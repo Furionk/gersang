@@ -1,30 +1,57 @@
-# 可選素材與公開版執行方式
+# Optional assets and the public checkout
 
-## 背景音樂
+The public source checkout runs without background music or the restricted village environment. Optional files on the author's workstation stay local and are not deleted by the Git configuration.
 
-`art/music/` 不隨 Git 分發。`BackgroundMusic` 只為存在的 MP3 建立播放器，沒有曲目時維持靜音。音效、角色語音、戰鬥及存檔不依賴 BGM。
+## Background music
 
-若你有合法使用權，將自己的 MP3 放入 `art/music/`，並在 `features/audio/background_music.gd` 的 `TRACKS` 指定路徑。重新匯入資源後執行遊戲。Web 的 `web_no_bgm` 匯出仍會停用 BGM。
+The entire `art/music/` directory, including `.import` sidecars, is ignored. `BackgroundMusic` loads available tracks at runtime and creates no player for a missing track. Without music, world exploration, battles, results, and saves continue normally. Effects and character voices use their existing systems.
 
-## EmacEArt 村莊
+To add music you have the right to use:
 
-- 作者：Maciej EmacArt / EmacEArt。
-- 素材包：Free Fantasy Medieval Houses。
-- [作者下載頁](https://emaceart.itch.io/free-fantasy-medieval-houses-and-props-pack)。
-- 作者本機使用的來源檔：`SlavicWorldFree_Godot_2026-09-06.zip`。
-- 來源 SHA-256：`fa1617aa00b73a35d08e0e1b2eafc102b2faf6e473a55d100fb66c2a85416374`。
+1. Put your MP3 files in the local `art/music/` directory.
+2. Set the `TRACKS` paths in [`features/audio/background_music.gd`](../features/audio/background_music.gd) to those files. Keep the route keys if you want the existing location-based transitions.
+3. Allow Godot to import the files, then run the game.
+4. Check your own distribution rights before packaging the music. Git ignores do not replace an export or licensing review.
 
-隨附 EmacEArt Asset License 允許遊戲內使用與修改，但禁止將素材作獨立檔案或素材包再分發。因此 Git 排除 `features/monkey/assets/emaceart/` 及 `features/monkey/village_*.tscn`。作者本機的改編場景及素材保留於原位置，不會被清理。
+The `web_no_bgm` export feature still disables BGM even when local tracks exist. The [BGM contract](../specs/background_music.md) describes routing and fades. The existing full playback test expects the six configured local tracks; without any tracks it checks silent routing and the actual director lifecycle instead.
 
-### 使用公開版庭園
+## EmacEArt village environment
 
-不需下載額外素材。`MonkeyProfile.resolved_scene()` 在指定場景不存在時回傳 `features/monkey/garden.tscn`。普通、疾風、狂亂及絕望入口保留各自的時間、數量與 AI 參數，使用內附庭園地形。村莊路線與平衡不適用於這個後備地形。
+| Item | Source record |
+| --- | --- |
+| Author | Maciej EmacArt / EmacEArt |
+| Pack | Free Fantasy Medieval Houses |
+| Download | [Author's asset page](https://emaceart.itch.io/free-fantasy-medieval-houses-and-props-pack) |
+| Archive used on the author's workstation | `SlavicWorldFree_Godot_2026-09-06.zip` |
+| Source SHA-256 | `fa1617aa00b73a35d08e0e1b2eafc102b2faf6e473a55d100fb66c2a85416374` |
 
-### 自行安裝村莊素材
+The supplied EmacEArt Asset License permits use and modification in games or applications, but prohibits redistributing the assets as standalone files or asset packs. Consequently, Git excludes:
 
-1. 從作者頁自行取得素材包，閱讀下載版本的授權。
-2. 將素材匯入你自己的 Godot 專案或此專案的本機目錄 `features/monkey/assets/emaceart/`。
-3. 以內附 `features/monkey/garden.tscn` 為玩法範本，將合法取得的環境整合至自己的場景。保留 `garden.gd`、`LevelLayout`、出生點、猴子巡邏標記、碰撞與導航。
-4. 在 `features/monkey/data/` 的對應 `MonkeyProfile` Resource，將 `scene` 指向已完成的場景，再測試出入口及捕猴。
+```text
+features/monkey/assets/emaceart/
+features/monkey/village_*.tscn
+```
 
-原包匯入不會自動重現作者已改編的村莊配置。本倉庫不提供受限素材或改編村莊的下載包。若你是原作者工作站，Git 排除的本機 `village_*.tscn` 及素材已存在，程式會繼續優先使用它們。
+The excluded scene pattern includes the environment scene and its difficulty wrappers. The adapted village and original local assets remain in place on the author's workstation. Do not upload them in a fork, source archive, or public asset bundle. Obtain any additional permissions required for your distribution directly from the rights holder.
+
+### Use the included garden
+
+No external asset download is required for this mode. [`MonkeyProfile.resolved_scene()`](../features/monkey/monkey_profile.gd) uses `features/monkey/garden.tscn` when the configured village scene is absent. The ordinary, hard, mania, and despair encounters keep their own profiles and snapshot target counts.
+
+The garden differs from the village in terrain, routes, and hazards. Shared difficulty parameters do not make the two layouts equally difficult. Test your chosen configuration on the actual level you distribute.
+
+### Install your own licensed environment
+
+1. Download the asset pack directly from its author and read the license bundled with that version.
+2. Import it into your own Godot project or the ignored local `features/monkey/assets/emaceart/` directory.
+3. Use the included [`garden.tscn`](../features/monkey/garden.tscn) as the gameplay starting point. Integrate your legally obtained environment while retaining the root script, `LevelLayout`, spawn marker, monkey home/route markers, collision, and navigation.
+4. Set the relevant `MonkeyProfile.scene` under `features/monkey/data/` to your finished scene. Use an ignored `village_*.tscn` name for a local adaptation that depends on the restricted pack, or add an appropriate ignore rule for another private scene name.
+5. Test entry, movement, capture, hazards, timeout, retreat, and return before exporting.
+
+Importing the downloaded archive does not automatically recreate the author's adapted village. This repository supplies neither the restricted asset pack nor a redistributable adapted-village bundle. If the existing local village scenes and their dependencies are already installed, the scene resolver continues to prefer them.
+
+## MIT and third-party boundaries
+
+The [root MIT License](../LICENSE) covers original project work owned by the project author. It does not change the terms of downloaded models, fonts, recordings, reference images, or other third-party material. Keep the original license files and copyright notices when redistribution is permitted.
+
+Repository-level notices and known source information are in [CREDITS.md](../CREDITS.md). Material whose ownership or reuse terms are not established there is not automatically covered by MIT. For a new release, use assets you own or assets with documented terms permitting the intended use.
