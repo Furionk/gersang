@@ -1,17 +1,29 @@
-# 製作名單與授權
+# Credits and third-party notices
 
-遊戲製作與整合：Furion Mashiou / Furionk，巨箱5.0 專案。
+Gersang / 巨箱5.0 is developed and integrated by **Furion Mashiou / Furionk**.
 
-| 項目 | 來源與條款 |
-| --- | --- |
-| 遊戲引擎 | Godot Engine contributors，MIT。[引擎授權](https://godotengine.org/license/)。 |
-| 自然素材 | Kenney Nature Kit 2.1，CC0。原文見 `features/monkey/assets/NATURE-LICENSE.txt`。 |
-| 早期角色基底 | Kenney Blocky Characters 2.0，CC0。原文見 `features/monkey/assets/CHARACTERS-LICENSE.txt`。 |
-| 中文字體 | Adobe、Google 與 Noto contributors，SIL Open Font License 1.1。原文見 `art/fonts/OFL.txt` 與 `art/fonts/NotoSansCJK-LICENSE.txt`。 |
-| Web Export Studio | 依 `addons/web_export/LICENSE.txt`。 |
-| 捕猴員與道具 | 專案提供參考圖，Meshy 生成及專案後製。未另行授予獨立素材再分發授權。 |
-| 猴子模型、介面與其他遊戲素材 | 專案提供或製作，權利依各自原作者與隨附條款保留。未統一標示為 CC0。 |
-| 可選村莊 | Maciej EmacArt / EmacEArt，Free Fantasy Medieval Houses。受限素材及依賴場景不在公開倉庫中。來源及安裝見 [可選素材](docs/optional_assets.md)。 |
-| 背景音樂 | 不隨本倉庫分發，整個 `art/music/` 已排除。 |
+## Project license
 
-此名單記錄已知來源，不為整個專案授予統一授權，也不改變第三方素材條款。公開原始碼與素材的可讀性不等於取得任何用途的再分發權。
+The project's original source code, original documentation, original scenes and data resources, and original assets owned by Furion Mashiou are available under the [MIT License](LICENSE), except where a file or the notices below identify separate rights or terms.
+
+You may use, modify, copy, merge, publish, distribute, sublicense, and sell the MIT-covered work, including in commercial games and closed-source products. Retain the copyright and permission notice in copies or substantial portions. No separate permission from the project author is required for these uses. The work is provided without warranty.
+
+**The root MIT License does not relicense third-party material or grant rights that the project author does not own.** Keep the applicable notices with redistributed third-party material. A public download, a generated file, or inclusion in this repository does not by itself establish ownership or an unrestricted asset license.
+
+## Third-party and separately sourced material
+
+| Material | Source and applicable notice | Scope |
+| --- | --- | --- |
+| Godot Engine | Godot Engine contributors, MIT. [Engine license and third-party notices](https://godotengine.org/license/). | Godot has its own copyright and dependency notices. Include those when distributing the engine with a game. |
+| Nature Kit 2.1 | Kenney, CC0. [Bundled notice](features/monkey/assets/NATURE-LICENSE.txt). | The original asset terms remain CC0. |
+| Blocky Characters 2.0 | Kenney, CC0. [Bundled notice](features/monkey/assets/CHARACTERS-LICENSE.txt). | Used as an earlier character base. The original asset terms remain CC0. |
+| Source Han Sans and Noto Sans CJK fonts | Adobe, Google, and Noto contributors. SIL Open Font License 1.1. [OFL notice](art/fonts/OFL.txt), [Noto CJK notice](art/fonts/NotoSansCJK-LICENSE.txt). | Font files remain under their supplied terms, including applicable reserved font names. |
+| Web Export Studio | Furion Tools, MIT. [Plugin license](addons/web_export/LICENSE.txt). | Preserve the plugin's existing notice. |
+| Optional village environment | Maciej EmacArt / EmacEArt, Free Fantasy Medieval Houses. [Author's download page](https://emaceart.itch.io/free-fantasy-medieval-houses-and-props-pack). | EmacEArt's supplied license allows game use and modification but prohibits standalone asset redistribution. The asset folder and dependent village scenes are excluded from this public repository. |
+| Current catcher and five tools | Project-supplied reference images, Meshy generation, and project post-production. | The root MIT grant covers project-owned contributions only. It does not replace applicable generator terms or license underlying reference material owned by others. No independent third-party asset license is asserted here. |
+| Supplied monkey model, character artwork, UI artwork, and voice recordings whose original ownership is not separately established | Project-supplied or separately produced material. | These files are not automatically relicensed under MIT. Follow any asset-specific notices and obtain appropriate rights before independently redistributing or reusing material whose license is not documented. |
+| Background music | Not distributed. | The entire `art/music/` directory, including import sidecars, is ignored. Add only music you have the right to use and distribute. |
+
+Project-owned code and original work remain MIT even when they interact with separately licensed assets. Keep an asset's provenance and licensing information when replacing it or adding new material. Do not describe the whole asset collection as MIT or CC0.
+
+See [optional assets and installation](docs/optional_assets.md) for the playable public fallback and local asset setup.

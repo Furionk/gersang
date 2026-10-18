@@ -84,4 +84,4 @@ godot --headless --path . res://tests/entry_persistence_suite.tscn
 
 作者：[Furion Mashiou / Furionk](https://github.com/Furionk)。
 
-字體、第三方素材及插件各自保留原授權，見 [製作名單與授權](CREDITS.md)。公開可讀不代表所有程式及素材均已授予開放授權；此倉庫沒有為整個專案另行指定統一授權。
+Original project code and project-owned work are licensed under the [MIT License](LICENSE). You may use, modify, distribute, and sell MIT-covered work, including in commercial and closed-source projects, while retaining the required notice. Third-party and separately sourced assets retain their own terms; see [credits and third-party notices](CREDITS.md).
