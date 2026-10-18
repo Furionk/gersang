@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/unit_definition.gd" id="1_g77nc"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_ve523"]
+[ext_resource type="Resource" path="res://features/skills/data/enemies/enemy_quake.tres" id="3_7gcbw"]
+[ext_resource type="Resource" path="res://features/skills/data/enemies/enemy_shockwave.tres" id="4_ilvnh"]
+[ext_resource type="Resource" path="res://features/skills/data/enemies/enemy_critical.tres" id="5_7b53x"]
+[ext_resource type="Resource" path="res://features/units/data/layouts/elite_layout.tres" id="6_x6oye"]
+[ext_resource type="Resource" path="res://features/audio/data/deep_well_shock_guard.tres" id="voice_profile"]
+
+[resource]
+script = ExtResource("1_g77nc")
+base_power = 240
+level_power_growth = 24
+strength = 90.0
+intelligence = 52.0
+defense = 90.0
+magic_resistance = 0.08
+experience_reward = 340
+id = &"deep_well_shock_guard"
+display_name = "深井裂焰鬼將"
+role = 9
+max_health = 828.0
+max_mana = 200.0
+damage = 48.0
+attack_range = 58.0
+attack_interval = 1.4
+minimum_ai_cast_time = 0.4
+balance_revision = 1
+tactical_hint = "重甲高體力：用法術／持續地面技削血，前排拉住，不要只靠普通物理硬打。"
+speed = 102.0
+mana_regeneration = 6.0
+armor = 0.45
+sprite_path = "res://features/units/art/elite.png"
+sprite_layout = ExtResource("6_x6oye")
+sprite_tint = Color(0.68, 0.8, 1, 1)
+skills = Array[ExtResource("2_ve523")]([ExtResource("3_7gcbw"), ExtResource("4_ilvnh"), ExtResource("5_7b53x")])
+voice_profile = ExtResource("voice_profile")

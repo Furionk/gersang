@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="SkillDefinition" format=3 uid="uid://dgol1gji0fh5l"]
+
+[ext_resource type="Script" uid="uid://cwgoeihpnw613" path="res://common/data/skill_effect_definition.gd" id="1_10uk3"]
+[ext_resource type="Script" uid="uid://boxf02g81ffu" path="res://common/data/skill_definition.gd" id="2_xv6f8"]
+
+[sub_resource type="Resource" id="Resource_exshq"]
+script = ExtResource("1_10uk3")
+kind = 8
+duration = 4.0
+tick_interval = 0.5
+radius = 85.0
+sprite_path = "res://features/skills/art/blast.png"
+
+[resource]
+script = ExtResource("2_xv6f8")
+id = &"enemy_flame"
+display_name = "焚地火焰"
+description = "在目標位置留下4秒火焰，每0.5秒傷害；離開火區可避開。"
+effect = 12
+action = &""
+icon_index = 1
+ai_enabled = true
+ai_attempt_interval = 3.5
+ai_cast_chance = 0.22
+mana_cost = 22.0
+range = 330.0
+radius = 85.0
+cast_time = 0.65
+damage_formula = "intelligence*0.30"
+effect_data = SubResource("Resource_exshq")

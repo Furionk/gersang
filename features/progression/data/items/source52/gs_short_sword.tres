@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="GearItemDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="1_6kug7"]
+[ext_resource type="Texture2D" path="res://art/items/source52/gs_short_sword.png" id="2_l0qa5"]
+[ext_resource type="Script" path="res://common/data/gear_item_definition.gd" id="3_7o4us"]
+
+[resource]
+script = ExtResource("3_7o4us")
+id = &"gs_short_sword"
+display_name = "短劍"
+category = "sword"
+icon = ExtResource("2_l0qa5")
+kind = 0
+weight = 15.0
+modifiers = {
+"attack_max": 14.0,
+"attack_min": 10.0
+}
+required_level = 16
+allowed_roles = PackedInt32Array()
+use_effect = 1
+source_url = "https://www.52jushang.com/item/dao.asp"
+source_image_url = "https://www.52jushang.com/item/img/dao/sword16.jpg"
+source_stats = {
+"modifiers": {
+"attack_max": 14.0,
+"attack_min": 10.0
+},
+"required_level": 16.0,
+"weight_jin": 15.0
+}
+source_skill_names = PackedStringArray()
+description = "52巨商參考裝備；屬性與重量依來源，攻擊區間作為裝備加成。"

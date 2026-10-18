@@ -1,0 +1,84 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3 uid="uid://bw3sear8mca03"]
+
+[ext_resource type="Script" uid="uid://bx2ysry1l3shr" path="res://common/data/unit_definition.gd" id="1"]
+[ext_resource type="Resource" uid="uid://jq601i416on" path="res://features/skills/data/blast.tres" id="2"]
+[ext_resource type="Script" uid="uid://boxf02g81ffu" path="res://common/data/skill_definition.gd" id="2_82gnj"]
+[ext_resource type="Resource" uid="uid://dwj6dudhga2fs" path="res://features/skills/data/summon.tres" id="4_7qtlp"]
+[ext_resource type="Script" uid="uid://dekk0d4nvs8mb" path="res://common/data/sprite_animation_clip.gd" id="5_8ruxk"]
+[ext_resource type="Script" uid="uid://t0xvoej4tvhi" path="res://common/data/sprite_sheet_layout.gd" id="6_mvupl"]
+[ext_resource type="Texture2D" uid="uid://c45ie61xbfdk4" path="res://features/units/art/guard.png" id="7_gxkfr"]
+[ext_resource type="Resource" path="res://features/audio/data/guard.tres" id="voice_profile"]
+
+[sub_resource type="Resource" id="Resource_odrh4"]
+script = ExtResource("5_8ruxk")
+columns = PackedInt32Array(0)
+fps = 2.0
+loop = true
+frame_durations = PackedFloat32Array()
+instant_start_frame = null
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_5witj"]
+script = ExtResource("5_8ruxk")
+action = 1
+columns = PackedInt32Array(1, 0, 2, 0)
+fps = 8.0
+loop = true
+frame_durations = PackedFloat32Array()
+instant_start_frame = null
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_hpiod"]
+script = ExtResource("5_8ruxk")
+action = 2
+columns = PackedInt32Array(0, 3, 0)
+fps = 12.0
+frame_durations = PackedFloat32Array()
+instant_start_frame = null
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_plbl8"]
+script = ExtResource("5_8ruxk")
+action = 3
+columns = PackedInt32Array(0, 4, 0)
+fps = 12.0
+frame_durations = PackedFloat32Array()
+instant_start_frame = null
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_wl1yf"]
+script = ExtResource("5_8ruxk")
+action = 4
+columns = PackedInt32Array(5)
+frame_durations = PackedFloat32Array()
+instant_start_frame = null
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_7bn88"]
+script = ExtResource("6_mvupl")
+source_texture = ExtResource("7_gxkfr")
+frame_size = Vector2i(181, 181)
+foot_point = Vector2(90.5, 157.47)
+frame_rects = Array[Rect2i]([Rect2i(56, 32, 108, 149), Rect2i(228, 37, 111, 142), Rect2i(413, 39, 113, 141), Rect2i(561, 9, 159, 172), Rect2i(759, 7, 139, 174), Rect2i(919, 96, 150, 83), Rect2i(47, 209, 102, 149), Rect2i(219, 212, 112, 147), Rect2i(404, 215, 106, 145), Rect2i(573, 185, 139, 175), Rect2i(764, 185, 112, 175), Rect2i(926, 263, 143, 95), Rect2i(34, 376, 113, 155), Rect2i(215, 381, 115, 156), Rect2i(398, 379, 111, 154), Rect2i(562, 366, 145, 172), Rect2i(752, 366, 122, 171), Rect2i(921, 441, 148, 95), Rect2i(27, 560, 112, 155), Rect2i(209, 563, 116, 145), Rect2i(392, 566, 116, 145), Rect2i(561, 557, 132, 159), Rect2i(755, 543, 119, 176), Rect2i(920, 616, 150, 98), Rect2i(18, 745, 121, 143), Rect2i(220, 747, 123, 149), Rect2i(380, 749, 131, 146), Rect2i(561, 729, 154, 166), Rect2i(759, 728, 117, 174), Rect2i(918, 799, 152, 96), Rect2i(38, 927, 126, 148), Rect2i(224, 927, 118, 150), Rect2i(405, 930, 120, 143), Rect2i(570, 908, 135, 168), Rect2i(762, 908, 119, 177), Rect2i(921, 987, 148, 87), Rect2i(39, 1108, 99, 145), Rect2i(221, 1107, 118, 147), Rect2i(404, 1104, 119, 150), Rect2i(566, 1086, 142, 166), Rect2i(755, 1086, 132, 170), Rect2i(922, 1174, 149, 67), Rect2i(49, 1285, 117, 147), Rect2i(234, 1285, 114, 146), Rect2i(408, 1285, 117, 142), Rect2i(569, 1267, 143, 162), Rect2i(767, 1267, 117, 169), Rect2i(921, 1334, 142, 98)])
+source_pivots = Array[Vector2]([Vector2(34.5, 147), Vector2(43.5, 140), Vector2(39.5, 139), Vector2(72.5, 170), Vector2(55.5, 172), Vector2(76.5, 81), Vector2(43.5, 147), Vector2(52.5, 145), Vector2(48.5, 143), Vector2(60.5, 173), Vector2(50.5, 173), Vector2(69.5, 93), Vector2(56.5, 153), Vector2(56.5, 154), Vector2(54.5, 152), Vector2(71.5, 170), Vector2(62.5, 169), Vector2(74.5, 93), Vector2(63.5, 153), Vector2(62.5, 143), Vector2(60.5, 143), Vector2(72.5, 157), Vector2(59.5, 174), Vector2(75.5, 96), Vector2(72.5, 141), Vector2(51.5, 147), Vector2(72.5, 144), Vector2(72.5, 164), Vector2(55.5, 172), Vector2(77.5, 94), Vector2(52.5, 146), Vector2(47.5, 148), Vector2(47.5, 141), Vector2(63.5, 166), Vector2(52.5, 175), Vector2(74.5, 85), Vector2(51.5, 143), Vector2(50.5, 145), Vector2(48.5, 148), Vector2(67.5, 164), Vector2(59.5, 168), Vector2(73.5, 65), Vector2(41.5, 145), Vector2(37.5, 144), Vector2(44.5, 140), Vector2(64.5, 160), Vector2(47.5, 167), Vector2(74.5, 96)])
+animations = Array[ExtResource("5_8ruxk")]([SubResource("Resource_odrh4"), SubResource("Resource_5witj"), SubResource("Resource_hpiod"), SubResource("Resource_plbl8"), SubResource("Resource_wl1yf")])
+direction_rows = Array[int]([0, 1, 2, 1, 0, 7, 6, 7])
+mirrored_directions = Array[bool]([false, false, false, true, true, true, false, false])
+
+[resource]
+script = ExtResource("1")
+puzzle_element = 1
+id = &"guard"
+display_name = "鐵衛"
+role = 1
+max_health = 380.0
+max_mana = 120.0
+damage = 24.0
+attack_range = 55.0
+speed = 112.0
+armor = 0.22
+sprite_path = "res://features/units/art/guard.png"
+sprite_layout = SubResource("Resource_7bn88")
+illustration_index = 1
+skills = Array[ExtResource("2_82gnj")]([ExtResource("2"), ExtResource("4_7qtlp")])
+voice_profile = ExtResource("voice_profile")

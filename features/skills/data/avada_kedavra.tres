@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="SkillDefinition" format=3 uid="uid://ct1ep4b8s7vma"]
+
+[ext_resource type="Script" path="res://common/data/skill_effect_definition.gd" id="1_h41e7"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_huurb"]
+
+[sub_resource type="Resource" id="Resource_px60r"]
+script = ExtResource("1_h41e7")
+target_max_hp_ratio_formula = "0.35+intelligence*0.001"
+kind = 16
+duration = 0.65
+radius = 130.0
+sprite_path = "res://features/skills/art/malfory-skull-v1.png"
+
+[resource]
+script = ExtResource("2_huurb")
+id = &"avada_kedavra"
+display_name = "啊哇呾喀呾啦"
+description = "0.5秒施法：目標最大HP×(35%＋每點智慧0.1%)，法抗照常。僅我軍新版；幻象維持舊公式。"
+effect = 22
+action = &"skill_avada_kedavra"
+default_key = 87
+icon_index = 8
+mana_cost = 50.0
+range = 500.0
+radius = 130.0
+cast_time = 0.5
+damage_formula = "0"
+effect_data = SubResource("Resource_px60r")
+tint = Color(0.05, 1, 0.12, 1)

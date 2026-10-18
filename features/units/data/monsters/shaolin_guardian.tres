@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/unit_definition.gd" id="1_ayoj8"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_mpn58"]
+[ext_resource type="Resource" path="res://features/units/data/layouts/shaolin_guardian_layout.tres" id="3_y76yo"]
+[ext_resource type="Resource" path="res://features/audio/data/shaolin_guardian.tres" id="voice_profile"]
+
+[resource]
+script = ExtResource("1_ayoj8")
+strength = 55.0
+defense = 90.0
+magic_resistance = 0.08
+experience_reward = 75
+id = &"shaolin_guardian"
+display_name = "銅棍護院"
+role = 9
+max_health = 468.0
+max_mana = 0.0
+damage = 24.0
+attack_range = 64.0
+attack_interval = 1.25
+minimum_ai_cast_time = 0.4
+balance_revision = 1
+tactical_hint = "重甲高體力：用法術／持續地面技削血，前排拉住，不要只靠普通物理硬打。"
+speed = 95.0
+mana_regeneration = 6.0
+armor = 0.45
+sprite_path = "res://features/units/art/shaolin_guardian-v1.png"
+sprite_layout = ExtResource("3_y76yo")
+voice_profile = ExtResource("voice_profile")

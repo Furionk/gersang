@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="UnitVoiceProfile" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://features/audio/unit_voice_profile.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+unit_id = &"merchant"
+nationality = "中國"
+language = "zh"
+species = "human"
+profession = "行旅商人"
+personality = "年輕有為、自信、朝氣、機靈、愛冒險"
+voice_id = "ZJsn5HnrE3eUbep2ia8D"
+model_id = "eleven_v3"
+manifest_path = "res://features/audio/data/unit_voices.json"
+events = {"select": ["res://art/voices/merchant/select_01.ogg", "res://art/voices/merchant/select_02.ogg", "res://art/voices/merchant/select_03.ogg"], "move": ["res://art/voices/merchant/move_01.ogg", "res://art/voices/merchant/move_02.ogg", "res://art/voices/merchant/move_03.ogg"], "attack": ["res://art/voices/merchant/attack_01.ogg", "res://art/voices/merchant/attack_02.ogg", "res://art/voices/merchant/attack_03.ogg"], "inspect": ["res://art/voices/merchant/inspect_01.ogg", "res://art/voices/merchant/inspect_02.ogg", "res://art/voices/merchant/inspect_03.ogg"]}

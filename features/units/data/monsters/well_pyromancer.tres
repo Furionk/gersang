@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/unit_definition.gd" id="1_fv708"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_u6ysd"]
+[ext_resource type="Resource" path="res://features/skills/data/enemies/enemy_flame.tres" id="3_7h8gr"]
+[ext_resource type="Resource" path="res://features/skills/data/enemies/enemy_shockwave.tres" id="4_58uxi"]
+[ext_resource type="Resource" path="res://features/units/data/layouts/tomb_pyromancer_layout.tres" id="5_btwtt"]
+[ext_resource type="Resource" path="res://features/audio/data/well_pyromancer.tres" id="voice_profile"]
+
+[resource]
+script = ExtResource("1_fv708")
+base_power = 240
+level_power_growth = 24
+intelligence = 74.0
+defense = 8.0
+magic_resistance = 0.6
+experience_reward = 125
+id = &"well_pyromancer"
+display_name = "古井燃燈巫"
+role = 8
+max_health = 450.0
+max_mana = 170.0
+damage = 27.0
+attack_range = 250.0
+attack_interval = 1.6
+minimum_ai_cast_time = 0.4
+balance_revision = 1
+tactical_hint = "高法抗施法者：用物理射手／忠臣之魂集中火力，控制中斷施法；不要一直用同種法術。"
+speed = 105.0
+mana_regeneration = 6.0
+armor = 0.03
+sprite_path = "res://features/units/art/tomb_pyromancer-v1.png"
+sprite_layout = ExtResource("5_btwtt")
+skills = Array[ExtResource("2_u6ysd")]([ExtResource("3_7h8gr"), ExtResource("4_58uxi")])
+voice_profile = ExtResource("voice_profile")

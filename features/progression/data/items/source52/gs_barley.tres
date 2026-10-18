@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="GearItemDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="1_qbb2o"]
+[ext_resource type="Texture2D" path="res://art/items/source52/gs_barley.png" id="2_f76gl"]
+[ext_resource type="Script" path="res://common/data/gear_item_definition.gd" id="3_hufli"]
+
+[resource]
+script = ExtResource("3_hufli")
+id = &"gs_barley"
+display_name = "大麥"
+category = "food"
+icon = ExtResource("2_f76gl")
+kind = 1
+weight = 3.0
+allowed_roles = PackedInt32Array()
+use_effect = 1
+source_url = "https://www.52jushang.com/item/shiwu.asp"
+source_image_url = "https://www.52jushang.com/item/img3/shiwu/food02.jpg"
+source_stats = {
+"modifiers": {},
+"required_level": 1.0,
+"satiety": 25.0,
+"weight_jin": 3.0
+}
+source_skill_names = PackedStringArray()
+description = "只收錄食品資料；本作不設定飽食度或食用效果。"

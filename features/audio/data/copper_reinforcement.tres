@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="UnitVoiceProfile" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://features/audio/unit_voice_profile.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+unit_id = &"copper_reinforcement"
+nationality = ""
+language = ""
+species = "copper construct"
+profession = "金身銅人"
+personality = "A living copper monk construct, resonant bronze chest vibration"
+voice_id = ""
+model_id = "eleven_text_to_sound_v2"
+manifest_path = "res://features/audio/data/unit_voices.json"
+events = {"engage": ["res://art/voices/copper_reinforcement/engage_01.ogg", "res://art/voices/copper_reinforcement/engage_02.ogg", "res://art/voices/copper_reinforcement/engage_03.ogg"], "death": ["res://art/voices/copper_reinforcement/death_01.ogg", "res://art/voices/copper_reinforcement/death_02.ogg", "res://art/voices/copper_reinforcement/death_03.ogg"]}

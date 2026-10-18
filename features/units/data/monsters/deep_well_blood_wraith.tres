@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/unit_definition.gd" id="1_5d1ve"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_c5goc"]
+[ext_resource type="Resource" path="res://features/skills/data/enemies/enemy_life_steal.tres" id="3_xxpbw"]
+[ext_resource type="Resource" path="res://features/skills/data/enemies/enemy_critical.tres" id="4_bjil6"]
+[ext_resource type="Resource" path="res://features/units/data/layouts/blood_wraith_layout.tres" id="5_tt0ie"]
+[ext_resource type="Resource" path="res://features/audio/data/deep_well_blood_wraith.tres" id="voice_profile"]
+
+[resource]
+script = ExtResource("1_5d1ve")
+base_power = 240
+level_power_growth = 24
+strength = 48.0
+intelligence = 50.0
+defense = 10.5
+magic_resistance = 0.6
+experience_reward = 320
+id = &"deep_well_blood_wraith"
+display_name = "深井嗜血刑鬼"
+role = 9
+max_health = 684.0
+max_mana = 0.0
+damage = 49.5
+attack_range = 58.0
+attack_interval = 1.4
+minimum_ai_cast_time = 0.4
+balance_revision = 1
+tactical_hint = "高法抗施法者：用物理射手／忠臣之魂集中火力，控制中斷施法；不要一直用同種法術。"
+speed = 132.0
+mana_regeneration = 6.0
+armor = 0.03
+sprite_path = "res://features/units/art/blood_wraith-v1.png"
+sprite_layout = ExtResource("5_tt0ie")
+sprite_tint = Color(1, 0.68, 0.7, 1)
+skills = Array[ExtResource("2_c5goc")]([ExtResource("3_xxpbw"), ExtResource("4_bjil6")])
+voice_profile = ExtResource("voice_profile")

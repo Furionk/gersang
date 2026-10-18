@@ -1,0 +1,63 @@
+[gd_resource type="Resource" script_class="SkillDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/skill_effect_definition.gd" id="1_qpw0g"]
+[ext_resource type="Script" path="res://common/data/unit_definition.gd" id="2_2uc3p"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="3_4f5kr"]
+[ext_resource type="Resource" path="res://features/units/data/layouts/millennium_worm_layout.tres" id="4_4a0fr"]
+
+[sub_resource type="Resource" id="Resource_7kf03"]
+script = ExtResource("3_4f5kr")
+id = &"lake_worm_leech"
+display_name = "湖血吞噬"
+description = "按實際命中扣除HP的25%恢復自身體力；不吸取MISS或過量傷害。"
+effect = 11
+trigger = 1
+action = &"skill_lake_worm_leech"
+life_steal_ratio = 0.25
+mana_cost = 0.0
+proc_chance = 1.0
+damage_formula = "0"
+
+[sub_resource type="Resource" id="Resource_8gj48"]
+script = ExtResource("2_2uc3p")
+base_power = 450
+defense = 15.0
+experience_reward = 0
+id = &"millennium_worm_clone"
+display_name = "千年蟲・分身"
+role = 9
+max_health = 550.0
+max_mana = 0.0
+damage = 55.0
+attack_range = 55.0
+attack_interval = 1.1
+speed = 115.0
+detection_range = 550.0
+sprite_path = "res://features/units/art/millennium_worm-v1.png"
+sprite_layout = ExtResource("4_4a0fr")
+visual_scale = 0.7
+skills = Array[ExtResource("3_4f5kr")]([SubResource("Resource_7kf03")])
+controllable = false
+
+[sub_resource type="Resource" id="Resource_mdilo"]
+script = ExtResource("1_qpw0g")
+kind = 5
+duration = 18.0
+summon_definition = SubResource("Resource_8gj48")
+summon_inherit_level = true
+sprite_path = "res://features/skills/art/summon.png"
+summon_controllable = false
+summon_limit = 2
+
+[resource]
+script = ExtResource("3_4f5kr")
+id = &"lake_worm_split"
+display_name = "蟲影分身"
+description = "普攻命中35%機率產生一隻同級分身，最多同時2隻、18秒；分身吸血但不再分裂，無額外獎勵。"
+effect = 9
+trigger = 1
+action = &"skill_lake_worm_split"
+mana_cost = 0.0
+proc_chance = 0.35
+damage_formula = "0"
+effect_data = SubResource("Resource_mdilo")

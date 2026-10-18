@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="GearItemDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="1_151h4"]
+[ext_resource type="Texture2D" path="res://art/items/source52/gs_tiger_armor.png" id="2_llxcd"]
+[ext_resource type="Script" path="res://common/data/gear_item_definition.gd" id="3_ggc5o"]
+
+[resource]
+script = ExtResource("3_ggc5o")
+id = &"gs_tiger_armor"
+display_name = "虎皮盔甲"
+category = "armor"
+icon = ExtResource("2_llxcd")
+kind = 0
+equipment_slot = 1
+weight = 9.0
+modifiers = {
+"defense": 14.0
+}
+required_level = 10
+allowed_roles = PackedInt32Array()
+use_effect = 1
+source_url = "https://www.52jushang.com/item/kuijia.asp"
+source_image_url = "https://www.52jushang.com/item/img2/kuijia/body10.jpg"
+source_stats = {
+"modifiers": {
+"defense": 14.0
+},
+"required_level": 10.0,
+"weight_jin": 9.0
+}
+source_skill_names = PackedStringArray()
+description = "52巨商參考裝備；屬性與重量依來源，攻擊區間作為裝備加成。"

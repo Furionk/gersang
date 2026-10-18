@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="UnitVoiceProfile" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://features/audio/unit_voice_profile.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+unit_id = &"guard"
+nationality = "朝鮮"
+language = "ko"
+species = "human"
+profession = "鐵衛"
+personality = "沉穩、厚實、忠誠"
+voice_id = "XIBeHrnXIVdoqMMadmog"
+model_id = "eleven_v3"
+manifest_path = "res://features/audio/data/unit_voices.json"
+events = {"select": ["res://art/voices/guard/select_01.ogg", "res://art/voices/guard/select_02.ogg", "res://art/voices/guard/select_03.ogg"], "move": ["res://art/voices/guard/move_01.ogg", "res://art/voices/guard/move_02.ogg", "res://art/voices/guard/move_03.ogg"], "attack": ["res://art/voices/guard/attack_01.ogg", "res://art/voices/guard/attack_02.ogg", "res://art/voices/guard/attack_03.ogg"], "inspect": ["res://art/voices/guard/inspect_01.ogg", "res://art/voices/guard/inspect_02.ogg", "res://art/voices/guard/inspect_03.ogg"]}

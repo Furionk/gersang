@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="SkillDefinition" format=3 uid="uid://dohxbbljkucjd"]
+
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="1"]
+[ext_resource type="Script" path="res://common/data/skill_effect_definition.gd" id="2"]
+
+[sub_resource type="Resource" id="Effect"]
+script = ExtResource("2")
+line_visual_count = 3
+line_sprite_cross_scale = 1.6
+kind = 4
+duration = 2.0
+tick_interval = 0.2
+radius = 80.0
+width = 120.0
+trail_length = 240.0
+sprite_path = "res://features/skills/art/dragon.png"
+
+[resource]
+script = ExtResource("1")
+id = &"dragon"
+display_name = "猛擊火龍破"
+description = "全戰場定向貫穿。Effect Data Width控制傷害帶，Line Visual Count控制多條火龍；同一命中不因圖片數量倍增。原公式×3。"
+effect = 8
+target_mode = 4
+action = &"skill_dragon"
+default_key = 82
+icon_index = 4
+mana_cost = 40.0
+range = 480.0
+battlefield_range = true
+radius = 80.0
+damage_formula = "intelligence*0.5"
+formula_multiplier = 3.0
+effect_data = SubResource("Effect")

@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="SkillDefinition" format=3 uid="uid://chu44airusk76"]
+
+[ext_resource type="Script" uid="uid://cwgoeihpnw613" path="res://common/data/skill_effect_definition.gd" id="1_wanxv"]
+[ext_resource type="Resource" uid="uid://b0p5sonvl6joy" path="res://features/units/data/summons/earth_claw.tres" id="2_n8nou"]
+[ext_resource type="Script" uid="uid://boxf02g81ffu" path="res://common/data/skill_definition.gd" id="3_2g86v"]
+
+[sub_resource type="Resource" id="Resource_6dig1"]
+script = ExtResource("1_wanxv")
+kind = 5
+duration = 30.0
+summon_definition = ExtResource("2_n8nou")
+sprite_path = "res://features/skills/art/summon.png"
+summon_intelligence_bonus_formula = "intelligence"
+summon_controllable = false
+
+[resource]
+script = ExtResource("3_2g86v")
+id = &"enemy_earth_claw"
+display_name = "大地魔爪"
+description = "按X／圖示立即召喚一隻不能控制的大地魔爪，持續30秒。隨機尋找周遭敵人刺擊，每次刺擊對地面敵軍造成15+釋放時智慧×1.4範圍傷害。同一施法者最多一隻。"
+effect = 9
+target_mode = 1
+action = &"skill_earth_claw"
+default_key = 88
+icon_index = 5
+ai_enabled = true
+ai_attempt_interval = 5.0
+ai_cast_chance = 0.4
+instant_self_activation = true
+mana_cost = 70.0
+radius = 350.0
+damage_formula = "0"
+effect_data = SubResource("Resource_6dig1")

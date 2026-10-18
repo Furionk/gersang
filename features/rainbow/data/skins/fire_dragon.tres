@@ -1,0 +1,57 @@
+[gd_resource type="Resource" script_class="SpriteSheetLayout" load_steps=9 format=3]
+
+[ext_resource type="Script" path="res://common/data/sprite_sheet_layout.gd" id="1"]
+[ext_resource type="Script" path="res://common/data/sprite_animation_clip.gd" id="2"]
+[ext_resource type="Texture2D" path="res://features/rainbow/art/fire_dragon-v1.png" id="3"]
+
+[sub_resource type="Resource" id="clip0"]
+script = ExtResource("2")
+action = 0
+columns = PackedInt32Array(0)
+fps = 3.0
+loop = true
+
+[sub_resource type="Resource" id="clip1"]
+script = ExtResource("2")
+action = 1
+columns = PackedInt32Array(1, 0, 2, 0)
+fps = 9.0
+loop = true
+
+[sub_resource type="Resource" id="clip2"]
+script = ExtResource("2")
+direction_rows = PackedInt32Array(0, 0, 0, 1, 1, 3, 3, 3)
+mirrored_directions = Array[bool]([false, false, false, false, false, true, true, false])
+action = 2
+columns = PackedInt32Array(0, 3, 0)
+fps = 9.0
+loop = false
+
+[sub_resource type="Resource" id="clip3"]
+script = ExtResource("2")
+direction_rows = PackedInt32Array(0, 0, 0, 1, 1, 3, 3, 3)
+mirrored_directions = Array[bool]([false, false, false, false, false, true, true, false])
+action = 3
+columns = PackedInt32Array(0, 3, 0)
+fps = 7.0
+loop = false
+
+[sub_resource type="Resource" id="clip4"]
+script = ExtResource("2")
+action = 4
+columns = PackedInt32Array(0)
+fps = 1.0
+loop = false
+
+[resource]
+script = ExtResource("1")
+source_texture = ExtResource("3")
+source_size = Vector2i(1410, 1115)
+columns = 4
+rows = 4
+frame_size = Vector2i(512, 400)
+foot_point = Vector2(256, 360)
+frame_rects = Array[Rect2i]([Rect2i(26, 37, 301, 206), Rect2i(379, 40, 290, 202), Rect2i(728, 35, 295, 203), Rect2i(1067, 10, 319, 236), Rect2i(46, 309, 287, 207), Rect2i(397, 307, 290, 208), Rect2i(757, 313, 282, 197), Rect2i(1081, 279, 312, 238), Rect2i(63, 575, 265, 204), Rect2i(413, 573, 264, 207), Rect2i(770, 570, 266, 208), Rect2i(1081, 534, 297, 254), Rect2i(40, 845, 252, 224), Rect2i(396, 846, 247, 216), Rect2i(743, 844, 250, 223), Rect2i(1061, 801, 322, 264)])
+source_pivots = Array[Vector2]([Vector2(191.3, 204.0), Vector2(195.2, 200.0), Vector2(177.3, 201.0), Vector2(176.2, 234.0), Vector2(102.5, 205.0), Vector2(104.4, 206.0), Vector2(112.6, 195.0), Vector2(144.5, 236.0), Vector2(162.5, 202.0), Vector2(159.4, 205.0), Vector2(166.0, 206.0), Vector2(100.3, 252.0), Vector2(93.2, 222.0), Vector2(99.7, 214.0), Vector2(90.2, 221.0), Vector2(130.2, 262.0)])
+direction_rows = Array[int]([0, 0, 0, 1, 1, 2, 2, 3])
+animations = Array[ExtResource("2")]([SubResource("clip0"), SubResource("clip1"), SubResource("clip2"), SubResource("clip3"), SubResource("clip4")])

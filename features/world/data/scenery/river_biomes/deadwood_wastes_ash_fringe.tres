@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="WorldSceneryDefinition" format=3]
+
+[ext_resource type="Script" path="res://features/world/definitions/world_scenery_definition.gd" id="1_u572a"]
+[ext_resource type="Texture2D" path="res://art/terrain/biomes_v1/deadwood_wastes/environment-atlas-v1.png" id="2_tos3t"]
+
+[resource]
+script = ExtResource("1_u572a")
+display_name = "灰土路緣"
+description = "河灣環境組合；原生通行／阻擋仍由 TileMap 遮罩決定。"
+texture = ExtResource("2_tos3t")
+atlas_region = Rect2(0, 725, 362, 362)
+foot_anchor = Vector2(192, 308)
+sprite_scale = 0.72
+
+sorting_mode = 0
+sorting_review_required = false
+sorting_note = "已實際查看原圖：低矮地被／碎石貼片，固定在角色下方；需遮腳可設單件立體。"

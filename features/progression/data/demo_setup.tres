@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="DemoSetup" format=3]
+[ext_resource type="Script" path="res://common/data/demo_setup.gd" id="setup"]
+[ext_resource type="Script" path="res://common/data/unit_definition.gd" id="unit"]
+[ext_resource type="Resource" path="res://features/units/data/mercenaries/merchant.tres" id="0"]
+[ext_resource type="Resource" path="res://features/units/data/mercenaries/guard.tres" id="1"]
+[ext_resource type="Resource" path="res://features/units/data/mercenaries/gunner.tres" id="2"]
+[ext_resource type="Resource" path="res://features/units/data/mercenaries/mage.tres" id="3"]
+[ext_resource type="Resource" path="res://features/units/data/mercenaries/healer.tres" id="4"]
+[ext_resource type="Resource" path="res://features/units/data/mercenaries/supplier.tres" id="5"]
+[ext_resource type="Resource" path="res://features/units/data/mercenaries/controller.tres" id="6"]
+[ext_resource type="Resource" path="res://features/units/data/mercenaries/ninja.tres" id="7"]
+[ext_resource type="Resource" path="res://features/units/data/mercenaries/kohime.tres" id="8"]
+[ext_resource type="Resource" path="res://features/units/data/mercenaries/malfory.tres" id="9"]
+[ext_resource type="Resource" path="res://features/units/data/mercenaries/teppo.tres" id="10"]
+[resource]
+script=ExtResource("setup")
+active=Array[ExtResource("unit")]([ExtResource("0"),ExtResource("1"),ExtResource("2"),ExtResource("3"),ExtResource("4"),ExtResource("5"),ExtResource("6"),ExtResource("7"),ExtResource("8"),ExtResource("9")])
+reserve=Array[ExtResource("unit")]([ExtResource("10")])

@@ -1,0 +1,471 @@
+{
+	"assets": [
+		{
+			"atlas": "res://art/terrain/expansion_v1/foliage-v1.png",
+			"foot_anchor": [
+				266.0,
+				510.0
+			],
+			"group": "foliage",
+			"id": "bamboo",
+			"name": "竹叢",
+			"opaque_bounds": [
+				40,
+				17,
+				452,
+				496
+			],
+			"region": [
+				0,
+				0,
+				512,
+				516
+			],
+			"resource": "res://art/terrain/expansion_v1/scenery/bamboo.tres"
+		},
+		{
+			"atlas": "res://art/terrain/expansion_v1/foliage-v1.png",
+			"foot_anchor": [
+				255.0,
+				510.0
+			],
+			"group": "foliage",
+			"id": "autumn_maple",
+			"name": "秋楓",
+			"opaque_bounds": [
+				515,
+				15,
+				504,
+				498
+			],
+			"region": [
+				512,
+				0,
+				512,
+				516
+			],
+			"resource": "res://art/terrain/expansion_v1/scenery/autumn_maple.tres"
+		},
+		{
+			"atlas": "res://art/terrain/expansion_v1/foliage-v1.png",
+			"foot_anchor": [
+				247.5,
+				512.0
+			],
+			"group": "foliage",
+			"id": "dead_tree",
+			"name": "枯樹",
+			"opaque_bounds": [
+				1045,
+				17,
+				453,
+				498
+			],
+			"region": [
+				1024,
+				0,
+				512,
+				516
+			],
+			"resource": "res://art/terrain/expansion_v1/scenery/dead_tree.tres"
+		},
+		{
+			"atlas": "res://art/terrain/expansion_v1/foliage-v1.png",
+			"foot_anchor": [
+				256.0,
+				451.0
+			],
+			"group": "foliage",
+			"id": "flowering_shrub",
+			"name": "花灌木",
+			"opaque_bounds": [
+				16,
+				562,
+				480,
+				408
+			],
+			"region": [
+				0,
+				516,
+				512,
+				508
+			],
+			"resource": "res://art/terrain/expansion_v1/scenery/flowering_shrub.tres"
+		},
+		{
+			"atlas": "res://art/terrain/expansion_v1/foliage-v1.png",
+			"foot_anchor": [
+				254.5,
+				461.0
+			],
+			"group": "foliage",
+			"id": "cattails",
+			"name": "蘆葦與香蒲",
+			"opaque_bounds": [
+				538,
+				527,
+				457,
+				453
+			],
+			"region": [
+				512,
+				516,
+				512,
+				508
+			],
+			"resource": "res://art/terrain/expansion_v1/scenery/cattails.tres"
+		},
+		{
+			"atlas": "res://art/terrain/expansion_v1/foliage-v1.png",
+			"foot_anchor": [
+				251.5,
+				448.0
+			],
+			"group": "foliage",
+			"id": "mossy_log",
+			"name": "苔木與蘑菇",
+			"opaque_bounds": [
+				1036,
+				670,
+				479,
+				297
+			],
+			"region": [
+				1024,
+				516,
+				512,
+				508
+			],
+			"resource": "res://art/terrain/expansion_v1/scenery/mossy_log.tres"
+		},
+		{
+			"atlas": "res://art/terrain/expansion_v1/village-v1.png",
+			"foot_anchor": [
+				250.5,
+				475.0
+			],
+			"group": "village",
+			"id": "stone_well",
+			"name": "村落石井",
+			"opaque_bounds": [
+				69,
+				72,
+				363,
+				406
+			],
+			"region": [
+				0,
+				0,
+				512,
+				520
+			],
+			"resource": "res://art/terrain/expansion_v1/scenery/stone_well.tres"
+		},
+		{
+			"atlas": "res://art/terrain/expansion_v1/village-v1.png",
+			"foot_anchor": [
+				241.0,
+				516.0
+			],
+			"group": "village",
+			"id": "market_stall",
+			"name": "雜貨攤",
+			"opaque_bounds": [
+				523,
+				27,
+				460,
+				492
+			],
+			"region": [
+				512,
+				0,
+				512,
+				520
+			],
+			"resource": "res://art/terrain/expansion_v1/scenery/market_stall.tres"
+		},
+		{
+			"atlas": "res://art/terrain/expansion_v1/village-v1.png",
+			"foot_anchor": [
+				235.5,
+				453.0
+			],
+			"group": "village",
+			"id": "grain_cart",
+			"name": "糧袋木車",
+			"opaque_bounds": [
+				1027,
+				87,
+				465,
+				369
+			],
+			"region": [
+				1024,
+				0,
+				512,
+				520
+			],
+			"resource": "res://art/terrain/expansion_v1/scenery/grain_cart.tres"
+		},
+		{
+			"atlas": "res://art/terrain/expansion_v1/village-v1.png",
+			"foot_anchor": [
+				270.5,
+				438.0
+			],
+			"group": "village",
+			"id": "clay_oven",
+			"name": "柴火土灶",
+			"opaque_bounds": [
+				43,
+				532,
+				455,
+				429
+			],
+			"region": [
+				0,
+				520,
+				512,
+				504
+			],
+			"resource": "res://art/terrain/expansion_v1/scenery/clay_oven.tres"
+		},
+		{
+			"atlas": "res://art/terrain/expansion_v1/village-v1.png",
+			"foot_anchor": [
+				260.5,
+				430.0
+			],
+			"group": "village",
+			"id": "bamboo_fence",
+			"name": "竹籬笆",
+			"opaque_bounds": [
+				566,
+				569,
+				413,
+				384
+			],
+			"region": [
+				512,
+				520,
+				512,
+				504
+			],
+			"resource": "res://art/terrain/expansion_v1/scenery/bamboo_fence.tres"
+		},
+		{
+			"atlas": "res://art/terrain/expansion_v1/village-v1.png",
+			"foot_anchor": [
+				265.5,
+				422.0
+			],
+			"group": "village",
+			"id": "storage_jars",
+			"name": "木桶與陶罐",
+			"opaque_bounds": [
+				1087,
+				581,
+				405,
+				364
+			],
+			"region": [
+				1024,
+				520,
+				512,
+				504
+			],
+			"resource": "res://art/terrain/expansion_v1/scenery/storage_jars.tres"
+		},
+		{
+			"atlas": "res://art/terrain/expansion_v1/ruins-v1.png",
+			"foot_anchor": [
+				267.5,
+				504.0
+			],
+			"group": "ruins",
+			"id": "broken_arch",
+			"name": "殘破石拱門",
+			"opaque_bounds": [
+				62,
+				14,
+				411,
+				493
+			],
+			"region": [
+				0,
+				0,
+				512,
+				512
+			],
+			"resource": "res://art/terrain/expansion_v1/scenery/broken_arch.tres"
+		},
+		{
+			"atlas": "res://art/terrain/expansion_v1/ruins-v1.png",
+			"foot_anchor": [
+				235.5,
+				499.0
+			],
+			"group": "ruins",
+			"id": "guardian_lion",
+			"name": "守門石獅",
+			"opaque_bounds": [
+				590,
+				72,
+				315,
+				430
+			],
+			"region": [
+				512,
+				0,
+				512,
+				512
+			],
+			"resource": "res://art/terrain/expansion_v1/scenery/guardian_lion.tres"
+		},
+		{
+			"atlas": "res://art/terrain/expansion_v1/ruins-v1.png",
+			"foot_anchor": [
+				249.0,
+				500.0
+			],
+			"group": "ruins",
+			"id": "bell_frame",
+			"name": "古鐘架",
+			"opaque_bounds": [
+				1074,
+				19,
+				398,
+				484
+			],
+			"region": [
+				1024,
+				0,
+				512,
+				512
+			],
+			"resource": "res://art/terrain/expansion_v1/scenery/bell_frame.tres"
+		},
+		{
+			"atlas": "res://art/terrain/expansion_v1/ruins-v1.png",
+			"foot_anchor": [
+				261.0,
+				444.0
+			],
+			"group": "ruins",
+			"id": "fallen_column",
+			"name": "倒塌石柱",
+			"opaque_bounds": [
+				41,
+				596,
+				440,
+				363
+			],
+			"region": [
+				0,
+				512,
+				512,
+				512
+			],
+			"resource": "res://art/terrain/expansion_v1/scenery/fallen_column.tres"
+		},
+		{
+			"atlas": "res://art/terrain/expansion_v1/ruins-v1.png",
+			"foot_anchor": [
+				256.5,
+				440.0
+			],
+			"group": "ruins",
+			"id": "stone_altar",
+			"name": "古石祭台",
+			"opaque_bounds": [
+				531,
+				612,
+				475,
+				343
+			],
+			"region": [
+				512,
+				512,
+				512,
+				512
+			],
+			"resource": "res://art/terrain/expansion_v1/scenery/stone_altar.tres"
+		},
+		{
+			"atlas": "res://art/terrain/expansion_v1/ruins-v1.png",
+			"foot_anchor": [
+				256.0,
+				476.0
+			],
+			"group": "ruins",
+			"id": "quartz_cluster",
+			"name": "石英晶簇",
+			"opaque_bounds": [
+				1090,
+				561,
+				380,
+				430
+			],
+			"region": [
+				1024,
+				512,
+				512,
+				512
+			],
+			"resource": "res://art/terrain/expansion_v1/scenery/quartz_cluster.tres"
+		},
+		{
+			"atlas": "res://art/terrain/expansion_v1/surfaces-v1.png",
+			"group": "surfaces",
+			"id": "dry_sand",
+			"name": "沙地",
+			"region": [
+				0.0,
+				0.0,
+				627.0,
+				627.0
+			],
+			"resource": "res://art/terrain/expansion_v1/surfaces/dry_sand.tres"
+		},
+		{
+			"atlas": "res://art/terrain/expansion_v1/surfaces-v1.png",
+			"group": "surfaces",
+			"id": "cracked_earth",
+			"name": "乾裂土地",
+			"region": [
+				627.0,
+				0.0,
+				627.0,
+				627.0
+			],
+			"resource": "res://art/terrain/expansion_v1/surfaces/cracked_earth.tres"
+		},
+		{
+			"atlas": "res://art/terrain/expansion_v1/surfaces-v1.png",
+			"group": "surfaces",
+			"id": "snow",
+			"name": "積雪",
+			"region": [
+				0.0,
+				627.0,
+				627.0,
+				627.0
+			],
+			"resource": "res://art/terrain/expansion_v1/surfaces/snow.tres"
+		},
+		{
+			"atlas": "res://art/terrain/expansion_v1/surfaces-v1.png",
+			"group": "surfaces",
+			"id": "dark_gravel",
+			"name": "深色碎石",
+			"region": [
+				627.0,
+				627.0,
+				627.0,
+				627.0
+			],
+			"resource": "res://art/terrain/expansion_v1/surfaces/dark_gravel.tres"
+		}
+	],
+	"schema": 1
+}

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="GearItemDefinition" load_steps=2 format=3]
+[ext_resource type="Script" path="res://common/data/gear_item_definition.gd" id="1"]
+[resource]
+script = ExtResource("1")
+id = &"coat"
+display_name = "商旅布甲"
+kind = 0
+equipment_slot = 1
+max_stack = 1
+weight = 5.0
+restore = 0.0
+modifiers = {"defense": 3.0, "health": 20.0}
+description = "防禦＋3、體力上限＋20。"

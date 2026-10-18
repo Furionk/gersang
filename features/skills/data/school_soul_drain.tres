@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="SkillDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/skill_effect_definition.gd" id="1_wfekv"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_ewtv6"]
+
+[sub_resource type="Resource" id="Resource_p1cod"]
+script = ExtResource("1_wfekv")
+channel_break_range = 440.0
+kind = 17
+duration = 4.0
+tick_interval = 0.5
+
+[resource]
+script = ExtResource("2_ewtv6")
+id = &"school_soul_drain"
+display_name = "吸魂"
+description = "持續施法4秒，每0.5秒造成攻擊×0.7法術傷害，按實際傷害回血；受控、死亡或目標離開440範圍中斷。Effect Data可調時間、間隔、回血比例與斷線距離。"
+effect = 23
+target_mode = 3
+action = &"skill_school_soul_drain"
+ai_enabled = true
+ai_attempt_interval = 6.0
+ai_cast_chance = 0.6
+mana_cost = 25.0
+range = 360.0
+damage_formula = "attack*0.7"
+effect_data = SubResource("Resource_p1cod")
+tint = Color(0.2, 0.8, 0.65, 1)

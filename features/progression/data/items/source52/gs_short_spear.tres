@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="GearItemDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="1_0vjvu"]
+[ext_resource type="Texture2D" path="res://art/items/source52/gs_short_spear.png" id="2_ug33o"]
+[ext_resource type="Script" path="res://common/data/gear_item_definition.gd" id="3_uf1ag"]
+
+[resource]
+script = ExtResource("3_uf1ag")
+id = &"gs_short_spear"
+display_name = "短槍"
+category = "spear"
+icon = ExtResource("2_ug33o")
+kind = 0
+weight = 18.0
+modifiers = {
+"attack_max": 8.0,
+"attack_min": 6.0
+}
+required_level = 8
+allowed_roles = PackedInt32Array()
+use_effect = 1
+source_url = "https://www.52jushang.com/item/mao.asp"
+source_image_url = "https://www.52jushang.com/item/img/mao/yari16.jpg"
+source_stats = {
+"modifiers": {
+"attack_max": 8.0,
+"attack_min": 6.0
+},
+"required_level": 8.0,
+"weight_jin": 18.0
+}
+source_skill_names = PackedStringArray()
+description = "52巨商參考裝備；屬性與重量依來源，攻擊區間作為裝備加成。"

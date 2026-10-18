@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="WorldSceneryDefinition" format=3]
+
+[ext_resource type="Script" path="res://features/world/definitions/world_scenery_definition.gd" id="1_xcwjp"]
+[ext_resource type="Texture2D" path="res://art/terrain/shaolin_temple/walls-v2.png" id="2_1cybj"]
+
+[resource]
+script = ExtResource("1_xcwjp")
+display_name = "少林寺連續朱牆"
+texture = ExtResource("2_1cybj")
+atlas_region = Rect2(512, 0, 512, 512)
+foot_anchor = Vector2(248.5, 340)
+sprite_scale = 0.42
+sprite_basis = Transform2D(1.153363, -0.08747288, 0, 1, 0, 0)
+metadata/source_ports = PackedVector2Array(457, 238, 40, 442)
+metadata/projected_ports = PackedVector2Array(101, -50.5, -101, 50.5)
+metadata/wall_kit = 2
+
+sorting_mode = 1
+sorting_review_required = false
+sorting_note = "立體素材，腳底Y自動交錯；不產生障礙。"

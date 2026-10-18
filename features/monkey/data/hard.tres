@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="MonkeyProfile" load_steps=2 format=3]
+[ext_resource type="Script" path="res://features/monkey/monkey_profile.gd" id="1"]
+[resource]
+script = ExtResource("1")
+zone_name = "困難 · Lv.15 · 10隻"
+time_limit = 120.0
+escape_multiplier = 1.55
+burst_multiplier = 1.45
+decision_seconds = 0.6
+dodge_chance = 0.65
+jump_seconds = 0.6
+confirmation_seconds = 0.32
+search_seconds = 5.0
+sight_range = 15
+hearing_range = 6.0
+look_back_interval = 0.75
+burst_cooldown = 1.9
+dodge_reaction = 0.12
+prediction_seconds = 0.6
+
+scene = "res://features/monkey/village_hard.tscn"
+
+monkey_count = 10
+
+monkey_level = 15
+
+difficulty = 1
+
+alarm_radius = 8
+
+feint_chance = 0.25
+
+attack_windup = 0.48
+
+attack_recovery = 0.5
+
+exhaustion_seconds = 0.45
+
+stun_resistance = 0.15
+
+sight_degrees = 140
+
+dodge_cooldown_seconds = 1.0

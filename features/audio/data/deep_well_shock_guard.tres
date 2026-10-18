@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="UnitVoiceProfile" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://features/audio/unit_voice_profile.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+unit_id = &"deep_well_shock_guard"
+nationality = "中國"
+language = "zh"
+species = "intelligent spirit"
+profession = "深井裂焰鬼將"
+personality = "兇猛、軍威、鬼將"
+voice_id = "xQsp9uyB3OResmXFYuFx"
+model_id = "eleven_v3"
+manifest_path = "res://features/audio/data/unit_voices.json"
+events = {"engage": ["res://art/voices/deep_well_shock_guard/engage_01.ogg", "res://art/voices/deep_well_shock_guard/engage_02.ogg", "res://art/voices/deep_well_shock_guard/engage_03.ogg"], "death": ["res://art/voices/deep_well_shock_guard/death_01.ogg", "res://art/voices/deep_well_shock_guard/death_02.ogg", "res://art/voices/deep_well_shock_guard/death_03.ogg"]}

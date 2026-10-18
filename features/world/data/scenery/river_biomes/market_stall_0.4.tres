@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="WorldSceneryDefinition" format=3]
+
+[ext_resource type="Script" path="res://features/world/definitions/world_scenery_definition.gd" id="1_7vvwa"]
+[ext_resource type="Texture2D" path="res://art/terrain/expansion_v1/village-v1.png" id="2_o3fb0"]
+
+[resource]
+script = ExtResource("1_7vvwa")
+display_name = "雜貨攤"
+description = "環境裝飾素材；通行及阻擋另由地圖遮罩設定。"
+texture = ExtResource("2_o3fb0")
+atlas_region = Rect2(512, 0, 512, 520)
+foot_anchor = Vector2(241, 516)
+sprite_scale = 0.4
+
+sorting_mode = 1
+sorting_review_required = false
+sorting_note = "立體素材，腳底Y自動交錯；不產生障礙。"

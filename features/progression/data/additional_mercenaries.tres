@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="MercenaryCatalog" format=3]
+
+[ext_resource type="Script" path="res://common/data/unit_definition.gd" id="1_e6x72"]
+[ext_resource type="Resource" path="res://features/units/data/mercenaries/kohime.tres" id="2_3qkhf"]
+[ext_resource type="Resource" path="res://features/units/data/mercenaries/ninja.tres" id="3_grvxv"]
+[ext_resource type="Resource" path="res://features/units/data/mercenaries/teppo.tres" id="4_s5iwe"]
+[ext_resource type="Resource" path="res://features/units/data/mercenaries/malfory.tres" id="5_otm36"]
+[ext_resource type="Script" path="res://common/data/mercenary_catalog.gd" id="6_cwnbd"]
+[ext_resource type="Script" path="res://common/data/unit_trial_entry.gd" id="trial"]
+[ext_resource type="Resource" path="res://features/units/data/summons/earth_claw.tres" id="claw"]
+[ext_resource type="Resource" path="res://features/units/data/monsters/kohime_enemy.tres" id="kohime_enemy"]
+[ext_resource type="Resource" path="res://features/units/data/monsters/ninja_enemy.tres" id="ninja_enemy"]
+[ext_resource type="Resource" path="res://features/units/data/monsters/teppo_enemy.tres" id="teppo_enemy"]
+[ext_resource type="Resource" path="res://features/units/data/monsters/earth_claw_enemy.tres" id="claw_enemy"]
+
+[sub_resource type="Resource" id="trial_kohime"]
+script=ExtResource("trial")
+friendly=ExtResource("2_3qkhf")
+enemy=ExtResource("kohime_enemy")
+[sub_resource type="Resource" id="trial_ninja"]
+script=ExtResource("trial")
+friendly=ExtResource("3_grvxv")
+enemy=ExtResource("ninja_enemy")
+[sub_resource type="Resource" id="trial_teppo"]
+script=ExtResource("trial")
+friendly=ExtResource("4_s5iwe")
+enemy=ExtResource("teppo_enemy")
+[sub_resource type="Resource" id="trial_malfory"]
+script=ExtResource("trial")
+friendly=ExtResource("5_otm36")
+[sub_resource type="Resource" id="trial_claw"]
+script=ExtResource("trial")
+friendly=ExtResource("claw")
+enemy=ExtResource("claw_enemy")
+
+[resource]
+script = ExtResource("6_cwnbd")
+definitions = Array[ExtResource("1_e6x72")]([ExtResource("2_3qkhf"), ExtResource("3_grvxv"), ExtResource("4_s5iwe"), ExtResource("5_otm36")])
+trials=Array[ExtResource("trial")]([SubResource("trial_kohime"),SubResource("trial_ninja"),SubResource("trial_teppo"),SubResource("trial_malfory"),SubResource("trial_claw")])

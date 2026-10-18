@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/unit_definition.gd" id="1_hipyq"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_4kleb"]
+[ext_resource type="Resource" path="res://features/rainbow/data/skins/lava_beast.tres" id="3_tqs3k"]
+
+[resource]
+script = ExtResource("1_hipyq")
+base_power = 500
+luck = 0.0
+defense = 4.0
+experience_reward = 180
+level = 18
+id = &"lava_beast"
+display_name = "熔岩獸"
+max_health = 2320.0
+max_mana = 300.0
+damage = 52.5
+attack_range = 130.0
+balance_revision = 2
+tactical_hint = "裂地猛踏有扇形預警；往側後走，別站在角前。"
+speed = 126.50000000000001
+mana_regeneration = 8.0
+sprite_path = "res://features/rainbow/art/lava_beast-v1.png"
+sprite_layout = ExtResource("3_tqs3k")
+battle_sprite_scale = 0.48
+world_sprite_scale = 0.24

@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/unit_definition.gd" id="1_t55b7"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_qhxbt"]
+[ext_resource type="Resource" path="res://features/rainbow/data/skins/temple_lava_troll.tres" id="3_5rj1j"]
+
+[resource]
+script = ExtResource("1_t55b7")
+base_power = 500
+luck = 0.0
+defense = 4.0
+experience_reward = 180
+level = 18
+id = &"temple_lava_troll"
+display_name = "熔岩巨魔"
+max_health = 2800.0
+max_mana = 300.0
+damage = 65.0
+attack_range = 100.0
+balance_revision = 1
+tactical_hint = "重鎚破陣；起手慢，繞後反擊。"
+speed = 75.0
+mana_regeneration = 8.0
+sprite_path = "res://features/rainbow/art/temple-creatures-v2.png"
+sprite_layout = ExtResource("3_5rj1j")
+battle_sprite_scale = 0.56
+world_sprite_scale = 0.30800000000000005

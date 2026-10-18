@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="UnitVoiceProfile" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://features/audio/unit_voice_profile.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+unit_id = &"beast"
+nationality = ""
+language = ""
+species = "boar"
+profession = "租霸豬"
+personality = "A large wild boar, rough snorts and throaty squeals"
+voice_id = ""
+model_id = "eleven_text_to_sound_v2"
+manifest_path = "res://features/audio/data/unit_voices.json"
+events = {"engage": ["res://art/voices/beast/engage_01.ogg", "res://art/voices/beast/engage_02.ogg", "res://art/voices/beast/engage_03.ogg"], "death": ["res://art/voices/beast/death_01.ogg", "res://art/voices/beast/death_02.ogg", "res://art/voices/beast/death_03.ogg"]}

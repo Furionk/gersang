@@ -1,0 +1,10 @@
+# Default rg searches should see source, not cached/imported or archived copies.
+.godot/
+artifacts/
+docs/history/
+*.log
+/tests/*-preview.png
+/tests/resize-*.png
+/tests/world-hud-*.png
+/tests/progression-*.png
+/tests/ice-wall-ai-*.png

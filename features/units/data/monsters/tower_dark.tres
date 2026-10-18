@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3]
+
+[ext_resource type="Resource" path="res://features/puzzle/data/tower_dark_rules.tres" id="1_lwd5q"]
+[ext_resource type="Script" path="res://common/data/unit_definition.gd" id="2_o7h5f"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="3_vuh2g"]
+[ext_resource type="Resource" path="res://features/puzzle/data/pearl_layout.tres" id="4_pd34h"]
+
+[resource]
+script = ExtResource("2_o7h5f")
+puzzle_element = 3
+puzzle_monster = ExtResource("1_lwd5q")
+experience_reward = 8000
+level = 99
+id = &"tower_dark"
+display_name = "黑暗轉珠怪"
+damage = 0.0
+attack_range = 56.0
+tactical_hint = "首次攻擊進入轉珠世界；消除同屬性珠可讓兵種出手。"
+speed = 360.0
+sprite_path = "res://features/puzzle/art/pearl-monster-v1.png"
+sprite_layout = ExtResource("4_pd34h")
+sprite_tint = Color(0.085, 0.06, 0.12, 1)
+battle_sprite_scale = 0.19
+world_sprite_scale = 0.15
+balance_revision = 2

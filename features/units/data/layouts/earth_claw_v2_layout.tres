@@ -1,0 +1,58 @@
+[gd_resource type="Resource" script_class="SpriteSheetLayout" format=3 uid="uid://b3bbvv24fhl0g"]
+
+[ext_resource type="Script" uid="uid://t0xvoej4tvhi" path="res://common/data/sprite_sheet_layout.gd" id="1_lo1r0"]
+[ext_resource type="Script" uid="uid://dekk0d4nvs8mb" path="res://common/data/sprite_animation_clip.gd" id="1_r1jmv"]
+[ext_resource type="Texture2D" uid="uid://c52utsdiyd551" path="res://features/units/art/earth-claw-v2.png" id="3_5lmy2"]
+
+[sub_resource type="Resource" id="Resource_r1jmv"]
+script = ExtResource("1_r1jmv")
+columns = PackedInt32Array(0)
+fps = 2.0
+loop = true
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_5lmy2"]
+script = ExtResource("1_r1jmv")
+action = 1
+columns = PackedInt32Array(1, 0, 2, 0)
+fps = 6.0
+loop = true
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_vi2ba"]
+script = ExtResource("1_r1jmv")
+action = 2
+columns = PackedInt32Array(3, 4, 0)
+fps = 12.0
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_jloqx"]
+script = ExtResource("1_r1jmv")
+action = 3
+columns = PackedInt32Array(0, 4, 0)
+fps = 12.0
+frame_durations = PackedFloat32Array()
+instant_start_frame = 1
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_jjcht"]
+script = ExtResource("1_r1jmv")
+action = 4
+columns = PackedInt32Array(5)
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[resource]
+script = ExtResource("1_lo1r0")
+source_texture = ExtResource("3_5lmy2")
+frame_size = Vector2i(256, 256)
+foot_point = Vector2(128, 224)
+frame_rects = Array[Rect2i]([Rect2i(0, 8, 173, 151), Rect2i(183, 10, 166, 149), Rect2i(364, 11, 168, 149), Rect2i(544, 0, 153, 161), Rect2i(729, 7, 163, 156), Rect2i(909, 53, 172, 109), Rect2i(1, 191, 167, 147), Rect2i(184, 181, 167, 159), Rect2i(369, 187, 165, 154), Rect2i(549, 181, 163, 160), Rect2i(729, 181, 170, 162), Rect2i(910, 223, 174, 114), Rect2i(2, 362, 139, 145), Rect2i(185, 362, 137, 147), Rect2i(373, 362, 134, 148), Rect2i(549, 362, 146, 153), Rect2i(737, 362, 157, 157), Rect2i(908, 416, 173, 101), Rect2i(20, 543, 159, 149), Rect2i(203, 543, 160, 149), Rect2i(387, 543, 158, 148), Rect2i(597, 543, 126, 153), Rect2i(739, 543, 157, 155), Rect2i(908, 598, 174, 95), Rect2i(16, 724, 168, 146), Rect2i(203, 724, 169, 146), Rect2i(389, 724, 164, 146), Rect2i(553, 724, 167, 148), Rect2i(730, 724, 174, 153), Rect2i(912, 756, 171, 114), Rect2i(23, 905, 158, 159), Rect2i(205, 905, 156, 159), Rect2i(391, 905, 154, 159), Rect2i(565, 905, 147, 163), Rect2i(732, 905, 165, 164), Rect2i(909, 956, 167, 98), Rect2i(27, 1086, 134, 157), Rect2i(203, 1086, 138, 157), Rect2i(388, 1086, 135, 157), Rect2i(571, 1086, 140, 157), Rect2i(731, 1086, 166, 163), Rect2i(909, 1144, 172, 96), Rect2i(5, 1267, 165, 153), Rect2i(183, 1268, 157, 152), Rect2i(365, 1267, 166, 152), Rect2i(547, 1267, 163, 158), Rect2i(729, 1267, 173, 163), Rect2i(907, 1317, 173, 104)])
+source_pivots = Array[Vector2]([Vector2(59.5, 149), Vector2(61, 147), Vector2(62, 147), Vector2(60.5, 159), Vector2(82.5, 154), Vector2(65.5, 107), Vector2(58, 145), Vector2(61, 157), Vector2(59.5, 152), Vector2(59.5, 158), Vector2(86.5, 160), Vector2(83, 112), Vector2(59.5, 143), Vector2(61, 145), Vector2(62, 146), Vector2(60.5, 151), Vector2(77.5, 155), Vector2(83, 99), Vector2(94.5, 147), Vector2(97, 147), Vector2(99, 146), Vector2(62, 151), Vector2(78, 153), Vector2(87.5, 93), Vector2(108.5, 144), Vector2(109.5, 144), Vector2(105, 144), Vector2(107, 146), Vector2(88, 151), Vector2(87.5, 112), Vector2(96, 157), Vector2(93, 157), Vector2(94, 157), Vector2(76.5, 161), Vector2(84, 162), Vector2(88.5, 96), Vector2(62, 155), Vector2(65.5, 155), Vector2(64.5, 155), Vector2(71.5, 155), Vector2(82, 161), Vector2(83.5, 94), Vector2(59, 151), Vector2(58.5, 150), Vector2(57, 150), Vector2(58, 156), Vector2(85, 161), Vector2(67.5, 102)])
+animations = Array[ExtResource("1_r1jmv")]([SubResource("Resource_r1jmv"), SubResource("Resource_5lmy2"), SubResource("Resource_vi2ba"), SubResource("Resource_jloqx"), SubResource("Resource_jjcht")])
+attack_columns = Array[int]([3, 4, 0])
+attack_fps = 12.0
+metadata/silhouette_review_20261013 = true

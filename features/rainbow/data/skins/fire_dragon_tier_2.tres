@@ -1,0 +1,55 @@
+[gd_resource type="Resource" script_class="SpriteSheetLayout" format=3]
+
+[ext_resource type="Script" path="res://common/data/sprite_animation_clip.gd" id="1_cv446"]
+[ext_resource type="Script" path="res://common/data/sprite_sheet_layout.gd" id="2_pso88"]
+[ext_resource type="Texture2D" path="res://features/rainbow/art/dragon-tiers-v3.png" id="3_cv446"]
+
+[sub_resource type="Resource" id="Resource_47vt6"]
+script = ExtResource("1_cv446")
+columns = PackedInt32Array(0)
+loop = true
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_tx0r8"]
+script = ExtResource("1_cv446")
+action = 1
+columns = PackedInt32Array(0)
+loop = true
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_j6eq3"]
+script = ExtResource("1_cv446")
+action = 2
+columns = PackedInt32Array(0)
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_8jmyf"]
+script = ExtResource("1_cv446")
+action = 3
+columns = PackedInt32Array(0)
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_x435b"]
+script = ExtResource("1_cv446")
+action = 4
+columns = PackedInt32Array(0)
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[resource]
+script = ExtResource("2_pso88")
+source_texture = ExtResource("3_cv446")
+source_size = Vector2i(1448, 1086)
+columns = 1
+rows = 4
+frame_size = Vector2i(520, 520)
+foot_point = Vector2(260, 480)
+frame_rects = Array[Rect2i]([Rect2i(44, 362, 272, 361), Rect2i(369, 362, 355, 360), Rect2i(745, 362, 333, 361), Rect2i(1101, 362, 331, 361)])
+source_pivots = Array[Vector2]([Vector2(136, 359), Vector2(177.5, 358), Vector2(166.5, 359), Vector2(165.5, 359)])
+animations = Array[ExtResource("1_cv446")]([SubResource("Resource_47vt6"), SubResource("Resource_tx0r8"), SubResource("Resource_j6eq3"), SubResource("Resource_8jmyf"), SubResource("Resource_x435b")])
+attack_columns = Array[int]([0])
+direction_rows = Array[int]([0, 0, 3, 3, 1, 1, 2, 2])

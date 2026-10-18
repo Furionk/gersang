@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="RainbowBossTier" format=3]
+
+[ext_resource type="Script" path="res://features/rainbow/boss_tier.gd" id="1_lmn6x"]
+
+[resource]
+script = ExtResource("1_lmn6x")
+attack_pool = PackedStringArray("breath", "rain", "ring")
+weights = PackedFloat32Array(3, 2, 2)

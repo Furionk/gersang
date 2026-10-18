@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="SkillDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/skill_effect_definition.gd" id="1_poplr"]
+[ext_resource type="Resource" path="res://features/units/data/summons/teppo_companion.tres" id="2_l7p3r"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="3_dsd1a"]
+
+[sub_resource type="Resource" id="Resource_vp7xv"]
+script = ExtResource("1_poplr")
+kind = 5
+duration = 30.0
+summon_definition = ExtResource("2_l7p3r")
+summon_count_min = 2
+summon_count_max = 2
+summon_attack_bonus_formula = "agility*0.8+strength*0.8"
+summon_accuracy_bonus_formula = "agility*1.2"
+sprite_path = "res://features/skills/art/summon.png"
+summon_limit = 2
+
+[resource]
+script = ExtResource("3_dsd1a")
+id = &"enemy_teppo_comrades"
+display_name = "召喚鐵炮群眾"
+description = "召喚2隻可控制的鐵炮手，持續30秒。攻擊加成為釋放時敏捷×0.8+力量×0.8；命中加成為敏捷×1.2。同一施法者最多2隻。"
+effect = 9
+action = &"skill_teppo_comrades"
+default_key = 79
+icon_index = 5
+ai_enabled = true
+ai_attempt_interval = 5.0
+ai_cast_chance = 0.4
+mana_cost = 70.0
+radius = 40.0
+damage_formula = "0"
+effect_data = SubResource("Resource_vp7xv")

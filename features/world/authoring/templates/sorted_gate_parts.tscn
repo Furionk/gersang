@@ -1,0 +1,38 @@
+[gd_scene load_steps=2 format=3]
+[ext_resource type="Texture2D" path="res://art/terrain/props.png" id="1"]
+[node name="SortedGateParts" type="Node2D"]
+y_sort_enabled = true
+metadata/scenery_parts = true
+metadata/sorting_example = "原牌坊裁切Region分件；圖片不修改。近柱／遠柱獨立腳底，屋頂明確固定前景。無入口或障礙功能。"
+[node name="NearPillar" type="Sprite2D" parent="."]
+position = Vector2(-63.45, 5.4)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(-85, -290)
+region_enabled = true
+region_rect = Rect2(542, 200, 241, 312)
+metadata/world_scenery_id = ""
+metadata/world_scenery_label = "近側柱"
+metadata/scenery_sort_override = 1
+[node name="FarPillar" type="Sprite2D" parent="."]
+position = Vector2(77.4, -17.1)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(-157, -240)
+region_enabled = true
+region_rect = Rect2(783, 200, 241, 312)
+metadata/world_scenery_id = ""
+metadata/world_scenery_label = "遠側柱"
+metadata/scenery_sort_override = 1
+[node name="Overhead" type="Sprite2D" parent="."]
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(-226, -478)
+region_enabled = true
+region_rect = Rect2(542, 0, 482, 200)
+metadata/world_scenery_id = ""
+metadata/world_scenery_label = "牌坊上橫樑"
+metadata/scenery_sort_override = 2

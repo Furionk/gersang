@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/unit_definition.gd" id="1_otm5i"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_t05tg"]
+[ext_resource type="Resource" path="res://features/units/data/layouts/shaolin_guardian_layout.tres" id="3_i3sny"]
+[ext_resource type="Resource" path="res://features/audio/data/shaolin_iron_disciple.tres" id="voice_profile"]
+
+[resource]
+script = ExtResource("1_otm5i")
+base_power = 280
+strength = 67.0
+defense = 90.0
+magic_resistance = 0.08
+experience_reward = 100
+id = &"shaolin_iron_disciple"
+display_name = "鐵棍武僧"
+role = 9
+max_health = 576.0
+max_mana = 0.0
+damage = 34.5
+attack_range = 64.0
+attack_interval = 1.25
+minimum_ai_cast_time = 0.4
+balance_revision = 1
+tactical_hint = "重甲高體力：用法術／持續地面技削血，前排拉住，不要只靠普通物理硬打。"
+speed = 95.0
+mana_regeneration = 6.0
+armor = 0.45
+sprite_path = "res://features/units/art/shaolin_guardian-v1.png"
+sprite_layout = ExtResource("3_i3sny")
+voice_profile = ExtResource("voice_profile")

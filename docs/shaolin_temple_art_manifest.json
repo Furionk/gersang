@@ -1,0 +1,54 @@
+{
+  "purpose": "Original Shaolin temple walled dungeon assets with one bronze staff guardian",
+  "method": "built-in image_gen",
+  "reference": "User-provided isometric temple image used only as architectural mood/composition reference; no source game pixels extracted",
+  "assets": [
+    {
+      "asset": "art/terrain/shaolin_temple/props-v1.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "layout": "Original 3x2 sprite atlas; authored nonuniform full-silhouette regions for gate, hall, two wall orientations, pavilion and incense/pine/stela",
+      "prompt": "Create an ORIGINAL production-ready isometric Chinese Buddhist monastery environment SPRITE ATLAS for a Shaolin Temple dungeon in a classic late-1990s prerendered East Asian MMORPG. TRUE TRANSPARENT BACKGROUND. 1536x1024 canvas STRICT 3 columns x 2 rows each512x512, detached complete objects each inside own cell with clear empty transparent margins, no text, no labels, no grid, no terrain floor outside objects. Fixed high camera, 2:1 isometric ground projection, upper-left daylight, detailed weathered textures, charcoal-grey curved Chinese roof tiles, muted vermilion plaster walls, aged dark wood, carved grey stone plinths, restrained gold temple trim. TOP LEFT: large Chinese monastery mountain gate with charcoal tiled sweeping roof, thick red columns, a deep OPEN rectangular passage visibly between columns, stone steps, small hanging bronze bell; no unreadable sign text. TOP CENTER: broad main Buddhist worship hall, grand symmetrical grey-green curved roof and red columns, carved stone foundation, full front and right sides visible. TOP RIGHT: modular straight red plaster perimeter WALL segment topped with narrow charcoal tiled cap, wall ridge runs screen northwest to southeast (\\), stone foundation, no doorway, should span most cell width and have low height about 140px, blank red wall. BOTTOM LEFT: matching modular straight WALL segment whose ridge runs screen southwest to northeast (/), same dimensions and cap and stone foundation. BOTTOM CENTER: small roofed wooden Chinese martial training pavilion with open sides, grey tiled roof and red wooden posts, complete silhouette, stone footprint. BOTTOM RIGHT: Chinese stone incense burner, one ancient stela and an old pine grouped as courtyard decoration. Every sprite clear at200px, realistic antique material, not cartoon, no outlines, no modern fantasy glow. Sprite bases roughly centered local x256 y420, preserve empty gutters. Architecture inspired by traditional Chinese temple compounds, original designs, not a copied game screenshot."
+    },
+    {
+      "asset": "art/terrain/shaolin_temple/materials-v1.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "layout": "2x2 with actual627px quadrants: flagstones, mossy paving, vermilion plaster, training sand",
+      "prompt": "Production-ready ORIGINAL seamless tile-material atlas for a Chinese Shaolin monastery dungeon, late-1990s detailed prerendered isometric RPG appearance. Square1024x1024 STRICT 2x2 equal square quadrants no margins no borders no labels. Flat top-down orthographic diffuse material, consistent neutral soft daylight without shading gradients. TOP LEFT: worn medium-grey Chinese courtyard flagstones, evenly sized rectangular slate bricks staggered, fine subtle cracks, restrained mottled texture, easy to read. TOP RIGHT: old grey-green stone rectangular paving with sparse moss at seams, monastery side garden. BOTTOM LEFT: ancient vermilion plaster mottled material over grey foundation stone hints, warm faded red, fine scale texture for wall collision tile tops. BOTTOM RIGHT: compacted tan sand and grey gravel of a martial training courtyard, a few small pebbles, no large marks. Seamless opposite edges in each quadrant, no objects no plants no cast shadows, no characters or symbols, no glossy cartoon, muted earthy colours."
+    },
+    {
+      "asset": "features/units/art/shaolin_guardian-v1.png",
+      "size": [
+        1086,
+        1448
+      ],
+      "layout": "6x8 directional original sprites; authored staff attack crops beyond equal-grid cells; SW mirrors SE and NE mirrors NW at presentation only",
+      "prompt": "Original production-ready classic isometric RPG MONSTER sprite sheet TRUE transparent background. Canvas1536x2048 STRICT SIX columns x EIGHT rows uniformly spaced 256x256 cells all48poses contained inside own cell with20px transparent gutters and feet local x128 y220. No text no grid no floor no scenery no effect spilling across cells. Subject: Shaolin temple bronze practice automaton, human-sized bald martial monk fashioned from weathered bronze, muscular stocky Chinese martial silhouette, simple ochre robe tied around waist and bronze bare upper body, cloth leg wraps, holds a wooden staff. Calm stern carved face, dark bronze and muted gold highlights, no giant armor, no cartoon. Original guardian named Bronze Staff Temple Guardian, fits traditional monastery. Fixed 2:1 isometric high camera and upper-left light, late1990s fine prerendered pixel texture. ROW directions top-bottom: E right profile, SE front right, S front, SW front left, W left profile, NW back left, N back, NE back right. COLUMN poses every row left-right:1 idle standing staff held,2 walk left foot forwards,3 walk right foot forwards,4 clearly distinct attack with staff swept forwards fully inside cell,5 martial stance staff raised,6 collapsed defeated low on ground. Identical costume and scale every frame, no glow no magical satellites, complete full last row and full48sprite silhouettes."
+    }
+  ],
+  "derived": [
+    {
+      "asset": "art/terrain/shaolin_temple/tiles-v1.png",
+      "size": [
+        320,
+        512
+      ],
+      "method": "Godot Image planar material sampling;64x32 diamonds,5materials x16offset variants; blocked footprints use neutral flagstones under wall/building sprites"
+    },
+    {
+      "asset": "art/terrain/shaolin_temple/battle-paving-v1.png",
+      "size": [
+        627,
+        627
+      ],
+      "method": "Godot Image lossless material quadrant extraction"
+    }
+  ],
+  "authoritative_scene": "features/world/data/shaolin_temple.tscn",
+  "wall_contract": "Only interior walkable mask; all outer walls and corners blocked; internal doors required; world exit through Portal only"
+}

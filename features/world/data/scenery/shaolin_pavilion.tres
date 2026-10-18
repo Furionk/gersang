@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="WorldSceneryDefinition" format=3]
+
+[ext_resource type="Script" path="res://features/world/definitions/world_scenery_definition.gd" id="1_vls17"]
+[ext_resource type="Texture2D" path="res://art/terrain/shaolin_temple/props-v1.png" id="2_46axb"]
+
+[resource]
+script = ExtResource("1_vls17")
+display_name = "演武亭"
+texture = ExtResource("2_46axb")
+atlas_region = Rect2(512, 550, 512, 474)
+foot_anchor = Vector2(256, 387)
+sprite_scale = 0.62
+
+sorting_mode = 1
+sorting_review_required = false
+sorting_note = "立體素材，腳底Y自動交錯；不產生障礙。"

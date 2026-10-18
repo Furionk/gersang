@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/unit_definition.gd" id="1_ak3f4"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_j6q3g"]
+[ext_resource type="Resource" path="res://features/skills/data/enemies/enemy_quake.tres" id="3_u7ggq"]
+[ext_resource type="Resource" path="res://features/skills/data/enemies/enemy_critical.tres" id="4_wgg52"]
+[ext_resource type="Resource" path="res://features/units/data/layouts/elite_layout.tres" id="5_iimmm"]
+[ext_resource type="Resource" path="res://features/audio/data/earth_brute.tres" id="voice_profile"]
+
+[resource]
+script = ExtResource("1_ak3f4")
+base_power = 240
+level_power_growth = 24
+strength = 73.0
+defense = 90.0
+magic_resistance = 0.08
+experience_reward = 65
+id = &"earth_brute"
+display_name = "裂地石妖"
+role = 9
+max_health = 558.0
+max_mana = 110.0
+damage = 31.5
+attack_range = 58.0
+attack_interval = 1.4
+minimum_ai_cast_time = 0.4
+balance_revision = 1
+tactical_hint = "重甲高體力：用法術／持續地面技削血，前排拉住，不要只靠普通物理硬打。"
+speed = 92.0
+mana_regeneration = 6.0
+armor = 0.45
+sprite_path = "res://features/units/art/elite.png"
+sprite_layout = ExtResource("5_iimmm")
+sprite_tint = Color(0.78, 0.88, 1, 1)
+skills = Array[ExtResource("2_j6q3g")]([ExtResource("3_u7ggq"), ExtResource("4_wgg52")])
+voice_profile = ExtResource("voice_profile")

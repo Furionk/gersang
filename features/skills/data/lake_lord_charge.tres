@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="SkillDefinition" format=3 uid="uid://ck2yuw5shx0le"]
+
+[ext_resource type="Script" uid="uid://cwgoeihpnw613" path="res://common/data/skill_effect_definition.gd" id="1_wq645"]
+[ext_resource type="Script" uid="uid://boxf02g81ffu" path="res://common/data/skill_definition.gd" id="2_yhdib"]
+
+[sub_resource type="Resource" id="Resource_ng28s"]
+script = ExtResource("1_wq645")
+kind = 14
+width = 150.0
+distance = 1100.0
+speed = 1000.0
+
+[resource]
+script = ExtResource("2_yhdib")
+id = &"lake_lord_charge"
+display_name = "真・衝鋒"
+description = "鎖定釋放時方向，實際衝向敵人，沿途每個敌人只受一次4.2倍攻擊傷害。飛行穿越地面阻擋。"
+effect = 19
+target_mode = 3
+action = &"skill_lake_lord_charge"
+ai_enabled = true
+ai_attempt_interval = 5.0
+ai_cast_chance = 0.8
+mana_cost = 0.0
+range = 1100.0
+damage_formula = "attack*4.2"
+damage_type = 0
+effect_data = SubResource("Resource_ng28s")
+tint = Color(0.15, 0.85, 1, 1)

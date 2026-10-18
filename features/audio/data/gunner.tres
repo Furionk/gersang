@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="UnitVoiceProfile" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://features/audio/unit_voice_profile.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+unit_id = &"gunner"
+nationality = "日本"
+language = "ja"
+species = "human"
+profession = "火銃手"
+personality = "爽朗、俐落、愛惜武器"
+voice_id = "iJBEaXoSKqjBox6o14th"
+model_id = "eleven_v3"
+manifest_path = "res://features/audio/data/unit_voices.json"
+events = {"select": ["res://art/voices/gunner/select_01.ogg", "res://art/voices/gunner/select_02.ogg", "res://art/voices/gunner/select_03.ogg"], "move": ["res://art/voices/gunner/move_01.ogg", "res://art/voices/gunner/move_02.ogg", "res://art/voices/gunner/move_03.ogg"], "attack": ["res://art/voices/gunner/attack_01.ogg", "res://art/voices/gunner/attack_02.ogg", "res://art/voices/gunner/attack_03.ogg"], "inspect": ["res://art/voices/gunner/inspect_01.ogg", "res://art/voices/gunner/inspect_02.ogg", "res://art/voices/gunner/inspect_03.ogg"]}

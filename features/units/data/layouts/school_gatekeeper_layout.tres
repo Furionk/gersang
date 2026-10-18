@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="SpriteSheetLayout" format=3]
+
+[ext_resource type="Script" path="res://common/data/sprite_animation_clip.gd" id="1_k5elj"]
+[ext_resource type="Script" path="res://common/data/sprite_sheet_layout.gd" id="2_ro0nx"]
+[ext_resource type="Texture2D" path="res://features/units/art/hogwarts/school-gatekeeper-v1.png" id="3_hkraj"]
+
+[resource]
+script = ExtResource("2_ro0nx")
+source_texture = ExtResource("3_hkraj")
+frame_size = Vector2i(256, 256)
+foot_point = Vector2(128, 224)
+frame_rects = Array[Rect2i]([Rect2i(22, 8, 147, 165), Rect2i(199, 3, 143, 171), Rect2i(364, 4, 124, 170), Rect2i(543, 28, 144, 147), Rect2i(727, 0, 178, 181), Rect2i(905, 57, 171, 124), Rect2i(27, 184, 126, 165), Rect2i(199, 183, 109, 172), Rect2i(363, 184, 118, 169), Rect2i(543, 186, 169, 166), Rect2i(735, 181, 170, 181), Rect2i(905, 229, 171, 127), Rect2i(26, 362, 116, 181), Rect2i(200, 362, 115, 169), Rect2i(367, 362, 118, 181), Rect2i(543, 362, 163, 166), Rect2i(739, 362, 166, 181), Rect2i(905, 406, 172, 124), Rect2i(18, 543, 132, 162), Rect2i(207, 543, 109, 181), Rect2i(362, 543, 122, 181), Rect2i(543, 543, 170, 163), Rect2i(735, 543, 170, 181), Rect2i(905, 596, 171, 117), Rect2i(29, 724, 119, 164), Rect2i(207, 724, 115, 181), Rect2i(362, 724, 128, 181), Rect2i(543, 731, 178, 146), Rect2i(734, 724, 171, 181), Rect2i(905, 775, 168, 123), Rect2i(38, 905, 109, 164), Rect2i(207, 905, 119, 163), Rect2i(362, 905, 130, 164), Rect2i(543, 911, 175, 158), Rect2i(732, 905, 173, 181), Rect2i(905, 942, 167, 126), Rect2i(25, 1086, 122, 160), Rect2i(207, 1086, 121, 181), Rect2i(371, 1086, 121, 181), Rect2i(543, 1086, 169, 164), Rect2i(730, 1086, 175, 181), Rect2i(905, 1147, 170, 114), Rect2i(26, 1267, 132, 160), Rect2i(203, 1267, 132, 164), Rect2i(371, 1267, 117, 166), Rect2i(543, 1267, 171, 166), Rect2i(737, 1267, 168, 166), Rect2i(905, 1316, 166, 118)])
+source_pivots = Array[Vector2]([Vector2(73.5, 163), Vector2(77.5, 168), Vector2(93.5, 167), Vector2(95.5, 143), Vector2(92.5, 171), Vector2(85.5, 122), Vector2(63, 163), Vector2(72, 164), Vector2(89, 163), Vector2(90, 161), Vector2(79, 166), Vector2(85.5, 125), Vector2(58, 179), Vector2(65, 179), Vector2(79, 179), Vector2(84, 179), Vector2(69, 179), Vector2(86, 122), Vector2(66, 160), Vector2(58, 160), Vector2(84, 160), Vector2(84, 160), Vector2(73, 160), Vector2(85.5, 115), Vector2(59.5, 162), Vector2(62.5, 162), Vector2(88.5, 162), Vector2(88.5, 155), Vector2(78.5, 162), Vector2(84, 121), Vector2(54.5, 162), Vector2(66.5, 162), Vector2(92.5, 162), Vector2(92.5, 156), Vector2(84.5, 162), Vector2(83.5, 124), Vector2(61, 158), Vector2(60, 158), Vector2(77, 158), Vector2(86, 158), Vector2(80, 158), Vector2(85, 112), Vector2(66, 158), Vector2(70, 158), Vector2(83, 158), Vector2(92, 158), Vector2(79, 158), Vector2(83, 116)])
+metadata/initial_silhouette_review = true
+metadata/column_pivots_corrected = true

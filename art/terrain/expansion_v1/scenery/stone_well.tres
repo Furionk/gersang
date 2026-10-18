@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="WorldSceneryDefinition" format=3]
+
+[ext_resource type="Script" path="res://features/world/definitions/world_scenery_definition.gd" id="1_fc1yd"]
+[ext_resource type="Texture2D" path="res://art/terrain/expansion_v1/village-v1.png" id="2_khxp8"]
+
+[resource]
+script = ExtResource("1_fc1yd")
+display_name = "村落石井"
+description = "環境裝飾素材；通行及阻擋另由地圖遮罩設定。"
+texture = ExtResource("2_khxp8")
+atlas_region = Rect2(0, 0, 512, 520)
+foot_anchor = Vector2(250.5, 475)

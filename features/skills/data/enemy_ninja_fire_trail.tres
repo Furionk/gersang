@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="SkillDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/skill_effect_definition.gd" id="1_q5j2h"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_ev0cy"]
+
+[sub_resource type="Resource" id="Resource_qeqlm"]
+script = ExtResource("1_q5j2h")
+kind = 11
+duration = 15.0
+tick_interval = 1.0
+radius = 42.0
+
+[resource]
+script = ExtResource("2_ev0cy")
+id = &"enemy_ninja_fire_trail"
+display_name = "忍法．熾烈之徑"
+description = "啟用15秒，經過的地方留下3秒火焰。每秒對碰到火路的地面敵軍造成20+敏捷×0.4法術傷害；同一施放的重疊火点只計一次。"
+effect = 15
+target_mode = 1
+action = &"skill_ninja_fire_trail"
+default_key = 75
+icon_index = 4
+ai_enabled = true
+ai_attempt_interval = 5.0
+ai_cast_chance = 0.4
+mana_cost = 55.0
+radius = 42.0
+damage_formula = "20+agility*0.4"
+effect_data = SubResource("Resource_qeqlm")

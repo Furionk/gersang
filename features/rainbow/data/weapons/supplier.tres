@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="RainbowWeaponDefinition" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://features/rainbow/weapon_definition.gd" id="1"]
+[ext_resource type="Resource" path="res://features/rainbow/data/skins/supplier.tres" id="2"]
+
+[ext_resource type="Texture2D" path="res://features/rainbow/art/effects-v1.png" id="3"]
+
+[sub_resource type="AtlasTexture" id="vfx"]
+atlas = ExtResource("3")
+region = Rect2(628, 450, 312, 350)
+filter_clip = true
+
+[resource]
+script = ExtResource("1")
+layout = ExtResource("2")
+unit_id = &"supplier"
+melee_name = "拂扇"
+ranged_name = "爆炎符"
+specialty = "符火爆裂"
+effect = "talisman"
+tint = Color(1.00000, 0.78039, 0.41961, 1)
+melee_range = 102.0
+melee_half_angle = 1.45
+melee_windup = 0.18
+melee_recovery = 0.35
+melee_power = 0.75
+ranged_windup = 0.3
+ranged_recovery = 0.55
+ranged_power = 0.9
+mana_cost = 5.0
+projectile_speed = 420.0
+projectile_lifetime = 1.25
+splash = 75.0
+effect_texture = SubResource("vfx")

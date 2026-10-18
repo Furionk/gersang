@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="WorldSceneryDefinition" format=3]
+
+[ext_resource type="Script" path="res://features/world/definitions/world_scenery_definition.gd" id="1_hytcd"]
+[ext_resource type="Texture2D" path="res://art/terrain/shaolin_temple/props-v1.png" id="2_hbc4i"]
+
+[resource]
+script = ExtResource("1_hytcd")
+display_name = "少林寺山門"
+description = "少林寺 · 禪武院
+朱牆環繞，經山門入寺；演武院內有一名銅棍護院。"
+texture = ExtResource("2_hbc4i")
+atlas_region = Rect2(0, 0, 500, 520)
+foot_anchor = Vector2(260, 486)
+sprite_scale = 0.64
+
+sorting_mode = 1
+sorting_review_required = false
+sorting_note = "立體素材，腳底Y自動交錯；不產生障礙。"

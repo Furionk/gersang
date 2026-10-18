@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="WorldSceneryDefinition" format=3]
+
+[ext_resource type="Script" path="res://features/world/definitions/world_scenery_definition.gd" id="1_jkdva"]
+[ext_resource type="Texture2D" path="res://art/terrain/biomes_v1/granite_valley/environment-atlas-v1.png" id="2_oouew"]
+
+[resource]
+script = ExtResource("1_jkdva")
+display_name = "花崗岩連脊"
+description = "河灣環境組合；原生通行／阻擋仍由 TileMap 遮罩決定。"
+texture = ExtResource("2_oouew")
+atlas_region = Rect2(362, 0, 362, 362)
+foot_anchor = Vector2(179, 349)
+sprite_scale = 0.8
+
+sorting_mode = 1
+sorting_review_required = true
+sorting_note = "混合山石／植被／地面的大圖只有一個排序點；先保留立體，精細遮擋請用分件場景。"

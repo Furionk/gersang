@@ -1,0 +1,127 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3 uid="uid://byix47r0014ni"]
+
+[ext_resource type="Script" path="res://common/data/unit_definition.gd" id="1_4tmf8"]
+[ext_resource type="Texture2D" path="res://features/units/art/teppo.png" id="1_unwkf"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_yx1jf"]
+[ext_resource type="Script" path="res://common/data/skill_effect_definition.gd" id="3_unwkf"]
+[ext_resource type="Resource" path="res://features/units/data/summons/teppo_companion.tres" id="4_yx1jf"]
+[ext_resource type="Resource" path="res://features/units/data/layouts/teppo_motion_v2_layout.tres" id="5_unwkf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2wua4"]
+atlas = ExtResource("1_unwkf")
+region = Rect2(68.5, 362, 75, 75)
+filter_clip = true
+
+[sub_resource type="Resource" id="Resource_0xvtv"]
+script = ExtResource("3_unwkf")
+kind = 13
+duration = 8.0
+attack_range_bonus = 180.0
+attack_bonus = 30.0
+
+[sub_resource type="Resource" id="Resource_2wua4"]
+script = ExtResource("2_yx1jf")
+id = &"enemy_teppo_sniper"
+display_name = "狙擊模式"
+description = "進入8秒狙擊狀態，普通攻擊距離+180、攻擊力+30；仍可正常走位。重施刷新持續時間，不疊加。"
+effect = 17
+target_mode = 1
+action = &"skill_teppo_sniper"
+default_key = 78
+icon_index = 2
+ai_enabled = true
+ai_attempt_interval = 5.0
+ai_cast_chance = 0.4
+mana_cost = 35.0
+damage_formula = "0"
+effect_data = SubResource("Resource_0xvtv")
+
+[sub_resource type="Resource" id="Resource_vp7xv"]
+script = ExtResource("3_unwkf")
+kind = 5
+duration = 30.0
+summon_definition = ExtResource("4_yx1jf")
+summon_count_min = 2
+summon_count_max = 2
+summon_attack_bonus_formula = "agility*0.8+strength*0.8"
+summon_accuracy_bonus_formula = "agility*1.2"
+sprite_path = "res://features/skills/art/summon.png"
+summon_limit = 2
+
+[sub_resource type="Resource" id="Resource_wpc2v"]
+script = ExtResource("2_yx1jf")
+id = &"enemy_teppo_comrades"
+display_name = "召喚鐵炮群眾"
+description = "召喚2隻可控制的鐵炮手，持續30秒。攻擊加成為釋放時敏捷×0.8+力量×0.8；命中加成為敏捷×1.2。同一施法者最多2隻。"
+effect = 9
+action = &"skill_teppo_comrades"
+default_key = 79
+icon_index = 5
+ai_enabled = true
+ai_attempt_interval = 5.0
+ai_cast_chance = 0.4
+mana_cost = 70.0
+radius = 40.0
+damage_formula = "0"
+effect_data = SubResource("Resource_vp7xv")
+
+[sub_resource type="Resource" id="Resource_1rkos"]
+script = ExtResource("3_unwkf")
+kind = 13
+duration = 10.0
+duration_formula = "10+(agility+strength)*0.05"
+attack_multiplier = 3.0
+attack_speed_multiplier = 1.5
+
+[sub_resource type="Resource" id="Resource_3k2mm"]
+script = ExtResource("2_yx1jf")
+id = &"enemy_teppo_triple"
+display_name = "三段"
+description = "攻擊力增加200%（总值×3）、攻速增加50%（間隔÷1.5）。持續10+(敏捷+力量)×0.05秒。重施刷新，不疊乘；狙擊加成先加再乘三段。"
+effect = 17
+target_mode = 1
+action = &"skill_teppo_triple"
+default_key = 80
+icon_index = 7
+ai_enabled = true
+ai_attempt_interval = 5.0
+ai_cast_chance = 0.4
+mana_cost = 65.0
+damage_formula = "0"
+effect_data = SubResource("Resource_1rkos")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wpc2v"]
+atlas = ExtResource("1_unwkf")
+region = Rect2(31, 362, 150, 181)
+filter_clip = true
+
+[resource]
+script = ExtResource("1_4tmf8")
+base_power = 240
+strength = 48.0
+agility = 52.0
+vitality = 50.0
+defense = 20.0
+magic_resistance = 0.18
+experience_reward = 70
+level = 20
+id = &"teppo_enemy"
+display_name = "流亡鐵炮兵"
+max_health = 432.0
+max_mana = 220.0
+damage = 51.0
+attack_range = 280.0
+attack_interval = 1.25
+minimum_ai_cast_time = 0.4
+balance_revision = 1
+tactical_hint = "成群消耗：聚怪後用範圍雷擊／暴雷；吸血與分裂種要快速集火，不要逐個慢磨。"
+speed = 122.0
+mana_regeneration = 6.0
+armor = 0.12
+sprite_path = "res://features/units/art/teppo-motion-v2.png"
+sprite_layout = ExtResource("5_unwkf")
+battle_sprite_scale = 0.43129
+world_sprite_scale = 0.4852
+portrait_texture = SubResource("AtlasTexture_2wua4")
+standee_texture = SubResource("AtlasTexture_wpc2v")
+skills = Array[ExtResource("2_yx1jf")]([SubResource("Resource_2wua4"), SubResource("Resource_wpc2v"), SubResource("Resource_3k2mm")])

@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="SkillDefinition" format=3 uid="uid://dbw6ub05tp5m3"]
+
+[ext_resource type="Script" path="res://common/data/skill_effect_definition.gd" id="1_y5q4k"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_sf43f"]
+
+[sub_resource type="Resource" id="Resource_cejnr"]
+script = ExtResource("1_y5q4k")
+kind = 9
+duration = 10.0
+tick_interval = 0.5
+radius = 160.0
+sprite_path = "res://features/skills/art/earth_stakes.png"
+
+[resource]
+script = ExtResource("2_sf43f")
+id = &"earth_stakes"
+display_name = "地樁突襲"
+description = "指定160半徑地樁，持續10秒，每0.5秒造成25+智慧×0.65地面法術傷害。自己的魔爪在區內攻速×1.4，刺擊區內敵人伤害×1.75；重疊不疊乘。飛行單位不受影響。"
+effect = 13
+action = &"skill_earth_stakes"
+default_key = 90
+icon_index = 1
+mana_cost = 55.0
+range = 400.0
+radius = 160.0
+duration = 10.0
+damage_formula = "25+intelligence*0.65"
+formula_multiplier = 1.7
+effect_data = SubResource("Resource_cejnr")

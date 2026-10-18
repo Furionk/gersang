@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="GearItemDefinition" load_steps=2 format=3]
+[ext_resource type="Script" path="res://common/data/gear_item_definition.gd" id="1"]
+[resource]
+script = ExtResource("1")
+id = &"charm"
+display_name = "招福玉佩"
+kind = 0
+equipment_slot = 3
+max_stack = 1
+weight = 1.0
+restore = 0.0
+modifiers = {"luck": 5.0}
+description = "幸運＋5。"

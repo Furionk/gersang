@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="EncounterDefinition" format=3 uid="uid://bj340axa00rao"]
+
+[ext_resource type="Script" uid="uid://d3vyygwq6v6lc" path="res://common/data/encounter_definition.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = &"meadow"
+display_name = "青嶺道・草原遭遇"
+battlefield_scene = "res://features/battle/maps/meadow.tscn"
+enemy_spawn_centers = null

@@ -1,0 +1,55 @@
+[gd_resource type="Resource" script_class="SpriteSheetLayout" format=3]
+
+[ext_resource type="Script" path="res://common/data/sprite_animation_clip.gd" id="1_gamvc"]
+[ext_resource type="Script" path="res://common/data/sprite_sheet_layout.gd" id="2_kr8t2"]
+[ext_resource type="Texture2D" path="res://features/rainbow/art/temple-creatures-v2.png" id="3_bsjh6"]
+
+[sub_resource type="Resource" id="Resource_yjynu"]
+script = ExtResource("1_gamvc")
+columns = PackedInt32Array(0)
+loop = true
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_tk5tm"]
+script = ExtResource("1_gamvc")
+action = 1
+columns = PackedInt32Array(0)
+loop = true
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_8a45o"]
+script = ExtResource("1_gamvc")
+action = 2
+columns = PackedInt32Array(0)
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_xllkx"]
+script = ExtResource("1_gamvc")
+action = 3
+columns = PackedInt32Array(0)
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_u76of"]
+script = ExtResource("1_gamvc")
+action = 4
+columns = PackedInt32Array(0)
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[resource]
+script = ExtResource("2_kr8t2")
+source_texture = ExtResource("3_bsjh6")
+source_size = Vector2i(1254, 1254)
+columns = 1
+rows = 4
+frame_size = Vector2i(360, 360)
+foot_point = Vector2(180, 325)
+frame_rects = Array[Rect2i]([Rect2i(27, 19, 286, 294), Rect2i(313, 59, 314, 254), Rect2i(627, 55, 308, 258), Rect2i(941, 43, 291, 270)])
+source_pivots = Array[Vector2]([Vector2(143, 292), Vector2(157, 252), Vector2(154, 256), Vector2(145.5, 268)])
+animations = Array[ExtResource("1_gamvc")]([SubResource("Resource_yjynu"), SubResource("Resource_tk5tm"), SubResource("Resource_8a45o"), SubResource("Resource_xllkx"), SubResource("Resource_u76of")])
+attack_columns = Array[int]([0])
+direction_rows = Array[int]([0, 0, 3, 3, 1, 1, 2, 2])

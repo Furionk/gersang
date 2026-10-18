@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="GearItemDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="1_wyujr"]
+[ext_resource type="Texture2D" path="res://art/items/source52/gs_old_axe.png" id="2_lhbw3"]
+[ext_resource type="Script" path="res://common/data/gear_item_definition.gd" id="3_4577x"]
+
+[resource]
+script = ExtResource("3_4577x")
+id = &"gs_old_axe"
+display_name = "舊斧頭"
+category = "axe"
+icon = ExtResource("2_lhbw3")
+kind = 0
+weight = 14.0
+modifiers = {
+"attack_max": 1.0,
+"attack_min": 1.0
+}
+allowed_roles = PackedInt32Array()
+use_effect = 1
+source_url = "https://www.52jushang.com/item/futou.asp"
+source_image_url = "https://www.52jushang.com/item/img/fu/axe2.jpg"
+source_stats = {
+"modifiers": {
+"attack_max": 1.0,
+"attack_min": 1.0
+},
+"required_level": 1.0,
+"weight_jin": 14.0
+}
+source_skill_names = PackedStringArray()
+description = "52巨商參考裝備；屬性與重量依來源，攻擊區間作為裝備加成。"

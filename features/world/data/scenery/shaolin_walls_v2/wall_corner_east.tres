@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="WorldSceneryDefinition" format=3]
+
+[ext_resource type="Script" path="res://features/world/definitions/world_scenery_definition.gd" id="1_hw2n8"]
+[ext_resource type="Texture2D" path="res://art/terrain/shaolin_temple/walls-v2.png" id="2_83m0x"]
+
+[resource]
+script = ExtResource("1_hw2n8")
+display_name = "少林寺完整轉角"
+texture = ExtResource("2_83m0x")
+atlas_region = Rect2(1024, 512, 512, 512)
+foot_anchor = Vector2(370, 325)
+sprite_scale = 0.42
+sprite_basis = Transform2D(1.0697378, -0.02815099, -0.2131433, 1.0476191, 0, 0)
+metadata/source_ports = PackedVector2Array(370, 325, 83, 185, 136, 451)
+metadata/projected_ports = PackedVector2Array(0, 0, -116.41336, -58.20668, -116.41336, 58.20668)
+metadata/wall_kit = 2
+
+sorting_mode = 1
+sorting_review_required = false
+sorting_note = "立體素材，腳底Y自動交錯；不產生障礙。"

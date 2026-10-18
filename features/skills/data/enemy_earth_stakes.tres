@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="SkillDefinition" format=3 uid="uid://b1nec06hmo4ea"]
+
+[ext_resource type="Script" uid="uid://cwgoeihpnw613" path="res://common/data/skill_effect_definition.gd" id="1_fg4bj"]
+[ext_resource type="Script" uid="uid://boxf02g81ffu" path="res://common/data/skill_definition.gd" id="2_mrrj2"]
+
+[sub_resource type="Resource" id="Resource_cejnr"]
+script = ExtResource("1_fg4bj")
+kind = 9
+duration = 10.0
+tick_interval = 0.5
+radius = 120.0
+sprite_path = "res://features/skills/art/earth_stakes.png"
+
+[resource]
+script = ExtResource("2_mrrj2")
+id = &"enemy_earth_stakes"
+display_name = "地樁突襲"
+description = "指定地面範圍召喚地樁，持續10秒。每0.5秒對範圍內地面敵軍造成12+智慧×0.35法術傷害；飛行單位不受影響。"
+effect = 13
+action = &"skill_earth_stakes"
+default_key = 90
+icon_index = 1
+ai_enabled = true
+ai_attempt_interval = 5.0
+ai_cast_chance = 0.4
+mana_cost = 55.0
+range = 300.0
+radius = 120.0
+duration = 10.0
+damage_formula = "12+intelligence*0.35"
+effect_data = SubResource("Resource_cejnr")

@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="SkillDefinition" format=3 uid="uid://c3qjd061gpkek"]
+
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="1"]
+[ext_resource type="Script" path="res://common/data/skill_effect_definition.gd" id="2"]
+
+[sub_resource type="Resource" id="Effect"]
+script = ExtResource("2")
+kind = 7
+duration = 0.4
+radius = 0.0
+sprite_path = "res://features/skills/art/critical.png"
+
+[resource]
+script = ExtResource("1")
+id = &"critical"
+display_name = "一擊必殺"
+effect = 5
+target_mode = 3
+trigger = 1
+action = &""
+mana_cost = 10.0
+range = 260.0
+radius = 0.0
+proc_chance = 0.3
+damage_formula = "attack*2"
+formula_multiplier = 1.7
+effect_data = SubResource("Effect")

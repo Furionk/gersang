@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3]
+[ext_resource type="Script" path="res://features/world/authoring/world_author_node.gd" id="1"]
+[ext_resource type="Resource" path="res://features/world/data/scenery/town_gate.tres" id="2"]
+[node name="TownOrDungeonEntrance" type="Node2D"]
+script = ExtResource("1")
+coordinate_space = 1
+kind = 4
+display_name = "新入口"
+target_map_id = "qingling_town"
+target_entry_id = "gate"
+sprite_definition = ExtResource("2")
+metadata/_edit_group_ = true
+[node name="Artwork" type="Sprite2D" parent="."]

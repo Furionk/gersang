@@ -1,0 +1,59 @@
+[gd_resource type="Resource" script_class="SpriteSheetLayout" format=3 uid="uid://bylxsvdgwytbv"]
+
+[ext_resource type="Script" uid="uid://dekk0d4nvs8mb" path="res://common/data/sprite_animation_clip.gd" id="1_0jxma"]
+[ext_resource type="Script" uid="uid://t0xvoej4tvhi" path="res://common/data/sprite_sheet_layout.gd" id="2_xwg42"]
+[ext_resource type="Texture2D" uid="uid://cf30gpqhvsue0" path="res://features/units/art/teppo-motion-v2.png" id="3_1s8xb"]
+
+[sub_resource type="Resource" id="Resource_qpr6j"]
+script = ExtResource("1_0jxma")
+columns = PackedInt32Array(0)
+fps = 2.0
+loop = true
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_tnpba"]
+script = ExtResource("1_0jxma")
+action = 1
+columns = PackedInt32Array(1, 2, 3, 4)
+fps = 8.0
+loop = true
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_y8hhn"]
+script = ExtResource("1_0jxma")
+action = 2
+columns = PackedInt32Array(0, 5, 0)
+fps = 12.0
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_jqlsc"]
+script = ExtResource("1_0jxma")
+action = 3
+columns = PackedInt32Array(0, 6, 0)
+fps = 12.0
+frame_durations = PackedFloat32Array()
+instant_start_frame = 1
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_cdfwh"]
+script = ExtResource("1_0jxma")
+action = 4
+columns = PackedInt32Array(7)
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[resource]
+script = ExtResource("2_xwg42")
+source_texture = ExtResource("3_1s8xb")
+source_size = Vector2i(1254, 1254)
+columns = 8
+frame_size = Vector2i(256, 256)
+foot_point = Vector2(128, 224)
+frame_rects = Array[Rect2i]([Rect2i(48, 18, 105, 138), Rect2i(198, 19, 112, 135), Rect2i(362, 15, 88, 140), Rect2i(501, 22, 107, 134), Rect2i(664, 19, 99, 137), Rect2i(798, 18, 139, 138), Rect2i(966, 19, 91, 137), Rect2i(1097, 71, 137, 77), Rect2i(50, 169, 105, 143), Rect2i(205, 167, 97, 146), Rect2i(355, 168, 81, 143), Rect2i(509, 170, 92, 143), Rect2i(667, 169, 90, 144), Rect2i(800, 169, 140, 142), Rect2i(961, 169, 89, 144), Rect2i(1097, 211, 136, 100), Rect2i(49, 323, 95, 147), Rect2i(202, 325, 93, 145), Rect2i(359, 324, 74, 146), Rect2i(508, 326, 87, 144), Rect2i(668, 326, 74, 144), Rect2i(817, 326, 105, 144), Rect2i(964, 326, 81, 144), Rect2i(1097, 367, 125, 99), Rect2i(38, 483, 92, 144), Rect2i(195, 485, 96, 142), Rect2i(355, 484, 82, 142), Rect2i(497, 487, 93, 140), Rect2i(655, 483, 95, 144), Rect2i(810, 486, 130, 141), Rect2i(972, 488, 78, 139), Rect2i(1097, 533, 139, 82), Rect2i(26, 641, 106, 142), Rect2i(190, 640, 103, 143), Rect2i(341, 640, 101, 143), Rect2i(495, 640, 104, 143), Rect2i(648, 639, 102, 144), Rect2i(783, 645, 127, 138), Rect2i(964, 635, 87, 148), Rect2i(1097, 688, 139, 80), Rect2i(44, 793, 90, 147), Rect2i(201, 795, 90, 145), Rect2i(349, 793, 92, 147), Rect2i(500, 795, 95, 145), Rect2i(663, 794, 89, 146), Rect2i(825, 784, 71, 156), Rect2i(965, 794, 86, 146), Rect2i(1097, 854, 136, 86), Rect2i(59, 952, 78, 142), Rect2i(213, 950, 77, 147), Rect2i(363, 948, 76, 149), Rect2i(508, 953, 76, 144), Rect2i(671, 951, 76, 146), Rect2i(822, 952, 77, 145), Rect2i(975, 955, 77, 142), Rect2i(1097, 1007, 132, 74), Rect2i(51, 1106, 88, 137), Rect2i(208, 1107, 88, 137), Rect2i(363, 1104, 92, 139), Rect2i(513, 1109, 88, 135), Rect2i(673, 1107, 83, 137), Rect2i(830, 1097, 110, 144), Rect2i(972, 1106, 84, 136), Rect2i(1102, 1138, 135, 97)])
+source_pivots = Array[Vector2]([Vector2(38, 136), Vector2(44.5, 133), Vector2(57.5, 138), Vector2(42, 132), Vector2(62, 135), Vector2(36, 136), Vector2(35.5, 135), Vector2(44.5, 75), Vector2(42, 141), Vector2(56, 144), Vector2(60, 141), Vector2(39.5, 141), Vector2(51, 142), Vector2(37, 140), Vector2(40, 142), Vector2(41, 98), Vector2(43, 145), Vector2(51.5, 143), Vector2(44.5, 144), Vector2(54, 142), Vector2(31.5, 142), Vector2(35.5, 142), Vector2(39, 142), Vector2(68, 97), Vector2(26.5, 142), Vector2(23, 140), Vector2(65.5, 140), Vector2(22.5, 138), Vector2(32.5, 142), Vector2(13, 139), Vector2(14, 137), Vector2(51.5, 80), Vector2(67, 140), Vector2(60.5, 141), Vector2(87, 141), Vector2(74.5, 141), Vector2(62, 142), Vector2(91, 136), Vector2(48.5, 146), Vector2(53, 78), Vector2(73, 145), Vector2(76, 143), Vector2(78, 145), Vector2(64.5, 143), Vector2(70.5, 144), Vector2(33, 154), Vector2(51, 144), Vector2(55.5, 84), Vector2(39.5, 140), Vector2(43, 145), Vector2(27, 147), Vector2(42, 142), Vector2(21.5, 144), Vector2(39, 143), Vector2(37.5, 140), Vector2(62.5, 72), Vector2(14, 135), Vector2(17.5, 135), Vector2(13.5, 137), Vector2(19, 133), Vector2(12, 135), Vector2(48, 142), Vector2(34, 134), Vector2(50, 95)])
+animations = Array[ExtResource("1_0jxma")]([SubResource("Resource_qpr6j"), SubResource("Resource_tnpba"), SubResource("Resource_y8hhn"), SubResource("Resource_jqlsc"), SubResource("Resource_cdfwh")])
+direction_rows = Array[int]([0, 1, 2, 1, 0, 7, 6, 7])
+mirrored_directions = Array[bool]([false, false, false, true, true, true, false, false])

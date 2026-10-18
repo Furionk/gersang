@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3]
+
+[ext_resource type="Resource" path="res://features/units/data/phases/ganondorf_final.tres" id="1_fxujl"]
+[ext_resource type="Texture2D" path="res://features/units/art/hogwarts/ganondorf-phantom-v1.png" id="1_yue5o"]
+[ext_resource type="Script" path="res://common/data/unit_definition.gd" id="2_t4lki"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="3_c0iaq"]
+[ext_resource type="Resource" path="res://features/skills/data/blood_moon_wave.tres" id="5_tmqg7"]
+[ext_resource type="Resource" path="res://features/units/data/layouts/ganondorf_phantom_layout.tres" id="6_yue5o"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fxujl"]
+atlas = ExtResource("1_yue5o")
+region = Rect2(26, 366, 137, 160)
+margin = Rect2(59.5, 66, 119, 96)
+filter_clip = true
+
+[resource]
+script = ExtResource("2_t4lki")
+base_power = 8100
+level_power_growth = 45
+strength = 75.0
+intelligence = 50.0
+defense = 90.0
+magic_resistance = 0.08
+experience_reward = 30000
+level = 90
+id = &"ganondorf_phantom"
+display_name = "加儂多夫的幻影"
+max_health = 16200.0
+max_mana = 500.0
+damage = 247.5
+attack_range = 90.0
+minimum_ai_cast_time = 0.4
+balance_revision = 1
+tactical_hint = "重甲高體力：用法術／持續地面技削血，前排拉住，不要只靠普通物理硬打。"
+speed = 180.0
+mana_regeneration = 8.0
+armor = 0.45
+sprite_layout = ExtResource("6_yue5o")
+battle_sprite_scale = 0.8
+world_sprite_scale = 0.8
+portrait_texture = SubResource("AtlasTexture_fxujl")
+eyes_texture = SubResource("AtlasTexture_fxujl")
+standee_texture = SubResource("AtlasTexture_fxujl")
+skills = Array[ExtResource("3_c0iaq")]([ExtResource("5_tmqg7")])
+death_phase = ExtResource("1_fxujl")

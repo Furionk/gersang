@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="RainbowWeaponDefinition" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://features/rainbow/weapon_definition.gd" id="1"]
+[ext_resource type="Resource" path="res://features/rainbow/data/skins/mage.tres" id="2"]
+
+[ext_resource type="Texture2D" path="res://features/rainbow/art/effects-v1.png" id="3"]
+
+[sub_resource type="AtlasTexture" id="vfx"]
+atlas = ExtResource("3")
+region = Rect2(0, 450, 314, 350)
+filter_clip = true
+
+[resource]
+script = ExtResource("1")
+layout = ExtResource("2")
+unit_id = &"mage"
+melee_name = "雷杖擊"
+ranged_name = "穿雲雷"
+specialty = "直線雷擊"
+effect = "lightning"
+tint = Color(0.44706, 0.78824, 1.00000, 1)
+melee_range = 95.0
+melee_half_angle = 0.75
+melee_windup = 0.2
+melee_recovery = 0.3
+melee_power = 0.65
+ranged_windup = 0.32
+ranged_recovery = 0.48
+ranged_power = 0.8
+mana_cost = 5.0
+projectile_speed = 1050.0
+projectile_lifetime = 0.55
+pierce = 3
+stagger = 0.18
+effect_texture = SubResource("vfx")

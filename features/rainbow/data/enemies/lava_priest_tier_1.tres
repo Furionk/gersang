@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="RainbowEnemyDefinition" format=3]
+
+[ext_resource type="Resource" path="res://features/rainbow/data/dragon_tier_1.tres" id="1_c1uux"]
+[ext_resource type="Script" path="res://features/rainbow/enemy_definition.gd" id="1_e1h8g"]
+[ext_resource type="Texture2D" path="res://features/rainbow/art/effects-v1.png" id="2_c1uux"]
+[ext_resource type="Resource" path="res://features/rainbow/data/skins/lava_priest.tres" id="3_ea50u"]
+[ext_resource type="Script" path="res://features/rainbow/weapon_definition.gd" id="4_m761a"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5wnu6"]
+atlas = ExtResource("2_c1uux")
+region = Rect2(940, 450, 314, 350)
+
+[sub_resource type="Resource" id="Resource_ou6xn"]
+script = ExtResource("4_m761a")
+unit_id = &"lava_priest_tier_1"
+layout = ExtResource("3_ea50u")
+effect_texture = SubResource("AtlasTexture_5wnu6")
+sprite_scale = 0.68
+tint = Color(0.79607844, 0.5686275, 1, 1)
+effect = "seal"
+melee_range = 100.0
+melee_half_angle = 1.1
+melee_windup = 0.6
+melee_recovery = 0.7
+melee_power = 0.65
+ranged_windup = 0.8
+ranged_recovery = 1.1
+ranged_power = 0.8
+mana_cost = 0.0
+projectile_speed = 340.0
+projectile_lifetime = 1.8
+projectile_count = 2
+spread = 0.19
+knockback = 65.0
+
+[resource]
+script = ExtResource("1_e1h8g")
+unit_id = &"lava_priest_tier_1"
+weapon = SubResource("Resource_ou6xn")
+pattern = "priest"
+boss = true
+boss_tier = ExtResource("1_c1uux")
+body_radius = 36.0
+special_interval = 4.8
+warning_seconds = 1.6
+special_power = 95.0
+armored_damage_scale = 0.8

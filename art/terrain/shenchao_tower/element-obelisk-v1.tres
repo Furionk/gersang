@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="WorldSceneryDefinition" format=3]
+
+[ext_resource type="Script" path="res://features/world/definitions/world_scenery_definition.gd" id="1_35u4g"]
+[ext_resource type="Texture2D" path="res://art/terrain/shenchao_tower/element-obelisk-v1.svg" id="2_hprnp"]
+
+[resource]
+script = ExtResource("1_35u4g")
+display_name = "元素星碑"
+texture = ExtResource("2_hprnp")
+foot_anchor = Vector2(160, 360)
+sprite_scale = 0.6

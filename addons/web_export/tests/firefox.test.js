@@ -1,0 +1,25 @@
+/* Isolated Firefox WebDriver BiDi acceptance. Uses no user profile. */
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');const {spawn}=require('node:child_process');
+const binary=process.argv[2],url=process.argv[3],dir=path.resolve(process.argv[4]);
+if(!/^http:\/\/127\.0\.0\.1:\d+\/$/.test(url))throw new Error('localhost fixtures only');
+fs.mkdirSync(dir,{recursive:true});const profile=path.join(dir,'profile');fs.mkdirSync(profile,{recursive:true});
+fs.writeFileSync(path.join(profile,'user.js'),'user_pref("webgl.force-enabled", true);\nuser_pref("browser.shell.checkDefaultBrowser", false);\n');
+const port=18983;const child=spawn(binary,['--headless','--no-remote','--profile',profile,'--remote-debugging-port',String(port),'about:blank'],{windowsHide:true,stdio:['ignore','ignore','pipe']});let stderr='';child.stderr.on('data',d=>stderr+=d);
+const sleep=ms=>new Promise(r=>setTimeout(r,ms));const errors=[],requests=[];const pending=new Map();let socket,seq=0,context;
+async function until(fn,label,timeout=120000){const start=Date.now();while(Date.now()-start<timeout){const result=await fn();if(result)return result;await sleep(200);}throw new Error('Timed out '+label+' '+stderr);}
+function send(method,params={}){return new Promise((resolve,reject)=>{const id=++seq;const timer=setTimeout(()=>reject(new Error('BiDi timeout '+method)),30000);pending.set(id,{resolve:v=>{clearTimeout(timer);resolve(v);},reject});socket.send(JSON.stringify({id,method,params}));});}
+async function evaluate(expression){const result=await send('script.evaluate',{expression,target:{context},awaitPromise:true});if(result.type==='exception')throw new Error(JSON.stringify(result));return result.result.value;}
+(async()=>{
+ await until(async()=>{try{const ws=new WebSocket('ws://127.0.0.1:'+port+'/session');await new Promise((resolve,reject)=>{ws.onopen=resolve;ws.onerror=reject;});socket=ws;return true;}catch(_){return false;}},'Firefox BiDi');
+ socket.onmessage=e=>{const msg=JSON.parse(e.data);if(msg.id&&pending.has(msg.id)){const p=pending.get(msg.id);pending.delete(msg.id);msg.type==='error'?p.reject(new Error(JSON.stringify(msg))):p.resolve(msg.result);}else if(msg.method==='log.entryAdded'&&(msg.params.level==='error'||/SCRIPT ERROR|ERROR:/.test(msg.params.text||'')))errors.push(msg.params);else if(msg.method==='network.beforeRequestSent')requests.push(msg.params.request.url);};
+ await send('session.new',{capabilities:{alwaysMatch:{acceptInsecureCerts:false}}});const created=await send('browsingContext.create',{type:'tab'});context=created.context;await send('session.subscribe',{events:['log.entryAdded','network.beforeRequestSent'],contexts:[context]});
+ await send('browsingContext.setViewport',{context,viewport:{width:800,height:500},devicePixelRatio:1});
+ async function start(){await until(()=>evaluate("typeof document.getElementById('web-export-start')?.onclick==='function'"),'shell');await evaluate("document.getElementById('web-export-start').click()");await until(async()=>{const failure=await evaluate("document.getElementById('web-export-start')?.disabled===false ? document.getElementById('web-export-status')?.textContent : ''");if(failure)throw new Error(failure);return evaluate("!document.getElementById('web-export-loading') && !!window.WebExport.lastStats");},'WebGL startup');}
+ await send('browsingContext.navigate',{context,url,wait:'complete'});await start();const first=JSON.parse(await evaluate('JSON.stringify(WebExport.lastStats)'));assert.ok(first.network>0);await sleep(1000);
+ await send('input.performActions',{context,actions:[{type:'pointer',id:'mouse',parameters:{pointerType:'mouse'},actions:[{type:'pointerMove',x:400,y:250,origin:'viewport'},{type:'pointerDown',button:0},{type:'pointerUp',button:0}]}]});await sleep(2500);
+ const shot=await send('browsingContext.captureScreenshot',{context});fs.writeFileSync(path.join(dir,'first-play.png'),Buffer.from(shot.data,'base64'));
+ const before=requests.length;await send('browsingContext.reload',{context,wait:'complete'});await start();const warm=JSON.parse(await evaluate('JSON.stringify(WebExport.lastStats)'));assert.equal(warm.network,0);assert.equal(warm.cached,warm.total);await sleep(1000);
+ const warmShot=await send('browsingContext.captureScreenshot',{context});fs.writeFileSync(path.join(dir,'warm-play.png'),Buffer.from(warmShot.data,'base64'));
+ const warmRequests=requests.slice(before).filter(u=>u.includes('/objects/'));assert.equal(warmRequests.length,0);assert.equal(errors.length,0,JSON.stringify(errors));const result={browser:binary,first,warm,warm_chunk_requests:warmRequests.length,errors};fs.writeFileSync(path.join(dir,'result.json'),JSON.stringify(result,null,2));console.log('FIREFOX_ACCEPTANCE_PASS '+JSON.stringify(result));await send('session.end');
+})().catch(e=>{console.error(e);fs.writeFileSync(path.join(dir,'error.log'),String(e)+'\n'+stderr);process.exitCode=1;}).finally(()=>{socket?.close();child.kill();});

@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="RainbowWeaponDefinition" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://features/rainbow/weapon_definition.gd" id="1"]
+[ext_resource type="Resource" path="res://features/rainbow/data/skins/malfory.tres" id="2"]
+
+[ext_resource type="Texture2D" path="res://features/rainbow/art/effects-v1.png" id="3"]
+
+[sub_resource type="AtlasTexture" id="vfx"]
+atlas = ExtResource("3")
+region = Rect2(628, 800, 312, 360)
+filter_clip = true
+
+[resource]
+script = ExtResource("1")
+layout = ExtResource("2")
+unit_id = &"malfory"
+melee_name = "魔杖震"
+ranged_name = "厄運球"
+specialty = "慢速重爆"
+effect = "curse"
+tint = Color(0.40392, 0.93725, 0.63137, 1)
+melee_range = 65.0
+melee_half_angle = 0.8
+melee_windup = 0.18
+melee_recovery = 0.34
+melee_power = 0.55
+ranged_windup = 0.42
+ranged_recovery = 0.68
+ranged_power = 1.25
+mana_cost = 7.0
+projectile_speed = 360.0
+projectile_lifetime = 1.5
+splash = 95.0
+knockback = 100.0
+stagger = 0.2
+effect_texture = SubResource("vfx")

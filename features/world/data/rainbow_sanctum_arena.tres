@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ArenaDefinition" format=3]
+
+[ext_resource type="Resource" path="res://features/rainbow/data/default_action.tres" id="1_jg6ol"]
+[ext_resource type="Script" path="res://common/data/encounter_definition.gd" id="2_ueqbl"]
+[ext_resource type="Script" path="res://features/world/definitions/arena_definition.gd" id="3_0utyd"]
+
+[sub_resource type="Resource" id="Resource_vwvyv"]
+script = ExtResource("2_ueqbl")
+id = &"rainbow_sanctum"
+display_name = "祭火聖所"
+action_profile = ExtResource("1_jg6ol")
+battlefield_scene = "res://features/battle/maps/rainbow_sanctum.tscn"
+enemy_spawn_centers = PackedVector2Array(1160, 440, 1520, 880, 1160, 1320, 600, 1240)
+
+[resource]
+script = ExtResource("3_0utyd")
+arena_id = "rainbow_sanctum"
+encounter = SubResource("Resource_vwvyv")

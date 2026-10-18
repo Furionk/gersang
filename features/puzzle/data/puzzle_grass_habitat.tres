@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="WorldHabitat" format=3]
+[ext_resource type="Script" path="res://features/world/definitions/world_habitat.gd" id="1"]
+[ext_resource type="Script" path="res://features/world/definitions/spawn_profile.gd" id="2"]
+[sub_resource type="Resource" id="profile"]
+script = ExtResource("2")
+speed = 255.0
+target_party_count = 10
+[resource]
+script = ExtResource("1")
+habitat_id = "puzzle_grass"
+display_name = "草轉珠怪棲地"
+profile = SubResource("profile")

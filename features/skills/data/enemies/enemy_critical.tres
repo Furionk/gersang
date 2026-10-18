@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="SkillDefinition" format=3 uid="uid://dgebopeb5vgc0"]
+
+[ext_resource type="Script" uid="uid://cwgoeihpnw613" path="res://common/data/skill_effect_definition.gd" id="1_7mfk5"]
+[ext_resource type="Script" uid="uid://boxf02g81ffu" path="res://common/data/skill_definition.gd" id="2_km704"]
+
+[sub_resource type="Resource" id="Resource_4n2jg"]
+script = ExtResource("1_7mfk5")
+kind = 7
+duration = 0.4
+radius = 0.0
+sprite_path = "res://features/skills/art/critical.png"
+
+[resource]
+script = ExtResource("2_km704")
+id = &"enemy_critical"
+display_name = "凶猛暴擊"
+description = "普攻命中18%機率以2–3倍攻擊造成暴擊。"
+effect = 5
+target_mode = 3
+trigger = 1
+action = &""
+critical_multiplier_min = 2.0
+critical_multiplier_max = 3.0
+mana_cost = 0.0
+range = 260.0
+radius = 0.0
+proc_chance = 0.18
+effect_data = SubResource("Resource_4n2jg")

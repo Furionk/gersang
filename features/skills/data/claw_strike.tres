@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="SkillDefinition" format=3 uid="uid://cdd4ob10s4dfe"]
+
+[ext_resource type="Script" path="res://common/data/skill_effect_definition.gd" id="1_3pspw"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_qw63w"]
+
+[sub_resource type="Resource" id="Resource_rq1ge"]
+script = ExtResource("1_3pspw")
+kind = 9
+duration = 0.7
+radius = 115.0
+sprite_path = "res://features/skills/art/earth_stakes.png"
+
+[resource]
+script = ExtResource("2_qw63w")
+id = &"claw_strike"
+display_name = "大地刺擊"
+description = "大地魔爪每次普通刺擊，以目標為中心對地面敵軍造成智慧範圍傷害；不額外再加一次普通傷害。"
+effect = 18
+target_mode = 3
+trigger = 1
+action = &"skill_claw_strike"
+icon_index = 6
+mana_cost = 0.0
+radius = 115.0
+proc_chance = 1.0
+damage_formula = "15+intelligence*1.4"
+formula_multiplier = 3.0
+effect_data = SubResource("Resource_rq1ge")

@@ -1,0 +1,81 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3 uid="uid://c02pu1bjakbif"]
+
+[ext_resource type="Script" path="res://common/data/unit_definition.gd" id="1_sng7e"]
+[ext_resource type="Texture2D" path="res://features/units/art/millennium_lord-v1.png" id="1_wrj5j"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_wrj5j"]
+[ext_resource type="Script" path="res://common/data/skill_effect_definition.gd" id="3_i34xa"]
+[ext_resource type="Resource" path="res://features/units/data/layouts/millennium_lord_layout.tres" id="4_7j0ow"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i34xa"]
+atlas = ExtResource("1_wrj5j")
+region = Rect2(0, 362, 181, 181)
+filter_clip = true
+
+[sub_resource type="Resource" id="Resource_ng28s"]
+script = ExtResource("3_i34xa")
+kind = 14
+width = 150.0
+distance = 1100.0
+speed = 1000.0
+
+[sub_resource type="Resource" id="Resource_e4whe"]
+script = ExtResource("2_wrj5j")
+id = &"lake_lord_charge"
+display_name = "真・衝鋒"
+description = "鎖定釋放時方向，實際衝向敵人，沿途每個敌人只受一次4.2倍攻擊傷害。飛行穿越地面阻擋。"
+effect = 19
+target_mode = 3
+action = &"skill_lake_lord_charge"
+ai_enabled = true
+ai_attempt_interval = 5.0
+ai_cast_chance = 0.8
+mana_cost = 0.0
+range = 1100.0
+damage_formula = "attack*4.2"
+damage_type = 0
+effect_data = SubResource("Resource_ng28s")
+tint = Color(0.15, 0.85, 1, 1)
+
+[sub_resource type="Resource" id="Resource_ym7k1"]
+script = ExtResource("2_wrj5j")
+id = &"lake_lord_leech"
+display_name = "湖血吞噬"
+description = "按實際命中扣除HP的45%恢復自身體力；不吸取MISS或過量傷害。"
+effect = 11
+trigger = 1
+action = &"skill_lake_lord_leech"
+life_steal_ratio = 0.45
+mana_cost = 0.0
+proc_chance = 1.0
+damage_formula = "0"
+
+[resource]
+script = ExtResource("1_sng7e")
+base_power = 5000
+vitality = 50.0
+defense = 150.0
+magic_resistance = 0.18
+experience_reward = 6000
+level = 99
+movement_type = 1
+id = &"millennium_lord"
+display_name = "千年湖主"
+role = 10
+max_health = 39600.0
+max_mana = 0.0
+damage = 570.0
+attack_range = 380.0
+minimum_ai_cast_time = 0.4
+balance_revision = 1
+tactical_hint = "成群消耗：聚怪後用範圍雷擊／暴雷；吸血與分裂種要快速集火，不要逐個慢磨。"
+speed = 175.0
+detection_range = 550.0
+mana_regeneration = 6.0
+armor = 0.35
+sprite_path = "res://features/units/art/millennium_lord-v1.png"
+sprite_layout = ExtResource("4_7j0ow")
+visual_scale = 1.25
+portrait_texture = SubResource("AtlasTexture_i34xa")
+standee_texture = SubResource("AtlasTexture_i34xa")
+skills = Array[ExtResource("2_wrj5j")]([SubResource("Resource_e4whe"), SubResource("Resource_ym7k1")])
+controllable = false

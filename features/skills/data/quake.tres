@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="SkillDefinition" format=3 uid="uid://ccuy2n7b6p8hn"]
+
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="1"]
+[ext_resource type="Script" path="res://common/data/skill_effect_definition.gd" id="2"]
+
+[sub_resource type="Resource" id="Effect"]
+script = ExtResource("2")
+use_skill_radius = true
+kind = 1
+sprite_path = "res://features/skills/art/quake.png"
+
+[resource]
+script = ExtResource("1")
+id = &"quake"
+display_name = "地震術"
+effect = 6
+action = &"skill_quake"
+default_key = 71
+icon_index = 1
+mana_cost = 40.0
+range = 260.0
+radius = 100.0
+damage_formula = "strength*0.5"
+formula_multiplier = 3.0
+effect_data = SubResource("Effect")

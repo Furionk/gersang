@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="SkillDefinition" format=3 uid="uid://c87ktaesldgl2"]
+
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="1"]
+[ext_resource type="Script" path="res://common/data/skill_effect_definition.gd" id="2"]
+
+[sub_resource type="Resource" id="Effect"]
+script = ExtResource("2")
+kind = 6
+duration = 20.25
+radius = 40.0
+wall_length = 300.0
+sprite_path = "res://features/skills/art/ice.png"
+
+[resource]
+script = ExtResource("1")
+id = &"ice_wall"
+display_name = "冰牆"
+effect = 10
+action = &"skill_ice_wall"
+default_key = 86
+icon_index = 6
+mana_cost = 30.0
+range = 280.0
+radius = 40.0
+damage_formula = "0"
+effect_data = SubResource("Effect")

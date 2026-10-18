@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="SkillDefinition" format=3 uid="uid://cxrlprs1vwvkh"]
+
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="1"]
+[ext_resource type="Script" path="res://common/data/skill_effect_definition.gd" id="2"]
+
+[sub_resource type="Resource" id="Effect"]
+script = ExtResource("2")
+use_skill_radius = true
+follow_speed = 550.0
+kind = 3
+duration = 10.0
+tick_interval = 0.18
+radius = 120.0
+sprite_path = "res://features/skills/art/wheel.png"
+
+[resource]
+script = ExtResource("1")
+id = &"wheel"
+display_name = "黑龍大車輪"
+description = "從施法者出發，按Follow Speed550追到敵人後持續跟隨10秒，每0.18秒原公式×3。速度、半徑、間隔、持續都可調。"
+effect = 7
+target_mode = 3
+action = &"skill_wheel"
+default_key = 66
+icon_index = 3
+mana_cost = 40.0
+range = 300.0
+radius = 120.0
+damage_formula = "attack*0.5"
+formula_multiplier = 3.0
+effect_data = SubResource("Effect")

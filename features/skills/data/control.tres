@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="SkillDefinition" format=3 uid="uid://d0wxrjspeoprg"]
+
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = &"control"
+display_name = "縛魂術"
+effect = 3
+action = &"skill_control"
+default_key = 67
+icon_index = 10
+radius = 85.0
+damage_formula = "intelligence*0.4"
+formula_multiplier = 1.7

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="WorldSceneryDefinition" format=3]
+
+[ext_resource type="Script" path="res://features/world/definitions/world_scenery_definition.gd" id="1_5lpas"]
+[ext_resource type="Texture2D" path="res://art/terrain/shaolin_temple/props-v1.png" id="2_n2f4m"]
+
+[resource]
+script = ExtResource("1_5lpas")
+display_name = "少林寺山門"
+description = "離開少林寺，返回青嶺河灣。"
+texture = ExtResource("2_n2f4m")
+atlas_region = Rect2(0, 0, 500, 520)
+foot_anchor = Vector2(360, 436)
+sprite_scale = 0.64
+
+sorting_mode = 1
+sorting_review_required = false
+sorting_note = "立體素材，腳底Y自動交錯；不產生障礙。"

@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="GearItemDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="1_1pkir"]
+[ext_resource type="Texture2D" path="res://art/items/source52/gs_training_staff.png" id="2_kp0e7"]
+[ext_resource type="Script" path="res://common/data/gear_item_definition.gd" id="3_dwacn"]
+
+[resource]
+script = ExtResource("3_dwacn")
+id = &"gs_training_staff"
+display_name = "訓練生的拐杖"
+category = "staff"
+icon = ExtResource("2_kp0e7")
+kind = 0
+weight = 10.0
+modifiers = {
+"attack_max": 30.0,
+"attack_min": 20.0,
+"intelligence": 20.0
+}
+allowed_roles = PackedInt32Array()
+use_effect = 1
+source_url = "https://www.52jushang.com/item/jipangyi.asp"
+source_image_url = "https://www.52jushang.com/item/img/img_new/shadu.gif"
+source_stats = {
+"modifiers": {
+"attack_max": 30.0,
+"attack_min": 20.0,
+"intelligence": 20.0
+},
+"required_level": 1.0,
+"weight_jin": 10.0
+}
+source_skill_names = PackedStringArray("暗黑火焰")
+adaptation_notes = "來源技能耗 MP30；本輪保留名稱，尚未接入暗黑火焰效果。可於 granted_skills 指定本作技能資源。"
+description = "52巨商參考裝備；屬性與重量依來源，攻擊區間作為裝備加成。"

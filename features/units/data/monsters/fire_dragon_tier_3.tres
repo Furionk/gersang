@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/unit_definition.gd" id="1_gdcp1"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_26l7w"]
+[ext_resource type="Resource" path="res://features/rainbow/data/skins/fire_dragon_tier_3.tres" id="3_gdcp1"]
+
+[resource]
+script = ExtResource("1_gdcp1")
+base_power = 8000
+luck = 0.0
+defense = 2.0
+experience_reward = 4000
+level = 90
+id = &"fire_dragon_tier_3"
+display_name = "進階絕望火龍"
+max_health = 64288.0
+max_mana = 300.0
+damage = 36.0
+attack_range = 160.0
+balance_revision = 4
+tactical_hint = "建議十人編隊 Lv90 · 自由挑戰 · 高危險；留意預警，側移與反擊。"
+speed = 90.0
+mana_regeneration = 8.0
+sprite_path = "res://features/rainbow/art/dragon-tiers-v3.png"
+sprite_layout = ExtResource("3_gdcp1")
+battle_sprite_scale = 1.7
+world_sprite_scale = 0.8
+metadata/rainbow_balance_v1 = true

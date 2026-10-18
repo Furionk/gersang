@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="WorldSceneryDefinition" format=3]
+
+[ext_resource type="Script" path="res://features/world/definitions/world_scenery_definition.gd" id="1_af26m"]
+[ext_resource type="Texture2D" path="res://art/terrain/hogwarts/school-props-v1.png" id="2_j3s2c"]
+
+[resource]
+script = ExtResource("1_af26m")
+display_name = "蛇妖石像"
+description = "霍格愛茲：平行空間的魔法學校。"
+texture = ExtResource("2_j3s2c")
+atlas_region = Rect2(443, 443, 444, 444)
+foot_anchor = Vector2(222, 429)
+sprite_scale = 0.8

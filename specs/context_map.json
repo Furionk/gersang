@@ -1,0 +1,2396 @@
+{
+    "schema":  1,
+    "description":  "Routes and document roles only; native Resources/scenes remain gameplay authority. No existing files moved.",
+    "rules":  {
+                  "max_read_first":  3,
+                  "default_file_budget":  12,
+                  "authority_order":  [
+                                          "latest user request",
+                                          "specs/decisions.md",
+                                          "current topic contract",
+                                          "native .tres/.tscn data",
+                                          "current guides",
+                                          "immutable sources/history"
+                                      ],
+                  "exclude_by_default":  [
+                                             ".godot/**",
+                                             "artifacts/**",
+                                             "*.log",
+                                             "tests/*.png",
+                                             "tests/*-results.json",
+                                             "docs/combat_v2.md"
+                                         ],
+                  "historical_docs":  [
+                                          "docs/combat_v2.md",
+                                          "docs/validation.md",
+                                          "docs/v2_validation.md"
+                                      ]
+              },
+    "documents":  {
+                      "docs/optional_assets.md":{"category":"current_guide","title":"公開版可選素材與村莊安裝"},
+                      "docs/rainbow_action.md":{"category":"current_guide","title":"彩虹冒險第一場動作遭遇與原生編輯"},
+                      "specs/puzzle_world.md":{"category":"current_contract","title":"D42轉珠怪與轉珠世界"},
+                      "docs/puzzle_world.md":{"category":"current_guide","title":"轉珠世界試玩與原生編輯"},
+                      "docs/puzzle_world_validation.md":{"category":"validation","title":"轉珠整合測試與限制"},
+                      "specs/hogwarts.md":{"category":"current_contract","title":"D41霍格愛茲地城與三階段首領"},
+                      "docs/hogwarts_guide.md":{"category":"artist_guide","title":"霍格愛茲怪區技能血月與場景編輯"},
+                      "docs/audits/hogwarts_delivery.md":{"category":"audit","title":"霍格愛茲交付證據與限制"},
+                      "docs/audits/hogwarts_art_provenance.md":{"category":"art_manifest","title":"霍格愛茲生成原圖與裁切来源"},
+                      "docs/architecture/resource_policy.md":{"category":"architecture","title":"來源生成物與可選Godot工具目錄分類"},
+                      "docs/audits/2026-10-13_resource_structure.md":{"category":"audit","title":"資源結構與AI檢索審視"},
+                      "docs/history/readme_before_2026_10_13.md":{"category":"historical_with_current_pointer","title":"原README歷史操作，現行請讀根README與D38/D39"},
+                      "docs/content_authoring_guide.md":{"category":"artist_guide","title":"兵種技能切圖怪物地形與入口製作指南"},
+                      "docs/audits/content_authoring_audit.md":{"category":"audit","title":"原生內容製作與RTS資料架構審視"},
+                      "specs/sprite_motion.md":{"category":"current_contract","title":"D40圖集動作方向與相位修正"},
+                      "docs/audits/sprite_motion_2026-10-13.md":{"category":"audit","title":"全圖集動作方向與原畫限制審視"},
+                      "docs/audits/sprite_motion_image_prompts.md":{"category":"art_manifest","title":"圖集補畫提示與版本化來源"},
+                      "specs/content_authoring.md":{"category":"current_contract","title":"D39可變動作幀與原生內容製作基礎"},
+                      "specs/demo_web.md": {"category":"current_contract","title":"十人預置編隊與無BGM Web展示版"},
+                      "specs/new_units.md":  {
+                                                 "category":  "current_contract",
+                                                 "title":  "湖衣姬、忍者、鐵炮手与暫時技能契約"
+                                             },
+                      "docs/new_units_guide.md":  {
+                                                      "category":  "artist_guide",
+                                                      "title":  "F2正式招募與倉庫交換、試兵與技能配置"
+                                                  },
+                      "specs/depth_sorting.md":  {
+                                                     "category":  "current_contract",
+                                                     "title":  "原生腳底深度排序與素材分類"
+                                                 },
+                      "docs/depth_sorting_guide.md":  {
+                                                          "category":  "artist_guide",
+                                                          "title":  "圖層、腳底校準與分件操作"
+                                                      },
+                      "docs/depth_sorting_validation.md":  {
+                                                               "category":  "validation",
+                                                               "title":  "排序像素、編輯器及導航保留實測"
+                                                           },
+                      "specs/editor_workflow.md":  {
+                                                       "category":  "current_contract",
+                                                       "title":  "原生編輯工作流與每秒動態增援"
+                                                   },
+                      "docs/editor_workflow_guide.md":  {
+                                                            "category":  "current_guide",
+                                                            "title":  "改键、資料分類、單Sprite與增援指南"
+                                                        },
+                      "docs/editor_workflow_validation.md":  {
+                                                                 "category":  "validation",
+                                                                 "title":  "編輯工作流實測及尚未驗證項目"
+                                                             },
+                      "specs/unit_voices.md":  {
+                                                   "category":  "current_contract",
+                                                   "title":  "兵種語音事件與試音審閱契約"
+                                               },
+                      "docs/unit_voices.md":  {
+                                                  "category":  "current_guide",
+                                                  "title":  "ElevenLabs兵種語音製作與試音"
+                                              },
+                      "specs/unit_resource_moves.json":  {
+                                                             "category":  "schema",
+                                                             "title":  "兵種／怪物分類與舊路徑遷移表"
+                                                         },
+                      "specs/battlefield_scenes.md":  {
+                                                          "category":  "current_contract",
+                                                          "title":  "原生戰場場景與五區隨機配置"
+                                                      },
+                      "docs/battlefield_artist_guide.md":  {
+                                                               "category":  "current_guide",
+                                                               "title":  "戰場TileMap及出生區Artist指南"
+                                                           },
+                      "docs/shaolin_strength.md":  {
+                                                       "category":  "current_guide",
+                                                       "title":  "少林寺30隊、分層強度與Lv50首領"
+                                                   },
+                      "docs/world_position_recovery.md":  {
+                                                              "category":  "current_guide",
+                                                              "title":  "失效怪物位置與移動遇怪讀檔修復"
+                                                          },
+                      "docs/farm_boars.md":  {
+                                                 "category":  "current_guide",
+                                                 "title":  "租霸豬身份、數量與舊存檔修正"
+                                             },
+                      "specs/monster_layout.md":  {
+                                                      "category":  "current_contract",
+                                                      "title":  "可行範圍與少林寺怪隊分佈"
+                                                  },
+                      "docs/monster_layout.md":  {
+                                                     "category":  "current_guide",
+                                                     "title":  "怪隊分佈與原生怪區調整"
+                                                 },
+                      "specs/multi_party_encounters.md":  {
+                                                              "category":  "current_contract",
+                                                              "title":  "多隊遭遇、火圈與戰場分區"
+                                                          },
+                      "docs/multi_party_encounters.md":  {
+                                                             "category":  "current_guide",
+                                                             "title":  "多隊遭遇與戰場調整指南"
+                                                         },
+                      "specs/background_music.md":  {
+                                                        "category":  "current_contract",
+                                                        "title":  "背景音樂與順滑切換"
+                                                    },
+                      "docs/shaolin_temple.md":  {
+                                                     "category":  "artist_guide",
+                                                     "title":  "少林寺原創素材、封閉圍牆與護院示範"
+                                                 },
+                      "docs/shaolin_temple_art_manifest.json":  {
+                                                                    "category":  "art_provenance",
+                                                                    "title":  "少林寺生成提示詞與原生素材記錄"
+                                                                },
+                      "specs/scenery_interaction.md":  {
+                                                           "category":  "current_contract",
+                                                           "title":  "Sprite scenery and entrance interaction"
+                                                       },
+                      "docs/scenery_authoring.md":  {
+                                                        "category":  "current_guide",
+                                                        "title":  "建築／山體 Sprite 與入口 Hover 製作"
+                                                    },
+                      "specs/world_map_ui.md":  {
+                                                    "category":  "current_contract",
+                                                    "title":  "世界與地城投影地圖 UI"
+                                                },
+                      "docs/millennium_lake.md":  {
+                                                      "category":  "artist_guide",
+                                                      "title":  "千年湖素材、入口與單怪示範"
+                                                  },
+                      "docs/millennium_lake_art_manifest.json":  {
+                                                                     "category":  "art_provenance",
+                                                                     "title":  "千年湖原創生成素材與提示詞"
+                                                                 },
+                      "artifacts/history/2026-10-13/test_results/v2-results.json":  {
+                                                    "category":  "historical_evidence",
+                                                    "title":  "{"
+                                                },
+                      "artifacts/history/2026-10-13/test_results/acceptance-results.json":  {
+                                                            "category":  "historical_evidence",
+                                                            "title":  "{"
+                                                        },
+                      "README.md":  {
+                                        "category":  "project_entry",
+                                        "title":  "巨雙2.0現行開發與AI入口"
+                                    },
+                      "AGENTS.md":  {
+                                        "category":  "agent_policy",
+                                        "title":  "# Gersang development entry"
+                                    },
+                      "specs/index.md":  {
+                                             "category":  "navigation",
+                                             "title":  "# 遊戲開發檢索與契約入口"
+                                         },
+                      "specs/decisions.md":  {
+                                                 "category":  "current_contract",
+                                                 "title":  "# 適配決策 2026-10-08"
+                                             },
+                      "specs/combat_controls.md":  {
+                                                       "category":  "current_contract",
+                                                       "title":  "# 戰鬥操作 V3 — 2026-10-09"
+                                                   },
+                      "specs/character_sheet.md":  {
+                                                       "category":  "current_contract",
+                                                       "title":  "# 角色全畫面 v1 — 2026-10-09"
+                                                   },
+                      "specs/manifest.json":  {
+                                                  "category":  "verification_registry",
+                                                  "title":  "{"
+                                              },
+                      "specs/items.md":  {
+                                             "category":  "current_contract",
+                                             "title":  "# 物品與 Debug v1"
+                                         },
+                      "specs/movement_feel.md":  {
+                                                     "category":  "current_contract",
+                                                     "title":  "# 受保護的移動手感契約（D09）"
+                                                 },
+                      "docs/world_validation.md":  {
+                                                       "category":  "validation_report",
+                                                       "title":  "# 世界／遭遇 v1 驗證"
+                                                   },
+                      "docs/world_hud_art_manifest.json":  {
+                                                               "category":  "art_provenance",
+                                                               "title":  "{"
+                                                           },
+                      "docs/validation.md":  {
+                                                 "category":  "validation_report",
+                                                 "title":  "# 第一階段驗證記錄"
+                                             },
+                      "docs/v2_validation.md":  {
+                                                    "category":  "validation_report",
+                                                    "title":  "# 戰鬥 V2 驗證結果"
+                                                },
+                      "docs/v2_art_manifest.json":  {
+                                                        "category":  "art_provenance",
+                                                        "title":  "{"
+                                                    },
+                      "docs/movement_validation.md":  {
+                                                          "category":  "validation_report",
+                                                          "title":  "# 大世界移動修正與防回退"
+                                                      },
+                      "docs/items_validation.md":  {
+                                                       "category":  "validation_report",
+                                                       "title":  "# 物品 v1 驗證"
+                                                   },
+                      "docs/items_debug_guide.md":  {
+                                                        "category":  "current_guide",
+                                                        "title":  "# 物品 Debug 與編輯後台"
+                                                    },
+                      "docs/combat_v2.md":  {
+                                                "category":  "historical_with_current_pointer",
+                                                "title":  "# 戰鬥 V2 操作與技能設定"
+                                            },
+                      "docs/combat_controls_validation.md":  {
+                                                                 "category":  "validation_report",
+                                                                 "title":  "# 戰鬥操作 V3 驗證 — 2026-10-09"
+                                                             },
+                      "docs/combat_controls.md":  {
+                                                      "category":  "current_guide",
+                                                      "title":  "# 最新戰鬥操作（V3）"
+                                                  },
+                      "docs/character_sheet_validation.md":  {
+                                                                 "category":  "validation_report",
+                                                                 "title":  "# 角色全畫面驗證 — 2026-10-09"
+                                                             },
+                      "docs/character_sheet_guide.md":  {
+                                                            "category":  "current_guide",
+                                                            "title":  "# 角色行囊、能力及技能"
+                                                        },
+                      "docs/art_manifest.json":  {
+                                                     "category":  "art_provenance",
+                                                     "title":  "{"
+                                                 },
+                      "docs/artist_guide.md":  {
+                                                   "category":  "current_guide",
+                                                   "title":  "# 世界製圖與試玩指南"
+                                               },
+                      "specs/sources/items52.json":  {
+                                                         "category":  "immutable_source",
+                                                         "title":  "{"
+                                                     },
+                      "specs/sources/world_encounter_2026-10-08.md":  {
+                                                                          "category":  "immutable_source",
+                                                                          "title":  "以 Godot 製作巨商式新遊戲的第一個可玩版本：大地圖怪隊遊走、玩家與怪隊戰力顯示、主動及被動遭遇、獨立戰鬥與回圖重生，以及美術可直接操作的區域、城鎮和地城配置工具。"
+                                                                      },
+                      "docs/index.md":  {
+                                            "category":  "navigation",
+                                            "title":  "文檔分類入口"
+                                        },
+                      "docs/architecture/project_map.md":  {
+                                                               "category":  "architecture",
+                                                               "title":  "架構與資料權威"
+                                                           },
+                      "docs/audits/2026-10-09_structure.md":  {
+                                                                  "category":  "audit_snapshot",
+                                                                  "title":  "2026-10-09文檔結構Audit"
+                                                              },
+                      "docs/design/units.md":  {
+                                                   "category":  "content_guide",
+                                                   "title":  "兵種資料入口"
+                                               },
+                      "docs/design/world.md":  {
+                                                   "category":  "content_guide",
+                                                   "title":  "世界／怪區資料入口"
+                                               },
+                      "docs/tools/editor_plugins.md":  {
+                                                           "category":  "tool_guide",
+                                                           "title":  "插件與製作工具入口"
+                                                       },
+                      "specs/context_map.json":  {
+                                                     "category":  "routing_registry",
+                                                     "title":  "AI主題路由"
+                                                 },
+                      "specs/party_polish.md":  {
+                                                    "category":  "current_contract",
+                                                    "title":  "# 箭魂、重新配點與怪物圖集修正 — 2026-10-09"
+                                                },
+                      "docs/party_polish_validation.md":  {
+                                                              "category":  "validation_report",
+                                                              "title":  "# 箭魂／配點／朝向／圖集驗證 — 2026-10-09"
+                                                          },
+                      "specs/battle_presentation.md":  {
+                                                           "category":  "current_contract",
+                                                           "title":  "# 經典戰鬥HUD與勝利回圖契約 — 2026-10-10"
+                                                       },
+                      "docs/battle_presentation_validation.md":  {
+                                                                     "category":  "validation_report",
+                                                                     "title":  "# 經典戰鬥UI與勝利流程驗證 — 2026-10-10"
+                                                                 },
+                      "specs/human_authoring.md":  {
+                                                       "category":  "current_contract",
+                                                       "title":  "D20 human-centered native map authoring"
+                                                   },
+                      "specs/river_enrichment.md":  {
+                                                        "category":  "current_contract",
+                                                        "title":  "D22 native river world enrichment"
+                                                    },
+                      "docs/river_enrichment.md":  {
+                                                       "category":  "current_guide",
+                                                       "title":  "River enrichment editing, screenshots and validation"
+                                                   },
+                      "docs/human_authoring_guide.md":  {
+                                                            "category":  "current_guide",
+                                                            "title":  "Human-centered native authoring quick guide"
+                                                        },
+                      "docs/human_authoring_validation.md":  {
+                                                                 "category":  "validation_report",
+                                                                 "title":  "Native authoring workflow validation"
+                                                             },
+                      "specs/native_tilemap.md":  {
+                                                      "category":  "current_contract",
+                                                      "title":  "# Native world TileMap contract — D18"
+                                                  },
+                      "docs/native_tilemap_guide.md":  {
+                                                           "category":  "current_guide",
+                                                           "title":  "# 原生等角 TileMap 製圖指南"
+                                                       },
+                      "specs/mercenary_storage.md":  {
+                                                         "title":  "正式傭兵倉庫與立即忍法",
+                                                         "category":  "current_contract"
+                                                     },
+                      "specs/roster_effects_polish.md":  {
+                                                             "title":  "D32倉庫獨立存取與戰鬥特效",
+                                                             "category":  "current_contract"
+                                                         },
+                      "specs/kohime_art.md":  {
+                                                  "title":  "D33湖衣姬形象與原生切圖",
+                                                  "category":  "current_contract"
+                                              },
+                      "specs/kohime_strength.md":  {
+                                                       "category":  "current_contract",
+                                                       "title":  "湖衣姬智慧魔爪強化"
+                                                   },
+                      "specs/millennium_ecology.md":  {
+                                                          "category":  "current_contract",
+                                                          "title":  "千年湖生態與兩階段王"
+                                                      },
+                      "specs/victory_cleanup.md":  {
+                                                       "category":  "current_contract",
+                                                       "title":  "勝利可操作收尾與延後經驗"
+                                                   },
+                      "docs/millennium_ecology_guide.md":  {
+                                                               "category":  "artist_guide",
+                                                               "title":  "千年湖怪物與湖衣姬強化編輯入口"
+                                                           },
+                      "specs/malfory.md":  {
+                                               "category":  "current_contract",
+                                               "title":  "D37 Malfory與智慧詛咒/最大HP百分比傷害"
+                                           },
+                      "docs/malfory_guide.md":  {
+                                                    "category":  "artist_guide",
+                                                    "title":  "Malfory招募/技能/美術/追加兵種清單"
+                                                }
+                  },
+    "topics":  {
+                    "rainbow_action":{"label":"彩虹冒險／火龍神殿動作遭遇","aliases":["彩虹冒險","火龍神殿","rainbow","動作遭遇"],"read_first":["docs/rainbow_action.md","specs/multi_party_encounters.md","specs/movement_feel.md"],"authority":["features/world/data/rainbow_temple.tscn","features/battle/maps/rainbow_temple.tscn","features/rainbow/data/default_action.tres"],"code":[{"path":"features/rainbow/action_battle.gd","symbols":"eligible,configure,tick,ai_direction,release"},{"path":"features/rainbow/action_actor.gd","symbols":"request,advance,move,receive_hit"},{"path":"tests/rainbow_action_suite.gd","symbols":"run"}],"related":["encounter","movement"],"warnings":["只在火龍神殿真實遭遇啟用；其他區域保留RTS。四廳10怪隊4戰場，四原創怪物與祭司／火龍機制；11友軍動作外觀。新增槽位保留舊存檔，Boss抗擊退，SettlementService仍是結算權威。"]},
+                  "puzzle": {"label":"轉珠怪／轉珠世界","aliases":["轉珠","转珠","puzzle","combo"],"read_first":["specs/puzzle_world.md","docs/puzzle_world.md","docs/puzzle_world_validation.md"],"authority":["features/puzzle/data/default_rules.tres","features/units/data/monsters/puzzle_*.tres"],"code":[{"path":"features/puzzle/puzzle_board.gd","symbols":"matches,path_between,refill"},{"path":"features/puzzle/puzzle_combat.gd","symbols":"actions,distribute,apply_action"},{"path":"features/puzzle/puzzle_battle.gd","symbols":"configure,_commit,_restore"},{"path":"features/battle/game_director.gd","symbols":"_begin_puzzle,_puzzle_completed"}],"related":["encounter","save"],"warnings":["僅SettlementService發獎勵；保留原怪區與存檔；實體滑鼠fixture不是正式難度平衡證據。"]},
+                   "hogwarts":{"feature":"hogwarts","label":"霍格愛茲大型地城／血月首領","aliases":["hogwarts","霍格愛茲","魔法學校","催狂魔","蛇妖","三頭犬","佛地魔","加儂","血月"],"read_first":["specs/hogwarts.md","docs/hogwarts_guide.md","docs/audits/hogwarts_delivery.md"],"authority":["features/world/data/hogwarts.tscn","features/battle/maps/hogwarts.tscn","features/battle/maps/hogwarts_blood_moon.tscn","features/units/data/phases/*.tres","features/units/data/monsters/school_*.tres"],"code":[{"path":"features/battle/battle_phase_controller.gd","symbols":"request_death,swap_visual_scene,tick,spawn_pending"},{"path":"features/skills/battle_skill_effect.gd","symbols":"initialize,_drain_pulse,_curse_pulse"},{"path":"tests/hogwarts_suite.gd","symbols":"run"}],"related":["battlefields","content_authoring","millennium_ecology"],"warnings":["生成工具是一輪性來源記錄，不重跑覆蓋Artist；換景不更改通行幾何；Web尚未重建。"]},
+                   "resource_structure":{"label":"資源分類／日誌／空資料夾／AI精準檢索","aliases":["resource_structure","資源分類","專案結構","log","日誌","空資料夾","export_templates","text_editor_themes"],"read_first":["docs/architecture/resource_policy.md","docs/audits/2026-10-13_resource_structure.md"],"authority":["project.godot","specs/context_map.json"],"code":[{"path":"tools/project_inventory.ps1","symbols":"read-only inventory, Verify"},{"path":"tools/project_context.ps1","symbols":"topic routing, Verify"},{"path":"tools/archive_generated.ps1","symbols":"Plan, explicit Apply, Restore"}],"related":["architecture","content_authoring"],"warnings":["129個生成檔已有manifest可回復；正式Resource／UID／保存不動。歸檔工具預設只列Plan。"]},
+                   "sprite_motion": {
+                     "label":"SpriteSheet停頓／方向／腳步／出招動畫",
+                     "aliases":["sprite_motion","腳不動","朝向錯誤","動畫卡頓","動作方向"],
+                     "read_first":["specs/sprite_motion.md","docs/audits/sprite_motion_2026-10-13.md"],
+                     "authority":["features/units/data/layouts/*.tres"],
+                     "code":[{"path":"features/presentation/directional_animation.gd","symbols":"play,phase_of,set_phase"},{"path":"features/presentation/unit_view.gd","symbols":"_on_visual_action_started,_process"},{"path":"features/world/world_party_view.gd","symbols":"_process"},{"path":"common/data/sprite_animation_clip.gd","symbols":"direction_rows,mirrored_directions"},{"path":"tests/sprite_motion_suite.gd","symbols":"live_playback"}],
+                     "related":["content_authoring","movement"],
+                     "warnings":["原圖缺姿勢不能靠metadata補畫；PNG、UID、D09及戰鬥傷害保持。一次性整改工具不可重跑覆寫Artist。"]
+                   },
+                   "content_authoring": {
+                     "label":"內容製作／兵種／怪物／技能／SpriteSheet可變幀數",
+                     "aliases":["content_authoring","spritesheet","製作指南","新增兵種","新增怪物","動作幀","切圖","頭像"],
+                     "read_first":["docs/content_authoring_guide.md","specs/content_authoring.md","docs/audits/content_authoring_audit.md"],
+                     "related":["editor_workflow","skills","units","authoring"],
+                     "authority":["features/units/data/*/*.tres","features/skills/data/*.tres","features/world/data/*.tscn"],
+                     "code":[{"path":"common/data/sprite_sheet_layout.gd","symbols":"clip_for,issues_for,regular_grid_values"},{"path":"features/presentation/sprite_atlas.gd","symbols":"texture_for,frames"},{"path":"addons/skill_authoring/content_inspector.gd","symbols":"_parse_begin"}],
+                     "warnings":["不自動重切Artist素材、不修改既有存檔、動畫不擁有傷害。全套既有失敗仍須列明。"]
+                   },
+                   "new_units":  {
+                                     "label":  "新兵種／湖衣姬／忍者／鐵炮手／魔爪",
+                                     "aliases":  [
+                                                     "new_units",
+                                                     "湖衣姬",
+                                                     "湖衣妖姬",
+                                                     "忍者",
+                                                     "鐵炮手",
+                                                     "铁炮手",
+                                                     "魔爪",
+                                                     "地樁",
+                                                     "四方導雷",
+                                                     "三段",
+                                                     "試兵"
+                                                 ],
+                                     "read_first":  [
+                                                        "docs/new_units_guide.md",
+                                                        "specs/new_units.md"
+                                                    ],
+                                     "authority":  [
+                                                       "features/units/data/mercenaries/kohime.tres",
+                                                       "features/units/data/mercenaries/ninja.tres",
+                                                       "features/units/data/mercenaries/teppo.tres",
+                                                       "features/units/data/monsters/*_enemy.tres",
+                                                       "features/units/data/summons/*.tres",
+                                                       "features/skills/data/*.tres"
+                                                   ],
+                                     "code":  [
+                                                  {
+                                                      "path":  "features/skills/advanced_skill_runtime.gd",
+                                                      "symbols":  "initialize, tick, _pulse, _chain"
+                                                  },
+                                                  {
+                                                      "path":  "features/skills/advanced_skill_visual.gd",
+                                                      "symbols":  "create_stakes, _draw"
+                                                  },
+                                                  {
+                                                      "path":  "features/units/status_controller.gd",
+                                                      "symbols":  "apply_buff, apply_stealth, tick, reveal"
+                                                  },
+                                                  {
+                                                      "path":  "features/battle/game_director.gd",
+                                                      "symbols":  "debug_trial_unit, basic_attack, resolve_skill"
+                                                  },
+                                                  {
+                                                      "path":  "features/ui/item_debug_panel.gd",
+                                                      "symbols":  "native trial buttons"
+                                                  }
+                                              ],
+                                     "related":  [
+                                                     "skills",
+                                                     "units",
+                                                     "controls",
+                                                     "sorting",
+                                                     "movement",
+                                                     "mercenary_storage",
+                                                     "kohime_art"
+                                                 ],
+                                     "feature":  "new_units",
+                                     "warnings":  [
+                                                      "D31：F2 傭兵倉庫可招募 Lv1 正式兵及交換候補；戰鬥試兵仍為臨時。J/K立即、C導雷。保留原兵進度，禁止重跑 one-shot builders。"
+                                                  ],
+                                     "evidence":  [
+                                                      "artifacts/new-units-2026-10-11/headless-results.json",
+                                                      "artifacts/new-units-2026-10-11/render-results.json",
+                                                      "artifacts/new-units-2026-10-11/editor-results.json"
+                                                  ]
+                                 },
+                   "sorting":  {
+                                   "label":  "自動圖層／腳底深度／景物遮擋",
+                                   "aliases":  [
+                                                   "sorting",
+                                                   "排序",
+                                                   "遮擋",
+                                                   "遮挡",
+                                                   "zindex",
+                                                   "z_index",
+                                                   "layer",
+                                                   "圖層",
+                                                   "腳底",
+                                                   "depth"
+                                               ],
+                                   "read_first":  [
+                                                      "docs/depth_sorting_guide.md",
+                                                      "specs/depth_sorting.md",
+                                                      "docs/depth_sorting_validation.md"
+                                                  ],
+                                   "authority":  [
+                                                     "features/world/data/scenery/*.tres",
+                                                     "features/world/data/scenery/*/*.tres",
+                                                     "features/world/data/*.tscn",
+                                                     "features/battle/maps/*.tscn"
+                                                 ],
+                                   "code":  [
+                                                {
+                                                    "path":  "features/presentation/scenery_sorting.gd",
+                                                    "symbols":  "apply_map, mode_for, preset_for, calibration"
+                                                },
+                                                {
+                                                    "path":  "features/world/definitions/world_scenery_definition.gd",
+                                                    "symbols":  "sorting_mode, foot_anchor, sorting_note"
+                                                },
+                                                {
+                                                    "path":  "features/presentation/unit_view.gd",
+                                                    "symbols":  "initialize, _process"
+                                                },
+                                                {
+                                                    "path":  "addons/world_authoring/sorting_controls.gd",
+                                                    "symbols":  "native Inspector controls"
+                                                },
+                                                {
+                                                    "path":  "features/world/authoring/native_scenery.gd",
+                                                    "symbols":  "entry"
+                                                }
+                                            ],
+                                   "related":  [
+                                                   "scenery",
+                                                   "authoring",
+                                                   "battlefields",
+                                                   "movement"
+                                               ],
+                                   "feature":  "depth_sorting",
+                                   "warnings":  [
+                                                    "Sprite排序只改呈現；不得改Walkable／Blockers或放寬D09。大型混合圖不保證一個腳底能完整描述。"
+                                                ],
+                                   "evidence":  [
+                                                    "artifacts/depth-sorting-2026-10-11/headless-results.json",
+                                                    "artifacts/depth-sorting-2026-10-11/render-results.json"
+                                                ]
+                               },
+                   "editor_workflow":  {
+                                           "label":  "編輯器資料工作流／資源改鍵／動態增援",
+                                           "aliases":  [
+                                                           "editor_workflow",
+                                                           "快捷鍵修改",
+                                                           "default_key",
+                                                           "中文說明",
+                                                           "單Sprite",
+                                                           "資料分類",
+                                                           "每秒增援"
+                                                       ],
+                                           "read_first":  [
+                                                              "docs/editor_workflow_guide.md",
+                                                              "specs/editor_workflow.md",
+                                                              "docs/editor_workflow_validation.md"
+                                                          ],
+                                           "authority":  [
+                                                             "features/skills/data/*.tres",
+                                                             "features/units/data/*/*.tres",
+                                                             "features/world/data/*.tscn",
+                                                             "features/battle/maps/*.tscn"
+                                                         ],
+                                           "code":  [
+                                                        {
+                                                            "path":  "features/settings/game_settings.gd",
+                                                            "symbols":  "register_skill, reset_skill_binding"
+                                                        },
+                                                        {
+                                                            "path":  "features/world/runtime/encounter_service.gd",
+                                                            "symbols":  "_recruit_nearby, tick"
+                                                        },
+                                                        {
+                                                            "path":  "features/world/authoring/native_scenery.gd",
+                                                            "symbols":  "entry, is_author"
+                                                        },
+                                                        {
+                                                            "path":  "features/battle/scene_transition_cover.gd",
+                                                            "symbols":  "begin, complete"
+                                                        }
+                                                    ],
+                                           "related":  [
+                                                           "skills",
+                                                           "units",
+                                                           "authoring",
+                                                           "encounter",
+                                                           "movement"
+                                                       ],
+                                           "feature":  "editor_workflow",
+                                           "warnings":  [
+                                                            "不重跑one-shot搬移／扁平化工具覆寫artist編輯；人工滑鼠另行驗收。"
+                                                        ]
+                                       },
+                   "voices":  {
+                                  "label":  "兵種語音／ElevenLabs試音",
+                                  "aliases":  [
+                                                  "voices",
+                                                  "voice",
+                                                  "elevenlabs",
+                                                  "ElevenLabs",
+                                                  "兵種語音",
+                                                  "語音",
+                                                  "試音"
+                                              ],
+                                  "read_first":  [
+                                                     "specs/unit_voices.md",
+                                                     "docs/unit_voices.md"
+                                                 ],
+                                  "authority":  [
+                                                    "features/audio/data/unit_voices.json",
+                                                    "features/audio/data/*.tres"
+                                                ],
+                                  "code":  [
+                                               {
+                                                   "path":  "features/audio/unit_voice_manager.gd",
+                                                   "symbols":  "request, acknowledge, inspect_selected, enemy_event, reset_context"
+                                               },
+                                               {
+                                                   "path":  "features/battle/selection_controller.gd",
+                                                   "symbols":  "select_ids, dispatch"
+                                               },
+                                               {
+                                                   "path":  "tools/unit_voice_assets.py",
+                                                   "symbols":  "preview, generate, validate"
+                                               }
+                                           ],
+                                  "related":  [
+                                                  "units",
+                                                  "controls",
+                                                  "audio"
+                                              ],
+                                  "feature":  null,
+                                  "warnings":  [
+                                                   "首批237段＋忍者9段＋Malfory12段已完成；其他新兵種待決定。SELECT/INSPECT每次操作立即重播，MOVE/ATTACK保留節流。"
+                                               ],
+                                  "evidence":  [
+                                                   "artifacts/unit-voices/runtime-results.json",
+                                                   "artifacts/unit-voices/asset-validation.json"
+                                               ]
+                              },
+                   "battlefields":  {
+                                        "label":  "戰場原生Scene／TileMap／隨機出生區",
+                                        "aliases":  [
+                                                        "戰場",
+                                                        "戰鬥地圖",
+                                                        "戰鬥Tile",
+                                                        "battlefield",
+                                                        "battle scene",
+                                                        "arena scene"
+                                                    ],
+                                        "read_first":  [
+                                                           "docs/battlefield_artist_guide.md",
+                                                           "specs/battlefield_scenes.md"
+                                                       ],
+                                        "authority":  [
+                                                          "features/battle/maps/*.tscn",
+                                                          "features/battle/data/*-tiles.tres",
+                                                          "features/world/data/*_arena.tres"
+                                                      ],
+                                        "code":  [
+                                                     {
+                                                         "path":  "features/battle/authoring/battlefield_compiler.gd",
+                                                         "symbols":  "compile,deployment,assign"
+                                                     },
+                                                     {
+                                                         "path":  "features/world/ground_map.gd",
+                                                         "symbols":  "build_scene,_build_navigation,add_wall"
+                                                     },
+                                                     {
+                                                         "path":  "features/battle/game_director.gd",
+                                                         "symbols":  "start_battle,_battle_map_failed"
+                                                     }
+                                                 ],
+                                        "related":  [
+                                                        "encounter",
+                                                        "authoring",
+                                                        "navigation"
+                                                    ],
+                                        "feature":  "battlefields",
+                                        "warnings":  [
+                                                         "maps 是戰場、world/data 是大世界，不能混用。場景不得在啟動時重生成。",
+                                                         "不重做RTS／冰牆，不啟用投影TileMap物理。"
+                                                     ],
+                                        "evidence":  [
+                                                         "artifacts/battlefield-scenes-2026-10-11/results.json",
+                                                         "artifacts/battlefield-alignment-2026-10-11/results.json"
+                                                     ]
+                                    },
+                   "audio":  {
+                                 "label":  "背景音樂／BGM／音訊",
+                                 "aliases":  [
+                                                 "music",
+                                                 "audio",
+                                                 "bgm",
+                                                 "BGM",
+                                                 "音樂",
+                                                 "背景音樂"
+                                             ],
+                                 "read_first":  [
+                                                    "specs/background_music.md"
+                                                ],
+                                 "authority":  [
+                                                   "features/audio/background_music.gd"
+                                               ],
+                                 "code":  [
+                                              {
+                                                  "path":  "features/audio/background_music.gd",
+                                                  "symbols":  "track_for, follow, play_track, _finish_transition"
+                                              },
+                                              {
+                                                  "path":  "features/battle/game_director.gd",
+                                                  "symbols":  "_ready, _sync_music"
+                                              }
+                                          ],
+                                 "related":  [
+                                                 "world",
+                                                 "battle"
+                                             ],
+                                 "feature":  null,
+                                 "warnings":  [
+                                                  "音樂節點不在_clear_level清除範圍；同曲不重播；原始MP3不可修改或刪除。"
+                                              ],
+                                 "evidence":  [
+                                                  "artifacts/bgm-results.json"
+                                              ]
+                             },
+                   "scenery":  {
+                                   "label":  "Sprite地景／入口輪廓／游標提示",
+                                   "aliases":  [
+                                                   "地景",
+                                                   "建築",
+                                                   "山體",
+                                                   "入口提示",
+                                                   "輪廓",
+                                                   "outline",
+                                                   "hover",
+                                                   "scenery"
+                                               ],
+                                   "read_first":  [
+                                                      "specs/river_enrichment.md",
+                                                      "docs/river_enrichment.md",
+                                                      "specs/scenery_interaction.md"
+                                                  ],
+                                   "authority":  [
+                                                     "features/world/data/scenery/*.tres",
+                                                     "features/world/data/*.tscn"
+                                                 ],
+                                   "code":  [
+                                                {
+                                                    "path":  "features/world/definitions/world_scenery_definition.gd",
+                                                    "symbols":  "texture, region, foot_anchor, alpha_threshold"
+                                                },
+                                                {
+                                                    "path":  "features/world/world_scenery_view.gd",
+                                                    "symbols":  "initialize, hit_test, set_highlight"
+                                                },
+                                                {
+                                                    "path":  "features/world/scenery_outline.gdshader",
+                                                    "symbols":  "covered, fragment"
+                                                },
+                                                {
+                                                    "path":  "features/world/world_hover_controller.gd",
+                                                    "symbols":  "pick, clear, update_hover"
+                                                },
+                                                {
+                                                    "path":  "features/ui/world_hover_overlay.gd",
+                                                    "symbols":  "present, follow_cursor"
+                                                },
+                                                {
+                                                    "path":  "features/world/authoring/world_author_node.gd",
+                                                    "symbols":  "SCENERY, sprite_definition, editor preview"
+                                                },
+                                                {
+                                                    "path":  "features/world/authoring/world_map_2d.gd",
+                                                    "symbols":  "compile_definition"
+                                                },
+                                                {
+                                                    "path":  "features/battle/game_director.gd",
+                                                    "symbols":  "_unhandled_input, _clear_level"
+                                                }
+                                            ],
+                                   "related":  [
+                                                   "authoring",
+                                                   "world",
+                                                   "ui",
+                                                   "art"
+                                               ],
+                                   "feature":  "scenery",
+                                   "warnings":  [
+                                                    "Sprite只管呈現，平面通行與障礙遮罩仍由D18負責；不可任意改D09手感。",
+                                                    "入口sprite左鍵先走近，不可直接傳送或绕過存檔／權限／控制鎖。",
+                                                    "只共享普通地景材質；hover入口獨立材質，不要污染另一入口。"
+                                                ],
+                                   "evidence":  [
+                                                    "artifacts/world/scenery-headless-results.json",
+                                                    "artifacts/world/scenery-render-results.json"
+                                                ]
+                               },
+                   "map_ui":  {
+                                  "label":  "玩家地圖全貌／小地圖／定位",
+                                  "aliases":  [
+                                                  "map_ui",
+                                                  "投影地圖",
+                                                  "地圖ui",
+                                                  "地圖UI",
+                                                  "小地圖",
+                                                  "全貌",
+                                                  "定位"
+                                              ],
+                                  "read_first":  [
+                                                     "specs/world_map_ui.md"
+                                                 ],
+                                  "authority":  [
+                                                    "features/world/data/*.tscn",
+                                                    "features/world/definitions/world_map_definition.gd"
+                                                ],
+                                  "code":  [
+                                               {
+                                                   "path":  "features/ui/world_map_projection.gd",
+                                                   "symbols":  "show_map, native presentation-only World2D"
+                                               },
+                                               {
+                                                   "path":  "features/ui/cartographic_map.gd",
+                                                   "symbols":  "refresh, logical_to_screen, screen_to_logical, locations, locate, overview"
+                                               },
+                                               {
+                                                   "path":  "features/ui/world_hud.gd",
+                                                   "symbols":  "_build_map, _refresh_map_places, toggle_map, _layout"
+                                               }
+                                           ],
+                                  "related":  [
+                                                  "world",
+                                                  "ui",
+                                                  "movement"
+                                              ],
+                                  "feature":  null,
+                                  "warnings":  [
+                                                   "玩家地圖使用實際場景投影，不可還原圖片或低解析度障礙示意；定位不得修改世界狀態。"
+                                               ],
+                                  "evidence":  [
+                                                   "artifacts/world/map-projection-headless-results.json",
+                                                   "artifacts/world/map-projection-render-results.json"
+                                               ]
+                              },
+                   "controls":  {
+                                    "label":  "操作／F1／施法確認",
+                                    "aliases":  [
+                                                    "F1",
+                                                    "操作",
+                                                    "游標",
+                                                    "鼠標",
+                                                    "controls",
+                                                    "快捷鍵",
+                                                    "自動施法"
+                                                ],
+                                    "read_first":  [
+                                                       "specs/combat_controls.md",
+                                                       "docs/combat_controls.md"
+                                                   ],
+                                    "authority":  [
+                                                      "common/data/skill_definition.gd",
+                                                      "features/skills/data/*.tres",
+                                                      "features/settings/game_settings.gd"
+                                                  ],
+                                    "code":  [
+                                                 {
+                                                     "path":  "features/battle/battle_cursor_guard.gd",
+                                                     "symbols":  "PLAY_MODES, sync, release"
+                                                 },
+                                                 {
+                                                     "path":  "features/battle/selection_controller.gd",
+                                                     "symbols":  "activate_skill, confirm_skill, toggle_autocast"
+                                                 },
+                                                 {
+                                                     "path":  "features/skills/ability_controller.gd",
+                                                     "symbols":  "request, commit, autocast"
+                                                 },
+                                                 {
+                                                     "path":  "features/ui/game_hud.gd",
+                                                     "symbols":  "on_skill_selection"
+                                                 }
+                                             ],
+                                    "related":  [
+                                                    "skills",
+                                                    "movement",
+                                                    "ui"
+                                                ],
+                                    "feature":  "controls",
+                                    "warnings":  [
+                                                     "D12: 世界／倒數／戰鬥可鎖；轉場只暫釋放，退出才清偏好。",
+                                                     "不可恢復按住／Ctrl沿用舊目標連射。",
+                                                     "D17例外：暴雷I／圖示即放，E仍準備後左擊；其他手動技不變。"
+                                                 ],
+                                    "evidence":  [
+                                                     "artifacts/world/blast-radial-headless-results.json",
+                                                     "artifacts/world/blast-radial-render-results.json"
+                                                 ]
+                                },
+                   "battle":  {
+                                  "label":  "RTS 戰鬥／命令／效果",
+                                  "aliases":  [
+                                                  "戰鬥",
+                                                  "战斗",
+                                                  "RTS",
+                                                  "battle",
+                                                  "駐守",
+                                                  "停止",
+                                                  "山道",
+                                                  "草原戰場",
+                                                  "勝利",
+                                                  "胜利",
+                                                  "賽果",
+                                                  "戰鬥介面"
+                                              ],
+                                  "read_first":  [
+                                                     "specs/battle_presentation.md",
+                                                     "specs/combat_controls.md",
+                                                     "docs/architecture/project_map.md"
+                                                 ],
+                                  "authority":  [
+                                                    "features/world/data/meadow.tres",
+                                                    "features/world/data/mountain.tres",
+                                                    "features/world/data/cave.tres"
+                                                ],
+                                  "code":  [
+                                               {
+                                                   "path":  "features/battle/game_director.gd",
+                                                   "symbols":  "start_battle, resolve_skill, finish_battle"
+                                               },
+                                               {
+                                                   "path":  "features/units/tactical_unit.gd",
+                                                   "symbols":  "issue_command, tick, _tick_cast"
+                                               },
+                                               {
+                                                   "path":  "features/skills/battle_skill_effect.gd",
+                                                   "symbols":  "tick"
+                                               },
+                                               {
+                                                   "path":  "features/battle/battle_result_flow.gd",
+                                                   "symbols":  "begin, tick, request_return, cancel (presentation only)"
+                                               }
+                                           ],
+                                  "related":  [
+                                                  "controls",
+                                                  "skills",
+                                                  "navigation"
+                                              ],
+                                  "feature":  "battle",
+                                  "warnings":  [
+                                                   "戰場 Arena 不等於探索 WorldMap。",
+                                                   "GameDirector 835 行基線，先查所列方法，不全文重讀。"
+                                               ],
+                                  "evidence":  [
+                                                   "artifacts/world/battle-presentation-headless-results.json",
+                                                   "artifacts/world/battle-presentation-render-results.json"
+                                               ]
+                              },
+                   "movement":  {
+                                    "label":  "受保護移動／鏡頭／插值",
+                                    "aliases":  [
+                                                    "移動",
+                                                    "移动",
+                                                    "手感",
+                                                    "鏡頭",
+                                                    "camera",
+                                                    "movement",
+                                                    "卡頓",
+                                                    "插值"
+                                                ],
+                                    "read_first":  [
+                                                       "specs/movement_feel.md",
+                                                       "docs/movement_validation.md"
+                                                   ],
+                                    "authority":  [
+                                                      "common/data/combat_feel_profile.gd",
+                                                      "features/progression/data/stat_rules.tres"
+                                                  ],
+                                    "code":  [
+                                                 {
+                                                     "path":  "common/movement_feel.gd",
+                                                     "symbols":  "shared movement arithmetic"
+                                                 },
+                                                 {
+                                                     "path":  "features/presentation/world_visual_pose.gd",
+                                                     "symbols":  "reset, interpolate"
+                                                 },
+                                                 {
+                                                     "path":  "features/world/runtime/world_navigation_service.gd",
+                                                     "symbols":  "find_path, segment_legal"
+                                                 },
+                                                 {
+                                                     "path":  "features/units/tactical_unit.gd",
+                                                     "symbols":  "_navigate"
+                                                 }
+                                             ],
+                                    "related":  [
+                                                    "navigation",
+                                                    "progression",
+                                                    "controls"
+                                                ],
+                                    "feature":  "movement",
+                                    "warnings":  [
+                                                     "D09 不能按早期來源改回四向階梯。需 --all 與非headless movement scene。"
+                                                 ]
+                                },
+                   "units":  {
+                                 "label":  "兵種／主角／召喚定義",
+                                 "aliases":  [
+                                                 "兵種",
+                                                 "兵种",
+                                                 "傭兵",
+                                                 "佣兵",
+                                                 "角色設計",
+                                                 "主角",
+                                                 "units"
+                                             ],
+                                 "read_first":  [
+                                                    "docs/design/units.md",
+                                                    "docs/architecture/project_map.md",
+                                                    "specs/party_polish.md"
+                                                ],
+                                 "authority":  [
+                                                   "common/data/unit_definition.gd",
+                                                   "features/units/data/*/*.tres",
+                                                   "common/data/sprite_sheet_layout.gd",
+                                                   "features/units/data/layouts/*.tres"
+                                               ],
+                                 "code":  [
+                                              {
+                                                  "path":  "common/data/catalog.gd",
+                                                  "symbols":  "PARTY_PATHS, ENEMY_PATHS"
+                                              },
+                                              {
+                                                  "path":  "features/units/tactical_unit.gd",
+                                                  "symbols":  "initialize, attach_character, available_skills"
+                                              },
+                                              {
+                                                  "path":  "features/skills/summon_scaling.gd",
+                                                  "symbols":  "evaluate, resolve (immutable release snapshot)"
+                                              }
+                                          ],
+                                 "related":  [
+                                                 "skills",
+                                                 "progression",
+                                                 "monsters"
+                                             ],
+                                 "feature":  null,
+                                 "warnings":  [
+                                                  "現有 7 永久角色＋4敵人＋1召喚；招募／轉職不是已實作。"
+                                              ],
+                                 "entities":  [
+                                                  {
+                                                      "id":  "merchant",
+                                                      "aliases":  [
+                                                                      "merchant",
+                                                                      "行旅商人",
+                                                                      "主角"
+                                                                  ],
+                                                      "path":  "features/units/data/mercenaries/merchant.tres"
+                                                  },
+                                                  {
+                                                      "id":  "guard",
+                                                      "aliases":  [
+                                                                      "guard",
+                                                                      "鐵衛"
+                                                                  ],
+                                                      "path":  "features/units/data/mercenaries/guard.tres"
+                                                  },
+                                                  {
+                                                      "id":  "gunner",
+                                                      "aliases":  [
+                                                                      "gunner",
+                                                                      "火銃手"
+                                                                  ],
+                                                      "path":  "features/units/data/mercenaries/gunner.tres"
+                                                  },
+                                                  {
+                                                      "id":  "mage",
+                                                      "aliases":  [
+                                                                      "mage",
+                                                                      "雷術師"
+                                                                  ],
+                                                      "path":  "features/units/data/mercenaries/mage.tres"
+                                                  },
+                                                  {
+                                                      "id":  "healer",
+                                                      "aliases":  [
+                                                                      "healer",
+                                                                      "醫術師"
+                                                                  ],
+                                                      "path":  "features/units/data/mercenaries/healer.tres"
+                                                  },
+                                                  {
+                                                      "id":  "supplier",
+                                                      "aliases":  [
+                                                                      "supplier",
+                                                                      "道術師"
+                                                                  ],
+                                                      "path":  "features/units/data/mercenaries/supplier.tres"
+                                                  },
+                                                  {
+                                                      "id":  "controller",
+                                                      "aliases":  [
+                                                                      "controller",
+                                                                      "符咒師"
+                                                                  ],
+                                                      "path":  "features/units/data/mercenaries/controller.tres"
+                                                  },
+                                                  {
+                                                      "id":  "beast",
+                                                      "aliases":  [
+                                                                      "beast",
+                                                                      "山野妖獸"
+                                                                  ],
+                                                      "path":  "features/units/data/monsters/beast.tres"
+                                                  },
+                                                  {
+                                                      "id":  "archer",
+                                                      "aliases":  [
+                                                                      "archer",
+                                                                      "山寨弓兵"
+                                                                  ],
+                                                      "path":  "features/units/data/monsters/archer.tres"
+                                                  },
+                                                  {
+                                                      "id":  "elite",
+                                                      "aliases":  [
+                                                                      "elite",
+                                                                      "黑甲石衛"
+                                                                  ],
+                                                      "path":  "features/units/data/monsters/elite.tres"
+                                                  },
+                                                  {
+                                                      "id":  "boss",
+                                                      "aliases":  [
+                                                                      "boss",
+                                                                      "赤魂獄使"
+                                                                  ],
+                                                      "path":  "features/units/data/monsters/boss.tres"
+                                                  },
+                                                  {
+                                                      "id":  "spirit",
+                                                      "aliases":  [
+                                                                      "spirit",
+                                                                      "忠臣箭魂"
+                                                                  ],
+                                                      "path":  "features/units/data/summons/spirit.tres"
+                                                  }
+                                              ],
+                                 "evidence":  [
+                                                  "artifacts/world/party-polish-headless-results.json",
+                                                  "artifacts/world/party-polish-render-results.json",
+                                                  "artifacts/world/world-direction-headless-results.json",
+                                                  "artifacts/world/world-direction-render-results.json"
+                                              ]
+                             },
+                   "monsters":  {
+                                    "label":  "怪物模板／怪队編成／AI",
+                                    "aliases":  [
+                                                    "怪物",
+                                                    "怪隊",
+                                                    "怪队",
+                                                    "monsters",
+                                                    "怪區",
+                                                    "巡邏"
+                                                ],
+                                    "read_first":  [
+                                                       "docs/farm_boars.md",
+                                                       "docs/shaolin_strength.md",
+                                                       "docs/design/units.md"
+                                                   ],
+                                    "authority":  [
+                                                      "features/units/data/monsters/beast.tres",
+                                                      "features/units/data/monsters/archer.tres",
+                                                      "features/units/data/monsters/elite.tres",
+                                                      "features/units/data/monsters/boss.tres",
+                                                      "features/world/data/*.tscn",
+                                                      "features/world/definitions/party_template.gd",
+                                                      "features/world/definitions/spawn_profile.gd"
+                                                  ],
+                                    "code":  [
+                                                 {
+                                                     "path":  "features/world/runtime/party_builder.gd",
+                                                     "symbols":  "fixed members and persistent IDs"
+                                                 },
+                                                 {
+                                                     "path":  "features/world/runtime/monster_brain.gd",
+                                                     "symbols":  "tick"
+                                                 },
+                                                 {
+                                                     "path":  "features/units/tactical_unit.gd",
+                                                     "symbols":  "enemy_scan_left"
+                                                 }
+                                             ],
+                                    "related":  [
+                                                    "world",
+                                                    "encounter",
+                                                    "power"
+                                                ],
+                                    "feature":  "world",
+                                    "warnings":  [
+                                                     "世界代表物不是額外戰鬥成員；場內unit_id不是持久ID。"
+                                                 ],
+                                    "entities":  [
+                                                     {
+                                                         "id":  "beast",
+                                                         "aliases":  [
+                                                                         "beast",
+                                                                         "山野妖獸"
+                                                                     ],
+                                                         "path":  "features/units/data/monsters/beast.tres"
+                                                     },
+                                                     {
+                                                         "id":  "archer",
+                                                         "aliases":  [
+                                                                         "archer",
+                                                                         "山寨弓兵"
+                                                                     ],
+                                                         "path":  "features/units/data/monsters/archer.tres"
+                                                     },
+                                                     {
+                                                         "id":  "elite",
+                                                         "aliases":  [
+                                                                         "elite",
+                                                                         "黑甲石衛"
+                                                                     ],
+                                                         "path":  "features/units/data/monsters/elite.tres"
+                                                     },
+                                                     {
+                                                         "id":  "boss",
+                                                         "aliases":  [
+                                                                         "boss",
+                                                                         "赤魂獄使"
+                                                                     ],
+                                                         "path":  "features/units/data/monsters/boss.tres"
+                                                     }
+                                                 ]
+                                },
+                   "skills":  {
+                                  "label":  "技能資料／公式／持續效果",
+                                  "aliases":  [
+                                                  "技能",
+                                                  "skill",
+                                                  "skills",
+                                                  "法術",
+                                                  "公式",
+                                                  "暴雷",
+                                                  "地震術",
+                                                  "火龍"
+                                              ],
+                                  "read_first":  [
+                                                     "specs/combat_controls.md",
+                                                     "docs/tools/editor_plugins.md",
+                                                     "specs/party_polish.md"
+                                                 ],
+                                  "authority":  [
+                                                    "common/data/skill_definition.gd",
+                                                    "common/data/skill_effect_definition.gd",
+                                                    "features/skills/data/*.tres"
+                                                ],
+                                  "code":  [
+                                               {
+                                                   "path":  "common/data/damage_formula.gd",
+                                                   "symbols":  "normalize, evaluate"
+                                               },
+                                               {
+                                                   "path":  "features/skills/ability_controller.gd",
+                                                   "symbols":  "available, request, commit"
+                                               },
+                                               {
+                                                   "path":  "features/skills/battle_skill_effect.gd",
+                                                   "symbols":  "fixed effect tick"
+                                               },
+                                               {
+                                                   "path":  "features/skills/summon_scaling.gd",
+                                                   "symbols":  "evaluate, resolve, preview_stats"
+                                               },
+                                               {
+                                                   "path":  "features/skills/skill_vfx.gd",
+                                                   "symbols":  "initialize, _process, _draw (stationary isometric radial sites)"
+                                               }
+                                           ],
+                                  "related":  [
+                                                  "units",
+                                                  "controls",
+                                                  "plugins"
+                                              ],
+                                  "feature":  "controls",
+                                  "warnings":  [
+                                                   "傷害公式按每次命中／tick；效果duration不是cooldown。",
+                                                   "D17: blast按I即時自身爆破，不是沿半徑搬動sprite；NOVA回歸不可恢復旧衛星。"
+                                               ],
+                                  "entities":  [
+                                                   {
+                                                       "id":  "quake",
+                                                       "aliases":  [
+                                                                       "quake",
+                                                                       "地震術"
+                                                                   ],
+                                                       "path":  "features/skills/data/quake.tres"
+                                                   },
+                                                   {
+                                                       "id":  "blast",
+                                                       "aliases":  [
+                                                                       "blast",
+                                                                       "暴雷擊"
+                                                                   ],
+                                                       "path":  "features/skills/data/blast.tres"
+                                                   },
+                                                   {
+                                                       "id":  "critical",
+                                                       "aliases":  [
+                                                                       "critical",
+                                                                       "一擊必殺"
+                                                                   ],
+                                                       "path":  "features/skills/data/critical.tres"
+                                                   },
+                                                   {
+                                                       "id":  "wheel",
+                                                       "aliases":  [
+                                                                       "wheel",
+                                                                       "黑龍大車輪"
+                                                                   ],
+                                                       "path":  "features/skills/data/wheel.tres"
+                                                   },
+                                                   {
+                                                       "id":  "dragon",
+                                                       "aliases":  [
+                                                                       "dragon",
+                                                                       "猛擊火龍波"
+                                                                   ],
+                                                       "path":  "features/skills/data/dragon.tres"
+                                                   },
+                                                   {
+                                                       "id":  "summon",
+                                                       "aliases":  [
+                                                                       "summon",
+                                                                       "忠臣之魂"
+                                                                   ],
+                                                       "path":  "features/skills/data/summon.tres"
+                                                   },
+                                                   {
+                                                       "id":  "ice_wall",
+                                                       "aliases":  [
+                                                                       "ice_wall",
+                                                                       "冰牆"
+                                                                   ],
+                                                       "path":  "features/skills/data/ice_wall.tres"
+                                                   },
+                                                   {
+                                                       "id":  "lightning",
+                                                       "aliases":  [
+                                                                       "lightning",
+                                                                       "雷擊術"
+                                                                   ],
+                                                       "path":  "features/skills/data/lightning.tres"
+                                                   },
+                                                   {
+                                                       "id":  "supply",
+                                                       "aliases":  [
+                                                                       "supply",
+                                                                       "補給術"
+                                                                   ],
+                                                       "path":  "features/skills/data/supply.tres"
+                                                   },
+                                                   {
+                                                       "id":  "heal",
+                                                       "aliases":  [
+                                                                       "heal",
+                                                                       "恢復術"
+                                                                   ],
+                                                       "path":  "features/skills/data/heal.tres"
+                                                   },
+                                                   {
+                                                       "id":  "control",
+                                                       "aliases":  [
+                                                                       "control",
+                                                                       "縛魂術"
+                                                                   ],
+                                                       "path":  "features/skills/data/control.tres"
+                                                   }
+                                               ],
+                                  "evidence":  [
+                                                   "artifacts/world/party-polish-headless-results.json",
+                                                   "artifacts/world/party-polish-render-results.json",
+                                                   "artifacts/world/world-direction-headless-results.json",
+                                                   "artifacts/world/world-direction-render-results.json",
+                                                   "artifacts/world/blast-radial-headless-results.json",
+                                                   "artifacts/world/blast-radial-render-results.json"
+                                               ]
+                              },
+                   "progression":  {
+                                       "label":  "成長／屬性／經驗／戰鬥數值",
+                                       "aliases":  [
+                                                       "成長",
+                                                       "成长",
+                                                       "升級",
+                                                       "升级",
+                                                       "經驗",
+                                                       "经验",
+                                                       "屬性",
+                                                       "属性",
+                                                       "數值",
+                                                       "progression",
+                                                       "重新配點",
+                                                       "重配",
+                                                       "respec"
+                                                   ],
+                                       "read_first":  [
+                                                          "docs/character_sheet_guide.md",
+                                                          "docs/design/units.md",
+                                                          "specs/party_polish.md"
+                                                      ],
+                                       "authority":  [
+                                                         "features/progression/data/experience_curve.tres",
+                                                         "features/progression/data/stat_rules.tres",
+                                                         "common/data/combat_stat_rules.gd"
+                                                     ],
+                                       "code":  [
+                                                    {
+                                                        "path":  "features/progression/character_record.gd",
+                                                        "symbols":  "level, allocate, reset_allocations, stats, restore"
+                                                    },
+                                                    {
+                                                        "path":  "features/progression/combat_stats.gd",
+                                                        "symbols":  "calculate"
+                                                    },
+                                                    {
+                                                        "path":  "features/progression/combat_math.gd",
+                                                        "symbols":  "hit_chance, mitigate"
+                                                    }
+                                                ],
+                                       "related":  [
+                                                       "units",
+                                                       "items",
+                                                       "save"
+                                                   ],
+                                       "feature":  "character",
+                                       "warnings":  [
+                                                        "Lv100；Shift配點最多剩餘100，不能透支。",
+                                                        "屬性係數以.tres為準；combat_v2.md只是歷史公式說明，不重複當權威。"
+                                                    ],
+                                       "evidence":  [
+                                                        "artifacts/world/party-polish-headless-results.json",
+                                                        "artifacts/world/party-polish-render-results.json",
+                                                        "artifacts/world/world-direction-headless-results.json",
+                                                        "artifacts/world/world-direction-render-results.json"
+                                                    ]
+                                   },
+                   "items":  {
+                                 "label":  "物品／裝備／食品／Debug",
+                                 "aliases":  [
+                                                 "物品",
+                                                 "裝備",
+                                                 "装备",
+                                                 "食品",
+                                                 "背包",
+                                                 "items",
+                                                 "Debug物品"
+                                             ],
+                                 "read_first":  [
+                                                    "specs/items.md",
+                                                    "docs/items_debug_guide.md"
+                                                ],
+                                 "authority":  [
+                                                   "common/data/gear_item_definition.gd",
+                                                   "features/progression/data/items/*.tres",
+                                                   "features/progression/data/items/source52/*.tres"
+                                               ],
+                                 "code":  [
+                                              {
+                                                  "path":  "features/progression/item_catalog.gd",
+                                                  "symbols":  "initialize"
+                                              },
+                                              {
+                                                  "path":  "features/progression/party_item_service.gd",
+                                                  "symbols":  "use_item"
+                                              },
+                                              {
+                                                  "path":  "features/progression/item_debug_service.gd",
+                                                  "symbols":  "grant, equip"
+                                              },
+                                              {
+                                                  "path":  "features/progression/character_record.gd",
+                                                  "symbols":  "grant_and_equip, unequip"
+                                              }
+                                          ],
+                                 "related":  [
+                                                 "progression",
+                                                 "skills",
+                                                 "ui"
+                                             ],
+                                 "feature":  "items",
+                                 "warnings":  [
+                                                  "sources/items52.json是來源，artifacts/world/items-review.csv/json是匯出，不是自動覆寫.tres的後台。",
+                                                  "一般新食品只有資料，無飽食度／食用效果。"
+                                              ],
+                                 "entities":  [
+                                                  {
+                                                      "id":  "debug_medicine",
+                                                      "aliases":  [
+                                                                      "debug_medicine",
+                                                                      "大補丸"
+                                                                  ],
+                                                      "path":  "features/progression/data/items/debug_medicine.tres"
+                                                  },
+                                                  {
+                                                      "id":  "debug_exp_book",
+                                                      "aliases":  [
+                                                                      "debug_exp_book",
+                                                                      "經驗之書"
+                                                                  ],
+                                                      "path":  "features/progression/data/items/debug_exp_book.tres"
+                                                  }
+                                              ]
+                             },
+                   "world":  {
+                                 "label":  "大地圖內容／城鎮／樓層／圖對位",
+                                 "aliases":  [
+                                                 "大地圖",
+                                                 "大地图",
+                                                 "地圖設計",
+                                                 "地图设计",
+                                                 "world",
+                                                 "城鎮",
+                                                 "城镇",
+                                                 "地城"
+                                             ],
+                                 "read_first":  [
+                                                    "specs/native_tilemap.md",
+                                                    "docs/design/world.md",
+                                                    "docs/artist_guide.md"
+                                                ],
+                                 "authority":  [
+                                                   "features/world/data/*.tscn",
+                                                   "features/world/definitions/world_map_definition.gd"
+                                               ],
+                                 "code":  [
+                                              {
+                                                  "path":  "features/world/authoring/world_map_2d.gd",
+                                                  "symbols":  "compile_definition"
+                                              },
+                                              {
+                                                  "path":  "features/world/runtime/world_catalog.gd",
+                                                  "symbols":  "initialize"
+                                              },
+                                              {
+                                                  "path":  "features/world/runtime/world_context.gd",
+                                                  "symbols":  "tick, move_player, begin_portal"
+                                              }
+                                          ],
+                                 "related":  [
+                                                 "monsters",
+                                                 "authoring",
+                                                 "encounter"
+                                             ],
+                                 "feature":  "world",
+                                 "warnings":  [
+                                                  "D18：地圖場景內原生TileMapLayer覆蓋舊多邊形形狀；不要只改WorldCatalog fallback或HABITAT的舊domain字段。"
+                                              ],
+                                 "entities":  [
+                                                  {
+                                                      "id":  "river_bay",
+                                                      "aliases":  [
+                                                                      "river_bay",
+                                                                      "青嶺河灣"
+                                                                  ],
+                                                      "path":  "features/world/data/river_bay.tscn"
+                                                  },
+                                                  {
+                                                      "id":  "qingling_town",
+                                                      "aliases":  [
+                                                                      "qingling_town",
+                                                                      "青嶺鎮"
+                                                                  ],
+                                                      "path":  "features/world/data/qingling_town.tscn"
+                                                  },
+                                                  {
+                                                      "id":  "well_1",
+                                                      "aliases":  [
+                                                                      "well_1",
+                                                                      "古井一層"
+                                                                  ],
+                                                      "path":  "features/world/data/well_1.tscn"
+                                                  },
+                                                  {
+                                                      "id":  "well_2",
+                                                      "aliases":  [
+                                                                      "well_2",
+                                                                      "古井二層"
+                                                                  ],
+                                                      "path":  "features/world/data/well_2.tscn"
+                                                  }
+                                              ]
+                             },
+                   "encounter":  {
+                                     "label":  "點怪／倒數／戰場快照／回圖",
+                                     "aliases":  [
+                                                     "遇怪",
+                                                     "遇敵",
+                                                     "倒數",
+                                                     "倒数",
+                                                     "遭遇",
+                                                     "encounter",
+                                                     "回圖",
+                                                     "回图"
+                                                 ],
+                                     "read_first":  [
+                                                        "specs/multi_party_encounters.md",
+                                                        "docs/multi_party_encounters.md",
+                                                        "specs/decisions.md"
+                                                    ],
+                                     "authority":  [
+                                                       "features/world/definitions/encounter_rules.gd",
+                                                       "features/world/definitions/arena_definition.gd"
+                                                   ],
+                                     "code":  [
+                                                  {
+                                                      "path":  "features/world/runtime/encounter_service.gd",
+                                                      "symbols":  "try_begin, cancel, mark_in_battle"
+                                                  },
+                                                  {
+                                                      "path":  "features/battle/game_director.gd",
+                                                      "symbols":  "_encounter_battle"
+                                                  },
+                                                  {
+                                                      "path":  "features/world/runtime/settlement_service.gd",
+                                                      "symbols":  "apply"
+                                                  }
+                                              ],
+                                     "related":  [
+                                                     "world",
+                                                     "save",
+                                                     "battle"
+                                                 ],
+                                     "feature":  "multi_party",
+                                     "warnings":  [
+                                                      "先同步保留控制權再await；來源完整生命週期只有需要時讀sources/world_encounter_2026-10-08.md相關章節。"
+                                                  ]
+                                 },
+                   "power":  {
+                                 "label":  "戰力評分",
+                                 "aliases":  [
+                                                 "戰力",
+                                                 "战力",
+                                                 "評分",
+                                                 "power"
+                                             ],
+                                 "read_first":  [
+                                                    "docs/artist_guide.md",
+                                                    "specs/decisions.md"
+                                                ],
+                                 "authority":  [
+                                                   "common/data/unit_definition.gd",
+                                                   "common/data/gear_item_definition.gd"
+                                               ],
+                                 "code":  [
+                                              {
+                                                  "path":  "features/world/runtime/power_calculator.gd",
+                                                  "symbols":  "unit_rating, make_summary"
+                                              }
+                                          ],
+                                 "related":  [
+                                                 "monsters",
+                                                 "units"
+                                             ],
+                                 "feature":  "power",
+                                 "warnings":  [
+                                                  "authored_rating_v1不是技能傷害，也不能直接判定勝負。"
+                                              ]
+                             },
+                   "navigation":  {
+                                      "label":  "導航／障礙／冰牆／活動域",
+                                      "aliases":  [
+                                                      "導航",
+                                                      "导航",
+                                                      "尋路",
+                                                      "寻路",
+                                                      "冰牆",
+                                                      "冰墙",
+                                                      "navigation"
+                                                  ],
+                                      "read_first":  [
+                                                         "specs/movement_feel.md",
+                                                         "docs/artist_guide.md"
+                                                     ],
+                                      "authority":  [
+                                                        "features/world/definitions/polygon_domain.gd",
+                                                        "features/world/data/*.tscn"
+                                                    ],
+                                      "code":  [
+                                                   {
+                                                       "path":  "features/world/runtime/world_navigation_service.gd",
+                                                       "symbols":  "register_map, find_path, segment_legal"
+                                                   },
+                                                   {
+                                                       "path":  "features/world/ground_map.gd",
+                                                       "symbols":  "wall_cells, navigation blockers"
+                                                   },
+                                                   {
+                                                       "path":  "features/units/tactical_unit.gd",
+                                                       "symbols":  "_navigate"
+                                                   }
+                                               ],
+                                      "related":  [
+                                                      "movement",
+                                                      "world",
+                                                      "skills"
+                                                  ],
+                                      "feature":  "navigation",
+                                      "warnings":  [
+                                                       "探索AStar與戰場NavigationServer/冰牆不是同一管線。"
+                                                   ]
+                                  },
+                   "save":  {
+                                "label":  "世界存檔／遷移／一次結算",
+                                "aliases":  [
+                                                "存檔",
+                                                "存档",
+                                                "save",
+                                                "遷移",
+                                                "迁移",
+                                                "獎勵",
+                                                "奖励"
+                                            ],
+                                "read_first":  [
+                                                   "specs/decisions.md",
+                                                   "docs/world_validation.md"
+                                               ],
+                                "authority":  [
+                                                  "features/world/runtime/world_context.gd",
+                                                  "features/progression/character_record.gd"
+                                              ],
+                                "code":  [
+                                             {
+                                                 "path":  "features/world/runtime/save_service.gd",
+                                                 "symbols":  "load_best"
+                                             },
+                                             {
+                                                 "path":  "features/world/runtime/settlement_service.gd",
+                                                 "symbols":  "apply"
+                                             },
+                                             {
+                                                 "path":  "features/world/runtime/world_session.gd",
+                                                 "symbols":  "restore"
+                                             },
+                                             {
+                                                 "path":  "features/progression/party_progress.gd",
+                                                 "symbols":  "restore, save_party"
+                                             }
+                                         ],
+                                "related":  [
+                                                "encounter",
+                                                "progression"
+                                            ],
+                                "feature":  "save",
+                                "warnings":  [
+                                                 "正式user://不在專案；禁止對實存檔測試。res://tests/、res://tools/前綴是隔離契約，不能隨意搬測試到features。"
+                                             ]
+                            },
+                   "ui":  {
+                              "label":  "GUI／角色立繪／視窗縮放",
+                              "aliases":  [
+                                              "UI",
+                                              "GUI",
+                                              "介面",
+                                              "界面",
+                                              "立繪",
+                                              "立绘",
+                                              "肖像",
+                                              "Inventory",
+                                              "角色介面"
+                                          ],
+                              "read_first":  [
+                                                 "specs/battle_presentation.md",
+                                                 "specs/character_sheet.md",
+                                                 "docs/character_sheet_guide.md"
+                                             ],
+                              "authority":  [
+                                                "common/data/unit_definition.gd",
+                                                "art/ui/classic/*.png"
+                                            ],
+                              "code":  [
+                                           {
+                                               "path":  "features/ui/progression_panels.gd",
+                                               "symbols":  "initialize, refresh, _layout"
+                                           },
+                                           {
+                                               "path":  "features/ui/world_hud.gd",
+                                               "symbols":  "_select, refresh, _layout"
+                                           },
+                                           {
+                                               "path":  "features/ui/game_hud.gd",
+                                               "symbols":  "on_skill_selection, is_modal_open"
+                                           },
+                                           {
+                                               "path":  "features/ui/character_art.gd",
+                                               "symbols":  "texture"
+                                           },
+                                           {
+                                               "path":  "features/ui/battle_hud_layout.gd",
+                                               "symbols":  "initialize, _layout, refresh (battle-only chrome)"
+                                           },
+                                           {
+                                               "path":  "features/ui/victory_scroll.gd",
+                                               "symbols":  "_draw (native parchment)"
+                                           }
+                                       ],
+                              "related":  [
+                                              "controls",
+                                              "art",
+                                              "progression"
+                                          ],
+                              "feature":  "character",
+                              "warnings":  [
+                                               "單一角色dossier；不能恢復独立立繪疊窗。HUD606行基線，依方法讀。"
+                                           ],
+                              "evidence":  [
+                                               "artifacts/world/battle-presentation-headless-results.json",
+                                               "artifacts/world/battle-presentation-render-results.json"
+                                           ]
+                          },
+                   "art":  {
+                               "label":  "美術／圖集／來源與生成記錄",
+                               "aliases":  [
+                                               "美術",
+                                               "美术",
+                                               "sprite",
+                                               "素材",
+                                               "art",
+                                               "圖集",
+                                               "图集",
+                                               "斜向",
+                                               "朝向",
+                                               "切格"
+                                           ],
+                               "read_first":  [
+                                                  "docs/index.md",
+                                                  "docs/architecture/project_map.md",
+                                                  "specs/party_polish.md"
+                                              ],
+                               "authority":  [
+                                                 "docs/art_manifest.json",
+                                                 "docs/v2_art_manifest.json",
+                                                 "docs/world_hud_art_manifest.json",
+                                                 "features/units/data/*/*.tres",
+                                                 "common/data/sprite_sheet_layout.gd",
+                                                 "features/units/data/layouts/*.tres"
+                                             ],
+                               "code":  [
+                                            {
+                                                "path":  "features/presentation/unit_view.gd",
+                                                "symbols":  "initialize, _make_frames"
+                                            },
+                                            {
+                                                "path":  "features/ui/character_art.gd",
+                                                "symbols":  "texture"
+                                            },
+                                            {
+                                                "path":  "features/presentation/sprite_atlas.gd",
+                                                "symbols":  "frames, frame, source_row, mirrored, foot"
+                                            },
+                                            {
+                                                "path":  "features/world/world_party_view.gd",
+                                                "symbols":  "_ready (shared authored atlas)"
+                                            }
+                                        ],
+                               "related":  [
+                                               "ui",
+                                               "units",
+                                               "world"
+                                           ],
+                               "feature":  null,
+                               "warnings":  [
+                                                "art_manifest是製作來源記錄，不是運行時素材路徑權威；runtime讀Definition/scene。",
+                                                "beast/elite採D14逐格裁切，不能按PNG高度平均八排；PNG未改。",
+                                                "D15: merchant NW用NE來源鏡像，elite SW用SE來源鏡像；只改sprite，不改Iso/facing。完整行走輪廓不可限在181px等分格內。"
+                                            ],
+                               "evidence":  [
+                                                "artifacts/world/party-polish-headless-results.json",
+                                                "artifacts/world/party-polish-render-results.json",
+                                                "artifacts/world/world-direction-headless-results.json",
+                                                "artifacts/world/world-direction-render-results.json"
+                                            ]
+                           },
+                   "plugins":  {
+                                   "label":  "原生Editor插件／公式預覽",
+                                   "aliases":  [
+                                                   "插件",
+                                                   "外掛",
+                                                   "外挂",
+                                                   "plugin",
+                                                   "plugins",
+                                                   "技能插件"
+                                               ],
+                                   "read_first":  [
+                                                      "docs/tools/editor_plugins.md",
+                                                      "docs/artist_guide.md"
+                                                  ],
+                                   "authority":  [
+                                                     "project.godot",
+                                                     "addons/skill_authoring/plugin.cfg",
+                                                     "addons/world_authoring/plugin.cfg"
+                                                 ],
+                                   "code":  [
+                                                {
+                                                    "path":  "addons/skill_authoring/plugin.gd",
+                                                    "symbols":  "_enter_tree, _exit_tree"
+                                                },
+                                                {
+                                                    "path":  "addons/skill_authoring/formula_inspector.gd",
+                                                    "symbols":  "_can_handle, _parse_begin"
+                                                },
+                                                {
+                                                    "path":  "addons/world_authoring/plugin.gd",
+                                                    "symbols":  "_enter_tree, _exit_tree"
+                                                }
+                                            ],
+                                   "related":  [
+                                                   "authoring",
+                                                   "skills"
+                                               ],
+                                   "feature":  null,
+                                   "warnings":  [
+                                                    "只有2個已啟用插件；Editor實際拖點／Undo操作仍有人工驗收待做。"
+                                                ]
+                               },
+                   "authoring":  {
+                                     "label":  "製圖工具／入口／獨立預覽",
+                                     "aliases":  [
+                                                     "製圖",
+                                                     "制图",
+                                                     "authoring",
+                                                     "Portal",
+                                                     "ArrivalPoint",
+                                                     "入口工具",
+                                                     "tilemap",
+                                                     "TileMapLayer",
+                                                     "筆刷",
+                                                     "原生製圖",
+                                                     "原生地图"
+                                                 ],
+                                     "read_first":  [
+                                                        "specs/human_authoring.md",
+                                                        "docs/human_authoring_guide.md",
+                                                        "specs/native_tilemap.md"
+                                                    ],
+                                     "authority":  [
+                                                       "features/world/authoring/world_author_node.gd",
+                                                       "features/world/data/*.tscn",
+                                                       "features/world/data/tiles/*.tres"
+                                                   ],
+                                     "code":  [
+                                                  {
+                                                      "path":  "addons/world_authoring/plugin.gd",
+                                                      "symbols":  "thin Inspector/Tools integration; native selection, stable IDs, _build current-tab snapshot"
+                                                  },
+                                                  {
+                                                      "path":  "features/world/authoring/world_monster_region.gd",
+                                                      "symbols":  "flat author configuration, compile_habitat"
+                                                  },
+                                                  {
+                                                      "path":  "features/world/authoring/world_region_polygon.gd",
+                                                      "symbols":  "native Polygon2D, logical_domain with holes"
+                                                  },
+                                                  {
+                                                      "path":  "features/world/authoring/world_author_tree.gd",
+                                                      "symbols":  "recursive grouped author traversal, canvas-to-logical position"
+                                                  },
+                                                  {
+                                                      "path":  "addons/world_authoring/world_inspector.gd",
+                                                      "symbols":  "Chinese scalar editors, species/destination dropdown, native shape selection"
+                                                  },
+                                                  {
+                                                      "path":  "features/world/authoring/world_authoring_snapshot.gd",
+                                                      "symbols":  "copy_exports, compile"
+                                                  },
+                                                  {
+                                                      "path":  "features/world/authoring/world_map_2d.gd",
+                                                      "symbols":  "compile_definition"
+                                                  },
+                                                  {
+                                                      "path":  "features/world/runtime/world_validator.gd",
+                                                      "symbols":  "validate"
+                                                  },
+                                                  {
+                                                      "path":  "features/world/authoring/world_tile_compiler.gd",
+                                                      "symbols":  "apply"
+                                                  },
+                                                  {
+                                                      "path":  "features/world/authoring/world_tile_layer.gd",
+                                                      "symbols":  "geometry, logical_center, snapshot"
+                                                  },
+                                                  {
+                                                      "path":  "features/world/authoring/world_tile_geometry.gd",
+                                                      "symbols":  "domains, cell_contours"
+                                                  },
+                                                  {
+                                                      "path":  "features/world/ground_map.gd",
+                                                      "symbols":  "build_exploration"
+                                                  }
+                                              ],
+                                     "related":  [
+                                                     "world",
+                                                     "plugins",
+                                                     "navigation"
+                                                 ],
+                                     "feature":  "native_tiles",
+                                     "warnings":  [
+                                                      "禁止為Audit實例化@tool地圖；編輯／驗證功能測試另立Scope。",
+                                                      "build_demo_world/decorate_demo_world是寫入工具，不是查資料工具。",
+                                                      "D20：沒有常駐Dock；六圖原生分組，地形用TileMap，怪區預設Polygon2D，顯式Tile Brush才讀舊遮罩；禁止兩套形狀同時生效。",
+                                                      "投影TileMap的碰撞與導航保持關閉；由編譯器轉為平面導航，保留D09手感。"
+                                                  ],
+                                     "evidence":  [
+                                                      "artifacts/workflow-2026-10-10/tests.json",
+                                                      "artifacts/world/native-tilemap-results.json",
+                                                      "artifacts/world/native-editor-results.json"
+                                                  ]
+                                 },
+                   "architecture":  {
+                                        "label":  "專案架構／文檔／AI入口",
+                                        "aliases":  [
+                                                        "架構",
+                                                        "架构",
+                                                        "文檔",
+                                                        "文档",
+                                                        "文件",
+                                                        "結構",
+                                                        "结构",
+                                                        "architecture",
+                                                        "Audit"
+                                                    ],
+                                        "read_first":  [
+                                                           "docs/architecture/project_map.md",
+                                                           "docs/audits/2026-10-09_structure.md"
+                                                       ],
+                                        "authority":  [
+                                                          "specs/context_map.json",
+                                                          "specs/manifest.json",
+                                                          "project.godot"
+                                                      ],
+                                        "code":  [
+                                                     {
+                                                         "path":  "tools/project_context.ps1",
+                                                         "symbols":  "topic routing, Verify"
+                                                     },
+                                                     {
+                                                         "path":  "tools/spec_context.ps1",
+                                                         "symbols":  "feature checks"
+                                                     }
+                                                 ],
+                                        "related":  [
+                                                        "units",
+                                                        "world",
+                                                        "plugins"
+                                                    ],
+                                        "feature":  null,
+                                        "warnings":  [
+                                                         "本輪只建索引，沒有搬移、刪除、重構運行資產。"
+                                                     ]
+                                    },
+                   "mercenary_storage":  {
+                                             "label":  "傭兵倉庫／正式招募／替換兵種",
+                                             "aliases":  [
+                                                             "倉庫",
+                                                             "仓库",
+                                                             "招募",
+                                                             "換兵",
+                                                             "替換",
+                                                             "reserve",
+                                                             "recruit",
+                                                             "storage",
+                                                             "mercenary_storage"
+                                                         ],
+                                             "read_first":  [
+                                                                "docs/new_units_guide.md",
+                                                                "specs/roster_effects_polish.md",
+                                                                "specs/mercenary_storage.md"
+                                                            ],
+                                             "authority":  [
+                                                               "features/units/data/mercenaries/*.tres",
+                                                               "features/skills/data/ninja_*.tres"
+                                                           ],
+                                             "code":  [
+                                                          {
+                                                              "path":  "features/progression/mercenary_roster.gd",
+                                                              "symbols":  "decode, recruit, exchange"
+                                                          },
+                                                          {
+                                                              "path":  "features/progression/party_progress.gd",
+                                                              "symbols":  "serialize, restore"
+                                                          },
+                                                          {
+                                                              "path":  "features/world/runtime/world_session.gd",
+                                                              "symbols":  "change_mercenary_roster"
+                                                          },
+                                                          {
+                                                              "path":  "features/ui/mercenary_storage_panel.gd",
+                                                              "symbols":  "recruit_selected, exchange_selected"
+                                                          }
+                                                      ],
+                                             "related":  [
+                                                             "new_units",
+                                                             "units",
+                                                             "controls",
+                                                             "roster_effects"
+                                                         ],
+                                             "feature":  "mercenary_storage",
+                                             "warnings":  [
+                                                              "D32 Active1–7，F2單獨存取或交換；主角固定，保存完整紀錄。"
+                                                          ],
+                                             "evidence":  [
+                                                              "artifacts/mercenary-storage-2026-10-11/headless-results.json",
+                                                              "artifacts/mercenary-storage-2026-10-11/render-results.json"
+                                                          ]
+                                         },
+                   "roster_effects":  {
+                                          "label":  "倉庫存取／火徑／落雷／全場火龍／大型魔爪",
+                                          "aliases":  [
+                                                          "roster_effects",
+                                                          "存入",
+                                                          "取出",
+                                                          "熾火徑",
+                                                          "熾烈之徑",
+                                                          "雷擊術",
+                                                          "火龍破",
+                                                          "火龍波",
+                                                          "魔爪",
+                                                          "D32"
+                                                      ],
+                                          "read_first":  [
+                                                             "docs/new_units_guide.md",
+                                                             "specs/roster_effects_polish.md"
+                                                         ],
+                                          "authority":  [
+                                                            "features/skills/data/dragon.tres",
+                                                            "features/skills/data/lightning.tres",
+                                                            "features/skills/data/ninja_fire_trail.tres",
+                                                            "features/skills/data/claw_strike.tres",
+                                                            "features/units/data/summons/earth_claw.tres",
+                                                            "features/units/data/layouts/earth_claw_v2_layout.tres"
+                                                        ],
+                                          "code":  [
+                                                       {
+                                                           "symbols":  "decode, deposit, withdraw, exchange",
+                                                           "path":  "features/progression/mercenary_roster.gd"
+                                                       },
+                                                       {
+                                                           "symbols":  "deposit_selected, withdraw_selected",
+                                                           "path":  "features/ui/mercenary_storage_panel.gd"
+                                                       },
+                                                       {
+                                                           "symbols":  "initialize",
+                                                           "path":  "features/skills/battle_skill_effect.gd"
+                                                       },
+                                                       {
+                                                           "symbols":  "update_fire, create_stakes",
+                                                           "path":  "features/skills/advanced_skill_visual.gd"
+                                                       },
+                                                       {
+                                                           "symbols":  "spawn_spike_burst, resolve_skill, start_battle",
+                                                           "path":  "features/battle/game_director.gd"
+                                                       }
+                                                   ],
+                                          "related":  [
+                                                          "mercenary_storage",
+                                                          "new_units",
+                                                          "controls",
+                                                          "sorting"
+                                                      ],
+                                          "feature":  "roster_effects_polish",
+                                          "warnings":  [
+                                                           "Active1–7，主角固定，完整紀錄先保存再發布。外觀不改導航，尖刺視覺不可造成第二次傷害。"
+                                                       ],
+                                          "evidence":  [
+                                                           "artifacts/roster-effects-polish-2026-10-11/headless.json",
+                                                           "artifacts/roster-effects-polish-2026-10-11/render.json"
+                                                       ]
+                                      },
+                   "kohime_art":  {
+                                      "label":  "湖衣姬藍膚甲冑／翼披風／Sprite畫像",
+                                      "aliases":  [
+                                                      "kohime_art",
+                                                      "湖衣姬形象",
+                                                      "湖衣姬sprite",
+                                                      "湖衣姬畫像",
+                                                      "湖衣姬立繪",
+                                                      "D33"
+                                                  ],
+                                      "read_first":  [
+                                                         "specs/kohime_art.md",
+                                                         "docs/new_units_guide.md"
+                                                     ],
+                                      "authority":  [
+                                                        "features/units/data/mercenaries/kohime.tres",
+                                                        "features/units/data/monsters/kohime_enemy.tres",
+                                                        "features/units/data/layouts/kohime_v2_layout.tres"
+                                                    ],
+                                      "code":  [
+                                                   {
+                                                       "symbols":  "texture",
+                                                       "path":  "features/ui/character_art.gd"
+                                                   },
+                                                   {
+                                                       "symbols":  "eyes_texture",
+                                                       "path":  "common/data/unit_definition.gd"
+                                                   },
+                                                   {
+                                                       "symbols":  "run",
+                                                       "path":  "tools/render_kohime_v2_review.gd"
+                                                   }
+                                               ],
+                                      "related":  [
+                                                      "new_units",
+                                                      "mercenary_storage",
+                                                      "roster_effects"
+                                                  ],
+                                      "feature":  "kohime_art",
+                                      "warnings":  [
+                                                       "D33藍膚黑金甲冑、翼披風、彎刃；兵怪共用新美術。保留源圖與數值，切圖工具禁止日常重跑。"
+                                                   ],
+                                      "evidence":  [
+                                                       "artifacts/kohime-art-2026-10-11/results.json"
+                                                   ]
+                                  },
+                   "kohime_strength":  {
+                                           "feature":  "kohime_strength",
+                                           "evidence":  [
+                                                            "artifacts/kohime-strength-2026-10-11/headless.json"
+                                                        ],
+                                           "warnings":  [
+                                                            "保留玩家進度與原生Artist布局；一次性生成工具不可重跑覆寫。"
+                                                        ],
+                                           "aliases":  [
+                                                           "kohime_strength",
+                                                           "魔爪強化",
+                                                           "無限魔爪",
+                                                           "D34"
+                                                       ],
+                                           "read_first":  [
+                                                              "specs/kohime_strength.md",
+                                                              "docs/millennium_ecology_guide.md"
+                                                          ],
+                                           "label":  "湖衣姬智慧魔爪強化",
+                                           "related":  [
+                                                           "new_units",
+                                                           "battlefields"
+                                                       ],
+                                           "code":  [
+                                                        {
+                                                            "symbols":  "evaluate,resolve",
+                                                            "path":  "features/skills/summon_scaling.gd"
+                                                        },
+                                                        {
+                                                            "symbols":  "summon_field_multiplier",
+                                                            "path":  "features/battle/game_director.gd"
+                                                        }
+                                                    ],
+                                           "authority":  [
+                                                             "features/skills/data/earth_claw.tres",
+                                                             "features/skills/data/earth_stakes.tres",
+                                                             "features/skills/data/claw_strike_empowered.tres",
+                                                             "features/units/data/summons/earth_claw.tres"
+                                                         ]
+                                       },
+                   "millennium_ecology":  {
+                                              "feature":  "millennium_ecology",
+                                              "evidence":  [
+                                                               "artifacts/millennium-ecology-2026-10-11/headless.json",
+                                                               "artifacts/lake-atlas-repair-2026-10-11/results.json"
+                                                           ],
+                                              "warnings":  [
+                                                               "保留玩家進度與原生Artist布局；一次性生成工具不可重跑覆寫。"
+                                                           ],
+                                              "aliases":  [
+                                                              "millennium_ecology",
+                                                              "千年蟲",
+                                                              "千年鳥",
+                                                              "千年狼",
+                                                              "千年湖主",
+                                                              "D35"
+                                                          ],
+                                              "read_first":  [
+                                                                 "specs/millennium_ecology.md",
+                                                                 "docs/millennium_ecology_guide.md"
+                                                             ],
+                                              "label":  "千年湖生態與兩階段王",
+                                              "related":  [
+                                                              "new_units",
+                                                              "battlefields"
+                                                          ],
+                                              "code":  [
+                                                           {
+                                                               "symbols":  "evolve_unit",
+                                                               "path":  "features/battle/game_director.gd"
+                                                           },
+                                                           {
+                                                               "symbols":  "reconcile_lake",
+                                                               "path":  "features/world/runtime/population_layout.gd"
+                                                           }
+                                                       ],
+                                              "authority":  [
+                                                                "features/world/data/millennium_lake.tscn",
+                                                                "features/units/data/monsters/lake_guardian.tres",
+                                                                "features/units/data/monsters/millennium_lord.tres",
+                                                                "features/units/data/monsters/millennium_worm.tres",
+                                                                "features/units/data/monsters/millennium_bird.tres",
+                                                                "features/units/data/monsters/millennium_wolf.tres",
+                                                                "features/units/data/layouts/millennium_wolf_layout.tres",
+                                                                "features/units/data/layouts/millennium_worm_layout.tres"
+                                                            ]
+                                          },
+                   "victory_cleanup":  {
+                                           "feature":  "victory_cleanup",
+                                           "evidence":  [
+                                                            "artifacts/victory-cleanup-2026-10-11/headless.json"
+                                                        ],
+                                           "warnings":  [
+                                                            "保留玩家進度與原生Artist布局；一次性生成工具不可重跑覆寫。"
+                                                        ],
+                                           "aliases":  [
+                                                           "victory_cleanup",
+                                                           "勝利收尾",
+                                                           "延後經驗",
+                                                           "D36"
+                                                       ],
+                                           "read_first":  [
+                                                              "specs/victory_cleanup.md",
+                                                              "docs/millennium_ecology_guide.md"
+                                                          ],
+                                           "label":  "勝利可操作收尾與延後經驗",
+                                           "related":  [
+                                                           "new_units",
+                                                           "battlefields"
+                                                       ],
+                                           "code":  [
+                                                        {
+                                                            "symbols":  "_physics_process,finish_battle",
+                                                            "path":  "features/battle/game_director.gd"
+                                                        },
+                                                        {
+                                                            "symbols":  "begin",
+                                                            "path":  "features/battle/battle_result_flow.gd"
+                                                        }
+                                                    ],
+                                           "authority":  [
+                                                             "features/battle/game_director.gd",
+                                                             "features/battle/battle_result_flow.gd"
+                                                         ]
+                                       },
+                   "malfory":  {
+                                   "feature":  "malfory",
+                                   "evidence":  [
+                                                    "artifacts/malfory-2026-10-11/headless.json",
+                                                    "artifacts/malfory-2026-10-11/render.json"
+                                                ],
+                                   "warnings":  [
+                                                    "使用最大HP非當前HP；法抗仍套用。原始倍率可超過100%，不改兩階段王/獎勵。追加兵種以native catalog設定，不改原初七人。"
+                                                ],
+                                   "aliases":  [
+                                                   "Malfory",
+                                                   "女魔法師",
+                                                   "Crucio",
+                                                   "Avada Kedavra",
+                                                   "咒咒虐",
+                                                   "D37",
+                                                   "追加招募"
+                                               ],
+                                   "read_first":  [
+                                                      "specs/malfory.md",
+                                                      "docs/malfory_guide.md"
+                                                  ],
+                                   "label":  "Malfory女魔法師與原生招募目錄",
+                                   "related":  [
+                                                   "new_units",
+                                                   "mercenary_storage",
+                                                   "ui"
+                                               ],
+                                   "code":  [
+                                                {
+                                                    "symbols":  "initialize,tick,_curse_pulse",
+                                                    "path":  "features/skills/battle_skill_effect.gd"
+                                                },
+                                                {
+                                                    "symbols":  "play,cancel",
+                                                    "path":  "features/presentation/screen_spell_flash.gd"
+                                                },
+                                                {
+                                                    "symbols":  "paths,decode",
+                                                    "path":  "features/progression/mercenary_roster.gd"
+                                                }
+                                            ],
+                                   "authority":  [
+                                                     "features/units/data/mercenaries/malfory.tres",
+                                                     "features/skills/data/crucio.tres",
+                                                     "features/skills/data/avada_kedavra.tres",
+                                                     "features/units/data/layouts/malfory_layout.tres",
+                                                     "features/progression/data/additional_mercenaries.tres"
+                                                 ]
+                               }
+               }
+}

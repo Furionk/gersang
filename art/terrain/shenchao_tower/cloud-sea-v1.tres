@@ -1,0 +1,22 @@
+[gd_resource type="TileSet" format=3]
+
+[ext_resource type="Material" path="res://art/terrain/shenchao_tower/cloud-sea-material.tres" id="1_emdpy"]
+[ext_resource type="Texture2D" path="res://art/terrain/shenchao_tower/cloud-sea-v1.png" id="1_i56ar"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_emdpy"]
+texture = ExtResource("1_i56ar")
+texture_region_size = Vector2i(1254, 1254)
+0:0/0 = 0
+0:0/0/material = ExtResource("1_emdpy")
+0:0/0/custom_data_1 = "ground"
+
+[resource]
+tile_shape = 1
+tile_layout = 5
+tile_size = Vector2i(64, 32)
+physics_layer_0/collision_layer = 1
+custom_data_layer_0/name = "blocked"
+custom_data_layer_0/type = 1
+custom_data_layer_1/name = "visual_kind"
+custom_data_layer_1/type = 4
+sources/0 = SubResource("TileSetAtlasSource_emdpy")

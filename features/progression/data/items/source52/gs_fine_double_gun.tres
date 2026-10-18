@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="GearItemDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="1_upj64"]
+[ext_resource type="Resource" path="res://features/skills/data/critical.tres" id="2_ql6l3"]
+[ext_resource type="Texture2D" path="res://art/items/source52/gs_fine_double_gun.png" id="3_g4dju"]
+[ext_resource type="Script" path="res://common/data/gear_item_definition.gd" id="4_axfl0"]
+
+[resource]
+script = ExtResource("4_axfl0")
+id = &"gs_fine_double_gun"
+display_name = "高級雙發鐵炮"
+category = "gun"
+icon = ExtResource("3_g4dju")
+kind = 0
+weight = 25.0
+modifiers = {
+"attack_max": 62.0,
+"attack_min": 41.0
+}
+required_level = 64
+allowed_roles = PackedInt32Array()
+granted_skills = Array[ExtResource("1_upj64")]([ExtResource("2_ql6l3")])
+use_effect = 1
+source_url = "https://www.52jushang.com/item/huoqiang.asp"
+source_image_url = "https://www.52jushang.com/item/img/qiang/gun70.jpg"
+source_stats = {
+"modifiers": {
+"attack_max": 62.0,
+"attack_min": 41.0
+},
+"required_level": 64.0,
+"weight_jin": 25.0
+}
+source_skill_names = PackedStringArray("一擊必殺")
+adaptation_notes = "一擊必殺使用本作現有可調機率／MP／公式，不宣稱原版精確數值。"
+description = "52巨商參考裝備；屬性與重量依來源，攻擊區間作為裝備加成。"

@@ -1,0 +1,55 @@
+[gd_resource type="Resource" script_class="SpriteSheetLayout" format=3]
+
+[ext_resource type="Script" path="res://common/data/sprite_animation_clip.gd" id="1_uvdnn"]
+[ext_resource type="Script" path="res://common/data/sprite_sheet_layout.gd" id="2_yvxs5"]
+[ext_resource type="Texture2D" path="res://features/rainbow/art/temple-creatures-v2.png" id="3_w3p26"]
+
+[sub_resource type="Resource" id="Resource_o3ddw"]
+script = ExtResource("1_uvdnn")
+columns = PackedInt32Array(0)
+loop = true
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_jcnf6"]
+script = ExtResource("1_uvdnn")
+action = 1
+columns = PackedInt32Array(0)
+loop = true
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_r3esn"]
+script = ExtResource("1_uvdnn")
+action = 2
+columns = PackedInt32Array(0)
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_bggeq"]
+script = ExtResource("1_uvdnn")
+action = 3
+columns = PackedInt32Array(0)
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_vqvbc"]
+script = ExtResource("1_uvdnn")
+action = 4
+columns = PackedInt32Array(0)
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[resource]
+script = ExtResource("2_yvxs5")
+source_texture = ExtResource("3_w3p26")
+source_size = Vector2i(1254, 1254)
+columns = 1
+rows = 4
+frame_size = Vector2i(360, 360)
+foot_point = Vector2(180, 325)
+frame_rects = Array[Rect2i]([Rect2i(13, 627, 300, 313), Rect2i(313, 627, 314, 304), Rect2i(628, 627, 312, 313), Rect2i(940, 627, 288, 313)])
+source_pivots = Array[Vector2]([Vector2(150, 311), Vector2(157, 302), Vector2(156, 311), Vector2(144, 311)])
+animations = Array[ExtResource("1_uvdnn")]([SubResource("Resource_o3ddw"), SubResource("Resource_jcnf6"), SubResource("Resource_r3esn"), SubResource("Resource_bggeq"), SubResource("Resource_vqvbc")])
+attack_columns = Array[int]([0])
+direction_rows = Array[int]([0, 0, 3, 3, 1, 1, 2, 2])

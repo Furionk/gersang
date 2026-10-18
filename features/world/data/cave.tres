@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="EncounterDefinition" format=3 uid="uid://cyoj533ctgkew"]
+
+[ext_resource type="Script" uid="uid://d3vyygwq6v6lc" path="res://common/data/encounter_definition.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = &"cave"
+display_name = "幽冥洞・赤魂試煉"
+terrain = 2
+level = 40
+melee_count = 8
+ranged_count = 3
+boss_count = 1
+battlefield_scene = "res://features/battle/maps/cave.tscn"
+enemy_spawn_centers = null

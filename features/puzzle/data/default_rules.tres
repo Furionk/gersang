@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="PuzzleRules" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://features/puzzle/puzzle_rules.gd" id="1"]
+[ext_resource type="Resource" path="res://features/units/data/mercenaries/gunner.tres" id="2"]
+
+[resource]
+script = ExtResource("1")
+monster_attack_reference = ExtResource("2")
+enemy_cooldown_seconds = 7.5
+enemy_initial_min_seconds = 6.0
+enemy_initial_max_seconds = 9.0
+monster_health_attack_multiple = 16.0

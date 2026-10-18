@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/unit_definition.gd" id="1_uxmrc"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_ijx0p"]
+[ext_resource type="Resource" path="res://features/rainbow/data/skins/temple_lava_bat.tres" id="3_504gb"]
+
+[resource]
+script = ExtResource("1_uxmrc")
+base_power = 500
+luck = 0.0
+defense = 4.0
+experience_reward = 180
+level = 18
+id = &"temple_lava_bat"
+display_name = "熔翼蝠"
+max_health = 700.0
+max_mana = 300.0
+damage = 28.0
+attack_range = 360.0
+balance_revision = 1
+tactical_hint = "遠距騷擾；利用障礙隔斷火羽。"
+speed = 135.0
+mana_regeneration = 8.0
+sprite_path = "res://features/rainbow/art/temple-creatures-v2.png"
+sprite_layout = ExtResource("3_504gb")
+battle_sprite_scale = 0.34
+world_sprite_scale = 0.18700000000000003

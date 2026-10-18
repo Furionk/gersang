@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/unit_definition.gd" id="1_u7eiv"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_30p3y"]
+[ext_resource type="Resource" path="res://features/rainbow/data/skins/lava_slime.tres" id="3_u7eiv"]
+
+[resource]
+script = ExtResource("1_u7eiv")
+puzzle_element = 0
+luck = 0.0
+experience_reward = 60
+level = 3
+id = &"rainbow_slime"
+display_name = "熔岩史萊姆"
+max_health = 672.0
+max_mana = 300.0
+damage = 17.5
+attack_range = 70.0
+balance_revision = 2
+tactical_hint = "熔泡鎖定腳下後才爆發；離開紅圈，近攻可打斷普攻。"
+speed = 104.50000000000001
+mana_regeneration = 8.0
+sprite_path = "res://features/rainbow/art/lava_slime-v1.png"
+sprite_layout = ExtResource("3_u7eiv")
+battle_sprite_scale = 0.3
+world_sprite_scale = 0.18

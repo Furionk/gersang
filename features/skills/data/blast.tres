@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="SkillDefinition" format=3 uid="uid://jq601i416on"]
+
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="1"]
+[ext_resource type="Script" path="res://common/data/skill_effect_definition.gd" id="2"]
+
+[sub_resource type="Resource" id="Effect"]
+script = ExtResource("2")
+use_skill_radius = true
+kind = 2
+tick_interval = 0.2
+radius = 300.0
+sprite_path = "res://features/skills/art/blast.png"
+
+[resource]
+script = ExtResource("1")
+id = &"blast"
+display_name = "暴雷擊"
+description = "自身半徑300暴雷（可改Radius），固定爆破點逐圈擴散。每目標每施放一次傷害＝原公式×Formula Multiplier，預設3。"
+target_mode = 1
+default_key = 84
+icon_index = 2
+ai_enabled = true
+instant_self_activation = true
+mana_cost = 28.0
+range = 0.0
+radius = 300.0
+damage_formula = "strength*2"
+formula_multiplier = 3.0
+effect_data = SubResource("Effect")

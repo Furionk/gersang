@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ArenaDefinition" format=3]
+
+[ext_resource type="Resource" path="res://features/rainbow/data/default_action.tres" id="1_5tu2t"]
+[ext_resource type="Script" path="res://common/data/encounter_definition.gd" id="2_km86h"]
+[ext_resource type="Script" path="res://features/world/definitions/arena_definition.gd" id="3_tmoco"]
+
+[sub_resource type="Resource" id="Resource_uybsj"]
+script = ExtResource("2_km86h")
+id = &"rainbow_forge"
+display_name = "熔岩獸巢"
+action_profile = ExtResource("1_5tu2t")
+battlefield_scene = "res://features/battle/maps/rainbow_forge.tscn"
+enemy_spawn_centers = PackedVector2Array(1160, 440, 1520, 880, 1160, 1320, 600, 1240)
+
+[resource]
+script = ExtResource("3_tmoco")
+arena_id = "rainbow_forge"
+encounter = SubResource("Resource_uybsj")

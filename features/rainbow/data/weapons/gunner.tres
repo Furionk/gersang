@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="RainbowWeaponDefinition" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://features/rainbow/weapon_definition.gd" id="1"]
+[ext_resource type="Resource" path="res://features/rainbow/data/skins/gunner.tres" id="2"]
+
+[ext_resource type="Texture2D" path="res://features/rainbow/art/effects-v1.png" id="3"]
+
+[sub_resource type="AtlasTexture" id="vfx"]
+atlas = ExtResource("3")
+region = Rect2(940, 100, 314, 350)
+filter_clip = true
+
+[resource]
+script = ExtResource("1")
+layout = ExtResource("2")
+unit_id = &"gunner"
+melee_name = "銃柄擊"
+ranged_name = "三連散彈"
+specialty = "近距散射"
+effect = "scatter"
+tint = Color(1.00000, 0.52941, 0.24314, 1)
+melee_range = 70.0
+melee_half_angle = 0.8
+melee_windup = 0.18
+melee_recovery = 0.3
+melee_power = 0.85
+ranged_windup = 0.25
+ranged_recovery = 0.6
+ranged_power = 0.38
+mana_cost = 5.0
+projectile_speed = 650.0
+projectile_lifetime = 0.48
+projectile_count = 3
+spread = 0.17
+knockback = 175.0
+effect_texture = SubResource("vfx")

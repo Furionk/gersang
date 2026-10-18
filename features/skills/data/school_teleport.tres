@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="SkillDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/skill_effect_definition.gd" id="1_ne5f2"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_ny8lg"]
+
+[sub_resource type="Resource" id="Resource_tcd2c"]
+script = ExtResource("1_ne5f2")
+kind = 18
+duration = 0.5
+sprite_path = "res://features/skills/art/control.png"
+
+[resource]
+script = ExtResource("2_ny8lg")
+id = &"school_teleport"
+display_name = "傳送術"
+description = "傳送到敵人附近合法空位，預設距離130；不移進Blockers或其他部隊。之後沿用遠距普攻。AI Attempt Interval與AI Cast Chance控制敵軍施放頻率。"
+effect = 24
+target_mode = 3
+action = &"skill_school_teleport"
+ai_enabled = true
+ai_attempt_interval = 6.0
+ai_cast_chance = 0.6
+mana_cost = 0.0
+range = 800.0
+damage_formula = "0"
+effect_data = SubResource("Resource_tcd2c")

@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="GearItemDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="1_8olc6"]
+[ext_resource type="Texture2D" path="res://art/items/source52/gs_trident.png" id="2_55set"]
+[ext_resource type="Script" path="res://common/data/gear_item_definition.gd" id="3_xkqoe"]
+
+[resource]
+script = ExtResource("3_xkqoe")
+id = &"gs_trident"
+display_name = "三叉戟"
+category = "spear"
+icon = ExtResource("2_55set")
+kind = 0
+weight = 34.0
+modifiers = {
+"attack_max": 28.0,
+"attack_min": 18.0
+}
+required_level = 25
+allowed_roles = PackedInt32Array()
+use_effect = 1
+source_url = "https://www.52jushang.com/item/mao.asp"
+source_image_url = "https://www.52jushang.com/item/img/mao/yari25.jpg"
+source_stats = {
+"modifiers": {
+"attack_max": 28.0,
+"attack_min": 18.0
+},
+"required_level": 25.0,
+"weight_jin": 34.0
+}
+source_skill_names = PackedStringArray()
+description = "52巨商參考裝備；屬性與重量依來源，攻擊區間作為裝備加成。"

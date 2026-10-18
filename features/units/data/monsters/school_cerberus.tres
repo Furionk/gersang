@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3]
+
+[ext_resource type="Texture2D" path="res://features/units/art/hogwarts/school-cerberus-v1.png" id="1_5i4jt"]
+[ext_resource type="Script" path="res://common/data/unit_definition.gd" id="2_71avu"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="3_g67k8"]
+[ext_resource type="Resource" path="res://features/skills/data/school_red_charge.tres" id="4_d56ki"]
+[ext_resource type="Resource" path="res://features/units/data/layouts/school_cerberus_layout.tres" id="5_5i4jt"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d56ki"]
+atlas = ExtResource("1_5i4jt")
+region = Rect2(20, 6, 141, 168)
+margin = Rect2(57.5, 58, 115, 88)
+filter_clip = true
+
+[resource]
+script = ExtResource("2_71avu")
+base_power = 6750
+level_power_growth = 45
+agility = 45.0
+intelligence = 50.0
+defense = 20.0
+evasion = 0.1
+magic_resistance = 0.18
+experience_reward = 1875
+level = 75
+id = &"school_cerberus"
+display_name = "三頭犬"
+max_health = 10440.0
+max_mana = 500.0
+damage = 142.5
+minimum_ai_cast_time = 0.4
+balance_revision = 1
+tactical_hint = "高速突擊：先控場／火路封位再集火，分散避開直線衝鋒；用高命中或範圍技能。"
+speed = 190.4
+mana_regeneration = 8.0
+armor = 0.08
+sprite_layout = ExtResource("5_5i4jt")
+battle_sprite_scale = 0.9
+world_sprite_scale = 0.9
+portrait_texture = SubResource("AtlasTexture_d56ki")
+eyes_texture = SubResource("AtlasTexture_d56ki")
+standee_texture = SubResource("AtlasTexture_d56ki")
+skills = Array[ExtResource("3_g67k8")]([ExtResource("4_d56ki")])

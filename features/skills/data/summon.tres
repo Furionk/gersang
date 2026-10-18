@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="SkillDefinition" format=3 uid="uid://dwj6dudhga2fs"]
+
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="1"]
+[ext_resource type="Script" path="res://common/data/skill_effect_definition.gd" id="2"]
+[ext_resource type="Resource" path="res://features/units/data/summons/spirit.tres" id="3"]
+
+[sub_resource type="Resource" id="Effect"]
+script = ExtResource("2")
+kind = 5
+duration = 45.0
+radius = 40.0
+summon_definition = ExtResource("3")
+summon_attack_bonus_formula = "agility*4+strength"
+summon_accuracy_bonus_formula = "agility*2"
+sprite_path = "res://features/skills/art/summon.png"
+summon_health_bonus_formula = "agility*8+strength*10"
+summon_limit = 0
+
+[resource]
+script = ExtResource("1")
+id = &"summon"
+display_name = "忠臣之魂"
+description = "忠臣之魂無同時數量上限（Summon Limit=0），每隻45秒。射速與前搖在spirit.tres設定，能力加成在Effect Data。"
+effect = 9
+action = &"skill_summon"
+default_key = 68
+icon_index = 5
+mana_cost = 60.0
+range = 260.0
+radius = 40.0
+damage_formula = "0"
+effect_data = SubResource("Effect")

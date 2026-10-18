@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="GearItemDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="1_k6x37"]
+[ext_resource type="Texture2D" path="res://art/items/source52/gs_hawthorn.png" id="2_xatwd"]
+[ext_resource type="Script" path="res://common/data/gear_item_definition.gd" id="3_jexb8"]
+
+[resource]
+script = ExtResource("3_jexb8")
+id = &"gs_hawthorn"
+display_name = "山楂"
+category = "food"
+icon = ExtResource("2_xatwd")
+kind = 1
+weight = 2.0
+allowed_roles = PackedInt32Array()
+use_effect = 1
+source_url = "https://www.52jushang.com/item/shiwu.asp"
+source_image_url = "https://www.52jushang.com/item/img3/shiwu/food04.jpg"
+source_stats = {
+"modifiers": {},
+"required_level": 1.0,
+"satiety": 50.0,
+"weight_jin": 2.0
+}
+source_skill_names = PackedStringArray()
+description = "只收錄食品資料；本作不設定飽食度或食用效果。"

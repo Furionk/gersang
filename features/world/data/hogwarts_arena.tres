@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ArenaDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/encounter_definition.gd" id="1_2cyam"]
+[ext_resource type="Script" path="res://features/world/definitions/arena_definition.gd" id="2_7re8u"]
+
+[sub_resource type="Resource" id="Resource_8kve7"]
+script = ExtResource("1_2cyam")
+id = &"hogwarts"
+display_name = "霍格愛茲・魔法試煉"
+melee_count = 0
+ranged_count = 3
+elite_count = 0
+battlefield_scene = "res://features/battle/maps/hogwarts.tscn"
+enemy_spawn_centers = PackedVector2Array(1160, 440, 1520, 880, 1160, 1320, 600, 1240)
+
+[resource]
+script = ExtResource("2_7re8u")
+arena_id = "hogwarts"
+encounter = SubResource("Resource_8kve7")

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="UnitVoiceProfile" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://features/audio/unit_voice_profile.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+unit_id = &"shaolin_elite_copper"
+nationality = "中國"
+language = "zh"
+species = "human"
+profession = "金剛陣師"
+personality = "堅定、威嚴、精通陣法"
+voice_id = "xQsp9uyB3OResmXFYuFx"
+model_id = "eleven_v3"
+manifest_path = "res://features/audio/data/unit_voices.json"
+events = {"engage": ["res://art/voices/shaolin_elite_copper/engage_01.ogg", "res://art/voices/shaolin_elite_copper/engage_02.ogg", "res://art/voices/shaolin_elite_copper/engage_03.ogg"], "death": ["res://art/voices/shaolin_elite_copper/death_01.ogg", "res://art/voices/shaolin_elite_copper/death_02.ogg", "res://art/voices/shaolin_elite_copper/death_03.ogg"]}

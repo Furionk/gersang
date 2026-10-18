@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="RainbowActionProfile" format=3]
+
+[ext_resource type="Script" path="res://features/rainbow/action_profile.gd" id="1"]
+[ext_resource type="Script" path="res://features/rainbow/enemy_definition.gd" id="1_415i3"]
+[ext_resource type="Script" path="res://features/rainbow/weapon_definition.gd" id="2"]
+[ext_resource type="Resource" path="res://features/rainbow/data/enemies/rainbow_slime.tres" id="2_2yoe2"]
+[ext_resource type="Resource" path="res://features/rainbow/data/enemies/lava_beast.tres" id="3_gab6m"]
+[ext_resource type="Resource" path="res://features/rainbow/data/enemies/lava_priest.tres" id="4_m3kye"]
+[ext_resource type="Resource" path="res://features/rainbow/data/enemies/fire_dragon.tres" id="5_lbeao"]
+[ext_resource type="Resource" path="res://features/rainbow/data/enemies/temple_hellhound.tres" id="6_vt8pd"]
+[ext_resource type="Resource" path="res://features/rainbow/data/enemies/temple_double_hound.tres" id="7_un3al"]
+[ext_resource type="Resource" path="res://features/rainbow/data/enemies/temple_lava_troll.tres" id="8_ivn8e"]
+[ext_resource type="Resource" path="res://features/rainbow/data/enemies/temple_lava_bat.tres" id="9_v55rj"]
+[ext_resource type="Resource" path="res://features/rainbow/data/enemies/fire_dragon_tier_1.tres" id="10_ivoa6"]
+[ext_resource type="Resource" path="res://features/rainbow/data/enemies/lava_priest_tier_1.tres" id="11_2r7i7"]
+[ext_resource type="Resource" path="res://features/rainbow/data/enemies/fire_dragon_tier_2.tres" id="12_1m7j7"]
+[ext_resource type="Resource" path="res://features/rainbow/data/enemies/lava_priest_tier_2.tres" id="13_gaa3u"]
+[ext_resource type="Resource" path="res://features/rainbow/data/enemies/fire_dragon_tier_3.tres" id="14_wtnqh"]
+[ext_resource type="Resource" path="res://features/rainbow/data/enemies/lava_priest_tier_3.tres" id="15_6q25g"]
+[ext_resource type="Resource" path="res://features/rainbow/data/weapons/controller.tres" id="controller"]
+[ext_resource type="Resource" path="res://features/rainbow/data/weapons/guard.tres" id="guard"]
+[ext_resource type="Resource" path="res://features/rainbow/data/weapons/gunner.tres" id="gunner"]
+[ext_resource type="Resource" path="res://features/rainbow/data/weapons/healer.tres" id="healer"]
+[ext_resource type="Resource" path="res://features/rainbow/data/weapons/kohime.tres" id="kohime"]
+[ext_resource type="Resource" path="res://features/rainbow/data/weapons/mage.tres" id="mage"]
+[ext_resource type="Resource" path="res://features/rainbow/data/weapons/malfory.tres" id="malfory"]
+[ext_resource type="Resource" path="res://features/rainbow/data/weapons/merchant.tres" id="merchant"]
+[ext_resource type="Resource" path="res://features/rainbow/data/weapons/ninja.tres" id="ninja"]
+[ext_resource type="Resource" path="res://features/rainbow/data/weapons/supplier.tres" id="supplier"]
+[ext_resource type="Resource" path="res://features/rainbow/data/weapons/teppo.tres" id="teppo"]
+
+[resource]
+script = ExtResource("1")
+allowed_maps = PackedStringArray("rainbow_temple")
+weapons = Array[ExtResource("2")]([ExtResource("merchant"), ExtResource("guard"), ExtResource("teppo"), ExtResource("gunner"), ExtResource("mage"), ExtResource("healer"), ExtResource("supplier"), ExtResource("controller"), ExtResource("ninja"), ExtResource("kohime"), ExtResource("malfory")])
+enemies = Array[ExtResource("1_415i3")]([ExtResource("2_2yoe2"), ExtResource("3_gab6m"), ExtResource("4_m3kye"), ExtResource("5_lbeao"), ExtResource("6_vt8pd"), ExtResource("7_un3al"), ExtResource("8_ivn8e"), ExtResource("9_v55rj"), ExtResource("10_ivoa6"), ExtResource("11_2r7i7"), ExtResource("12_1m7j7"), ExtResource("13_gaa3u"), ExtResource("14_wtnqh"), ExtResource("15_6q25g")])

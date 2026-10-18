@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="WorldSceneryDefinition" format=3]
+
+[ext_resource type="Script" path="res://features/world/definitions/world_scenery_definition.gd" id="1_0m14f"]
+[ext_resource type="Texture2D" path="res://art/terrain/expansion_v1/foliage-v1.png" id="2_tdvij"]
+
+[resource]
+script = ExtResource("1_0m14f")
+display_name = "苔木與蘑菇"
+description = "環境裝飾素材；通行及阻擋另由地圖遮罩設定。"
+texture = ExtResource("2_tdvij")
+atlas_region = Rect2(1024, 516, 512, 508)
+foot_anchor = Vector2(251.5, 448)

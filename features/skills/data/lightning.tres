@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="SkillDefinition" format=3 uid="uid://bsf8vrwqr2cma"]
+
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="1"]
+[ext_resource type="Script" path="res://common/data/skill_effect_definition.gd" id="2"]
+
+[sub_resource type="Resource" id="LightningVisual"]
+script = ExtResource("2")
+storm_waves = 4
+storm_strikes = 5
+storm_impact_radius = 75.0
+kind = 19
+duration = 0.65
+sprite_path = "res://features/skills/art/lightning-v2.png"
+sprite_grounded = true
+
+[resource]
+script = ExtResource("1")
+id = &"lightning"
+display_name = "雷擊術"
+description = "指定區域多波隨機落雷；波數、每波雷數、波間隔、單雷半徑都在Effect Data。每道實際落雷獨立判定，不是只換動畫。"
+effect = 1
+action = &"skill_lightning"
+default_key = 84
+icon_index = 7
+mana_cost = 22.0
+range = 280.0
+radius = 220.0
+damage_formula = "intelligence*2.6"
+formula_multiplier = 2.0
+effect_data = SubResource("LightningVisual")

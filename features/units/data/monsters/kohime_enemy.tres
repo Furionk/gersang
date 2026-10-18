@@ -1,0 +1,108 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3 uid="uid://cunh775tscr3l"]
+
+[ext_resource type="Texture2D" path="res://features/units/art/kohime-standee-v2.png" id="1_jh6g2"]
+[ext_resource type="Script" path="res://common/data/unit_definition.gd" id="1_mep5p"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_atnp8"]
+[ext_resource type="Script" path="res://common/data/skill_effect_definition.gd" id="3_jh6g2"]
+[ext_resource type="Resource" path="res://features/units/data/summons/earth_claw_enemy_summon.tres" id="4_atnp8"]
+[ext_resource type="Resource" path="res://features/units/data/layouts/kohime_v2_layout.tres" id="5_jh6g2"]
+
+[sub_resource type="AtlasTexture" id="KohimeEyes"]
+atlas = ExtResource("1_jh6g2")
+region = Rect2(275, 245, 300, 110)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q8kvj"]
+atlas = ExtResource("1_jh6g2")
+region = Rect2(275, 150, 300, 300)
+filter_clip = true
+
+[sub_resource type="Resource" id="Resource_cejnr"]
+script = ExtResource("3_jh6g2")
+kind = 9
+duration = 10.0
+tick_interval = 0.5
+radius = 120.0
+sprite_path = "res://features/skills/art/earth_stakes.png"
+
+[sub_resource type="Resource" id="Resource_q8kvj"]
+script = ExtResource("2_atnp8")
+id = &"enemy_earth_stakes"
+display_name = "地樁突襲"
+description = "指定地面範圍召喚地樁，持續10秒。每0.5秒對範圍內地面敵軍造成12+智慧×0.35法術傷害；飛行單位不受影響。"
+effect = 13
+action = &"skill_earth_stakes"
+default_key = 90
+icon_index = 6
+ai_enabled = true
+ai_attempt_interval = 5.0
+ai_cast_chance = 0.4
+mana_cost = 55.0
+range = 300.0
+radius = 120.0
+duration = 10.0
+damage_formula = "12+intelligence*0.35"
+effect_data = SubResource("Resource_cejnr")
+
+[sub_resource type="Resource" id="Resource_6dig1"]
+script = ExtResource("3_jh6g2")
+kind = 5
+duration = 30.0
+summon_definition = ExtResource("4_atnp8")
+sprite_path = "res://features/skills/art/summon.png"
+summon_intelligence_bonus_formula = "intelligence"
+summon_controllable = false
+
+[sub_resource type="Resource" id="Resource_tko27"]
+script = ExtResource("2_atnp8")
+id = &"enemy_earth_claw"
+display_name = "大地魔爪"
+description = "按X／圖示立即召喚一隻不能控制的大地魔爪，持續30秒。隨機尋找周遭敵人刺擊，每次刺擊對地面敵軍造成15+釋放時智慧×1.4範圍傷害。同一施法者最多一隻。"
+effect = 9
+target_mode = 1
+action = &"skill_earth_claw"
+default_key = 88
+icon_index = 5
+ai_enabled = true
+ai_attempt_interval = 5.0
+ai_cast_chance = 0.4
+instant_self_activation = true
+mana_cost = 70.0
+radius = 350.0
+damage_formula = "0"
+effect_data = SubResource("Resource_6dig1")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tko27"]
+atlas = ExtResource("1_jh6g2")
+region = Rect2(0, 0, 1024, 1536)
+filter_clip = true
+
+[resource]
+script = ExtResource("1_mep5p")
+base_power = 220
+strength = 18.0
+agility = 26.0
+intelligence = 95.0
+defense = 8.0
+magic_resistance = 0.6
+experience_reward = 70
+level = 20
+id = &"kohime_enemy"
+display_name = "湖衣妖姬"
+max_health = 378.0
+max_mana = 300.0
+damage = 27.0
+attack_range = 200.0
+attack_interval = 1.4
+minimum_ai_cast_time = 0.4
+balance_revision = 1
+tactical_hint = "高法抗施法者：用物理射手／忠臣之魂集中火力，控制中斷施法；不要一直用同種法術。"
+speed = 122.0
+mana_regeneration = 6.0
+armor = 0.03
+sprite_path = "res://features/units/art/kohime-v2.png"
+sprite_layout = ExtResource("5_jh6g2")
+portrait_texture = SubResource("AtlasTexture_q8kvj")
+eyes_texture = SubResource("KohimeEyes")
+standee_texture = SubResource("AtlasTexture_tko27")
+skills = Array[ExtResource("2_atnp8")]([SubResource("Resource_q8kvj"), SubResource("Resource_tko27")])

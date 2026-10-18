@@ -1,0 +1,41 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3]
+
+[ext_resource type="Texture2D" path="res://features/units/art/hogwarts/school-basilisk-v1.png" id="1_0q8ex"]
+[ext_resource type="Script" path="res://common/data/unit_definition.gd" id="2_f6nve"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="3_4gmbt"]
+[ext_resource type="Resource" path="res://features/skills/data/school_petrify.tres" id="4_0q8ex"]
+[ext_resource type="Resource" path="res://features/units/data/layouts/school_basilisk_layout.tres" id="5_f6nve"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0q8ex"]
+atlas = ExtResource("1_0q8ex")
+region = Rect2(7, 362, 164, 158)
+margin = Rect2(46, 68, 92, 98)
+filter_clip = true
+
+[resource]
+script = ExtResource("2_f6nve")
+base_power = 7200
+level_power_growth = 45
+vitality = 50.0
+intelligence = 50.0
+defense = 40.0
+magic_resistance = 0.18
+experience_reward = 2000
+level = 80
+id = &"school_basilisk"
+display_name = "蛇妖"
+max_health = 12600.0
+max_mana = 500.0
+damage = 150.0
+minimum_ai_cast_time = 0.4
+balance_revision = 1
+tactical_hint = "成群消耗：聚怪後用範圍雷擊／暴雷；吸血與分裂種要快速集火，不要逐個慢磨。"
+mana_regeneration = 8.0
+armor = 0.12
+sprite_layout = ExtResource("5_f6nve")
+battle_sprite_scale = 0.95
+world_sprite_scale = 0.95
+portrait_texture = SubResource("AtlasTexture_0q8ex")
+eyes_texture = SubResource("AtlasTexture_0q8ex")
+standee_texture = SubResource("AtlasTexture_0q8ex")
+skills = Array[ExtResource("3_4gmbt")]([ExtResource("4_0q8ex")])

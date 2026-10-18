@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = &"heal"
+display_name = "恢復術"
+description = "更快速支援：自動判定間隔Support Interval0.10秒，原公式×2。右鍵技能切換自動；不對已滿目標浪費施法。"
+effect = 4
+target_mode = 2
+trigger = 2
+action = &"skill_heal"
+default_key = 75
+icon_index = 8
+automatic = true
+mana_cost = 8.0
+range = 360.0
+radius = 0.0
+damage_formula = "intelligence*2.4"
+formula_multiplier = 2.0
+support_interval = 0.1

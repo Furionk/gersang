@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="SkillDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = &"supply"
+display_name = "補給術"
+description = "更快速支援：自動判定間隔Support Interval0.10秒，原公式×2。右鍵技能切換自動；不對已滿目標浪費施法。"
+effect = 2
+target_mode = 2
+action = &"skill_supply"
+default_key = 70
+icon_index = 9
+mana_cost = 12.0
+range = 360.0
+radius = 0.0
+damage_formula = "intelligence*1.9"
+formula_multiplier = 2.0
+support_interval = 0.1

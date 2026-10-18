@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="GearItemDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="1_w487r"]
+[ext_resource type="Texture2D" path="res://art/items/source52/gs_training_axe.png" id="2_be5ha"]
+[ext_resource type="Script" path="res://common/data/gear_item_definition.gd" id="3_u5mel"]
+
+[resource]
+script = ExtResource("3_u5mel")
+id = &"gs_training_axe"
+display_name = "訓練用巨漢斧"
+category = "axe"
+icon = ExtResource("2_be5ha")
+kind = 0
+weight = 10.0
+modifiers = {
+"attack_max": 50.0,
+"attack_min": 30.0,
+"intelligence": 25.0,
+"strength": 25.0
+}
+required_level = 10
+allowed_roles = PackedInt32Array()
+use_effect = 1
+source_url = "https://www.52jushang.com/item/futou.asp"
+source_image_url = "https://www.52jushang.com/item/img/fu/axe80.jpg"
+source_stats = {
+"modifiers": {
+"attack_max": 50.0,
+"attack_min": 30.0,
+"intelligence": 25.0,
+"strength": 25.0
+},
+"required_level": 10.0,
+"weight_jin": 10.0
+}
+source_skill_names = PackedStringArray("滿月舞")
+adaptation_notes = "來源為10天／無法交易訓練裝；本作尚無到期或交易系統，保存原條件但不假裝已實作。滿月舞尚未接入。"
+description = "52巨商參考裝備；屬性與重量依來源，攻擊區間作為裝備加成。"

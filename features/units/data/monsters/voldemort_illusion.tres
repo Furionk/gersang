@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3]
+
+[ext_resource type="Resource" path="res://features/units/data/phases/voldemort_blood_moon.tres" id="1_33mxs"]
+[ext_resource type="Resource" path="res://features/skills/data/illusion_avada.tres" id="5_bp5ae"]
+[ext_resource type="Resource" path="res://features/units/data/layouts/voldemort_illusion_layout.tres" id="6_688p2"]
+[ext_resource type="Script" path="res://common/data/unit_definition.gd" id="8_ttnbf"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="9_0qup8"]
+[ext_resource type="Texture2D" path="res://features/units/art/hogwarts/voldemort-illusion-v1.png" id="15_8pgha"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_33mxs"]
+atlas = ExtResource("15_8pgha")
+region = Rect2(42, 365, 107, 161)
+margin = Rect2(74.5, 65, 149, 95)
+filter_clip = true
+
+[resource]
+script = ExtResource("8_ttnbf")
+base_power = 8100
+level_power_growth = 45
+intelligence = 120.0
+defense = 14.0
+magic_resistance = 0.6
+experience_reward = 30000
+level = 90
+id = &"voldemort_illusion"
+display_name = "佛地魔的幻象"
+max_health = 12960.0
+max_mana = 500.0
+damage = 127.5
+attack_range = 370.0
+minimum_ai_cast_time = 0.4
+balance_revision = 1
+tactical_hint = "高法抗施法者：用物理射手／忠臣之魂集中火力，控制中斷施法；不要一直用同種法術。"
+speed = 155.0
+mana_regeneration = 8.0
+armor = 0.03
+sprite_layout = ExtResource("6_688p2")
+battle_sprite_scale = 0.65
+world_sprite_scale = 0.65
+portrait_texture = SubResource("AtlasTexture_33mxs")
+eyes_texture = SubResource("AtlasTexture_33mxs")
+standee_texture = SubResource("AtlasTexture_33mxs")
+skills = Array[ExtResource("9_0qup8")]([ExtResource("5_bp5ae")])
+death_phase = ExtResource("1_33mxs")

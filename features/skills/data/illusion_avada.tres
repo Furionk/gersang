@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="SkillDefinition" format=3 uid="uid://dabgw1e4e5ax1"]
+
+[ext_resource type="Script" uid="uid://cwgoeihpnw613" path="res://common/data/skill_effect_definition.gd" id="1_lxs6g"]
+[ext_resource type="Script" uid="uid://boxf02g81ffu" path="res://common/data/skill_definition.gd" id="2_s171o"]
+
+[sub_resource type="Resource" id="Resource_x2by2"]
+script = ExtResource("1_lxs6g")
+target_max_hp_ratio_formula = "(0.5+intelligence*0.005)*0.25"
+kind = 16
+duration = 0.65
+radius = 130.0
+sprite_path = "res://features/skills/art/malfory-skull-v1.png"
+
+[resource]
+script = ExtResource("2_s171o")
+id = &"illusion_avada"
+display_name = "幻象・啊哇呾喀呾啦"
+description = "0.5秒施法；原Avada最大HP比例公式的25%，法抗照常。"
+effect = 22
+action = &"skill_illusion_avada"
+default_key = 87
+icon_index = 8
+ai_enabled = true
+ai_attempt_interval = 5.0
+ai_cast_chance = 0.5
+mana_cost = 50.0
+range = 500.0
+radius = 130.0
+cast_time = 0.5
+damage_formula = "0"
+effect_data = SubResource("Resource_x2by2")
+tint = Color(0.05, 1, 0.12, 1)

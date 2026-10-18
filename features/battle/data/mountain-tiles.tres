@@ -1,0 +1,17 @@
+[gd_resource type="TileSet" format=3 uid="uid://vtg8dwv1royr"]
+
+[ext_resource type="Texture2D" uid="uid://bk362x60udvof" path="res://features/battle/data/mountain-tiles-v1.png" id="1_xncfi"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p7mla"]
+texture = ExtResource("1_xncfi")
+texture_region_size = Vector2i(80, 40)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+
+[resource]
+tile_shape = 1
+tile_layout = 5
+tile_size = Vector2i(80, 40)
+sources/0 = SubResource("TileSetAtlasSource_p7mla")

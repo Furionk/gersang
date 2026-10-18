@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="WorldSceneryDefinition" format=3]
+
+[ext_resource type="Script" path="res://features/world/definitions/world_scenery_definition.gd" id="1_g4787"]
+[ext_resource type="Texture2D" path="res://art/terrain/millennium_lake/props-v1.png" id="2_ho4yo"]
+
+[resource]
+script = ExtResource("1_g4787")
+display_name = "河灣木橋"
+texture = ExtResource("2_ho4yo")
+atlas_region = Rect2(1024, 512, 512, 512)
+foot_anchor = Vector2(256, 326)
+sprite_scale = 0.72
+
+sorting_mode = 0
+sorting_review_required = false
+sorting_note = "橋面固定在角色下方。若需欄杆遮擋，另作Region分件；不改原圖或通行。"

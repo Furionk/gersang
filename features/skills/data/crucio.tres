@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="SkillDefinition" format=3 uid="uid://b8ifsmfj0t7o2"]
+
+[ext_resource type="Script" path="res://common/data/skill_effect_definition.gd" id="1_fosii"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_be8b5"]
+
+[sub_resource type="Resource" id="Resource_fdp4i"]
+script = ExtResource("1_fosii")
+kind = 15
+duration = 10.0
+tick_interval = 1.0
+radius = 150.0
+sprite_path = "res://features/skills/art/malfory-skull-v1.png"
+duration_formula = "10+intelligence*0.02"
+
+[resource]
+script = ExtResource("2_be8b5")
+id = &"crucio"
+display_name = "咒咒虐"
+description = "Crucio：範圍敵人受到智慧持續傷害及減速。"
+effect = 21
+action = &"skill_crucio"
+default_key = 81
+icon_index = 9
+range = 450.0
+radius = 150.0
+damage_formula = "intelligence*1.5"
+formula_multiplier = 1.7
+effect_data = SubResource("Resource_fdp4i")
+tint = Color(0.2, 0.8, 0.3, 1)

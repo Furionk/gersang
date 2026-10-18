@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="GearItemDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="1_kkgm4"]
+[ext_resource type="Texture2D" path="res://art/items/source52/gs_iron_sword.png" id="2_c1mhs"]
+[ext_resource type="Script" path="res://common/data/gear_item_definition.gd" id="3_hy1wa"]
+
+[resource]
+script = ExtResource("3_hy1wa")
+id = &"gs_iron_sword"
+display_name = "鐵劍"
+category = "sword"
+icon = ExtResource("2_c1mhs")
+kind = 0
+weight = 25.0
+modifiers = {
+"attack_max": 31.0,
+"attack_min": 20.0
+}
+required_level = 34
+allowed_roles = PackedInt32Array()
+use_effect = 1
+source_url = "https://www.52jushang.com/item/dao.asp"
+source_image_url = "https://www.52jushang.com/item/img/dao/tiejian.gif"
+source_stats = {
+"modifiers": {
+"attack_max": 31.0,
+"attack_min": 20.0
+},
+"required_level": 34.0,
+"weight_jin": 25.0
+}
+source_skill_names = PackedStringArray()
+description = "52巨商參考裝備；屬性與重量依來源，攻擊區間作為裝備加成。"

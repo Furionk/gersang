@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cxpuysasjm2f1"]
+
+[ext_resource type="Script" uid="uid://ctjrxrdjnclb8" path="res://features/battle/game_director.gd" id="1"]
+
+[node name="GersangFeelLab" type="Node2D" unique_id=1958034890]
+script = ExtResource("1")

@@ -1,0 +1,58 @@
+{
+  "assets": [
+    {
+      "asset": "features/skills/art/quake.png",
+      "layout": "4x2 animation frames",
+      "prompt": "Production original 2D isometric RPG animated VFX sprite atlas. Hand-painted high-definition style matching a classic East Asian merchant tactical RPG. EXACTLY eight consecutive animation keyframes in a strict FOUR columns by TWO rows even grid. Canvas1024x512. Each cell256x256; all effects centered in cell with transparent gutters and genuine transparent background. Effect: brown stone cracks opening in an oval isometric patch, dusty tremor shockwave and rising debris. Frames progress clearly from emergence to peak to dissipation, no characters, no words, no UI, no ground background. Elevated isometric35degree view for ground-oriented effects except the dragon which is a sideward advancing ribbon. Maintain size scale, no clipping across cell borders. Bright authentic spell energy with soft painted edges and layered sprite detail. No outlines or diagrams.",
+      "method": "built-in image_gen"
+    },
+    {
+      "asset": "features/skills/art/blast.png",
+      "layout": "4x2 animation frames",
+      "prompt": "Production original 2D isometric RPG animated VFX sprite atlas. Hand-painted high-definition style matching a classic East Asian merchant tactical RPG. EXACTLY eight consecutive animation keyframes in a strict FOUR columns by TWO rows even grid. Canvas1024x512. Each cell256x256; all effects centered in cell with transparent gutters and genuine transparent background. Effect: dense fiery orange-white explosions, white hot centers and spreading flames, dramatic expanding blast. Frames progress clearly from emergence to peak to dissipation, no characters, no words, no UI, no ground background. Elevated isometric35degree view for ground-oriented effects except the dragon which is a sideward advancing ribbon. Maintain size scale, no clipping across cell borders. Bright authentic spell energy with soft painted edges and layered sprite detail. No outlines or diagrams.",
+      "method": "built-in image_gen"
+    },
+    {
+      "asset": "features/skills/art/wheel.png",
+      "layout": "4x2 animation frames",
+      "prompt": "Production original 2D isometric RPG animated VFX sprite atlas. Hand-painted high-definition style matching a classic East Asian merchant tactical RPG. EXACTLY eight consecutive animation keyframes in a strict FOUR columns by TWO rows even grid. Canvas1024x512. Each cell256x256; all effects centered in cell with transparent gutters and genuine transparent background. Effect: a silver sharp bladed wind wheel whirling in blue-white circular motion with slashing streaks. Frames progress clearly from emergence to peak to dissipation, no characters, no words, no UI, no ground background. Elevated isometric35degree view for ground-oriented effects except the dragon which is a sideward advancing ribbon. Maintain size scale, no clipping across cell borders. Bright authentic spell energy with soft painted edges and layered sprite detail. No outlines or diagrams.",
+      "method": "built-in image_gen"
+    },
+    {
+      "asset": "features/skills/art/dragon.png",
+      "layout": "4x2 animation frames",
+      "prompt": "Production original 2D isometric RPG animated VFX sprite atlas. Hand-painted high-definition style matching a classic East Asian merchant tactical RPG. EXACTLY eight consecutive animation keyframes in a strict FOUR columns by TWO rows even grid. Canvas1024x512. Each cell256x256; all effects centered in cell with transparent gutters and genuine transparent background. Effect: an orange-gold fire dragon head and long flaming serpentine trailing body advancing horizontally to the right. Frames progress clearly from emergence to peak to dissipation, no characters, no words, no UI, no ground background. Elevated isometric35degree view for ground-oriented effects except the dragon which is a sideward advancing ribbon. Maintain size scale, no clipping across cell borders. Bright authentic spell energy with soft painted edges and layered sprite detail. No outlines or diagrams.",
+      "method": "built-in image_gen"
+    },
+    {
+      "asset": "features/skills/art/summon.png",
+      "layout": "4x2 animation frames",
+      "prompt": "Production original 2D isometric RPG animated VFX sprite atlas. Hand-painted high-definition style matching a classic East Asian merchant tactical RPG. EXACTLY eight consecutive animation keyframes in a strict FOUR columns by TWO rows even grid. Canvas1024x512. Each cell256x256; all effects centered in cell with transparent gutters and genuine transparent background. Effect: cyan-white spectral summoning rune and rising ghostly smoke with blue wisps. Frames progress clearly from emergence to peak to dissipation, no characters, no words, no UI, no ground background. Elevated isometric35degree view for ground-oriented effects except the dragon which is a sideward advancing ribbon. Maintain size scale, no clipping across cell borders. Bright authentic spell energy with soft painted edges and layered sprite detail. No outlines or diagrams.",
+      "method": "built-in image_gen"
+    },
+    {
+      "asset": "features/skills/art/ice.png",
+      "layout": "4x2 animation frames",
+      "prompt": "Production original 2D isometric RPG animated VFX sprite atlas. Hand-painted high-definition style matching a classic East Asian merchant tactical RPG. EXACTLY eight consecutive animation keyframes in a strict FOUR columns by TWO rows even grid. Canvas1024x512. Each cell256x256; all effects centered in cell with transparent gutters and genuine transparent background. Effect: a cluster of tall luminous blue-white crystalline ice pillars, growing then splintering. Frames progress clearly from emergence to peak to dissipation, no characters, no words, no UI, no ground background. Elevated isometric35degree view for ground-oriented effects except the dragon which is a sideward advancing ribbon. Maintain size scale, no clipping across cell borders. Bright authentic spell energy with soft painted edges and layered sprite detail. No outlines or diagrams.",
+      "method": "built-in image_gen"
+    },
+    {
+      "asset": "features/skills/art/critical.png",
+      "layout": "4x2 animation frames",
+      "prompt": "Production original 2D isometric RPG animated VFX sprite atlas. Hand-painted high-definition style matching a classic East Asian merchant tactical RPG. EXACTLY eight consecutive animation keyframes in a strict FOUR columns by TWO rows even grid. Canvas1024x512. Each cell256x256; all effects centered in cell with transparent gutters and genuine transparent background. Effect: brilliant gold-white starburst impact with short sharp rays and sparkling fragments. Frames progress clearly from emergence to peak to dissipation, no characters, no words, no UI, no ground background. Elevated isometric35degree view for ground-oriented effects except the dragon which is a sideward advancing ribbon. Maintain size scale, no clipping across cell borders. Bright authentic spell energy with soft painted edges and layered sprite detail. No outlines or diagrams.",
+      "method": "built-in image_gen"
+    },
+    {
+      "asset": "features/units/art/spirit.png",
+      "layout": "6x8 directional character poses",
+      "prompt": "Original high definition hand-painted sprite animation atlas for a spectral ancient East Asian bow soldier. Blue-cyan translucent ghost in lamellar armor with a bamboo longbow, normal adult proportions. Genuine transparent background. Strict SIX columns EIGHT rows even grid, canvas1536x2048. Every cell256x256 full body with feet at center near bottom220, no labels or background. Eight rows of directions east, southeast, south, southwest, west, northwest, north, northeast from elevated isometric35degree camera. Six columns: idle, walk left foot, walk right foot, shoot bow attack, invoke power, collapsed death. Maintain identical costume, scale, proportions, transparent gutters, no cropped weapons. Painterly clear silhouette matching classic merchant tactical RPGs. Subtle blue spiritual wisps stay within each cell.",
+      "method": "built-in image_gen"
+    },
+    {
+      "asset": "features/skills/art/icons.png",
+      "layout": "6x2 icons",
+      "prompt": "Original high definition hand-painted classic East Asian tactical RPG ability icon atlas, genuine transparent background, STRICT SIX columns TWO rows equal square cells256x256, canvas1536x512. Each icon is a compact square framed in antique bronze, readable colored symbol on dark background, no letters or words. First row left to right: golden critical starburst, cracked earth earthquake, fiery expanding explosion, silver bladed whirlwind wheel, orange fire dragon head, blue spectral bow soldier. Second row: blue ice wall crystals, white blue lightning strike, green healing hands, green-blue mana flask, purple binding talisman, crossed grey swords basic attack. Clear separate cells with gutters, same frame size and visual scale, premium nostalgic hand-painted sprite icon detail, never overlap neighboring cells.",
+      "method": "built-in image_gen"
+    }
+  ]
+}

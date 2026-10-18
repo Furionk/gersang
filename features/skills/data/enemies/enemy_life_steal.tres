@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="SkillDefinition" format=3 uid="uid://c2qxykcxxn3ax"]
+
+[ext_resource type="Script" uid="uid://cwgoeihpnw613" path="res://common/data/skill_effect_definition.gd" id="1_yq0ww"]
+[ext_resource type="Script" uid="uid://boxf02g81ffu" path="res://common/data/skill_definition.gd" id="2_feyv2"]
+
+[sub_resource type="Resource" id="Resource_ktdi3"]
+script = ExtResource("1_yq0ww")
+kind = 7
+duration = 0.4
+radius = 0.0
+sprite_path = "res://features/skills/art/critical.png"
+
+[resource]
+script = ExtResource("2_feyv2")
+id = &"enemy_life_steal"
+display_name = "噬血"
+description = "普攻命中後回復實際扣除HP的30%；MISS、過量傷害及已死施法者不吸血。"
+effect = 11
+target_mode = 3
+trigger = 1
+action = &""
+life_steal_ratio = 0.3
+mana_cost = 0.0
+range = 260.0
+radius = 0.0
+proc_chance = 1.0
+damage_formula = "0"
+effect_data = SubResource("Resource_ktdi3")

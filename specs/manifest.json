@@ -1,0 +1,1652 @@
+﻿{
+    "schema":  1,
+    "engine":  "4.7.1.stable.official.a13da4feb",
+    "source_sha256":  "67FF7A813F874197F993637AE3B901A6FED2E455DD7455BD67DF60D8220FF6FD",
+    "features":  {
+                     "hogwarts":{"status":"headless63_render63_preservation_pass_editor22_MOVE40_UX69_full132_11_before_final_receipt_camera_changes_manual_play_pending","requirements":["D41"],"dependencies":["world","battle","skills","encounter"],"files":["specs/hogwarts.md","docs/hogwarts_guide.md","features/world/data/hogwarts.tscn","features/battle/maps/hogwarts.tscn","features/battle/maps/hogwarts_blood_moon.tscn","common/data/monster_phase_definition.gd","features/battle/battle_phase_controller.gd"],"tests":["tests/hogwarts_suite.gd","tests/hogwarts_art_gallery.gd","tests/hogwarts_preservation.gd"],"evidence":["artifacts/tests/hogwarts/headless.json","artifacts/tests/hogwarts/render.json","artifacts/tests/hogwarts/preservation.json"]},
+                     "content_authoring": {"status":"core375_editor14_MOVE40_full131_11_manual_mouse_pending","requirements":["D39"],"dependencies":["editor_workflow","units","skills"],"files":["specs/content_authoring.md","docs/content_authoring_guide.md","docs/audits/content_authoring_audit.md","common/data/sprite_animation_clip.gd","common/data/sprite_sheet_layout.gd","features/presentation/sprite_atlas.gd","addons/skill_authoring/content_inspector.gd"],"tests":["tests/content_authoring_suite.gd","tests/content_authoring_editor_worker.gd"],"evidence":["artifacts/content-authoring-2026-10-12/results.json","artifacts/content-authoring-2026-10-12/editor-results.json"]},
+                     "new_units":  {
+                                       "status":  "headless45_render45_MOVE40_full124_13_manual_mouse_pending",
+                                       "requirements":  [
+                                                            "NEW-01",
+                                                            "NEW-02",
+                                                            "NEW-03",
+                                                            "NEW-04",
+                                                            "NEW-05"
+                                                        ],
+                                       "dependencies":  [
+                                                            "skills",
+                                                            "controls",
+                                                            "battle",
+                                                            "movement",
+                                                            "save",
+                                                            "depth_sorting"
+                                                        ],
+                                       "tests":  [
+                                                     "new_units_suite",
+                                                     "all",
+                                                     "world_movement"
+                                                 ],
+                                       "files":  [
+                                                     "specs/new_units.md",
+                                                     "docs/new_units_guide.md",
+                                                     "common/data/skill_definition.gd",
+                                                     "common/data/skill_effect_definition.gd",
+                                                     "common/data/unit_definition.gd",
+                                                     "features/skills/advanced_skill_runtime.gd",
+                                                     "features/skills/advanced_skill_visual.gd",
+                                                     "features/skills/battle_skill_effect.gd",
+                                                     "features/skills/summon_scaling.gd",
+                                                     "features/units/status_controller.gd",
+                                                     "features/units/tactical_unit.gd",
+                                                     "features/ui/item_debug_panel.gd",
+                                                     "tests/new_units_suite.gd"
+                                                 ],
+                                       "evidence":  [
+                                                        "artifacts/new-units-2026-10-11/headless-results.json",
+                                                        "artifacts/new-units-2026-10-11/render-results.json",
+                                                        "artifacts/new-units-2026-10-11/all.log"
+                                                    ]
+                                   },
+                     "depth_sorting":  {
+                                           "status":  "headless71_render75_editor24_MOVE40_passed_full122_11_not_clean_manual_mouse_pending",
+                                           "requirements":  [
+                                                                "SORT-01",
+                                                                "SORT-02",
+                                                                "SORT-03",
+                                                                "SORT-04",
+                                                                "SORT-05",
+                                                                "SORT-06",
+                                                                "SORT-07",
+                                                                "SORT-08",
+                                                                "SORT-09",
+                                                                "SORT-10",
+                                                                "SORT-11",
+                                                                "SORT-12",
+                                                                "SORT-13"
+                                                            ],
+                                           "dependencies":  [
+                                                                "scenery",
+                                                                "authoring",
+                                                                "battlefields",
+                                                                "movement"
+                                                            ],
+                                           "tests":  [
+                                                         "depth_sorting_suite",
+                                                         "editor_sorting_worker",
+                                                         "all",
+                                                         "world_movement"
+                                                     ],
+                                           "files":  [
+                                                         "specs/depth_sorting.md",
+                                                         "docs/depth_sorting_guide.md",
+                                                         "docs/depth_sorting_validation.md",
+                                                         "features/presentation/scenery_sorting.gd",
+                                                         "features/world/definitions/world_scenery_definition.gd",
+                                                         "features/presentation/unit_view.gd",
+                                                         "features/world/world_party_view.gd",
+                                                         "features/world/ground_map.gd",
+                                                         "features/world/authoring/native_scenery.gd",
+                                                         "features/world/authoring/world_authoring_snapshot.gd",
+                                                         "features/world/authoring/templates/sorted_gate_parts.tscn",
+                                                         "addons/world_authoring/sorting_controls.gd",
+                                                         "addons/world_authoring/sorting_mode_property.gd",
+                                                         "addons/world_authoring/plugin.gd",
+                                                         "tests/depth_sorting_suite.gd",
+                                                         "tests/editor_sorting_worker.gd"
+                                                     ],
+                                           "evidence":  [
+                                                            "artifacts/depth-sorting-2026-10-11/headless-results.json",
+                                                            "artifacts/depth-sorting-2026-10-11/render-results.json",
+                                                            "artifacts/depth-sorting-2026-10-11/classification.json",
+                                                            "artifacts/depth-sorting-2026-10-11/all.log"
+                                                        ]
+                                       },
+                     "editor_workflow":  {
+                                             "status":  "core14_render15_data74_reinforcement18_multi66_editor19_MOVE40_verified_full119_13_not_clean_manual_mouse_pending",
+                                             "requirements":  [
+                                                                  "EDITOR-RESOURCE-KEY",
+                                                                  "EDITOR-CHINESE-HELP",
+                                                                  "EDITOR-DATA-FOLDERS",
+                                                                  "EDITOR-NATIVE-SPRITE",
+                                                                  "COUNTDOWN-LIVE-WORLD",
+                                                                  "COUNTDOWN-PER-SECOND",
+                                                                  "TRANSITION-FIRST-FRAME"
+                                                              ],
+                                             "dependencies":  [
+                                                                  "controls",
+                                                                  "multi_party",
+                                                                  "authoring",
+                                                                  "battlefields",
+                                                                  "movement",
+                                                                  "save"
+                                                              ],
+                                             "tests":  [
+                                                           "editor_workflow_core_suite",
+                                                           "editor_workflow_data_suite",
+                                                           "dynamic_reinforcement_suite",
+                                                           "editor_workflow_worker",
+                                                           "multi_party_suite",
+                                                           "all",
+                                                           "world_movement"
+                                                       ],
+                                             "files":  [
+                                                           "specs/editor_workflow.md",
+                                                           "docs/editor_workflow_guide.md",
+                                                           "docs/editor_workflow_validation.md",
+                                                           "specs/unit_resource_moves.json",
+                                                           "common/data/unit_resource_paths.gd",
+                                                           "features/settings/game_settings.gd",
+                                                           "common/data/skill_definition.gd",
+                                                           "common/data/unit_definition.gd",
+                                                           "addons/skill_authoring/key_property.gd",
+                                                           "addons/skill_authoring/formula_inspector.gd",
+                                                           "features/world/authoring/native_scenery.gd",
+                                                           "features/world/runtime/encounter_service.gd",
+                                                           "features/world/runtime/world_context.gd",
+                                                           "features/battle/scene_transition_cover.gd",
+                                                           "features/battle/game_director.gd"
+                                                       ],
+                                             "evidence":  [
+                                                              "artifacts/editor-workflow-2026-10-11/results.json",
+                                                              "artifacts/editor-workflow-2026-10-11/core.log",
+                                                              "artifacts/editor-workflow-2026-10-11/data-final.log",
+                                                              "artifacts/editor-workflow-2026-10-11/reinforcement.log",
+                                                              "artifacts/editor-workflow-2026-10-11/multi.log",
+                                                              "artifacts/editor-workflow-2026-10-11/editor-final.log",
+                                                              "artifacts/editor-workflow-2026-10-11/all-final.log"
+                                                          ]
+                                         },
+                     "battlefields":  {
+                                          "status":  "native_scene254_editor14_alignment50_multi66_ice24_skills65_presentation42_MOVE40_verified_full_suite_not_clean",
+                                          "requirements":  [
+                                                               "BATTLE-SCENE-AUTHORITY",
+                                                               "BATTLE-NATIVE-BRUSH",
+                                                               "BATTLE-FIVE-ZONES",
+                                                               "BATTLE-F6-ISOLATION"
+                                                           ],
+                                          "dependencies":  [
+                                                               "battle",
+                                                               "movement",
+                                                               "multi_party"
+                                                           ],
+                                          "tests":  [
+                                                        "battlefield_scene_suite",
+                                                        "editor_battlefield_worker",
+                                                        "multi_party_suite",
+                                                        "ice_wall_ai_regression",
+                                                        "all"
+                                                    ],
+                                          "files":  [
+                                                        "specs/battlefield_scenes.md",
+                                                        "docs/battlefield_artist_guide.md",
+                                                        "features/battle/authoring/battlefield_map.gd",
+                                                        "features/battle/authoring/battlefield_compiler.gd",
+                                                        "features/battle/authoring/battle_tile_layer.gd",
+                                                        "features/battle/authoring/battle_spawn_zone.gd",
+                                                        "features/battle/maps/meadow.tscn",
+                                                        "features/battle/maps/mountain.tscn",
+                                                        "features/battle/maps/cave.tscn",
+                                                        "features/battle/maps/shaolin_temple.tscn",
+                                                        "features/battle/maps/millennium_lake.tscn",
+                                                        "tests/battlefield_scene_suite.gd",
+                                                        "tools/create_battlefield_scenes.gd"
+                                                    ],
+                                          "evidence":  [
+                                                           "artifacts/battlefield-scenes-2026-10-11/scene-tests.log",
+                                                           "artifacts/battlefield-scenes-2026-10-11/editor.log",
+                                                           "artifacts/battlefield-scenes-2026-10-11/preview.log"
+                                                       ]
+                                      },
+                     "monster_layout":  {
+                                            "status":  "75_checks_and_native_render_verified",
+                                            "requirements":  [
+                                                                 "MONSTER-VISUAL-DOMAINS",
+                                                                 "TEMPLE-POPULATION",
+                                                                 "LAYOUT-MIGRATION"
+                                                             ],
+                                            "dependencies":  [
+                                                                 "world",
+                                                                 "navigation",
+                                                                 "save",
+                                                                 "authoring"
+                                                             ],
+                                            "tests":  [
+                                                          "monster_layout_suite",
+                                                          "shaolin_temple",
+                                                          "all"
+                                                      ],
+                                            "files":  [
+                                                          "specs/monster_layout.md",
+                                                          "docs/monster_layout.md",
+                                                          "features/world/data/river_bay.tscn",
+                                                          "features/world/data/shaolin_temple.tscn",
+                                                          "features/world/runtime/population_layout.gd",
+                                                          "features/world/definitions/polygon_domain.gd",
+                                                          "features/world/runtime/world_validator.gd",
+                                                          "features/world/runtime/world_context.gd",
+                                                          "features/world/runtime/world_session.gd",
+                                                          "tests/monster_layout_suite.gd",
+                                                          "tests/world/approved_monster_layouts.json"
+                                                      ],
+                                            "evidence":  [
+                                                             "artifacts/monster-layout-2026-10-10/results.json"
+                                                         ]
+                                        },
+                     "multi_party":  {
+                                         "status":  "verified_72_targeted_125_unified_render_MOVE40_temple53_lake35_manual_art_review_pending",
+                                         "requirements":  [
+                                                              "MULTI-COUNTDOWN",
+                                                              "MULTI-RECRUIT",
+                                                              "MULTI-LIFECYCLE",
+                                                              "MULTI-SETTLEMENT",
+                                                              "MULTI-ARENAS"
+                                                          ],
+                                         "dependencies":  [
+                                                              "encounter",
+                                                              "battle",
+                                                              "save",
+                                                              "movement"
+                                                          ],
+                                         "tests":  [
+                                                       "multi_party_suite",
+                                                       "ice_wall_ai_regression",
+                                                       "all",
+                                                       "world_movement"
+                                                   ],
+                                         "files":  [
+                                                       "specs/multi_party_encounters.md",
+                                                       "docs/multi_party_encounters.md",
+                                                       "features/world/runtime/encounter_service.gd",
+                                                       "features/world/runtime/settlement_service.gd",
+                                                       "features/world/runtime/world_context.gd",
+                                                       "features/world/definitions/encounter_rules.gd",
+                                                       "features/world/encounter_fire_ring.gd",
+                                                       "features/world/ground_map.gd",
+                                                       "common/data/encounter_definition.gd",
+                                                       "features/battle/game_director.gd",
+                                                       "features/ui/game_hud.gd",
+                                                       "tests/multi_party_suite.gd",
+                                                       "tests/multi_party_suite.tscn"
+                                                   ],
+                                         "evidence":  [
+                                                          "artifacts/multi-party-2026-10-10/results.json",
+                                                          "artifacts/multi-party-2026-10-10/all-acceptance.log",
+                                                          "artifacts/multi-party-2026-10-10/movement-render.log"
+                                                      ]
+                                     },
+                     "river_enrichment":  {
+                                              "status":  "verified_native_enrichment_render_editor_110_regressions_manual_mouse_pending",
+                                              "requirements":  [
+                                                                   "RICH-01",
+                                                                   "RICH-02",
+                                                                   "RICH-03",
+                                                                   "RICH-04",
+                                                                   "RICH-05"
+                                                               ],
+                                              "dependencies":  [
+                                                                   "scenery",
+                                                                   "native_tiles",
+                                                                   "world",
+                                                                   "movement"
+                                                               ],
+                                              "tests":  [
+                                                            "river_enrichment_suite",
+                                                            "river_enrichment_capture",
+                                                            "river_enrichment_benchmark",
+                                                            "world_movement",
+                                                            "editor_native_tile_smoke",
+                                                            "all"
+                                                        ],
+                                              "files":  [
+                                                            "specs/river_enrichment.md",
+                                                            "docs/river_enrichment.md",
+                                                            "tools/enrich_river_bay.gd",
+                                                            "tools/refine_river_composition.gd",
+                                                            "tests/river_enrichment_suite.gd",
+                                                            "tests/river_enrichment_suite.tscn",
+                                                            "tests/river_enrichment_capture.gd",
+                                                            "tests/river_enrichment_capture.tscn",
+                                                            "tests/river_enrichment_benchmark.gd",
+                                                            "tests/river_enrichment_benchmark.tscn",
+                                                            "features/world/data/river_bay.tscn",
+                                                            "features/world/data/tiles/river_bay_enriched.tres",
+                                                            "features/world/data/tiles/river_bay_enriched_obstacles.tres"
+                                                        ],
+                                              "evidence":  [
+                                                               "artifacts/river-enrichment-2026-10-10/results.json",
+                                                               "artifacts/river-enrichment-2026-10-10/benchmark.json",
+                                                               "artifacts/river-enrichment-2026-10-10/all-final.log",
+                                                               "artifacts/river-enrichment-2026-10-10/editor.log",
+                                                               "artifacts/river-enrichment-2026-10-10/movement-render.log"
+                                                           ]
+                                          },
+                     "editor_placeholder":  {
+                                                "status":  "verified_actual_editor_placeholder_and_native_regressions",
+                                                "requirements":  [
+                                                                     "EDITOR-PLACEHOLDER-01",
+                                                                     "EDITOR-PLACEHOLDER-02",
+                                                                     "EDITOR-PLACEHOLDER-03"
+                                                                 ],
+                                                "dependencies":  [
+                                                                     "authoring",
+                                                                     "native_tiles"
+                                                                 ],
+                                                "tests":  [
+                                                              "editor_placeholder_regression",
+                                                              "editor_native_tile_smoke",
+                                                              "native_tilemap_suite"
+                                                          ],
+                                                "files":  [
+                                                              "features/world/authoring/world_authoring_snapshot.gd",
+                                                              "addons/world_authoring/plugin.gd",
+                                                              "tests/editor_placeholder_regression.gd",
+                                                              "tests/placeholder_world_fixture.gd",
+                                                              "specs/native_tilemap.md",
+                                                              "docs/tools/editor_plugins.md"
+                                                          ]
+                                            },
+                     "scenery":  {
+                                     "status":  "verified_data_native_input_shader_render_editor_and_regressions_manual_mouse_pending",
+                                     "requirements":  [
+                                                          "SCENE-01",
+                                                          "SCENE-02",
+                                                          "SCENE-03",
+                                                          "SCENE-04",
+                                                          "SCENE-05",
+                                                          "SCENE-06"
+                                                      ],
+                                     "dependencies":  [
+                                                          "native_tiles",
+                                                          "world",
+                                                          "authoring",
+                                                          "movement"
+                                                      ],
+                                     "tests":  [
+                                                   "world_scenery_suite",
+                                                   "world_movement",
+                                                   "all"
+                                               ],
+                                     "files":  [
+                                                   "features/world/definitions/world_scenery_definition.gd",
+                                                   "features/world/world_scenery_view.gd",
+                                                   "features/world/scenery_outline.gdshader",
+                                                   "features/world/world_hover_controller.gd",
+                                                   "features/ui/world_hover_overlay.gd",
+                                                   "features/world/authoring/world_author_node.gd",
+                                                   "features/world/authoring/world_map_2d.gd",
+                                                   "features/battle/game_director.gd",
+                                                   "features/world/ground_map.gd",
+                                                   "features/world/runtime/world_validator.gd",
+                                                   "features/world/definitions/world_map_definition.gd",
+                                                   "addons/world_authoring/plugin.gd",
+                                                   "tests/world_scenery_suite.gd",
+                                                   "tests/world_scenery_suite.tscn",
+                                                   "specs/scenery_interaction.md",
+                                                   "docs/scenery_authoring.md",
+                                                   "features/world/data/scenery/tree.tres",
+                                                   "features/world/data/scenery/mountain.tres",
+                                                   "features/world/data/scenery/cave_rock.tres",
+                                                   "features/world/data/scenery/building.tres",
+                                                   "features/world/data/scenery/town_gate.tres",
+                                                   "features/world/data/scenery/dungeon_gate.tres",
+                                                   "features/world/data/scenery/dungeon_stairs.tres"
+                                               ]
+                                 },
+                     "battle_presentation":  {
+                                                 "status":  "verified_native_input_render_and_full_regressions",
+                                                 "requirements":  [
+                                                                      "PRES-01",
+                                                                      "PRES-02",
+                                                                      "PRES-03",
+                                                                      "PRES-04",
+                                                                      "PRES-05",
+                                                                      "PRES-06",
+                                                                      "PRES-07",
+                                                                      "PRES-08",
+                                                                      "PRES-09",
+                                                                      "PRES-10",
+                                                                      "PRES-11",
+                                                                      "PRES-12",
+                                                                      "PRES-13",
+                                                                      "PRES-14",
+                                                                      "PRES-15"
+                                                                  ],
+                                                 "dependencies":  [
+                                                                      "battle",
+                                                                      "controls",
+                                                                      "save"
+                                                                  ],
+                                                 "tests":  [
+                                                               "battle_presentation_suite",
+                                                               "PRES-"
+                                                           ],
+                                                 "files":  [
+                                                               "specs/battle_presentation.md",
+                                                               "docs/battle_presentation_validation.md",
+                                                               "docs/artist_guide.md",
+                                                               "features/battle/battle_result_flow.gd",
+                                                               "features/battle/game_director.gd",
+                                                               "features/ui/battle_hud_layout.gd",
+                                                               "features/ui/victory_scroll.gd",
+                                                               "features/ui/game_hud.gd",
+                                                               "tests/battle_presentation_suite.gd",
+                                                               "tests/battle_presentation_suite.tscn",
+                                                               "tests/window_resize_regression.gd",
+                                                               "tests/selection_input_regression.gd",
+                                                               "tests/run_all.gd",
+                                                               "specs/decisions.md",
+                                                               "AGENTS.md"
+                                                           ],
+                                                 "evidence":  "docs/battle_presentation_validation.md"
+                                             },
+                     "party_polish":  {
+                                          "status":  "verified_native_input_render_and_regressions",
+                                          "requirements":  [
+                                                               "POLISH-01",
+                                                               "POLISH-02",
+                                                               "POLISH-03",
+                                                               "POLISH-04",
+                                                               "POLISH-05",
+                                                               "POLISH-06",
+                                                               "DIR-01",
+                                                               "DIR-02",
+                                                               "DIR-03",
+                                                               "DIR-04",
+                                                               "DIR-05",
+                                                               "DIR-06",
+                                                               "DIR-07"
+                                                           ],
+                                          "dependencies":  [
+                                                               "character",
+                                                               "battle",
+                                                               "movement"
+                                                           ],
+                                          "tests":  [
+                                                        "party_polish_suite",
+                                                        "sprite_layout_capture",
+                                                        "POLISH-",
+                                                        "world_direction_regression",
+                                                        "DIR-"
+                                                    ],
+                                          "files":  [
+                                                        "specs/party_polish.md",
+                                                        "docs/party_polish_validation.md",
+                                                        "common/data/skill_effect_definition.gd",
+                                                        "common/data/unit_definition.gd",
+                                                        "common/data/sprite_sheet_layout.gd",
+                                                        "features/skills/summon_scaling.gd",
+                                                        "features/skills/battle_skill_effect.gd",
+                                                        "features/skills/data/summon.tres",
+                                                        "features/progression/character_record.gd",
+                                                        "features/battle/game_director.gd",
+                                                        "features/ui/progression_panels.gd",
+                                                        "features/ui/skill_description.gd",
+                                                        "features/presentation/sprite_atlas.gd",
+                                                        "features/presentation/unit_view.gd",
+                                                        "features/world/world_party_view.gd",
+                                                        "features/units/data/monsters/beast.tres",
+                                                        "features/units/data/monsters/elite.tres",
+                                                        "features/units/data/layouts/beast_layout.tres",
+                                                        "features/units/data/layouts/elite_layout.tres",
+                                                        "tests/party_polish_suite.gd",
+                                                        "tests/party_polish_suite.tscn",
+                                                        "tests/sprite_layout_capture.gd",
+                                                        "tests/sprite_layout_capture.tscn",
+                                                        "tests/run_all.gd",
+                                                        "features/units/data/mercenaries/merchant.tres",
+                                                        "features/units/data/layouts/merchant_layout.tres",
+                                                        "tests/world_direction_regression.gd",
+                                                        "tests/world_direction_regression.tscn"
+                                                    ],
+                                          "evidence":  "docs/party_polish_validation.md"
+                                      },
+                     "structure":  {
+                                       "status":  "verified_document_routes_no_relocation",
+                                       "requirements":  [
+                                                            "IDX-01",
+                                                            "IDX-02",
+                                                            "IDX-03",
+                                                            "IDX-04",
+                                                            "IDX-05",
+                                                            "IDX-06",
+                                                            "IDX-07",
+                                                            "IDX-08",
+                                                            "IDX-09",
+                                                            "IDX-10",
+                                                            "IDX-11",
+                                                            "IDX-12"
+                                                        ],
+                                       "dependencies":  [
+
+                                                        ],
+                                       "tests":  [
+                                                     "context_routes_test.ps1",
+                                                     "IDX-"
+                                                 ],
+                                       "files":  [
+                                                     "specs/combat_controls.md",
+                                                     "docs/combat_controls.md",
+                                                     "specs/decisions.md",
+                                                     "specs/context_map.json",
+                                                     "tools/project_context.ps1",
+                                                     "tests/context_routes_test.ps1",
+                                                     "docs/index.md",
+                                                     "docs/architecture/project_map.md",
+                                                     "docs/design/units.md",
+                                                     "docs/design/world.md",
+                                                     "docs/tools/editor_plugins.md",
+                                                     "docs/audits/2026-10-09_structure.md",
+                                                     "AGENTS.md",
+                                                     "specs/index.md",
+                                                     "tools/spec_context.ps1"
+                                                 ],
+                                       "evidence":  "docs/audits/2026-10-09_structure.md"
+                                   },
+                     "controls":  {
+                                      "status":  "verified_native_input_and_render",
+                                      "requirements":  [
+                                                           "UX-01",
+                                                           "UX-02",
+                                                           "UX-03",
+                                                           "UX-04",
+                                                           "UX-05",
+                                                           "UX-06",
+                                                           "UX-07",
+                                                           "UX-08",
+                                                           "UX-09",
+                                                           "NOVA-01",
+                                                           "NOVA-02",
+                                                           "NOVA-03",
+                                                           "NOVA-04",
+                                                           "NOVA-05",
+                                                           "NOVA-06",
+                                                           "NOVA-07",
+                                                           "NOVA-08"
+                                                       ],
+                                      "dependencies":  [
+                                                           "battle",
+                                                           "character"
+                                                       ],
+                                      "tests":  [
+                                                    "combat_ux_suite",
+                                                    "UX-",
+                                                    "blast_radial_suite",
+                                                    "NOVA-"
+                                                ],
+                                      "files":  [
+                                                    "specs/combat_controls.md",
+                                                    "docs/combat_controls.md",
+                                                    "docs/combat_controls_validation.md",
+                                                    "common/data/skill_definition.gd",
+                                                    "common/data/combat_feel_profile.gd",
+                                                    "features/battle/battle_cursor_guard.gd",
+                                                    "features/battle/selection_controller.gd",
+                                                    "features/battle/game_director.gd",
+                                                    "features/skills/ability_controller.gd",
+                                                    "features/units/tactical_unit.gd",
+                                                    "features/presentation/unit_view.gd",
+                                                    "features/settings/game_settings.gd",
+                                                    "features/ui/game_hud.gd",
+                                                    "features/ui/skill_description.gd",
+                                                    "tests/combat_ux_suite.gd",
+                                                    "tests/test_runner.gd",
+                                                    "tests/v2_suite.gd",
+                                                    "tests/progression_suite.gd",
+                                                    "tests/run_all.gd",
+                                                    "tools/spec_context.ps1",
+                                                    "specs/decisions.md",
+                                                    "features/skills/data/blast.tres",
+                                                    "features/skills/data/critical.tres",
+                                                    "features/skills/data/quake.tres",
+                                                    "features/skills/data/wheel.tres",
+                                                    "features/skills/data/dragon.tres",
+                                                    "features/skills/data/summon.tres",
+                                                    "features/skills/data/ice_wall.tres",
+                                                    "features/skills/data/lightning.tres",
+                                                    "features/skills/data/supply.tres",
+                                                    "features/skills/data/heal.tres",
+                                                    "features/skills/data/control.tres",
+                                                    "features/skills/skill_vfx.gd",
+                                                    "features/skills/battle_skill_effect.gd",
+                                                    "tests/blast_radial_suite.gd",
+                                                    "tests/blast_radial_suite.tscn"
+                                                ],
+                                      "evidence":  "docs/combat_controls_validation.md"
+                                  },
+                     "character":  {
+                                       "status":  "verified_with_test_input_and_render",
+                                       "requirements":  [
+                                                            "SHEET-01",
+                                                            "SHEET-02",
+                                                            "SHEET-03",
+                                                            "SHEET-04",
+                                                            "SHEET-05",
+                                                            "SHEET-06",
+                                                            "SHEET-07",
+                                                            "SHEET-08",
+                                                            "SHEET-09",
+                                                            "SHEET-10",
+                                                            "SHEET-11",
+                                                            "SHEET-12"
+                                                        ],
+                                       "dependencies":  [
+                                                            "items",
+                                                            "battle",
+                                                            "save"
+                                                        ],
+                                       "tests":  [
+                                                     "character_sheet_suite",
+                                                     "SHEET-"
+                                                 ],
+                                       "files":  [
+                                                     "specs/character_sheet.md",
+                                                     "docs/character_sheet_guide.md",
+                                                     "features/ui/progression_panels.gd",
+                                                     "features/ui/skill_description.gd",
+                                                     "features/ui/world_hud.gd",
+                                                     "features/ui/game_hud.gd",
+                                                     "features/battle/game_director.gd",
+                                                     "features/progression/character_record.gd",
+                                                     "common/data/gear_item_definition.gd",
+                                                     "common/data/skill_definition.gd",
+                                                     "tests/character_sheet_suite.gd",
+                                                     "tests/character_sheet_capture.gd",
+                                                     "tests/world_hud_suite.gd",
+                                                     "tests/progression_suite.gd",
+                                                     "tests/run_all.gd",
+                                                     "specs/decisions.md",
+                                                     "tools/spec_context.ps1",
+                                                     "docs/character_sheet_validation.md"
+                                                 ],
+                                       "evidence":  "docs/character_sheet_validation.md"
+                                   },
+                     "items":  {
+                                   "status":  "verified_data_ui_and_render",
+                                   "requirements":  [
+                                                        "ITEM-01",
+                                                        "ITEM-02",
+                                                        "ITEM-03",
+                                                        "ITEM-04",
+                                                        "ITEM-05",
+                                                        "ITEM-06",
+                                                        "ITEM-07",
+                                                        "ITEM-08",
+                                                        "ITEM-09"
+                                                    ],
+                                   "dependencies":  [
+                                                        "power",
+                                                        "battle",
+                                                        "save"
+                                                    ],
+                                   "tests":  [
+                                                 "items_suite"
+                                             ],
+                                   "files":  [
+                                                 "specs/items.md",
+                                                 "specs/sources/items52.json",
+                                                 "common/data/gear_item_definition.gd",
+                                                 "features/progression/item_catalog.gd",
+                                                 "features/progression/character_record.gd",
+                                                 "features/progression/combat_stats.gd",
+                                                 "features/progression/party_item_service.gd",
+                                                 "features/progression/item_debug_service.gd",
+                                                 "features/ui/item_debug_panel.gd",
+                                                 "features/ui/item_glyph.gd",
+                                                 "features/ui/game_hud.gd",
+                                                 "tests/items_suite.gd"
+                                             ]
+                               },
+                     "movement":  {
+                                      "status":  "protected_verified_data_and_render",
+                                      "requirements":  [
+                                                           "MOVE-01",
+                                                           "MOVE-02",
+                                                           "MOVE-03",
+                                                           "MOVE-04",
+                                                           "MOVE-05",
+                                                           "MOVE-06",
+                                                           "MOVE-07",
+                                                           "MOVE-08",
+                                                           "MOVE-09",
+                                                           "MOVE-10",
+                                                           "MOVE-11",
+                                                           "MOVE-12",
+                                                           "MOVE-13",
+                                                           "MOVE-14",
+                                                           "MOVE-15",
+                                                           "MOVE-16",
+                                                           "MOVE-17",
+                                                           "MOVE-18"
+                                                       ],
+                                      "dependencies":  [
+                                                           "navigation",
+                                                           "battle"
+                                                       ],
+                                      "tests":  [
+                                                    "MOVE-"
+                                                ],
+                                      "files":  [
+                                                    "specs/movement_feel.md",
+                                                    "common/movement_feel.gd",
+                                                    "features/world/runtime/world_navigation_service.gd",
+                                                    "features/world/runtime/world_context.gd",
+                                                    "features/units/tactical_unit.gd",
+                                                    "features/presentation/world_visual_pose.gd",
+                                                    "features/presentation/unit_view.gd",
+                                                    "features/battle/game_director.gd",
+                                                    "tests/world/movement_checks.gd",
+                                                    "tests/world/movement_regression.gd",
+                                                    "tests/run_all.gd"
+                                                ]
+                                  },
+                     "world":  {
+                                   "status":  "implemented_data_and_gameplay_verified",
+                                   "requirements":  [
+                                                        "WORLD-01",
+                                                        "WORLD-02"
+                                                    ],
+                                   "dependencies":  [
+                                                        "power",
+                                                        "navigation"
+                                                    ],
+                                   "tests":  [
+                                                 "T02",
+                                                 "T03",
+                                                 "T06",
+                                                 "T10",
+                                                 "T13"
+                                             ],
+                                   "files":  [
+                                                 "specs/decisions.md",
+                                                 "features/world/runtime/world_context.gd",
+                                                 "features/world/runtime/world_session.gd",
+                                                 "features/world/runtime/world_catalog.gd",
+                                                 "features/battle/game_director.gd"
+                                             ]
+                               },
+                     "power":  {
+                                   "status":  "verified",
+                                   "requirements":  [
+                                                        "POWER-01"
+                                                    ],
+                                   "dependencies":  [
+
+                                                    ],
+                                   "tests":  [
+                                                 "T01"
+                                             ],
+                                   "files":  [
+                                                 "common/data/unit_definition.gd",
+                                                 "features/world/runtime/power_calculator.gd",
+                                                 "features/world/runtime/party_builder.gd"
+                                             ]
+                               },
+                     "navigation":  {
+                                        "status":  "verified_conservative_v1",
+                                        "requirements":  [
+                                                             "NAV-01"
+                                                         ],
+                                        "dependencies":  [
+
+                                                         ],
+                                        "tests":  [
+                                                      "T04",
+                                                      "T05",
+                                                      "T06",
+                                                      "T25"
+                                                  ],
+                                        "files":  [
+                                                      "features/world/definitions/polygon_domain.gd",
+                                                      "features/world/runtime/world_navigation_service.gd"
+                                                  ]
+                                    },
+                     "encounter":  {
+                                       "status":  "verified",
+                                       "requirements":  [
+                                                            "ENC-01",
+                                                            "ENC-02"
+                                                        ],
+                                       "dependencies":  [
+                                                            "world",
+                                                            "save"
+                                                        ],
+                                       "tests":  [
+                                                     "T07",
+                                                     "T08",
+                                                     "T09",
+                                                     "T10",
+                                                     "T21",
+                                                     "T22"
+                                                 ],
+                                       "files":  [
+                                                     "features/world/runtime/encounter_service.gd",
+                                                     "features/world/runtime/world_context.gd",
+                                                     "features/battle/game_director.gd"
+                                                 ]
+                                   },
+                     "save":  {
+                                  "status":  "verified_recovery",
+                                  "requirements":  [
+                                                       "SAVE-01",
+                                                       "SETTLE-01"
+                                                   ],
+                                  "dependencies":  [
+                                                       "world"
+                                                   ],
+                                  "tests":  [
+                                                "T11",
+                                                "T14",
+                                                "T15",
+                                                "T16",
+                                                "T23",
+                                                "T24"
+                                            ],
+                                  "files":  [
+                                                "features/world/runtime/save_service.gd",
+                                                "features/world/runtime/settlement_service.gd",
+                                                "features/progression/party_progress.gd"
+                                            ]
+                              },
+                     "authoring":  {
+                                       "status":  "verified_native_editor_api_manual_mouse_pending",
+                                       "requirements":  [
+                                                            "AUTHOR-01",
+                                                            "MAP-01"
+                                                        ],
+                                       "dependencies":  [
+                                                            "world",
+                                                            "navigation",
+                                                            "encounter"
+                                                        ],
+                                       "tests":  [
+                                                     "T17",
+                                                     "T18",
+                                                     "T19",
+                                                     "T20"
+                                                 ],
+                                       "files":  [
+                                                     "addons/world_authoring/plugin.gd",
+                                                     "features/world/authoring/world_map_2d.gd",
+                                                     "features/world/runtime/world_validator.gd",
+                                                     "features/world/authoring/world_tile_compiler.gd",
+                                                     "features/world/authoring/world_tile_layer.gd"
+                                                 ]
+                                   },
+                     "battle":  {
+                                    "status":  "verified_existing_rts_bridge",
+                                    "requirements":  [
+                                                         "BATTLE-01"
+                                                     ],
+                                    "dependencies":  [
+                                                         "encounter",
+                                                         "save"
+                                                     ],
+                                    "tests":  [
+                                                  "T12",
+                                                  "combat_v2",
+                                                  "progression",
+                                                  "resize",
+                                                  "ice_wall_ai"
+                                              ],
+                                    "files":  [
+                                                  "features/battle/game_director.gd",
+                                                  "features/units/tactical_unit.gd",
+                                                  "features/world/runtime/settlement_service.gd"
+                                              ]
+                                },
+                     "native_tiles":  {
+                                          "status":  "verified_native_human_workflow_approved_portal_editor_api_regressions_manual_mouse_pending",
+                                          "requirements":  [
+                                                               "TILE-01",
+                                                               "TILE-02",
+                                                               "TILE-03",
+                                                               "TILE-04",
+                                                               "TILE-05",
+                                                               "TILE-06",
+                                                               "TILE-07",
+                                                               "HU-01",
+                                                               "HU-02",
+                                                               "HU-03",
+                                                               "HU-04",
+                                                               "HU-05",
+                                                               "HU-06",
+                                                               "HU-07"
+                                                           ],
+                                          "dependencies":  [
+                                                               "world",
+                                                               "navigation",
+                                                               "authoring",
+                                                               "movement"
+                                                           ],
+                                          "tests":  [
+                                                        "human_authoring_suite",
+                                                        "native_tile_preflight",
+                                                        "native_tilemap_suite",
+                                                        "editor_native_tile_smoke",
+                                                        "native_tilemap_render",
+                                                        "world_movement",
+                                                        "all"
+                                                    ],
+                                          "files":  [
+                                                        "features/world/authoring/world_tile_compiler.gd",
+                                                        "features/world/authoring/world_author_tree.gd",
+                                                        "features/world/authoring/world_monster_region.gd",
+                                                        "features/world/authoring/world_region_polygon.gd",
+                                                        "addons/world_authoring/world_inspector.gd",
+                                                        "addons/world_authoring/choice_property.gd",
+                                                        "addons/world_authoring/scalar_property.gd",
+                                                        "features/world/authoring/templates/monster_region.tscn",
+                                                        "features/world/authoring/templates/portal.tscn",
+                                                        "features/world/authoring/templates/scenery.tscn",
+                                                        "tests/human_authoring_suite.gd",
+                                                        "tests/world/approved_content_changes.gd",
+                                                        "tests/world/approved_portal_edits.json",
+                                                        "tests/editor_native_tile_worker.gd",
+                                                        "specs/human_authoring.md",
+                                                        "docs/human_authoring_guide.md",
+                                                        "docs/human_authoring_validation.md",
+                                                        "features/world/authoring/world_tile_geometry.gd",
+                                                        "features/world/authoring/world_tile_layer.gd",
+                                                        "features/world/authoring/world_map_2d.gd",
+                                                        "features/world/definitions/world_tile_layer_data.gd",
+                                                        "features/world/definitions/world_map_definition.gd",
+                                                        "features/world/runtime/world_validator.gd",
+                                                        "features/world/ground_map.gd",
+                                                        "addons/world_authoring/plugin.gd",
+                                                        "tests/native_tilemap_suite.gd",
+                                                        "tests/native_tilemap_suite.tscn",
+                                                        "tests/native_tile_preflight.gd",
+                                                        "tests/native_tilemap_render.gd",
+                                                        "tests/native_tilemap_render.tscn",
+                                                        "tests/editor_native_tile_smoke.gd",
+                                                        "specs/native_tilemap.md",
+                                                        "docs/native_tilemap_guide.md",
+                                                        "features/world/data/river_bay.tscn",
+                                                        "features/world/data/tiles/river_bay_terrain.tres",
+                                                        "features/world/data/tiles/river_bay_masks.tres",
+                                                        "features/world/data/qingling_town.tscn",
+                                                        "features/world/data/tiles/qingling_town_terrain.tres",
+                                                        "features/world/data/tiles/qingling_town_masks.tres",
+                                                        "features/world/data/well_1.tscn",
+                                                        "features/world/data/tiles/well_1_terrain.tres",
+                                                        "features/world/data/tiles/well_1_masks.tres",
+                                                        "features/world/data/well_2.tscn",
+                                                        "features/world/data/millennium_lake.tscn",
+                                                        "features/world/data/shaolin_temple.tscn",
+                                                        "features/world/data/tiles/well_2_terrain.tres",
+                                                        "features/world/data/tiles/well_2_masks.tres"
+                                                    ],
+                                          "evidence":  [
+                                                           "artifacts/world/native-tilemap-results.json",
+                                                           "artifacts/workflow-2026-10-10/tests.json",
+                                                           "artifacts/workflow-2026-10-10/full-approved.log",
+                                                           "artifacts/workflow-2026-10-10/human-approved.log",
+                                                           "artifacts/workflow-2026-10-10/editor-real-final.log",
+                                                           "artifacts/workflow-2026-10-10/editor.png",
+                                                           "artifacts/workflow-2026-10-10/movement-render.log",
+                                                           "artifacts/world/native-editor-results.json",
+                                                           "artifacts/world/results.json",
+                                                           "artifacts/world/native-movement-render.log",
+                                                           "artifacts/world/native-map-river_bay.png",
+                                                           "artifacts/world/native-map-qingling_town.png",
+                                                           "artifacts/world/native-map-well_1.png",
+                                                           "artifacts/world/native-map-well_2.png"
+                                                       ]
+                                      },
+                     "mercenary_storage":  {
+                                               "status":  "headless45_render45_MOVE40_full124_13_manual_mouse_pending",
+                                               "requirements":  [
+                                                                    "D31 persistent Lv1 recruitment",
+                                                                    "D31 non-destructive reserve swap",
+                                                                    "D31 v1-v2 restore",
+                                                                    "D31 immediate J K and C target",
+                                                                    "D31 original standees"
+                                                                ],
+                                               "dependencies":  [
+                                                                    "new_units",
+                                                                    "save",
+                                                                    "battle",
+                                                                    "controls"
+                                                                ],
+                                               "tests":  [
+                                                             "mercenary_storage_suite",
+                                                             "new_units_suite",
+                                                             "all",
+                                                             "world_movement"
+                                                         ],
+                                               "files":  [
+                                                             "AGENTS.md",
+                                                             "specs/mercenary_storage.md",
+                                                             "specs/new_units.md",
+                                                             "docs/new_units_guide.md",
+                                                             "features/progression/mercenary_roster.gd",
+                                                             "features/progression/party_progress.gd",
+                                                             "features/progression/character_record.gd",
+                                                             "features/world/runtime/world_context.gd",
+                                                             "features/world/runtime/world_session.gd",
+                                                             "features/battle/game_director.gd",
+                                                             "features/ui/item_debug_panel.gd",
+                                                             "features/ui/mercenary_storage_panel.gd",
+                                                             "features/ui/world_hud.gd",
+                                                             "features/ui/progression_panels.gd",
+                                                             "features/ui/game_hud.gd",
+                                                             "tests/mercenary_storage_suite.gd",
+                                                             "features/units/art/kohime-standee-v1.png",
+                                                             "features/units/data/mercenaries/kohime.tres",
+                                                             "features/units/art/ninja-standee-v1.png",
+                                                             "features/units/data/mercenaries/ninja.tres",
+                                                             "features/units/art/teppo-standee-v1.png",
+                                                             "features/units/data/mercenaries/teppo.tres",
+                                                             "features/skills/data/ninja_stealth.tres",
+                                                             "features/skills/data/ninja_fire_trail.tres",
+                                                             "features/skills/data/ninja_chain.tres"
+                                                         ],
+                                               "evidence":  [
+                                                                "artifacts/mercenary-storage-2026-10-11/headless-results.json",
+                                                                "artifacts/mercenary-storage-2026-10-11/render-results.json",
+                                                                "artifacts/mercenary-storage-2026-10-11/results.json"
+                                                            ]
+                                           },
+                     "roster_effects_polish":  {
+                                                   "status":  "headless45_render45_MOVE40_full124_13_manual_mouse_pending",
+                                                   "requirements":  [
+                                                                        "D32 independent warehouse deposit withdraw",
+                                                                        "D32 actual active count saves and battle",
+                                                                        "D32 original animated fire lightning",
+                                                                        "D32 scene full-range dragon",
+                                                                        "D32 giant claw spike strike"
+                                                                    ],
+                                                   "dependencies":  [
+                                                                        "mercenary_storage",
+                                                                        "new_units",
+                                                                        "battle",
+                                                                        "controls"
+                                                                    ],
+                                                   "tests":  [
+                                                                 "roster_effects_polish_suite",
+                                                                 "mercenary_storage_suite",
+                                                                 "new_units_suite",
+                                                                 "all",
+                                                                 "world_movement"
+                                                             ],
+                                                   "files":  [
+                                                                 "AGENTS.md",
+                                                                 "specs/roster_effects_polish.md",
+                                                                 "specs/mercenary_storage.md",
+                                                                 "docs/new_units_guide.md",
+                                                                 "common/data/unit_definition.gd",
+                                                                 "common/data/skill_definition.gd",
+                                                                 "common/data/skill_effect_definition.gd",
+                                                                 "common/data/sprite_sheet_layout.gd",
+                                                                 "features/progression/mercenary_roster.gd",
+                                                                 "features/world/runtime/world_session.gd",
+                                                                 "features/battle/game_director.gd",
+                                                                 "features/battle/selection_controller.gd",
+                                                                 "features/ui/world_hud.gd",
+                                                                 "features/ui/game_hud.gd",
+                                                                 "features/ui/progression_panels.gd",
+                                                                 "features/ui/mercenary_storage_panel.gd",
+                                                                 "features/ui/skill_description.gd",
+                                                                 "features/skills/advanced_skill_visual.gd",
+                                                                 "features/skills/advanced_skill_runtime.gd",
+                                                                 "features/skills/skill_vfx.gd",
+                                                                 "features/skills/battle_skill_effect.gd",
+                                                                 "features/presentation/unit_view.gd",
+                                                                 "features/presentation/sprite_atlas.gd",
+                                                                 "features/skills/data/dragon.tres",
+                                                                 "features/skills/data/lightning.tres",
+                                                                 "features/skills/data/ninja_fire_trail.tres",
+                                                                 "features/skills/data/claw_strike.tres",
+                                                                 "features/skills/art/fire-trail-v2.png",
+                                                                 "features/skills/art/lightning-v2.png",
+                                                                 "features/units/art/earth-claw-v2.png",
+                                                                 "features/units/data/summons/earth_claw.tres",
+                                                                 "features/units/data/monsters/earth_claw_enemy.tres",
+                                                                 "features/units/data/layouts/earth_claw_v2_layout.tres",
+                                                                 "tests/roster_effects_polish_suite.gd",
+                                                                 "tests/run_all.gd",
+                                                                 "tests/v2_suite.gd"
+                                                             ],
+                                                   "evidence":  [
+                                                                    "artifacts/roster-effects-polish-2026-10-11/headless.json",
+                                                                    "artifacts/roster-effects-polish-2026-10-11/render.json",
+                                                                    "artifacts/roster-effects-polish-2026-10-11/results.json"
+                                                                ]
+                                               },
+                     "kohime_art":  {
+                                        "status":  "native48_render45_MOVE40_full124_13_human_mouse_unverified",
+                                        "requirements":  [
+                                                             "D33 blue skin black-gold armor wing cape",
+                                                             "D33 native eight directions and48poses",
+                                                             "D33 standee portrait eyes",
+                                                             "D33 same unit identity and mechanics"
+                                                         ],
+                                        "dependencies":  [
+                                                             "new_units",
+                                                             "mercenary_storage",
+                                                             "roster_effects_polish"
+                                                         ],
+                                        "tests":  [
+                                                      "new_units_suite",
+                                                      "mercenary_storage_suite",
+                                                      "roster_effects_polish_suite",
+                                                      "all",
+                                                      "world_movement",
+                                                      "render_kohime_v2_review"
+                                                  ],
+                                        "files":  [
+                                                      "AGENTS.md",
+                                                      "specs/kohime_art.md",
+                                                      "docs/new_units_guide.md",
+                                                      "common/data/unit_definition.gd",
+                                                      "features/ui/character_art.gd",
+                                                      "features/units/art/kohime-v2.png",
+                                                      "features/units/art/kohime-standee-v2.png",
+                                                      "features/units/data/layouts/kohime_v2_layout.tres",
+                                                      "features/units/data/mercenaries/kohime.tres",
+                                                      "features/units/data/monsters/kohime_enemy.tres",
+                                                      "tools/create_kohime_v2_layout.gd",
+                                                      "tools/render_kohime_v2_review.gd"
+                                                  ],
+                                        "evidence":  [
+                                                         "artifacts/kohime-art-2026-10-11/results.json",
+                                                         "artifacts/kohime-art-2026-10-11/native-48-frames.png",
+                                                         "artifacts/kohime-art-2026-10-11/warehouse.png",
+                                                         "artifacts/kohime-art-2026-10-11/battle.png"
+                                                     ]
+                                    },
+                     "kohime_strength":  {
+                                             "files":  [
+                                                           "specs/kohime_strength.md",
+                                                           "docs/millennium_ecology_guide.md",
+                                                           "tests/kohime_strength_suite.gd",
+                                                           "features/skills/data/earth_claw.tres",
+                                                           "features/skills/data/earth_stakes.tres",
+                                                           "features/skills/data/claw_strike_empowered.tres",
+                                                           "features/units/data/summons/earth_claw.tres",
+                                                           "common/data/skill_effect_definition.gd",
+                                                           "features/skills/ability_controller.gd",
+                                                           "features/skills/battle_skill_effect.gd",
+                                                           "features/units/tactical_unit.gd"
+                                                       ],
+                                             "requirements":  [
+                                                                  "kohime_strength"
+                                                              ],
+                                             "tests":  [
+                                                           "kohime_strength_suite",
+                                                           "all",
+                                                           "world_movement"
+                                                       ],
+                                             "dependencies":  [
+                                                                  "skills",
+                                                                  "battle",
+                                                                  "save",
+                                                                  "movement"
+                                                              ],
+                                             "evidence":  [
+                                                              "artifacts/kohime-strength-2026-10-11/headless.json",
+                                                              "artifacts/kohime-strength-2026-10-11/render.json",
+                                                              "artifacts/world/results.json"
+                                                          ],
+                                             "status":  "headless31_fail0_render31_fail0_full126_fail14_manual_mouse_pending"
+                                         },
+                     "millennium_ecology":  {
+                                                "files":  [
+                                                              "specs/millennium_ecology.md",
+                                                              "docs/millennium_ecology_guide.md",
+                                                              "tests/millennium_ecology_suite.gd",
+                                                              "features/world/data/millennium_lake.tscn",
+                                                              "features/units/data/monsters/lake_guardian.tres",
+                                                              "features/units/data/monsters/millennium_lord.tres",
+                                                              "features/units/data/monsters/millennium_worm.tres",
+                                                              "features/units/data/monsters/millennium_bird.tres",
+                                                              "features/units/data/monsters/millennium_wolf.tres",
+                                                              "common/data/unit_definition.gd",
+                                                              "features/skills/battle_skill_effect.gd",
+                                                              "features/skills/ability_controller.gd",
+                                                              "features/units/tactical_unit.gd",
+                                                              "features/units/data/layouts/millennium_wolf_layout.tres",
+                                                              "features/units/data/layouts/millennium_worm_layout.tres",
+                                                              "features/presentation/atlas_silhouette_bounds.gd",
+                                                              "tests/lake_atlas_suite.gd",
+                                                              "tools/repair_lake_wolf_worm_layouts.gd",
+                                                              "tools/render_lake_atlas_review.gd"
+                                                          ],
+                                                "requirements":  [
+                                                                     "millennium_ecology"
+                                                                 ],
+                                                "tests":  [
+                                                              "millennium_ecology_suite",
+                                                              "all",
+                                                              "world_movement"
+                                                          ],
+                                                "dependencies":  [
+                                                                     "skills",
+                                                                     "battle",
+                                                                     "save",
+                                                                     "movement"
+                                                                 ],
+                                                "evidence":  [
+                                                                 "artifacts/millennium-ecology-2026-10-11/headless.json",
+                                                                 "artifacts/millennium-ecology-2026-10-11/render.json",
+                                                                 "artifacts/world/results.json",
+                                                                 "artifacts/lake-atlas-repair-2026-10-11/results.json"
+                                                             ],
+                                                "status":  "headless44_render44_atlas27_fail0_MOVE40_full127_fail13_manual_mouse_pending"
+                                            },
+                     "victory_cleanup":  {
+                                             "files":  [
+                                                           "specs/victory_cleanup.md",
+                                                           "docs/millennium_ecology_guide.md",
+                                                           "tests/victory_cleanup_suite.gd",
+                                                           "features/battle/game_director.gd",
+                                                           "features/battle/battle_result_flow.gd"
+                                                       ],
+                                             "requirements":  [
+                                                                  "victory_cleanup"
+                                                              ],
+                                             "tests":  [
+                                                           "victory_cleanup_suite",
+                                                           "all",
+                                                           "world_movement"
+                                                       ],
+                                             "dependencies":  [
+                                                                  "skills",
+                                                                  "battle",
+                                                                  "save",
+                                                                  "movement"
+                                                              ],
+                                             "evidence":  [
+                                                              "artifacts/victory-cleanup-2026-10-11/headless.json",
+                                                              "artifacts/victory-cleanup-2026-10-11/render.json",
+                                                              "artifacts/world/results.json"
+                                                          ],
+                                             "status":  "headless18_fail0_render18_fail0_full126_fail14_manual_mouse_pending"
+                                         },
+                     "malfory":  {
+                                     "files":  [
+                                                   "features/units/data/mercenaries/malfory.tres",
+                                                   "features/skills/data/crucio.tres",
+                                                   "features/skills/data/avada_kedavra.tres",
+                                                   "features/units/data/layouts/malfory_layout.tres",
+                                                   "features/progression/data/additional_mercenaries.tres",
+                                                   "specs/malfory.md",
+                                                   "docs/malfory_guide.md",
+                                                   "common/data/mercenary_catalog.gd",
+                                                   "common/data/catalog.gd",
+                                                   "common/data/skill_definition.gd",
+                                                   "common/data/skill_effect_definition.gd",
+                                                   "features/progression/mercenary_roster.gd",
+                                                   "features/battle/game_director.gd",
+                                                   "features/ui/item_debug_panel.gd",
+                                                   "features/ui/skill_description.gd",
+                                                   "features/skills/ability_controller.gd",
+                                                   "features/skills/battle_skill_effect.gd",
+                                                   "features/presentation/screen_spell_flash.gd",
+                                                   "tests/malfory_suite.gd",
+                                                   "features/units/art/malfory-v1.png",
+                                                   "features/units/art/malfory-standee-v1.png",
+                                                   "features/skills/art/malfory-skull-v1.png"
+                                               ],
+                                     "requirements":  [
+                                                          "MALFORY-art",
+                                                          "MALFORY-recruit",
+                                                          "MALFORY-curse",
+                                                          "MALFORY-percent"
+                                                      ],
+                                     "tests":  [
+                                                   "malfory_suite",
+                                                   "all",
+                                                   "world_movement"
+                                               ],
+                                     "dependencies":  [
+                                                          "skills",
+                                                          "battle",
+                                                          "save",
+                                                          "mercenary_storage",
+                                                          "movement"
+                                                      ],
+                                     "evidence":  [
+                                                      "artifacts/malfory-2026-10-11/headless.json",
+                                                      "artifacts/malfory-2026-10-11/render.json",
+                                                      "artifacts/world/results.json",
+                                                      "artifacts/malfory-2026-10-11/image-prompts.json"
+                                                  ],
+                                     "status":  "headless30_fail0_render30_fail0_MOVE40_full127_fail14_manual_mouse_pending"
+                                 }
+                 },
+    "validated_hashes":  {
+                             "tests/placeholder_world_fixture.gd":  "1EEB0922504489BF6476C8C0F61AC73EEBD2289AB094131C22C56655F4E0AF00",
+                             "features/world/authoring/world_authoring_snapshot.gd":  "9C076533C7D7C6294BED955C54E03F26F16435190E456F08EE4FED18EF43E1FB",
+                             "tests/editor_placeholder_regression.gd":  "E6A81C9090965583B76425B3CB2317EF2D6A754638E724B51370CDFE84EC087A",
+                             "specs/scenery_interaction.md":  "9074C3349B10F3DF15532C73AA445CA277A8A6706012AC347A34A2E6E6F5C79D",
+                             "features/world/scenery_outline.gdshader":  "114A1A138E1CCE3685A2B763427CF917B22E5F258ADD76FE34F5B2CD4739C5AC",
+                             "features/world/authoring/world_author_node.gd":  "C7A766ADC5CABC4CE95E55639617EB1F74480AC217C7F0F6D0A32B44CFEDA81E",
+                             "features/world/data/scenery/mountain.tres":  "4002C2825B6EC050185CD22D8F3BB1B9DAF1D538CDA1BF03E6A800A6774EDEC7",
+                             "features/world/world_scenery_view.gd":  "36AC1DF4201372E250D1B8E7E6171488BB6E9B15A28CD4AD942A48A180EDC094",
+                             "tests/world_scenery_suite.gd":  "D05DFCA3D8F1375A82BC18C3B6AB264406FF06DC0DD208274C90DC0D3AD113CE",
+                             "docs/scenery_authoring.md":  "CC9FFB4A01F5877677C9EAD07B88B56EDE8054C04B68CF0DAA9C1529B6E6981A",
+                             "features/world/definitions/world_scenery_definition.gd":  "8EC7B22732A799FF44C9B2A3D8ADF22063E903BB28F12367F28D067B947A46AC",
+                             "features/world/world_hover_controller.gd":  "B768383C3B9357724639489C1C405FBF819E71DFA8F0B1120D5A7D48DC2AA281",
+                             "tests/world_scenery_suite.tscn":  "D4BBC81A8D9D1DA18FD2E96E57A83405EA76D9804F64CB56C4B996BE55D5DC3D",
+                             "features/ui/world_hover_overlay.gd":  "79A1BD43B00947FAA6F10E513E263E3D83CD722F9D82FA2D3E32EF25B16F73CE",
+                             "features/world/data/scenery/cave_rock.tres":  "429108B911F6D453F7F10791D3960821D7226E2583BF5F4BFD2F0AA855C488D6",
+                             "features/world/data/scenery/town_gate.tres":  "9FAC6B39540FB3B472E11B40D18A2BEF07B112974AB881163DCC57D04D309B46",
+                             "features/world/data/scenery/tree.tres":  "786C0908983B07FFF9DBCCE4354AF6A0D9313B03108C14CD475DB96EB46546B2",
+                             "features/world/data/scenery/dungeon_stairs.tres":  "3CF931220B365E2EA290409D84FF2C545B52EC86BE2ABEF7EC4319275738C074",
+                             "features/world/data/scenery/dungeon_gate.tres":  "D0D682763EAD14E9CAFC2F78852A30054FFF462642DAA9AD86FDBE72797ECB68",
+                             "features/world/data/scenery/building.tres":  "0831213F661D84BB27D037C6E21B0A9E52CCB227678D5EB4B3CA1E718E0F8B0B",
+                             "features/world/definitions/polygon_domain.gd":  "E84FA8DE9809D9BBF6B76CD4FDE4C58BB1B6DCEDC6E25772BD8B3C8048D6986D",
+                             "features/world/runtime/world_validator.gd":  "04C196AA09EA01987247F9E951F8F890270DB4000C261E91C55BF9B1AD1D3848",
+                             "features/world/runtime/settlement_service.gd":  "E87236A7D976714B8744B00E160DE13C29AC4A204C65B01D9A4C6F7E3B79831B",
+                             "features/world/runtime/encounter_service.gd":  "C032E0B024C182532BE12AC8A355A20C855088E67E04A9E3C4408241FF5B380D",
+                             "features/world/runtime/world_navigation_service.gd":  "308BD2B87FCAA263CD6C487AB8ED9340BCA2A5AC99E1D4A9DC1654372442DEAB",
+                             "features/world/runtime/world_catalog.gd":  "4902DCADFB766F37E981A22673D02609488DE7927F8AB8A439967236D65EE7AC",
+                             "features/world/runtime/save_service.gd":  "9A8379BD2AACBB203568DFEEA5C8980C1296562BBA1196559B108A6AF2A85D40",
+                             "features/world/authoring/world_map_2d.gd":  "73DE7A679F69B2D6325842644F848D1FCD09873B95FB8009F805C91F66B88D79",
+                             "specs/decisions.md":  "B77A88D61697D8299BA65E9179D30036A3892C0F22E9A16D80695EAED81F8AEE",
+                             "addons/world_authoring/plugin.gd":  "AFA8480E035B987BE6C1875315E1E69EBBD9019ADE3980FB720DE4C6B064524C",
+                             "features/world/runtime/power_calculator.gd":  "1474B39688E763D51631DABCB265884F0F85AF5A92524B0E873F316EEB082AEF",
+                             "common/movement_feel.gd":  "F1BADA353820AE856AD278B04957889283B0E779AC6E4B78087A650DC8E4DC74",
+                             "features/presentation/world_visual_pose.gd":  "448F46AD634F02C07D31ED2EF86EDD6F3430AC6454B7F4140223E7425826AAE6",
+                             "tests/world/movement_checks.gd":  "B0AF507B3E856352570161BB4F39BBEE1166C7D33725E6DC17B4D8A9189C3B76",
+                             "tests/world/movement_regression.gd":  "F4C048662EDEDD15CF33F091C0F321D08BB11834A67E37BAD9FCB2C28A070AF4",
+                             "specs/items.md":  "D32067109DBCBB2D21DDE55BF86E7DCC4DF5DA8022B97AF61ED0AD52A3C8F2C5",
+                             "tests/items_suite.gd":  "E0461CB4B8903BDD6451DF1E73C77CC3AC6228A9FBB3A875CC1743E80A600117",
+                             "specs/sources/items52.json":  "241E1B57E2562F78EDFDA4547C3392049836C2E5293C0CBC9EC604B379C63A1A",
+                             "features/progression/party_item_service.gd":  "05FF039ABB58E389338FA1E24533ECE9E35B98C826A195DE5BC868D4086505A4",
+                             "features/progression/item_catalog.gd":  "58CB2912330DD677449862EE4F7171EEED27EB8B1EA612647BF1CA154957AD62",
+                             "features/progression/combat_stats.gd":  "B05435333B5587307836AFDBDDF9BDF4DDC6B1783C209DB03B5E04105A872EB1",
+                             "features/ui/item_glyph.gd":  "471FF5610BBD62B9E50A5FA8A8B2FF480FD683CA4156D205AD92FB8746A93AC3",
+                             "common/data/gear_item_definition.gd":  "C50BAFDC88BDE49912981DD9D94A0F8B7FBA4CFDA6271496D821DDD2F2F6D26F",
+                             "features/progression/item_debug_service.gd":  "CFCF05E83297F72E107B765BC7D01D93217F349C37F87DF06C5E1750B6610CBD",
+                             "specs/movement_feel.md":  "DDBBC6FF3CEBCF98A11947D5CE10F30BBD2888102C866E21218E2BA548D3149F",
+                             "features/world/runtime/party_builder.gd":  "E41A921953E772389097340ECA61A88377E4C39990AD28DA81B776411D30FB2F",
+                             "docs/character_sheet_guide.md":  "3133E971AA58D831821A78F1D816FD5D88155DC9A3E043A31FE4907122668DA2",
+                             "tests/world_hud_suite.gd":  "2C262B2D33EB43A59BCD503067D94474F5C482A355015DDF2F12CAFE135FCCBC",
+                             "tests/character_sheet_suite.gd":  "86D52E9D2359842C9BF425B8E2A0DD8E04018CDA8C6F35E0535FAA74461B2872",
+                             "tools/spec_context.ps1":  "72EAB89238219F1449D0844141C438C68408E0405D9102EE30F7756538BA0F3C",
+                             "tests/progression_suite.gd":  "31D15150DD805E0ED6935CE2DF1CCF82937CB8471AD7771D0C2E4A7FF714CD0E",
+                             "specs/character_sheet.md":  "38F5CDFEAAC373A75EFC3A0228437D3BA4537AC1A85A7F787296D336F705C389",
+                             "tests/character_sheet_capture.gd":  "276B7EE44A185811CF318D55B765D9AB005AE3B453DB10968D86D43E2C7099E7",
+                             "docs/character_sheet_validation.md":  "12F5C96CE3B18CDECBCF74B5DC4B7420A57485E2E7620273D41BF6FD6A35C14E",
+                             "features/skills/data/summon.tres":  "6C21CF13098339E467CE6CEDA4A538B952233703D11FB3979EA9DF88961DA9F2",
+                             "docs/combat_controls_validation.md":  "2B0DDB607F725923B9CCC3E047B592DB32A728C1591E92942BA561FD357EB306",
+                             "tests/combat_ux_suite.gd":  "C009426F5639F0B18B41B8B8F614F916BAA95D22EC10C2CF9B8E21BF099A2C76",
+                             "features/skills/data/control.tres":  "77E2398CF602C24766C28AEB32E4B2133CE94891D68C40F58D2B9F346B63FFA8",
+                             "docs/combat_controls.md":  "29FDE672DF4F19613003D7813133A0DB7596F2986491E0AD34FEB716963D5CC2",
+                             "features/skills/data/heal.tres":  "8AD4032FE7DF742FBF69B0A5AF4D19973F9C04700CC2BE14CC0DAB17845B4126",
+                             "features/skills/data/blast.tres":  "9C649904146E220998197FBBFDFDB0C3486F19F919C05B49DE14FAC886363B77",
+                             "tests/test_runner.gd":  "6ED690ABC3947FC07A4BC1E605E12836A160EBF65078BE68ED0F70816B16C73E",
+                             "features/skills/data/critical.tres":  "E03CA9BF0E7E65332EE1A8C9570DB4047DBAA8879CFA0A3237B37D0354A72B96",
+                             "features/battle/battle_cursor_guard.gd":  "149D7786F03CFBF6E48C580ECC6624934ABDCD3DDCAA164A30E75A9AA0CE60EE",
+                             "features/skills/data/supply.tres":  "B1D6E80D37A9DDF80E0E8E292545B2E9A2AD8617B51EA142BC9A43B30BC890EE",
+                             "common/data/combat_feel_profile.gd":  "E537F55D3B544FF43CB519792BB00C6758770C4D6F74C899FEA9684E9C2C5D35",
+                             "features/settings/game_settings.gd":  "61494EA2DFC3F26840497A891F6B1B45B15E95640BC37F1C5EADA515EF7C6135",
+                             "features/skills/data/wheel.tres":  "E3E105C2A8A6356F1EA070D4D81F9E92D8AAECA66AE2C33BC4C5CE0A63D88BDA",
+                             "features/skills/data/ice_wall.tres":  "44C01E4566061A58E034F7315F6E5247DC3DFD9E465EFD2BD093BF722582000B",
+                             "features/skills/data/quake.tres":  "2A63CAC659BDEC2781FBDD1DC0B5185F39C823CCCC44225A107C874E20600156",
+                             "specs/combat_controls.md":  "E1D299B5CAD7E3E209B33918C43D92EDDCF752C1E73F90754574F3FB47A5122E",
+                             "docs/tools/editor_plugins.md":  "48B70D1D5C85580C228F0B508A38D120B440AC36A12EB25239598F54AA2A845F",
+                             "tools/project_context.ps1":  "C2617B7F3AA64641274C2B32491A895CC7F9ED16E665C6DACEB41F394C0BEC1E",
+                             "specs/context_map.json":  "4EE9243ECC9D6D8686046B8F980D5BE3024F0C6C565512910ED1D0DBA032A21B",
+                             "docs/architecture/project_map.md":  "A838C0863243ED9FE6FA0DCC4754B7CA95C1CEAD944534F8984D499A2FE34ECD",
+                             "docs/design/units.md":  "E32B8DBA0A577672AD9B2EC160859ACBCA31875B0974482396F47E8F9990AC52",
+                             "specs/index.md":  "73B3AE742B454DCC55A85600D4EAA582B36E70E304AE97B2F61CA3709FA51BDC",
+                             "docs/design/world.md":  "98DB5EEF4F016F5CEB70E827CED82B31955AC59BB53DDA3407FCA57F1C1BD86C",
+                             "docs/index.md":  "F1AF2915D99C5F8DC1F5A1EE63B980FD9BCF4286817CDE17E8B1840994E95175",
+                             "tests/context_routes_test.ps1":  "27FC03ACE3AF9AE16EA9D2EEB620B354355C3FCD003F7B316564B26DC5B0DD09",
+                             "docs/audits/2026-10-09_structure.md":  "6553E511B53A2B7B069EA6FF74625C7E962A8141A91954F4BAC3607940847BEF",
+                             "specs/party_polish.md":  "D742C489B20F8DB8888F53DDAC913BFE311EE0C79077B7F34832F9FAC7198FAC",
+                             "docs/party_polish_validation.md":  "089A61FD5CBD70DA4678DB0B3784B7FA4F2A801E9899E6D916B2B01C86CC5F74",
+                             "features/world/world_party_view.gd":  "E475898CFFCAE6CBC86B6D882DD71B89027ABF3607A0532883CEA64934317B96",
+                             "features/units/data/monsters/beast.tres":  "2DEA72688FBCDA7E95C4D3FC276AC8DB53F5A07A59CE331108AE9BC6F8883DD5",
+                             "features/units/data/monsters/elite.tres":  "8D0633C225BE52ADB66C8C3EAA93900E50711C42629014CDFC3B4AB3F39A6DCE",
+                             "features/units/data/layouts/beast_layout.tres":  "4C6C585EFF5942D7EEC63E5C5B86388260FED06802ED7D915AB2990FD745476E",
+                             "features/units/data/layouts/elite_layout.tres":  "961857564958F6B98785F9BE9C1F98C4241119094E41B062581C3360426B76CC",
+                             "tests/party_polish_suite.gd":  "89109E0FCDB370D4D9F762F16F50174A2C4E89DAED2F02D3FB438E88A28941C4",
+                             "tests/party_polish_suite.tscn":  "300A0C0A5017F8D3A504398F7FFB2BFA6BC9F616E53B0AA1AAE1D522E5B5E3BA",
+                             "tests/sprite_layout_capture.gd":  "92EC66B78F396E485F6727907DB38F49F962A510F0E7711F921B6ED66DECDC5E",
+                             "tests/sprite_layout_capture.tscn":  "462A94D685A707D8F6DA8B1FE8EDBFABF83CE798E78FE8A52DEFD66676F8EC84",
+                             "features/units/data/mercenaries/merchant.tres":  "E1E017A0CE5B0C0ED687FD7030498B91F16C24801E53278FAD3DC1D6BD12ADDD",
+                             "features/units/data/layouts/merchant_layout.tres":  "103EDF7BE9F91D5636E3FC11B12EBF4613809E0F437B74DD3FE333C5EBE41843",
+                             "tests/world_direction_regression.gd":  "B3A4F7608D2D753FF0C7E79054E4B79B2508F9D02D07031C7F313A27E794E3AD",
+                             "tests/world_direction_regression.tscn":  "95DCF6BDBE3EEB806380ABE82D9360F25F8F7499F830F76D6384393906D68370",
+                             "tests/native_tilemap_render.tscn":  "756EBFF229EA23BC87A3E1F2D1253B835762E5500664BCD0CFD98E7174E26CD0",
+                             "tests/native_tile_preflight.gd":  "BCCA0F85A38DB5DDBE5BB698B84E6BA8AD6CF00D097A0D43B42AE76A47EF93A6",
+                             "tests/native_tilemap_suite.gd":  "D5DFA6F5C8547FFD5C5923E5A3239B964781DA23DC6BDFE732FC178BC19CEB9B",
+                             "features/world/authoring/world_tile_layer.gd":  "6F7D26B8331F83BFE752BB00B4DFA2C0E26219DA07356A07A95B5058698B14A8",
+                             "features/world/data/tiles/river_bay_terrain.tres":  "8AECE1D79A6CE199E8D05AF1ED1B81FBF98CC87A374D9139F938894D1EA61A4F",
+                             "features/ui/victory_scroll.gd":  "D6237454F2294DD2712B22227932DCD67646C5921A112931A76E3EA62206288A",
+                             "docs/artist_guide.md":  "F180F995E2E5A22DAB606BB80CDD934FAC3C85B984BF3F5E57E9D5BBE48C7144",
+                             "features/world/definitions/world_map_definition.gd":  "1C5D39E54CBA5A9577D8891B656C5417E0357F5699C8BDCF43A28A4A952408DB",
+                             "tests/native_tilemap_suite.tscn":  "140CD8E0AF00E36120F07B7C858C9C20C056B3895C8E770AA499C8ED18F56312",
+                             "features/world/data/tiles/qingling_town_terrain.tres":  "1EDA3E7DE3ED20F11B76BD7F89FC8320CB3A9E2451C420CBAF8B852D0BFB7B2D",
+                             "tests/selection_input_regression.gd":  "E191D1CADF717C446D3C9261EF9D9E5B3E686388D6EDAC5D65ACF388F428C07E",
+                             "tests/blast_radial_suite.gd":  "47774741287FE6160A55C28A6F4BE1F0BCC42B6445BAAC3F881AE38FF03062CA",
+                             "tests/native_tilemap_render.gd":  "305C6A8D5C67E737A78C03D7A7EE6F5F046DB657E5D9C216382D7A6940909AD3",
+                             "features/world/data/tiles/qingling_town_masks.tres":  "EA189836E418F0E82DD171FB4FD2C3AD66F710A71490B8FCFDD2D152ACBD6268",
+                             "specs/native_tilemap.md":  "0A0FE7EF3A84F87E4F29BFEE131577339921E39C24353A80286005ADF5EEFA04",
+                             "features/world/definitions/world_tile_layer_data.gd":  "5A6BBA516734D0B07F0373F0DD4189BDB76302EDA27B6B3BD24C061360BBA2F0",
+                             "tests/editor_native_tile_smoke.gd":  "A3887F050F13B5B010E9FF9DBE91B1536E9330FC6CC8EDC69FAD3B11FFCFAC8A",
+                             "docs/native_tilemap_guide.md":  "1EEE09CB08EFC5FD13A7A9DD49EC5DAF51A43988BF1785F4921D60EA5A4A544B",
+                             "features/ui/battle_hud_layout.gd":  "5E5AB483D4A99A2F676D8628E54E9ADE278EACBC84B3E16AB7979FE3310AB22E",
+                             "specs/battle_presentation.md":  "61BDEA04427122279BB0A1AA76B863824A3BCE9CD312998F3C65D13396B0950C",
+                             "features/world/data/qingling_town.tscn":  "5B8B5095EE9CCD51215A44C36B2DD7C2BDBCE91D0CA2C1E59A070CEF14BF1C57",
+                             "tests/battle_presentation_suite.gd":  "A1112D1119A983883D3DF8B456DD9C0292F95363F060B73509E82681A51E4F95",
+                             "features/world/data/tiles/river_bay_masks.tres":  "E021180367F49F86CD3A0729CC0452D374FF67DC85FE435B1DA26534F703FD91",
+                             "features/world/data/well_2.tscn":  "132466FBE37BC5D0B8F76AD79D1DE602D91D24DC619B631781F3B542C0DFFF9D",
+                             "features/world/data/tiles/well_2_terrain.tres":  "05F587D9712BD706223DF39DB6F71426A883744376213D0C43C5BA347001123A",
+                             "features/world/data/tiles/well_1_terrain.tres":  "7328B7F2664A1377D3C72713D3081AFDBF20825E4CB4A8A7186E61332EC96216",
+                             "docs/battle_presentation_validation.md":  "3C56052E8C8611FFDF0FACAD44C5F89BEA4259B7621B3AAA2A80206F2716833D",
+                             "tests/blast_radial_suite.tscn":  "B6BD7245A3CBE3F01302837F49FEE7D9A2098EAC32631D257E822D71A22AE164",
+                             "tests/window_resize_regression.gd":  "49324C9531A713344810186A22F033F25D6C113BBC9AA8DA94EF13284409F056",
+                             "features/world/ground_map.gd":  "1DE5611BFC01E11D33C2F58F1E9A72879FA20AA0563A1D91E3819C75AD813A93",
+                             "features/world/authoring/world_tile_compiler.gd":  "D78BFBAE2A4CA7A9F7999ACA3E28A3A2E88560C0E706201434C31807BD5A68F5",
+                             "tests/battle_presentation_suite.tscn":  "CA676E6B5283938A723D15EE276D714DE8A70C7C82B846FDAAC679E6D3CB5FC0",
+                             "features/world/data/well_1.tscn":  "CCCA1793107C0FA228AC3B32B463938D0E7BC6F03AEE3DC661D977BCB79F1DE9",
+                             "features/world/data/tiles/well_2_masks.tres":  "532B7B3196BB1F2DE53A5028BAC90989D2B40FC678752A56EBC7AC44E3C39F9A",
+                             "features/world/authoring/world_tile_geometry.gd":  "1DC113D986D09B1E1787ADCE27247B16A1EA0FDF2A9271C2D9B48AFD002F2719",
+                             "features/world/data/tiles/well_1_masks.tres":  "50C8461B77701979E6481294E078D2C9BA83FC61F2A72659756082104A43BCA0",
+                             "features/world/data/river_bay.tscn":  "A8B7341B78150EA4F369C566476A89923D71C957E1ED9DAEF475D6BCAE538C6D",
+                             "features/skills/summon_scaling.gd":  "E702DB3E047F3BB1F008BCD65B38447BBABE93A121FBD7C71D31C2F529B7192E",
+                             "features/units/status_controller.gd":  "9CC944AF58993C2F3A06EF04E068D628B6A522286A46E3AECFC5CE5CC687DC0A",
+                             "tests/new_units_suite.gd":  "338E3E0EBC0202FFF51BEF7445BCCF1B5751F57DF847CA6C4B6BBBFDABD789DC",
+                             "addons/skill_authoring/formula_inspector.gd":  "A5EB9CC22CB173F90995859A569C6DBD65759E0622ADEE4083A21003DE13935E",
+                             "addons/skill_authoring/plugin.gd":  "062050AB4006A838B09F579F87F0381641BDE1E6BE179F39310B8811958B3D89",
+                             "tests/new_units_editor_suite.gd":  "8A091D1681800A73F63ED5DEB32E0842C001F9F9B9A22BD06C810714A9132626",
+                             "features/units/data/layouts/kohime_layout.tres":  "43D56F58A8409A59F7B0CAF7D96FD0D336BA3F64E802F818488E60D8467C2304",
+                             "features/units/art/kohime.png":  "F1985AE66290D110DC208BE456622DC606CAC9A0807C5DCDB2A1795EEDA9FA8E",
+                             "features/units/data/monsters/ninja_enemy.tres":  "DA9C0874CF542D8D19E5DCE175297E3BD28E561B81E6867B923AABCEF0603A86",
+                             "features/units/data/layouts/ninja_layout.tres":  "FAD1FCB102CF9DAFAF4ED72E48199DB5A5495C05A327B509E6247774C8B7DE55",
+                             "features/units/art/ninja.png":  "CD4F7175F074AB72C01D30F4B9972BBE4B93BCA59172B86AEA3A00FD43F1438D",
+                             "features/units/data/monsters/teppo_enemy.tres":  "BE5BC99AF2B80078AC67D649B09B4EC7665B075814D2A4DDEE1494DA2A035EFB",
+                             "features/units/data/layouts/teppo_layout.tres":  "6C85792AA600F65291730184A833F7473589632B4FDA9F0FE5663C16E47D5AB1",
+                             "features/units/art/teppo.png":  "9C90301634CFE21941B1D3DAE7578F5621B849809B23B4F0A7A13454C48E069E",
+                             "features/units/data/layouts/earth_claw_layout.tres":  "AF3A8DC5EEA15ED831776E9FE07B7A872E4451844C44340E563B7C0187CAF9AF",
+                             "features/units/art/earth_claw.png":  "DD34D8652D26C3F077E2215AB34A0399E4E4CA017C26118E422AA9CAAAE29C1D",
+                             "features/units/data/summons/teppo_companion.tres":  "230A713C5AA3E26409330406C37419A3230F05CAB571D101D325DC5215C9EDC5",
+                             "features/skills/data/enemy_earth_stakes.tres":  "F30CDD6EFAA26456885953F1DB96E9C1C7827094484AE529ED19DC9E3FAB83A3",
+                             "features/skills/data/enemy_earth_claw.tres":  "4ED271513EA3EEED88492236E9081F62826D0D05EFEB9275CA1167240126F934",
+                             "features/skills/data/enemy_ninja_stealth.tres":  "A711E8A9005D80EFCE3562A373C157540A955EFF460B33E4C0408521D98F3FC2",
+                             "features/skills/data/enemy_ninja_fire_trail.tres":  "58AAE9C0AA28D8E1DC716A675C4F80D2E3D7F2D25A537E2909545F0EC9370212",
+                             "features/skills/data/enemy_ninja_chain.tres":  "C3AAAFA5AF06970D088466F8D657A99CA0DEAECE502BE4165C4FE7A5B0772E91",
+                             "features/skills/data/teppo_sniper.tres":  "8A7090CE3BCD235CB986327B737AFF1998B793BD4C7BEF179A0677FC53315169",
+                             "features/skills/data/enemy_teppo_sniper.tres":  "7609AABF6A7AF8ACE1A8B99B6B61A0655F9D24E0057926E44EB625B89921F13C",
+                             "features/skills/data/teppo_comrades.tres":  "D95F2A6F4033D2EB206E72CDA1B5FD691C2425BC24100D1DD1186FC273E2D32E",
+                             "features/skills/data/enemy_teppo_comrades.tres":  "EDE56522FFF55A362F1CEAEEE16204902D3552385F29467F341FC8D2D30D951F",
+                             "features/skills/data/teppo_triple.tres":  "94EE2FCD448B782E2593C553E6B4825E53CB7D06F7C9BC19B662D7CF92BE5854",
+                             "features/skills/data/enemy_teppo_triple.tres":  "ADD13805D2DCEE45FDD6CA5157F2326767070A9D8984E26288ACFE4CFD47A171",
+                             "features/skills/art/earth_stakes.png":  "3D4DD43368380CA295F2744CEEED9F40E453E9009EDA656B1B5D552EB66D2938",
+                             "specs/new_units.md":  "DAFFCD7FF798751B0A3F28FEC4930474E358EAD7118076C4A85A2BAB5E7FA2EA",
+                             "features/progression/party_progress.gd":  "D37A74C686DBDD0736DC969EFBA5C2B2B0C7DF89FD086BE2E059F4923189D64C",
+                             "features/progression/character_record.gd":  "33FEB401D52EA9FB425035BE3E7B0F5DB77C728676948A99532CAFB4E8DF1F48",
+                             "features/world/runtime/world_context.gd":  "A1DA849AE60728F304811F48D0DD246C0DBF74887C73AB9FA8ECBA3F2A3A2B90",
+                             "tests/mercenary_storage_suite.gd":  "345B34D046440766B0BAFB8A2D17893E3E944D77669D6073E54EECC043BCF045",
+                             "features/units/art/kohime-standee-v1.png":  "FC22496CEB02D4E192DE2F548DEF7D6ACDEE7BF04FF985E6C07177C989F2AD2F",
+                             "features/units/art/ninja-standee-v1.png":  "8610ACEAA5D1D08DDC7FE29757BB8E401BC7A132810C8E2956E403666E978C62",
+                             "features/units/data/mercenaries/ninja.tres":  "304BD40E152DA20DCFF899CFDC82A18A810D8084EDA390EB8879D99C96535776",
+                             "features/units/art/teppo-standee-v1.png":  "72118791FEF1634E2916F7872979E7162D9E0D896C442C19D4FD717335D1976E",
+                             "features/units/data/mercenaries/teppo.tres":  "ED005E51490A3B3EE50B6215AE8BA3F86D3EC7ED470450391787C3DFDFD90F31",
+                             "features/skills/data/ninja_stealth.tres":  "4F73F526DCF9C751B2EFB26B0E6FDF3B38509C327CCFFEB6D964A89CCE06F39B",
+                             "features/skills/data/ninja_chain.tres":  "11354D16836100300902B9A29177ED628D80DC5C9EF88D61A7A9A0E4183746D8",
+                             "specs/roster_effects_polish.md":  "E914C538810F233C319E9D05ED37BD7D35B72B23379C9E98ABEE854037D53327",
+                             "specs/mercenary_storage.md":  "668B258DEFED13C9266A27EA31B6278DEFDDDCD41937FB31E7516E332B7EC8C4",
+                             "common/data/sprite_sheet_layout.gd":  "11E7E45F1DF73C8729C0407043B6BEAFCC432F32368DB088D3A62BD34A54F433",
+                             "features/world/runtime/world_session.gd":  "834978C32623E81B5FBD70E88263D5E5B328B9A4FC5F6DA3FD5459E99BC531BF",
+                             "features/battle/selection_controller.gd":  "CD2D40EB658133298F7A73D6E6C057799385434EDD9445E1AD0077BC2C6ADBCB",
+                             "features/ui/world_hud.gd":  "1414E9B49822F74E0F16C9DC106F370C79C11DFFD4693122547AEE9EF1F2E41B",
+                             "features/ui/game_hud.gd":  "E926BF867A993942D5954BAE0641326929D35731D4768C5BE1A6E81CA36CC0A0",
+                             "features/ui/progression_panels.gd":  "B3D11A60B2DB2B9FE04924EC8743D2E5FDD6A15C4D741E0A641C131826B3BC14",
+                             "features/ui/mercenary_storage_panel.gd":  "5478032982DD83431AA40824AD05D698D9C5A298E3B15D234894AC877DAC794F",
+                             "features/skills/advanced_skill_visual.gd":  "3E95511F844D811F0D69E7C3E13E0D5E497BF8ADB8277F70A53F152400DDBA3B",
+                             "features/skills/advanced_skill_runtime.gd":  "450848DB4F5A69D20A6CDF4C269C408414C71BAC8B1B8324BD28AFE838C8845E",
+                             "features/skills/skill_vfx.gd":  "94AD9BA2BA4CC1EAB2322EB36BD3A614117B5BA744870CD4D0A27AD07E449DA0",
+                             "features/presentation/unit_view.gd":  "36696331EDFBD29007E392EBFE9F2691DE43D5E1B5EA21989A00FDF8D5767DF2",
+                             "features/presentation/sprite_atlas.gd":  "D87F0866A24B78953F90DF5267CACCF855943B31506B4FB89FD1CE9C1DB503FD",
+                             "features/skills/data/dragon.tres":  "7031B1B76EE2A5658D046E7A143E340F245B70E125623D912B29ED6A200B96FD",
+                             "features/skills/data/lightning.tres":  "4D0DC94060D0B387ED5A09AE65FFC88D061B668D26B5D107A74143515F718C35",
+                             "features/skills/data/ninja_fire_trail.tres":  "ABD47B2F23C868CBDE6B4515FAAD4903AA87F908DCBA97048644B20153EB7739",
+                             "features/skills/data/claw_strike.tres":  "95DAB3A6949ED08650EA5F0A685E4DD5309B8793F50CAC5049B84E6CA2A200F2",
+                             "features/skills/art/fire-trail-v2.png":  "36535B9096ABE7B7B7392A593A76B216AB2EB33287562979055CB0979F8E585C",
+                             "features/skills/art/lightning-v2.png":  "294EB09F1ADEFF3E1BE936EF0CE16515E3DE6B3C9FA7B2DF5D66140F4AE94FE2",
+                             "features/units/art/earth-claw-v2.png":  "30918D13DB1596B985C71A5DF62A72AEBB1E68661DDCA63D1FDA3CB07C26116C",
+                             "features/units/data/monsters/earth_claw_enemy.tres":  "97579862E6ABF4EFB38D829A8D19F84964B7A1105B1A354C3578E2FF75975560",
+                             "features/units/data/layouts/earth_claw_v2_layout.tres":  "0AE9EEC1F2D02BFBB4DC11194712ED8671FF833D0DE3A3420713536B5C91B334",
+                             "tests/roster_effects_polish_suite.gd":  "EBD3C4910F04C3845983C3D1ADD030EF20FFC92607C8C37C1D669C301B0F50E4",
+                             "tests/run_all.gd":  "9579910A56EFCEF8F3CC7438405D7760AC1F6513A1C92117F2EDBC1576CE640B",
+                             "tests/v2_suite.gd":  "C924F9E943B70098AA6021616E19E9859C9EA535163E21F0B079B96D2AA32E9F",
+                             "AGENTS.md":  "6E3A58E3141202B34176014F925F6B3B761AEF784F36AF7D314ACD51C60B7FB3",
+                             "specs/kohime_art.md":  "0F18891E5E8C1B3D955B0D379BE786EE59AEBB2B4B66555755EC795FB2B4748E",
+                             "docs/new_units_guide.md":  "2D477980C8AF5773083935874024745DD5E6ADD80FC18ED0C8BE78FDD93F7417",
+                             "features/ui/character_art.gd":  "F9631E17769C522D5A695FC2F8D07D0DBB45E4A99F103096FBD67F745A658BE1",
+                             "features/units/art/kohime-v2.png":  "B849750F53B357E9B02DED4538E371FA3EF581DE0754749CF3E1F6E5698DBF23",
+                             "features/units/art/kohime-standee-v2.png":  "E88F869BB6F2876BE2D613A8A84FE3040200B2B0EB9ECBE8CC702BCF073AA9BB",
+                             "features/units/data/layouts/kohime_v2_layout.tres":  "CAD1154EBCD88C83C7302CBAC6D280B7728CB771D1BF0FE6B977CCF9E3ACFBB4",
+                             "features/units/data/mercenaries/kohime.tres":  "E360ED8C133CA0AEA194594FE2396618E1D30100248170AB24D4379879A90C0A",
+                             "features/units/data/monsters/kohime_enemy.tres":  "04AF2E72EDBAC57AA044A954ABB23CE9AC8254EF869AEB83126CC466A269A20B",
+                             "tools/create_kohime_v2_layout.gd":  "488419CB00107F8CCB1DFC572D5EABEA583E20D0807BB40309E764B1559D0356",
+                             "tools/render_kohime_v2_review.gd":  "275E896E698AA883C39ACABCE8F2C08BC6E44AE6B3955AA77C59706BCEA3B638",
+                             "specs/kohime_strength.md":  "0793573F06A91A3DC0A5214222450873568707FBC734F07C8957AA5FBCF2409F",
+                             "tests/kohime_strength_suite.gd":  "702BF8C1ACB0B06CC7439B1D18F8329684D6BF9E44FA2BB37BAFF8EC3161C097",
+                             "features/skills/data/earth_claw.tres":  "9604BC05B8D5D567821F5B6AB5E4E8A8747D66CAE5E41E7D3473EE3AF45D7800",
+                             "features/skills/data/earth_stakes.tres":  "1137ABED182255CD37B7074A0EFA1BF7BD191F4ABDE7B0759C50BE0CD92A7C20",
+                             "features/skills/data/claw_strike_empowered.tres":  "568A67B718CE885B84D8C349ED92A4BF19AFABE1031BEB3B7366C40B1882FAA9",
+                             "features/units/data/summons/earth_claw.tres":  "EFB5DD2DD41384F9E15B013319E96E5E19DD7356511175929A3A028C4603E0F1",
+                             "tests/millennium_ecology_suite.gd":  "07F561949BDFEFF402B0E6D4F71709F4EFCBAD84309B76BFA114627F061E6F58",
+                             "features/world/data/millennium_lake.tscn":  "06ED9D233D50B8CBB410ABD2EFD97717B6EB6D0690B88C80D612F9237B4E699D",
+                             "features/units/data/monsters/lake_guardian.tres":  "6360B5976E543B7D23C9FA02BF944F060BE32676E439A9A511720A681C9D62D5",
+                             "features/units/data/monsters/millennium_lord.tres":  "85E5BB6286174F465351473C0EF4656B5281A6D1E9BD0BE81F621AF85E0083EA",
+                             "features/units/data/monsters/millennium_worm.tres":  "1A8F5CD9B216F9428BF8F890DC86C1352C27A9C934A81704F0C6623ECDA77F52",
+                             "features/units/data/monsters/millennium_bird.tres":  "0EED8C91E3763E2734C1DEEA8E1C02BABDEB3C1FF1AEEDDC07416D0E13A70C1D",
+                             "features/units/data/monsters/millennium_wolf.tres":  "8BBDD5102C15C3BA69CCEE81011ABAC4671E830F4FA93195D363683C93456C8B",
+                             "common/data/unit_definition.gd":  "EDAFD3DEB9743870C567F33B90EB878EF9A4B9BD923E24E8353640115A35E428",
+                             "features/units/tactical_unit.gd":  "FBE6B8C397E8E6BDB50C01FC0860018B76B4E2414EF6F289315F987218001E4A",
+                             "specs/victory_cleanup.md":  "0D52FACFEDCE17BD61E8D348A884D21A47DEBD5F8DFB08ABD6AC83888B49A2DA",
+                             "tests/victory_cleanup_suite.gd":  "2435663D292CFA2434ED23F60C960CCB9FED7D6123D12D1620395172CA00F3E5",
+                             "features/battle/battle_result_flow.gd":  "646E2705B9E71A50A238715C3E3F820E968C9E529A3F1307BBDF78E22C13DADF",
+                             "features/units/data/layouts/millennium_wolf_layout.tres":  "E2FA1523714C9F36C5DE784B6DB7D1B3A7CE80178CFEC8D6C225E271A63C3AF3",
+                             "features/units/data/layouts/millennium_worm_layout.tres":  "D80E98493F6AAC266053E0A338B2AC1373E4B62FFDF301CF4A0337E5309E6019",
+                             "features/presentation/atlas_silhouette_bounds.gd":  "F513B27D70012E8B230164741B1D80C18AD1E082F36ED176FFD389595B220049",
+                             "tests/lake_atlas_suite.gd":  "077F9F4C16EC808F8A2D63A30541F9AAB234D34C854B41CF2F33459CD2BFE13A",
+                             "tools/repair_lake_wolf_worm_layouts.gd":  "5FD97A0EE43D4B7C76583292DDC289A099DC218BB786AD406EF0067AA4EEDA72",
+                             "tools/render_lake_atlas_review.gd":  "C8541ED78EBF7FB81F0B85E045EFE547CBC618AF1B1C42544612C7C663CB578C",
+                             "specs/millennium_ecology.md":  "F39EC60FAA5401E76931241BE2245F95C7B1C60925216D5A0FC7982EF998923B",
+                             "docs/millennium_ecology_guide.md":  "2A7C75781634D6EA50D96EA6A0624AFA4F853FEB07C4BF7E3C8092ECCEC69EE4",
+                             "features/units/data/mercenaries/malfory.tres":  "BF296F715CDC8DE6F59B91ADDBD196D2EE9D31A2D3448BD3F1405BDFBF8951C7",
+                             "features/skills/data/crucio.tres":  "65DBA779F597F74BDD6C158290747BD2DAD75E98F251A21C44B2647C29E33C16",
+                             "features/skills/data/avada_kedavra.tres":  "F4ADE6ED7B776991F1F928083114F7C10D164E297D0DB32CF6B0BE37404D55E9",
+                             "features/units/data/layouts/malfory_layout.tres":  "18F1BDD31BE02B63E777A5608ADAAE03E385B4296B830A71B8976E7D143C73BA",
+                             "features/progression/data/additional_mercenaries.tres":  "A83210E7825671D65FC77C83E80D2DCCAF2FA925F78AD7F3F5AA2283FB8714B7",
+                             "specs/malfory.md":  "B68B5AEA14C26FA69819E4269F1F0761DFE97C826F1215C5F155773650355D9A",
+                             "docs/malfory_guide.md":  "AB15610176C3BD0FEFE4972274578DB1FB21A38EA0CD32643B4CAA310D27B865",
+                             "common/data/mercenary_catalog.gd":  "C01918BB3520B7694978FEF91926F56AFA36D253480026EC09B186F7B5C1B9DE",
+                             "common/data/catalog.gd":  "FD53709A8EAB0C65CD7DB66FB878D52C1EAD6B3BA0D6D4A0ED4C2161422AFDAE",
+                             "common/data/skill_definition.gd":  "534930322117A3B9AFE29D0A6E9BCB2C4A74AF051480FFF500B09B1FDFFE426F",
+                             "common/data/skill_effect_definition.gd":  "026C79C366FBC59AB7F49759C05C14E5BA5A8D1609416A33566F47BAE82EA3D3",
+                             "features/progression/mercenary_roster.gd":  "A0F1F9944D681D1C6F4C70E49E31EA1A5DC7FBF66B79E885D5357E81C67C9FC0",
+                             "features/battle/game_director.gd":  "777336BEA53EEBFBA201A48AAC7699E63818C7CA8350B992282855A12B0C2D6E",
+                             "features/ui/item_debug_panel.gd":  "889D5C6BF075F0AB60CA270CB1218C88D988080325EF3353B3AA6AE9CE8328DF",
+                             "features/ui/skill_description.gd":  "BDD13539A44AC4CCCF31316A5E66425A3D54A4A7DFAA17EEF8A78A0A6874BCDF",
+                             "features/skills/ability_controller.gd":  "D318BBB5D3E5916EBF610956750DC4999179B363F2C94DD9630F59BB86D32F4C",
+                             "features/skills/battle_skill_effect.gd":  "814278262729B2B2CA180E3C5AC47BD62D1AFB1B083E56DB0B4B6D483FFF507C",
+                             "features/presentation/screen_spell_flash.gd":  "08536156EA58C3304B67F87509FE32F160C8D3A8C4551C8E7F433A6814678FD9",
+                             "tests/malfory_suite.gd":  "B37FDB595FB4CEEA6444F77B23DB66D1BD8007DF8849BA4AE31614F1BAB1CCF9",
+                             "features/units/art/malfory-v1.png":  "185F117C6ED882DA908CA25ABCAFFA27FB074491ED3F6C78BA4576ACD5598E29",
+                             "features/units/art/malfory-standee-v1.png":  "D732553E6E6234B8901003BE4A3257208D46BCA8292F3F392567711B1EB6A9CD",
+                             "features/skills/art/malfory-skull-v1.png":  "D87359AA902471557D202504DDD0DC8D944B2BB5CED933E5DC633E878E97E733"
+                         },
+    "phases":  [
+                   {
+                       "id":  0,
+                       "status":  "verified",
+                       "depends":  [
+
+                                   ],
+                       "evidence":  "artifacts/world/results.json"
+                   },
+                   {
+                       "id":  1,
+                       "status":  "implemented_data_and_gameplay_verified",
+                       "depends":  [
+                                       0
+                                   ],
+                       "evidence":  "artifacts/world/visual-final.log"
+                   },
+                   {
+                       "id":  2,
+                       "status":  "verified",
+                       "depends":  [
+                                       1
+                                   ],
+                       "evidence":  "artifacts/world/results.json"
+                   },
+                   {
+                       "id":  3,
+                       "status":  "implemented_gui_unverified",
+                       "depends":  [
+                                       1,
+                                       2
+                                   ],
+                       "evidence":  "artifacts/world/import-final.log"
+                   },
+                   {
+                       "id":  4,
+                       "status":  "routes_verified_authoring_gui_unverified",
+                       "depends":  [
+                                       2,
+                                       3
+                                   ],
+                       "evidence":  "artifacts/world/visual-final.log"
+                   },
+                   {
+                       "id":  5,
+                       "status":  "verified_existing_rts_bridge",
+                       "depends":  [
+                                       2,
+                                       4
+                                   ],
+                       "evidence":  "artifacts/world/visual-final.log"
+                   },
+                   {
+                       "id":  6,
+                       "status":  "recovery_verified_manual_gates_pending",
+                       "depends":  [
+                                       0,
+                                       1,
+                                       2,
+                                       3,
+                                       4,
+                                       5
+                                   ],
+                       "evidence":  "docs/world_validation.md"
+                   }
+               ],
+    "manual_gates":  {
+                         "T17":  "unverified",
+                         "T18_editor_preview":  "unverified",
+                         "T20":  "unverified",
+                         "atlas_walkthrough":  "unverified"
+                     }
+}

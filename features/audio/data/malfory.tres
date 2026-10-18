@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="UnitVoiceProfile" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://features/audio/unit_voice_profile.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+unit_id = &"malfory"
+language = "en"
+gender = "female"
+vocal_age = "mature adult female"
+profession = "女魔法師"
+personality = "成熟、自信、性感、魅惑，帶危險的黑魔法氣質"
+voice_id = "pFZP5JQG7iQjIQuC4Bku"
+model_id = "eleven_v3"
+manifest_path = "res://features/audio/data/unit_voices.json"
+events = {"select": ["res://art/voices/malfory/select_01.ogg", "res://art/voices/malfory/select_02.ogg", "res://art/voices/malfory/select_03.ogg"], "move": ["res://art/voices/malfory/move_01.ogg", "res://art/voices/malfory/move_02.ogg", "res://art/voices/malfory/move_03.ogg"], "attack": ["res://art/voices/malfory/attack_01.ogg", "res://art/voices/malfory/attack_02.ogg", "res://art/voices/malfory/attack_03.ogg"], "inspect": ["res://art/voices/malfory/inspect_01.ogg", "res://art/voices/malfory/inspect_02.ogg", "res://art/voices/malfory/inspect_03.ogg"]}

@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="GearItemDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="1_i78y8"]
+[ext_resource type="Texture2D" path="res://art/items/source52/gs_old_bamboo_spear.png" id="2_g0q1c"]
+[ext_resource type="Script" path="res://common/data/gear_item_definition.gd" id="3_6g4b7"]
+
+[resource]
+script = ExtResource("3_6g4b7")
+id = &"gs_old_bamboo_spear"
+display_name = "舊竹槍"
+category = "spear"
+icon = ExtResource("2_g0q1c")
+kind = 0
+weight = 10.0
+modifiers = {
+"attack_max": 1.0,
+"attack_min": 1.0
+}
+allowed_roles = PackedInt32Array()
+use_effect = 1
+source_url = "https://www.52jushang.com/item/mao.asp"
+source_image_url = "https://www.52jushang.com/item/img/mao/yari2.jpg"
+source_stats = {
+"modifiers": {
+"attack_max": 1.0,
+"attack_min": 1.0
+},
+"required_level": 1.0,
+"weight_jin": 10.0
+}
+source_skill_names = PackedStringArray()
+description = "52巨商參考裝備；屬性與重量依來源，攻擊區間作為裝備加成。"

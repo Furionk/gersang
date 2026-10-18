@@ -1,0 +1,85 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3 uid="uid://gyp0q4w8fh0s"]
+
+[ext_resource type="Script" uid="uid://bx2ysry1l3shr" path="res://common/data/unit_definition.gd" id="1"]
+[ext_resource type="Resource" path="res://features/skills/data/supply.tres" id="2"]
+[ext_resource type="Script" uid="uid://boxf02g81ffu" path="res://common/data/skill_definition.gd" id="2_pg4pa"]
+[ext_resource type="Resource" uid="uid://c87ktaesldgl2" path="res://features/skills/data/ice_wall.tres" id="3"]
+[ext_resource type="Script" uid="uid://dekk0d4nvs8mb" path="res://common/data/sprite_animation_clip.gd" id="5_7p1ua"]
+[ext_resource type="Script" uid="uid://t0xvoej4tvhi" path="res://common/data/sprite_sheet_layout.gd" id="6_ohi6r"]
+[ext_resource type="Texture2D" uid="uid://uttwj6wnpafv" path="res://features/units/art/supplier.png" id="7_oqijx"]
+[ext_resource type="Resource" path="res://features/audio/data/supplier.tres" id="voice_profile"]
+
+[sub_resource type="Resource" id="Resource_p7hvj"]
+script = ExtResource("5_7p1ua")
+columns = PackedInt32Array(0)
+fps = 2.0
+loop = true
+frame_durations = PackedFloat32Array()
+instant_start_frame = null
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_ldq5q"]
+script = ExtResource("5_7p1ua")
+action = 1
+columns = PackedInt32Array(1, 0, 2, 0)
+fps = 8.0
+loop = true
+frame_durations = PackedFloat32Array()
+instant_start_frame = null
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_ej1da"]
+script = ExtResource("5_7p1ua")
+action = 2
+columns = PackedInt32Array(0, 3, 0)
+fps = 12.0
+frame_durations = PackedFloat32Array()
+instant_start_frame = null
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_h8ncp"]
+script = ExtResource("5_7p1ua")
+action = 3
+columns = PackedInt32Array(0, 4, 0)
+fps = 12.0
+frame_durations = PackedFloat32Array()
+instant_start_frame = null
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_cnr8s"]
+script = ExtResource("5_7p1ua")
+action = 4
+columns = PackedInt32Array(5)
+frame_durations = PackedFloat32Array()
+instant_start_frame = null
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_w0ndk"]
+script = ExtResource("6_ohi6r")
+source_texture = ExtResource("7_oqijx")
+frame_size = Vector2i(181, 181)
+foot_point = Vector2(90.5, 157.47)
+frame_rects = Array[Rect2i]([Rect2i(40, 12, 102, 161), Rect2i(211, 9, 110, 161), Rect2i(384, 9, 121, 162), Rect2i(555, 23, 162, 147), Rect2i(748, 3, 128, 173), Rect2i(917, 82, 150, 90), Rect2i(42, 196, 103, 161), Rect2i(212, 195, 114, 163), Rect2i(398, 199, 111, 156), Rect2i(563, 202, 158, 154), Rect2i(748, 181, 126, 176), Rect2i(921, 269, 155, 92), Rect2i(42, 374, 93, 163), Rect2i(218, 374, 98, 166), Rect2i(389, 375, 108, 160), Rect2i(565, 382, 145, 157), Rect2i(742, 373, 141, 164), Rect2i(934, 432, 135, 107), Rect2i(41, 556, 98, 162), Rect2i(230, 555, 92, 165), Rect2i(404, 556, 96, 162), Rect2i(551, 563, 147, 155), Rect2i(740, 547, 128, 174), Rect2i(920, 634, 152, 83), Rect2i(39, 737, 96, 166), Rect2i(218, 738, 99, 165), Rect2i(396, 739, 102, 163), Rect2i(545, 742, 157, 156), Rect2i(754, 731, 116, 169), Rect2i(915, 817, 157, 75), Rect2i(48, 921, 86, 161), Rect2i(227, 920, 94, 162), Rect2i(400, 921, 99, 158), Rect2i(573, 926, 125, 156), Rect2i(748, 914, 121, 172), Rect2i(927, 1002, 129, 84), Rect2i(49, 1099, 87, 157), Rect2i(228, 1098, 84, 163), Rect2i(407, 1101, 83, 160), Rect2i(571, 1094, 117, 167), Rect2i(755, 1097, 114, 168), Rect2i(926, 1165, 132, 92), Rect2i(50, 1278, 92, 158), Rect2i(218, 1278, 117, 158), Rect2i(393, 1279, 111, 158), Rect2i(561, 1280, 139, 157), Rect2i(749, 1273, 125, 165), Rect2i(917, 1342, 166, 85)])
+source_pivots = Array[Vector2]([Vector2(50.5, 159), Vector2(60.5, 159), Vector2(68.5, 160), Vector2(78.5, 145), Vector2(66.5, 171), Vector2(78.5, 88), Vector2(48.5, 159), Vector2(59.5, 161), Vector2(54.5, 154), Vector2(70.5, 152), Vector2(66.5, 174), Vector2(74.5, 90), Vector2(48.5, 161), Vector2(53.5, 164), Vector2(63.5, 158), Vector2(68.5, 155), Vector2(72.5, 162), Vector2(61.5, 105), Vector2(49.5, 160), Vector2(41.5, 163), Vector2(48.5, 160), Vector2(82.5, 153), Vector2(74.5, 172), Vector2(75.5, 81), Vector2(51.5, 164), Vector2(53.5, 163), Vector2(56.5, 161), Vector2(88.5, 154), Vector2(60.5, 167), Vector2(80.5, 73), Vector2(42.5, 159), Vector2(44.5, 160), Vector2(52.5, 156), Vector2(60.5, 154), Vector2(66.5, 170), Vector2(68.5, 82), Vector2(41.5, 155), Vector2(43.5, 161), Vector2(45.5, 158), Vector2(62.5, 165), Vector2(59.5, 166), Vector2(69.5, 90), Vector2(40.5, 156), Vector2(53.5, 156), Vector2(59.5, 156), Vector2(72.5, 155), Vector2(65.5, 163), Vector2(78.5, 83)])
+animations = Array[ExtResource("5_7p1ua")]([SubResource("Resource_p7hvj"), SubResource("Resource_ldq5q"), SubResource("Resource_ej1da"), SubResource("Resource_h8ncp"), SubResource("Resource_cnr8s")])
+direction_rows = Array[int]([0, 1, 2, 1, 0, 5, 6, 5])
+mirrored_directions = Array[bool]([false, false, false, true, true, false, false, true])
+
+[resource]
+script = ExtResource("1")
+puzzle_element = 2
+id = &"supplier"
+display_name = "道術師"
+role = 5
+max_health = 170.0
+max_mana = 230.0
+damage = 10.0
+attack_range = 200.0
+attack_interval = 1.5
+speed = 128.0
+armor = 0.04
+sprite_path = "res://features/units/art/supplier.png"
+sprite_layout = SubResource("Resource_w0ndk")
+illustration_index = 5
+skills = Array[ExtResource("2_pg4pa")]([ExtResource("2"), ExtResource("3")])
+voice_profile = ExtResource("voice_profile")

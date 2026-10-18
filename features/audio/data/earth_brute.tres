@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="UnitVoiceProfile" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://features/audio/unit_voice_profile.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+unit_id = &"earth_brute"
+nationality = ""
+language = ""
+species = "stone demon"
+profession = "裂地石妖"
+personality = "A huge living stone demon, deep gravel grinding groans"
+voice_id = ""
+model_id = "eleven_text_to_sound_v2"
+manifest_path = "res://features/audio/data/unit_voices.json"
+events = {"engage": ["res://art/voices/earth_brute/engage_01.ogg", "res://art/voices/earth_brute/engage_02.ogg", "res://art/voices/earth_brute/engage_03.ogg"], "death": ["res://art/voices/earth_brute/death_01.ogg", "res://art/voices/earth_brute/death_02.ogg", "res://art/voices/earth_brute/death_03.ogg"]}

@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="SkillDefinition" format=3 uid="uid://b8xd7i0iwsnj5"]
+
+[ext_resource type="Script" path="res://common/data/skill_effect_definition.gd" id="1_ds38a"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_q3mxb"]
+
+[sub_resource type="Resource" id="Resource_1rkos"]
+script = ExtResource("1_ds38a")
+kind = 13
+duration = 13.5
+duration_formula = "10+(agility+strength)*0.05"
+attack_multiplier = 3.9000000000000004
+attack_speed_multiplier = 1.9500000000000002
+
+[resource]
+script = ExtResource("2_q3mxb")
+id = &"teppo_triple"
+display_name = "三段"
+description = "攻擊力增加200%（总值×3）、攻速增加50%（間隔÷1.5）。持續10+(敏捷+力量)×0.05秒。重施刷新，不疊乘；狙擊加成先加再乘三段。"
+effect = 17
+target_mode = 1
+action = &"skill_teppo_triple"
+default_key = 80
+icon_index = 7
+mana_cost = 65.0
+damage_formula = "0"
+effect_data = SubResource("Resource_1rkos")

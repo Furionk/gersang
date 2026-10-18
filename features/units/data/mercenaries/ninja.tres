@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3 uid="uid://dh0fk3gk8acf"]
+
+[ext_resource type="Texture2D" uid="uid://bk23wd0tv8inp" path="res://features/units/art/ninja-standee-v1.png" id="1_4creo"]
+[ext_resource type="Script" uid="uid://bx2ysry1l3shr" path="res://common/data/unit_definition.gd" id="1_g68py"]
+[ext_resource type="Script" uid="uid://boxf02g81ffu" path="res://common/data/skill_definition.gd" id="2_ymd5m"]
+[ext_resource type="Resource" uid="uid://cf17vngw71iyj" path="res://features/skills/data/ninja_stealth.tres" id="3_6le6k"]
+[ext_resource type="Resource" uid="uid://crt3c6mbveiu8" path="res://features/skills/data/ninja_fire_trail.tres" id="4_4creo"]
+[ext_resource type="Resource" uid="uid://df41b5xqr3d8s" path="res://features/skills/data/ninja_chain.tres" id="5_06yvy"]
+[ext_resource type="Resource" uid="uid://dwt7rcckgbh01" path="res://features/units/data/layouts/ninja_layout.tres" id="6_4mrpu"]
+[ext_resource type="Resource" path="res://features/audio/data/ninja.tres" id="voice_profile"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_06yvy"]
+atlas = ExtResource("1_4creo")
+region = Rect2(370, 10, 270, 270)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4mrpu"]
+atlas = ExtResource("1_4creo")
+region = Rect2(0, 0, 1024, 1536)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="NinjaEyes"]
+atlas = ExtResource("1_4creo")
+region = Rect2(407, 103, 160, 68)
+filter_clip = true
+
+[resource]
+script = ExtResource("1_g68py")
+puzzle_element = 3
+base_power = 230
+strength = 30.0
+agility = 70.0
+intelligence = 26.0
+id = &"ninja"
+display_name = "忍者"
+max_health = 230.0
+max_mana = 240.0
+damage = 28.0
+attack_range = 55.0
+attack_interval = 0.85
+speed = 140.0
+sprite_path = "res://features/units/art/ninja.png"
+sprite_layout = ExtResource("6_4mrpu")
+eyes_texture = SubResource("NinjaEyes")
+portrait_texture = SubResource("AtlasTexture_06yvy")
+standee_texture = SubResource("AtlasTexture_4mrpu")
+skills = Array[ExtResource("2_ymd5m")]([ExtResource("3_6le6k"), ExtResource("4_4creo"), ExtResource("5_06yvy")])
+voice_profile = ExtResource("voice_profile")

@@ -1,0 +1,72 @@
+[
+  {
+    "file": "features\\rainbow\\audio\\voice_cut.ogg",
+    "text": "切！",
+    "voice": "Arthur - Chinese Male",
+    "model": "eleven_v3",
+    "sha256": "4201bf8afde2408c528d76de2e846e19f0ffed987e0b55e229ba8a5c3b043ae8",
+    "duration": 0.560998,
+    "channels": 1,
+    "sample_rate": 44100
+  },
+  {
+    "file": "features\\rainbow\\audio\\voice_cleave.ogg",
+    "text": "劈！",
+    "voice": "Arthur - Chinese Male",
+    "model": "eleven_v3",
+    "sha256": "8e7701903f33e6ddee65788d0616e91c405bb0de8284f27cab8e3a80a14bd0c3",
+    "duration": 0.724694,
+    "channels": 1,
+    "sample_rate": 44100
+  },
+  {
+    "file": "features\\rainbow\\audio\\voice_bang.ogg",
+    "text": "砰！",
+    "voice": "Arthur - Chinese Male",
+    "model": "eleven_v3",
+    "sha256": "ce74c85fa734f479fc1b4fb8c21265ee9ddd4b3147f23bdde7c452a0df7dbe0a",
+    "duration": 0.537868,
+    "channels": 1,
+    "sample_rate": 44100
+  },
+  {
+    "file": "features\\rainbow\\audio\\voice_break.ogg",
+    "text": "破！",
+    "voice": "Arthur - Chinese Male",
+    "model": "eleven_v3",
+    "sha256": "322d79301e1cb0392b1866408e0cdbc29e13712f47489366bebd02bcdbb1fc7d",
+    "duration": 1.174558,
+    "channels": 1,
+    "sample_rate": 44100
+  },
+  {
+    "file": "features\\rainbow\\audio\\swing.wav",
+    "source": "original deterministic transient synthesis",
+    "sha256": "cfb683280da4655e733171873447acef2b34203427ef222108a03b0b25abe221"
+  },
+  {
+    "file": "features\\rainbow\\audio\\cut.wav",
+    "source": "original deterministic transient synthesis",
+    "sha256": "de904aab0964df81edb7bae9df106ac50bef42d381dc149041e8ef3e8f0e9e80"
+  },
+  {
+    "file": "features\\rainbow\\audio\\cleave.wav",
+    "source": "original deterministic transient synthesis",
+    "sha256": "6709e34d4f40324e3cfe2bd3d306e0977b68b80f91030dd1137d1e09d70a8bb3"
+  },
+  {
+    "file": "features\\rainbow\\audio\\bang.wav",
+    "source": "original deterministic transient synthesis",
+    "sha256": "634f68a741edd8bad6b53885ad88b5917881c830478b51dd3bf77d367aa33a4f"
+  },
+  {
+    "file": "features\\rainbow\\audio\\break.wav",
+    "source": "original deterministic transient synthesis",
+    "sha256": "bf83d8fba1459e2ba7e6cf90fca847ba65da2ae628659d9bfaba5e79272d1b5c"
+  },
+  {
+    "file": "features\\rainbow\\audio\\guard.wav",
+    "source": "original deterministic transient synthesis",
+    "sha256": "acc8947467f196caf3935cfec8f342d7130c8596e9e354ecc28f59d07f9eb070"
+  }
+]

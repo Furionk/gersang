@@ -1,0 +1,55 @@
+[gd_resource type="Resource" script_class="SpriteSheetLayout" format=3 uid="uid://vdmlcs0fsr8b"]
+
+[ext_resource type="Script" uid="uid://t0xvoej4tvhi" path="res://common/data/sprite_sheet_layout.gd" id="1"]
+[ext_resource type="Script" uid="uid://dekk0d4nvs8mb" path="res://common/data/sprite_animation_clip.gd" id="1_8fvrg"]
+[ext_resource type="Texture2D" uid="uid://cul3ljcgprq25" path="res://features/units/art/elite.png" id="3_mqyow"]
+
+[sub_resource type="Resource" id="Resource_1ick7"]
+script = ExtResource("1_8fvrg")
+columns = PackedInt32Array(0)
+fps = 2.0
+loop = true
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_ysko3"]
+script = ExtResource("1_8fvrg")
+action = 1
+columns = PackedInt32Array(1, 0, 2, 0)
+fps = 8.0
+loop = true
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_y7jo1"]
+script = ExtResource("1_8fvrg")
+action = 2
+columns = PackedInt32Array(0, 3, 0)
+fps = 12.0
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_dxc1o"]
+script = ExtResource("1_8fvrg")
+action = 3
+columns = PackedInt32Array(0, 4, 0)
+fps = 12.0
+frame_durations = PackedFloat32Array()
+instant_start_frame = 1
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_xp0x4"]
+script = ExtResource("1_8fvrg")
+action = 4
+columns = PackedInt32Array(5)
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[resource]
+script = ExtResource("1")
+source_texture = ExtResource("3_mqyow")
+frame_rects = Array[Rect2i]([Rect2i(19, 5, 166, 170), Rect2i(201, 5, 162, 168), Rect2i(379, 5, 161, 169), Rect2i(550, 3, 152, 171), Rect2i(722, 2, 169, 175), Rect2i(892, 72, 188, 104), Rect2i(18, 182, 170, 173), Rect2i(202, 182, 167, 172), Rect2i(381, 182, 165, 170), Rect2i(544, 179, 159, 176), Rect2i(723, 183, 175, 174), Rect2i(894, 248, 179, 115), Rect2i(22, 361, 170, 168), Rect2i(209, 361, 155, 169), Rect2i(380, 361, 166, 171), Rect2i(568, 358, 141, 178), Rect2i(725, 361, 181, 175), Rect2i(905, 398, 171, 143), Rect2i(16, 540, 172, 172), Rect2i(211, 540, 161, 174), Rect2i(382, 540, 165, 172), Rect2i(552, 539, 147, 176), Rect2i(713, 541, 178, 174), Rect2i(901, 601, 175, 109), Rect2i(10, 722, 159, 171), Rect2i(190, 723, 156, 172), Rect2i(365, 722, 167, 173), Rect2i(547, 718, 169, 177), Rect2i(722, 723, 172, 170), Rect2i(900, 787, 179, 99), Rect2i(6, 902, 159, 171), Rect2i(176, 902, 167, 171), Rect2i(359, 902, 166, 170), Rect2i(551, 904, 151, 169), Rect2i(725, 903, 171, 170), Rect2i(898, 962, 180, 107), Rect2i(17, 1080, 167, 170), Rect2i(199, 1080, 166, 174), Rect2i(377, 1081, 167, 172), Rect2i(561, 1078, 138, 178), Rect2i(724, 1082, 171, 169), Rect2i(896, 1135, 181, 106), Rect2i(18, 1259, 171, 177), Rect2i(202, 1260, 167, 174), Rect2i(381, 1260, 164, 173), Rect2i(560, 1257, 138, 180), Rect2i(717, 1261, 176, 177), Rect2i(901, 1308, 177, 118)])
+source_pivots = Array[Vector2]([Vector2(71.5, 168), Vector2(70.5, 168), Vector2(73.5, 168), Vector2(83.5, 170), Vector2(92.5, 171), Vector2(103.5, 101), Vector2(72.5, 171), Vector2(69.5, 171), Vector2(71.5, 171), Vector2(89.5, 174), Vector2(91.5, 170), Vector2(101.5, 105), Vector2(68.5, 166), Vector2(62.5, 166), Vector2(72.5, 166), Vector2(65.5, 169), Vector2(89.5, 166), Vector2(90.5, 129), Vector2(74.5, 170), Vector2(60.5, 170), Vector2(70.5, 170), Vector2(81.5, 171), Vector2(101.5, 169), Vector2(94.5, 109), Vector2(80.5, 169), Vector2(81.5, 168), Vector2(87.5, 169), Vector2(86.5, 173), Vector2(92.5, 168), Vector2(95.5, 104), Vector2(84.5, 169), Vector2(95.5, 169), Vector2(93.5, 169), Vector2(82.5, 167), Vector2(89.5, 168), Vector2(97.5, 109), Vector2(73.5, 168), Vector2(72.5, 168), Vector2(75.5, 167), Vector2(72.5, 170), Vector2(90.5, 166), Vector2(99.5, 113), Vector2(72.5, 175), Vector2(69.5, 174), Vector2(71.5, 174), Vector2(73.5, 177), Vector2(97.5, 173), Vector2(94.5, 126)])
+animations = Array[ExtResource("1_8fvrg")]([SubResource("Resource_1ick7"), SubResource("Resource_ysko3"), SubResource("Resource_y7jo1"), SubResource("Resource_dxc1o"), SubResource("Resource_xp0x4")])
+direction_rows = Array[int]([0, 1, 2, 1, 4, 5, 6, 7])
+mirrored_directions = Array[bool]([false, false, false, true, false, false, false, false])

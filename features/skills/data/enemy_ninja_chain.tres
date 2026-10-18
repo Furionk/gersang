@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="SkillDefinition" format=3 uid="uid://do6c13vdu1imx"]
+
+[ext_resource type="Script" uid="uid://cwgoeihpnw613" path="res://common/data/skill_effect_definition.gd" id="1_4j5d5"]
+[ext_resource type="Script" uid="uid://boxf02g81ffu" path="res://common/data/skill_definition.gd" id="2_6v30a"]
+
+[sub_resource type="Resource" id="Resource_f046f"]
+script = ExtResource("1_4j5d5")
+kind = 12
+duration = 4.0
+tick_interval = 1.0
+chain_damage_multiplier = 0.85
+hit_control_duration = 0.35
+
+[resource]
+script = ExtResource("2_6v30a")
+id = &"enemy_ninja_chain"
+display_name = "忍法密傳．四方導雷"
+description = "指定敵軍，每秒放出一輪串連閃電，共4輪。每輪最多串連4個不同敵人，跳距180，基礎傷害35+敏捷×1.2+智慧×0.5，每跳保留85%，每次命中控制0.35秒。主目標死亡則結束。"
+effect = 16
+target_mode = 3
+action = &"skill_ninja_chain"
+default_key = 76
+icon_index = 7
+ai_enabled = true
+ai_attempt_interval = 5.0
+ai_cast_chance = 0.4
+mana_cost = 75.0
+range = 300.0
+radius = 0.0
+damage_formula = "35+agility*1.2+intelligence*0.5"
+effect_data = SubResource("Resource_f046f")

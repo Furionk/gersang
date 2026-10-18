@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="SkillDefinition" format=3 uid="uid://pvaeny6ymckp"]
+
+[ext_resource type="Script" path="res://common/data/skill_effect_definition.gd" id="1_fvtu5"]
+[ext_resource type="Resource" path="res://features/units/data/summons/earth_claw.tres" id="2_83yoy"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="3_versy"]
+
+[sub_resource type="Resource" id="Resource_6dig1"]
+script = ExtResource("1_fvtu5")
+kind = 5
+duration = 40.0
+summon_definition = ExtResource("2_83yoy")
+sprite_path = "res://features/skills/art/summon.png"
+summon_intelligence_bonus_formula = "intelligence*1.4"
+summon_health_bonus_formula = "intelligence*20"
+summon_defense_bonus_formula = "intelligence*1.2"
+summon_controllable = false
+summon_limit = 0
+
+[resource]
+script = ExtResource("3_versy")
+id = &"earth_claw"
+display_name = "大地魔爪"
+description = "X即時召喚，MP35（可改）、無數量上限、40秒；智慧加體力/防禦/刺擊，自己的地樁區仍有協同。"
+effect = 9
+target_mode = 1
+action = &"skill_earth_claw"
+default_key = 88
+icon_index = 5
+instant_self_activation = true
+mana_cost = 35.0
+radius = 350.0
+damage_formula = "0"
+effect_data = SubResource("Resource_6dig1")

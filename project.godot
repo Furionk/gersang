@@ -1,0 +1,63 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="巨箱"
+run/main_scene="res://main.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+config/icon="uid://0vyhok4wwbup"
+
+[audio]
+
+general/default_playback_type.web=0
+
+[autoload]
+
+GameSettings="*res://features/settings/game_settings.gd"
+PartyProgress="*res://features/progression/party_progress.gd"
+WorldSession="*res://features/world/runtime/world_session.gd"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/size/window_width_override=1280
+window/size/window_height_override=720
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+window/size/min_width=800
+window/size/min_height=450
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/skill_authoring/plugin.cfg", "res://addons/world_authoring/plugin.cfg", "res://addons/web_export/plugin.cfg")
+
+[file_customization]
+
+folder_colors={
+"res://art/": "orange",
+"res://features/": "red",
+"res://features/battle/data/": "yellow",
+"res://features/skills/data/": "yellow",
+"res://features/units/data/": "yellow",
+"res://features/world/": "orange",
+"res://features/world/data/": "yellow"
+}
+
+[gui]
+
+theme/custom_font="res://art/fonts/NotoSansCJKtc-Regular.otf"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.025, 0.03, 0.025, 1)

@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="RainbowWeaponDefinition" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://features/rainbow/weapon_definition.gd" id="1"]
+[ext_resource type="Resource" path="res://features/rainbow/data/skins/healer.tres" id="2"]
+
+[ext_resource type="Texture2D" path="res://features/rainbow/art/effects-v1.png" id="3"]
+
+[sub_resource type="AtlasTexture" id="vfx"]
+atlas = ExtResource("3")
+region = Rect2(314, 600, 314, 65)
+filter_clip = true
+
+[resource]
+script = ExtResource("1")
+layout = ExtResource("2")
+unit_id = &"healer"
+melee_name = "點穴刺"
+ranged_name = "三花針"
+specialty = "輕巧快攻"
+effect = "needle"
+tint = Color(0.56863, 0.92549, 0.76078, 1)
+melee_range = 55.0
+melee_half_angle = 0.55
+melee_windup = 0.08
+melee_recovery = 0.2
+melee_power = 0.6
+ranged_windup = 0.12
+ranged_recovery = 0.32
+ranged_power = 0.2
+mana_cost = 2.0
+projectile_speed = 900.0
+projectile_lifetime = 0.6
+projectile_count = 3
+spread = 0.08
+move_multiplier = 1.05
+stagger = 0.08
+knockback = 80.0
+effect_texture = SubResource("vfx")

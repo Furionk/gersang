@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="WorldSceneryDefinition" format=3]
+
+[ext_resource type="Script" path="res://features/world/definitions/world_scenery_definition.gd" id="1_1aw4l"]
+[ext_resource type="Texture2D" path="res://art/terrain/biomes_v1/deadwood_wastes/environment-atlas-v1.png" id="2_51db7"]
+
+[resource]
+script = ExtResource("1_1aw4l")
+display_name = "外彎枯岩"
+description = "河灣環境組合；原生通行／阻擋仍由 TileMap 遮罩決定。"
+texture = ExtResource("2_51db7")
+atlas_region = Rect2(724, 362, 361, 363)
+foot_anchor = Vector2(190, 347)
+sprite_scale = 0.72
+
+sorting_mode = 1
+sorting_review_required = true
+sorting_note = "混合山石／植被／地面的大圖只有一個排序點；先保留立體，精細遮擋請用分件場景。"

@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3 uid="uid://dq7fnimfvbykh"]
+
+[ext_resource type="Script" path="res://common/data/unit_definition.gd" id="1"]
+[ext_resource type="Resource" path="res://features/units/data/layouts/beast_layout.tres" id="2"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_2htdq"]
+[ext_resource type="Resource" path="res://features/audio/data/beast.tres" id="voice_profile"]
+
+[resource]
+script = ExtResource("1")
+vitality = 50.0
+defense = 20.0
+magic_resistance = 0.18
+id = &"beast"
+display_name = "租霸豬"
+role = 7
+max_mana = 0.0
+damage = 16.5
+attack_range = 48.0
+attack_interval = 1.15
+minimum_ai_cast_time = 0.4
+balance_revision = 1
+tactical_hint = "成群消耗：聚怪後用範圍雷擊／暴雷；吸血與分裂種要快速集火，不要逐個慢磨。"
+speed = 103.0
+mana_regeneration = 6.0
+armor = 0.12
+sprite_path = "res://features/units/art/beast.png"
+sprite_layout = ExtResource("2")
+voice_profile = ExtResource("voice_profile")

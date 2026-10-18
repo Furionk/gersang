@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ArenaDefinition" format=3 uid="uid://cw20sg4nqy3wp"]
+
+[ext_resource type="Texture2D" uid="uid://bqldss0vi10qx" path="res://art/terrain/shaolin_temple/battle-paving-v1.png" id="1_x0spy"]
+[ext_resource type="Script" uid="uid://d3vyygwq6v6lc" path="res://common/data/encounter_definition.gd" id="2_20s8e"]
+[ext_resource type="Script" uid="uid://cre3yslmla84g" path="res://features/world/definitions/arena_definition.gd" id="3_allc6"]
+
+[sub_resource type="Resource" id="Resource_wj4ts"]
+script = ExtResource("2_20s8e")
+id = &"shaolin_temple"
+display_name = "少林寺 · 護院試煉"
+terrain = 1
+ground_texture = ExtResource("1_x0spy")
+battlefield_scene = "res://features/battle/maps/shaolin_temple.tscn"
+enemy_spawn_centers = PackedVector2Array(1160, 440, 1520, 880, 1160, 1320, 600, 1240)
+
+[resource]
+script = ExtResource("3_allc6")
+arena_id = "shaolin_temple"
+encounter = SubResource("Resource_wj4ts")

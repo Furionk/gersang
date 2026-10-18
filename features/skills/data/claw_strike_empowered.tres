@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="SkillDefinition" format=3 uid="uid://cd6iij7hoqnfs"]
+
+[ext_resource type="Script" uid="uid://boxf02g81ffu" path="res://common/data/skill_definition.gd" id="1"]
+[ext_resource type="Script" uid="uid://cwgoeihpnw613" path="res://common/data/skill_effect_definition.gd" id="2"]
+
+[sub_resource type="Resource" id="Spikes"]
+script = ExtResource("2")
+kind = 9
+duration = 0.5
+sprite_path = "res://features/skills/art/earth_stakes.png"
+synergy_skill_id = &"earth_stakes"
+synergy_damage_multiplier = 1.75
+synergy_attack_speed_multiplier = 1.4
+
+[resource]
+script = ExtResource("1")
+id = &"claw_strike_empowered"
+display_name = "大地魔爪・破陣刺擊"
+description = "每次普攻刺擊地面範圍，40+釋放時智慧×2.8；自己的召喚者地樁區內敵人受1.75倍刺擊。魔爪站在區內攻速1.4倍，重疊地樁不疊乘。"
+effect = 18
+target_mode = 3
+trigger = 1
+action = &"skill_claw_strike_empowered"
+mana_cost = 0.0
+radius = 100.0
+proc_chance = 1.0
+damage_formula = "40+intelligence*2.8"
+effect_data = SubResource("Spikes")

@@ -1,0 +1,41 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3 uid="uid://ch8ckf3rlx0b1"]
+
+[ext_resource type="Script" uid="uid://bx2ysry1l3shr" path="res://common/data/unit_definition.gd" id="1_po521"]
+[ext_resource type="Texture2D" uid="uid://c4h3l6y43qysi" path="res://features/units/art/teppo-standee-v1.png" id="1_y81is"]
+[ext_resource type="Script" uid="uid://boxf02g81ffu" path="res://common/data/skill_definition.gd" id="2_nybda"]
+[ext_resource type="Resource" uid="uid://c1a5e85vlwj2v" path="res://features/skills/data/teppo_sniper.tres" id="3_qhovj"]
+[ext_resource type="Resource" uid="uid://cutpvamicer7i" path="res://features/skills/data/teppo_comrades.tres" id="4_y81is"]
+[ext_resource type="Resource" uid="uid://b8xd7i0iwsnj5" path="res://features/skills/data/teppo_triple.tres" id="5_5ndip"]
+[ext_resource type="Resource" uid="uid://bylxsvdgwytbv" path="res://features/units/data/layouts/teppo_motion_v2_layout.tres" id="6_ksk6e"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5ndip"]
+atlas = ExtResource("1_y81is")
+region = Rect2(355, 30, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ksk6e"]
+atlas = ExtResource("1_y81is")
+region = Rect2(0, 0, 1024, 1536)
+filter_clip = true
+
+[resource]
+script = ExtResource("1_po521")
+puzzle_element = 0
+base_power = 240
+strength = 48.0
+agility = 52.0
+id = &"teppo"
+display_name = "鐵炮手"
+max_health = 240.0
+max_mana = 220.0
+damage = 34.0
+attack_range = 280.0
+attack_interval = 1.25
+speed = 122.0
+sprite_path = "res://features/units/art/teppo-motion-v2.png"
+sprite_layout = ExtResource("6_ksk6e")
+battle_sprite_scale = 0.43129
+world_sprite_scale = 0.4852
+portrait_texture = SubResource("AtlasTexture_5ndip")
+standee_texture = SubResource("AtlasTexture_ksk6e")
+skills = Array[ExtResource("2_nybda")]([ExtResource("3_qhovj"), ExtResource("4_y81is"), ExtResource("5_5ndip")])

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="UnitVoiceProfile" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://features/audio/unit_voice_profile.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+unit_id = &"well_earth_sentinel"
+nationality = ""
+language = ""
+species = "ghost sentinel"
+profession = "古井震地鬼衛"
+personality = "An ancient well sentinel, eerie low metallic spectral moaning"
+voice_id = ""
+model_id = "eleven_text_to_sound_v2"
+manifest_path = "res://features/audio/data/unit_voices.json"
+events = {"engage": ["res://art/voices/well_earth_sentinel/engage_01.ogg", "res://art/voices/well_earth_sentinel/engage_02.ogg", "res://art/voices/well_earth_sentinel/engage_03.ogg"], "death": ["res://art/voices/well_earth_sentinel/death_01.ogg", "res://art/voices/well_earth_sentinel/death_02.ogg", "res://art/voices/well_earth_sentinel/death_03.ogg"]}

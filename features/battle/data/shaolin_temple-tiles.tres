@@ -1,0 +1,17 @@
+[gd_resource type="TileSet" format=3 uid="uid://ypnas0n2ct4o"]
+
+[ext_resource type="Texture2D" uid="uid://dijpp24hba1ci" path="res://features/battle/data/shaolin_temple-tiles-v1.png" id="1_87s15"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8ncqu"]
+texture = ExtResource("1_87s15")
+texture_region_size = Vector2i(80, 40)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+
+[resource]
+tile_shape = 1
+tile_layout = 5
+tile_size = Vector2i(80, 40)
+sources/0 = SubResource("TileSetAtlasSource_8ncqu")

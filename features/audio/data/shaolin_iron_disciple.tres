@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="UnitVoiceProfile" format=3 uid="uid://bc4taa3cnsl4a"]
+
+[ext_resource type="Script" uid="uid://cpjpdr846ikm2" path="res://features/audio/unit_voice_profile.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+unit_id = &"shaolin_iron_disciple"
+nationality = "中國"
+language = "zh"
+profession = "鐵棍武僧"
+personality = "剛直、勤練、勇猛"
+voice_id = "xQsp9uyB3OResmXFYuFx"
+manifest_path = "res://features/audio/data/unit_voices.json"
+events = {
+"death": ["res://art/voices/shaolin_iron_disciple/death_01.ogg", "res://art/voices/shaolin_iron_disciple/death_02.ogg", "res://art/voices/shaolin_iron_disciple/death_03.ogg"],
+"engage": ["res://art/voices/shaolin_iron_disciple/engage_01.ogg", "res://art/voices/shaolin_iron_disciple/engage_02.ogg", "res://art/voices/shaolin_iron_disciple/engage_03.ogg"]
+}

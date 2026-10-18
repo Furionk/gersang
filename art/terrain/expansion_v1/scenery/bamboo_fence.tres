@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="WorldSceneryDefinition" format=3]
+
+[ext_resource type="Script" path="res://features/world/definitions/world_scenery_definition.gd" id="1_hicib"]
+[ext_resource type="Texture2D" path="res://art/terrain/expansion_v1/village-v1.png" id="2_hsqaj"]
+
+[resource]
+script = ExtResource("1_hicib")
+display_name = "竹籬笆"
+description = "環境裝飾素材；通行及阻擋另由地圖遮罩設定。"
+texture = ExtResource("2_hsqaj")
+atlas_region = Rect2(512, 520, 512, 504)
+foot_anchor = Vector2(260.5, 430)

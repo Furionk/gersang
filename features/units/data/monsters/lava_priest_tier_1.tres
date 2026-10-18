@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/unit_definition.gd" id="1_qiecn"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_1nx31"]
+[ext_resource type="Resource" path="res://features/rainbow/data/skins/lava_priest.tres" id="3_hui1s"]
+
+[resource]
+script = ExtResource("1_qiecn")
+base_power = 3000
+luck = 0.0
+defense = 6.0
+experience_reward = 1600
+level = 50
+id = &"lava_priest_tier_1"
+display_name = "普通熔岩祭司"
+max_health = 11608.0
+max_mana = 300.0
+damage = 32.0
+attack_range = 360.0
+balance_revision = 3
+tactical_hint = "建議十人編隊 Lv50 · 自由挑戰 · 高危險；留意預警，側移與反擊。"
+speed = 95.0
+mana_regeneration = 8.0
+sprite_path = "res://features/rainbow/art/lava_priest-v1.png"
+sprite_layout = ExtResource("3_hui1s")
+battle_sprite_scale = 0.68
+world_sprite_scale = 0.36

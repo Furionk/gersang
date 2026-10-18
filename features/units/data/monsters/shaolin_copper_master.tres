@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/unit_definition.gd" id="1_x1xco"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_iw73n"]
+[ext_resource type="Resource" path="res://features/skills/data/enemies/enemy_copper_summon.tres" id="3_5lmst"]
+[ext_resource type="Resource" path="res://features/skills/data/enemies/enemy_critical.tres" id="4_bxlid"]
+[ext_resource type="Resource" path="res://features/units/data/layouts/copper_monk_motion_v3_layout.tres" id="5_x1xco"]
+[ext_resource type="Resource" path="res://features/audio/data/shaolin_copper_master.tres" id="voice_profile"]
+
+[resource]
+script = ExtResource("1_x1xco")
+base_power = 240
+level_power_growth = 24
+strength = 75.0
+defense = 90.0
+magic_resistance = 0.08
+experience_reward = 150
+id = &"shaolin_copper_master"
+display_name = "銅人陣師"
+role = 9
+max_health = 756.0
+max_mana = 180.0
+damage = 37.5
+attack_range = 64.0
+attack_interval = 1.25
+minimum_ai_cast_time = 0.4
+balance_revision = 1
+tactical_hint = "重甲高體力：用法術／持續地面技削血，前排拉住，不要只靠普通物理硬打。"
+speed = 100.0
+mana_regeneration = 6.0
+armor = 0.45
+sprite_path = "res://features/units/art/copper_monk-motion-v3.png"
+sprite_layout = ExtResource("5_x1xco")
+battle_sprite_scale = 0.58043
+world_sprite_scale = 0.55573
+skills = Array[ExtResource("2_iw73n")]([ExtResource("3_5lmst"), ExtResource("4_bxlid")])
+voice_profile = ExtResource("voice_profile")

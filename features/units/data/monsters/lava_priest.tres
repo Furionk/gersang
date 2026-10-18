@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/unit_definition.gd" id="1_nuxk4"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_evtyh"]
+[ext_resource type="Resource" path="res://features/rainbow/data/skins/lava_priest.tres" id="3_k53te"]
+
+[resource]
+script = ExtResource("1_nuxk4")
+base_power = 3000
+luck = 0.0
+defense = 6.0
+experience_reward = 1600
+level = 28
+id = &"lava_priest"
+display_name = "熔岩祭司"
+max_health = 8308.0
+max_mana = 300.0
+damage = 32.0
+attack_range = 360.0
+balance_revision = 3
+tactical_hint = "次王。烙印鎖定位置、焚魂外環中央安全；兩次施法後耗竭四秒。"
+speed = 95.0
+mana_regeneration = 8.0
+sprite_path = "res://features/rainbow/art/lava_priest-v1.png"
+sprite_layout = ExtResource("3_k53te")
+battle_sprite_scale = 0.68
+world_sprite_scale = 0.36

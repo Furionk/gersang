@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/unit_definition.gd" id="1_7tkvn"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_lk0sc"]
+[ext_resource type="Resource" path="res://features/skills/data/enemies/enemy_flame.tres" id="3_xg5lv"]
+[ext_resource type="Resource" path="res://features/skills/data/enemies/enemy_shockwave.tres" id="4_hbg7y"]
+[ext_resource type="Resource" path="res://features/units/data/layouts/tomb_pyromancer_layout.tres" id="5_c6bsg"]
+[ext_resource type="Resource" path="res://features/audio/data/ember_raider.tres" id="voice_profile"]
+
+[resource]
+script = ExtResource("1_7tkvn")
+base_power = 240
+level_power_growth = 24
+intelligence = 62.0
+defense = 8.0
+magic_resistance = 0.6
+experience_reward = 55
+id = &"ember_raider"
+display_name = "赤焰劫匪"
+role = 8
+max_health = 378.0
+max_mana = 140.0
+damage = 21.0
+attack_range = 230.0
+attack_interval = 1.6
+minimum_ai_cast_time = 0.4
+balance_revision = 1
+tactical_hint = "高法抗施法者：用物理射手／忠臣之魂集中火力，控制中斷施法；不要一直用同種法術。"
+speed = 105.0
+mana_regeneration = 6.0
+armor = 0.03
+sprite_path = "res://features/units/art/tomb_pyromancer-v1.png"
+sprite_layout = ExtResource("5_c6bsg")
+skills = Array[ExtResource("2_lk0sc")]([ExtResource("3_xg5lv"), ExtResource("4_hbg7y")])
+voice_profile = ExtResource("voice_profile")

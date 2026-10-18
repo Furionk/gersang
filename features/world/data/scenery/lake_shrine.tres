@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="WorldSceneryDefinition" format=3]
+
+[ext_resource type="Script" path="res://features/world/definitions/world_scenery_definition.gd" id="1_ur1v1"]
+[ext_resource type="Texture2D" path="res://art/terrain/millennium_lake/props-v1.png" id="2_h4n0k"]
+
+[resource]
+script = ExtResource("1_ur1v1")
+display_name = "shrine"
+texture = ExtResource("2_h4n0k")
+atlas_region = Rect2(512, 512, 512, 512)
+foot_anchor = Vector2(256, 456)
+sprite_scale = 0.6
+
+sorting_mode = 1
+sorting_review_required = false
+sorting_note = "立體素材，腳底Y自動交錯；不產生障礙。"

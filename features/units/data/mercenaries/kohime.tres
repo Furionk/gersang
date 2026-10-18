@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3 uid="uid://ble126h2pgyi3"]
+
+[ext_resource type="Texture2D" uid="uid://c8f4sllvujcbr" path="res://features/units/art/kohime-standee-v2.png" id="1_0bt8b"]
+[ext_resource type="Script" uid="uid://bx2ysry1l3shr" path="res://common/data/unit_definition.gd" id="1_hgyxw"]
+[ext_resource type="Script" uid="uid://boxf02g81ffu" path="res://common/data/skill_definition.gd" id="2_w03tk"]
+[ext_resource type="Resource" uid="uid://dbw6ub05tp5m3" path="res://features/skills/data/earth_stakes.tres" id="3_w03tk"]
+[ext_resource type="Resource" uid="uid://pvaeny6ymckp" path="res://features/skills/data/earth_claw.tres" id="4_0bt8b"]
+[ext_resource type="Resource" uid="uid://clu0a4cv6gg6q" path="res://features/units/data/layouts/kohime_v2_layout.tres" id="5_xgwxf"]
+
+[sub_resource type="AtlasTexture" id="KohimeEyes"]
+atlas = ExtResource("1_0bt8b")
+region = Rect2(275, 245, 300, 110)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xgwxf"]
+atlas = ExtResource("1_0bt8b")
+region = Rect2(275, 150, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hjsx2"]
+atlas = ExtResource("1_0bt8b")
+region = Rect2(0, 0, 1024, 1536)
+filter_clip = true
+
+[resource]
+script = ExtResource("1_hgyxw")
+puzzle_element = 1
+base_power = 220
+strength = 18.0
+agility = 26.0
+intelligence = 65.0
+id = &"kohime"
+display_name = "妖術師・湖衣姬"
+max_health = 210.0
+max_mana = 300.0
+attack_range = 200.0
+attack_interval = 1.4
+speed = 122.0
+sprite_path = "res://features/units/art/kohime-v2.png"
+sprite_layout = ExtResource("5_xgwxf")
+portrait_texture = SubResource("AtlasTexture_xgwxf")
+eyes_texture = SubResource("KohimeEyes")
+standee_texture = SubResource("AtlasTexture_hjsx2")
+skills = Array[ExtResource("2_w03tk")]([ExtResource("3_w03tk"), ExtResource("4_0bt8b")])

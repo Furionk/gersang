@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/unit_definition.gd" id="1_rbp4h"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_8paml"]
+[ext_resource type="Script" path="res://common/data/sprite_animation_clip.gd" id="3_8fujo"]
+[ext_resource type="Script" path="res://common/data/sprite_sheet_layout.gd" id="4_yc4mo"]
+
+[sub_resource type="Resource" id="Resource_drj38"]
+script = ExtResource("4_yc4mo")
+source_size = Vector2i(768, 1024)
+frame_size = Vector2i(128, 128)
+foot_point = Vector2(64, 110)
+frame_rects = Array[Rect2i]([Rect2i(0, 0, 128, 128), Rect2i(128, 0, 128, 128), Rect2i(256, 0, 128, 128), Rect2i(384, 0, 128, 128), Rect2i(512, 0, 128, 128), Rect2i(640, 0, 128, 128), Rect2i(0, 128, 128, 128), Rect2i(128, 128, 128, 128), Rect2i(256, 128, 128, 128), Rect2i(384, 128, 128, 128), Rect2i(512, 128, 128, 128), Rect2i(640, 128, 128, 128), Rect2i(0, 256, 128, 128), Rect2i(128, 256, 128, 128), Rect2i(256, 256, 128, 128), Rect2i(384, 256, 128, 128), Rect2i(512, 256, 128, 128), Rect2i(640, 256, 128, 128), Rect2i(0, 384, 128, 128), Rect2i(128, 384, 128, 128), Rect2i(256, 384, 128, 128), Rect2i(384, 384, 128, 128), Rect2i(512, 384, 128, 128), Rect2i(640, 384, 128, 128), Rect2i(0, 512, 128, 128), Rect2i(128, 512, 128, 128), Rect2i(256, 512, 128, 128), Rect2i(384, 512, 128, 128), Rect2i(512, 512, 128, 128), Rect2i(640, 512, 128, 128), Rect2i(0, 640, 128, 128), Rect2i(128, 640, 128, 128), Rect2i(256, 640, 128, 128), Rect2i(384, 640, 128, 128), Rect2i(512, 640, 128, 128), Rect2i(640, 640, 128, 128), Rect2i(0, 768, 128, 128), Rect2i(128, 768, 128, 128), Rect2i(256, 768, 128, 128), Rect2i(384, 768, 128, 128), Rect2i(512, 768, 128, 128), Rect2i(640, 768, 128, 128), Rect2i(0, 896, 128, 128), Rect2i(128, 896, 128, 128), Rect2i(256, 896, 128, 128), Rect2i(384, 896, 128, 128), Rect2i(512, 896, 128, 128), Rect2i(640, 896, 128, 128)])
+source_pivots = Array[Vector2]([Vector2(64, 110), Vector2(64, 110), Vector2(64, 110), Vector2(64, 110), Vector2(64, 110), Vector2(64, 110), Vector2(64, 110), Vector2(64, 110), Vector2(64, 110), Vector2(64, 110), Vector2(64, 110), Vector2(64, 110), Vector2(64, 110), Vector2(64, 110), Vector2(64, 110), Vector2(64, 110), Vector2(64, 110), Vector2(64, 110), Vector2(64, 110), Vector2(64, 110), Vector2(64, 110), Vector2(64, 110), Vector2(64, 110), Vector2(64, 110), Vector2(64, 110), Vector2(64, 110), Vector2(64, 110), Vector2(64, 110), Vector2(64, 110), Vector2(64, 110), Vector2(64, 110), Vector2(64, 110), Vector2(64, 110), Vector2(64, 110), Vector2(64, 110), Vector2(64, 110), Vector2(64, 110), Vector2(64, 110), Vector2(64, 110), Vector2(64, 110), Vector2(64, 110), Vector2(64, 110), Vector2(64, 110), Vector2(64, 110), Vector2(64, 110), Vector2(64, 110), Vector2(64, 110), Vector2(64, 110)])
+
+[resource]
+script = ExtResource("1_rbp4h")
+id = &"garden_monkey_4"
+display_name = "藏身猴"
+sprite_path = "res://features/monkey/assets/monkey_world.png"
+sprite_layout = SubResource("Resource_drj38")
+world_sprite_scale = 0.7

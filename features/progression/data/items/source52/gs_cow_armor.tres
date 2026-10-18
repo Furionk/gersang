@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="GearItemDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="1_asmf4"]
+[ext_resource type="Texture2D" path="res://art/items/source52/gs_cow_armor.png" id="2_4de0m"]
+[ext_resource type="Script" path="res://common/data/gear_item_definition.gd" id="3_6k1kh"]
+
+[resource]
+script = ExtResource("3_6k1kh")
+id = &"gs_cow_armor"
+display_name = "牛皮盔甲"
+category = "armor"
+icon = ExtResource("2_4de0m")
+kind = 0
+equipment_slot = 1
+weight = 7.0
+modifiers = {
+"defense": 5.0
+}
+required_level = 3
+allowed_roles = PackedInt32Array()
+use_effect = 1
+source_url = "https://www.52jushang.com/item/kuijia.asp"
+source_image_url = "https://www.52jushang.com/item/img2/kuijia/body3.jpg"
+source_stats = {
+"modifiers": {
+"defense": 5.0
+},
+"required_level": 3.0,
+"weight_jin": 7.0
+}
+source_skill_names = PackedStringArray()
+description = "52巨商參考裝備；屬性與重量依來源，攻擊區間作為裝備加成。"

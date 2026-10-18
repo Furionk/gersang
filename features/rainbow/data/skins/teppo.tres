@@ -1,0 +1,53 @@
+[gd_resource type="Resource" script_class="SpriteSheetLayout" load_steps=9 format=3]
+
+[ext_resource type="Script" path="res://common/data/sprite_sheet_layout.gd" id="1"]
+[ext_resource type="Script" path="res://common/data/sprite_animation_clip.gd" id="2"]
+[ext_resource type="Texture2D" path="res://features/rainbow/art/teppo-v1.png" id="3"]
+
+[sub_resource type="Resource" id="clip0"]
+script = ExtResource("2")
+action = 0
+columns = PackedInt32Array(0)
+fps = 3.0
+loop = true
+
+[sub_resource type="Resource" id="clip1"]
+script = ExtResource("2")
+action = 1
+columns = PackedInt32Array(1, 0, 2, 0)
+fps = 9.0
+loop = true
+
+[sub_resource type="Resource" id="clip2"]
+script = ExtResource("2")
+action = 2
+columns = PackedInt32Array(0, 3, 0)
+fps = 9.0
+loop = false
+
+[sub_resource type="Resource" id="clip3"]
+script = ExtResource("2")
+action = 3
+columns = PackedInt32Array(0, 3, 0)
+fps = 7.0
+loop = false
+
+[sub_resource type="Resource" id="clip4"]
+script = ExtResource("2")
+action = 4
+columns = PackedInt32Array(0)
+fps = 1.0
+loop = false
+
+[resource]
+script = ExtResource("1")
+source_texture = ExtResource("3")
+source_size = Vector2i(1254, 1254)
+columns = 4
+rows = 4
+frame_size = Vector2i(512, 400)
+foot_point = Vector2(256, 360)
+frame_rects = Array[Rect2i]([Rect2i(66, 12, 198, 288), Rect2i(361, 13, 190, 287), Rect2i(671, 12, 206, 288), Rect2i(968, 14, 261, 286), Rect2i(49, 318, 199, 295), Rect2i(356, 322, 197, 289), Rect2i(677, 320, 204, 293), Rect2i(939, 318, 288, 293), Rect2i(86, 630, 197, 289), Rect2i(397, 631, 209, 289), Rect2i(703, 633, 216, 288), Rect2i(975, 636, 253, 276), Rect2i(42, 939, 181, 284), Rect2i(341, 938, 205, 285), Rect2i(655, 938, 212, 286), Rect2i(944, 939, 263, 285)])
+source_pivots = Array[Vector2]([Vector2(80.4, 286.0), Vector2(95.0, 285.0), Vector2(105.8, 286.0), Vector2(105.6, 284.0), Vector2(99.9, 293.0), Vector2(96.0, 287.0), Vector2(94.0, 291.0), Vector2(164.3, 291.0), Vector2(77.3, 287.0), Vector2(67.1, 287.0), Vector2(70.9, 286.0), Vector2(114.2, 274.0), Vector2(107.8, 282.0), Vector2(129.0, 283.0), Vector2(135.0, 284.0), Vector2(129.1, 283.0)])
+direction_rows = Array[int]([0, 0, 0, 1, 1, 3, 3, 2])
+animations = Array[ExtResource("2")]([SubResource("clip0"), SubResource("clip1"), SubResource("clip2"), SubResource("clip3"), SubResource("clip4")])

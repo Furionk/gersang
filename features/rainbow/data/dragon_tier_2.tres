@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RainbowBossTier" format=3]
+
+[ext_resource type="Script" path="res://features/rainbow/boss_tier.gd" id="1_i7ku0"]
+
+[resource]
+script = ExtResource("1_i7ku0")
+tier = 2
+recommended_level = 75
+display_name = "中階"
+interval = 2.6
+attack_pool = PackedStringArray("breath", "rain", "ring", "sweep", "trail", "fan", "expanding_ring")
+weights = PackedFloat32Array(3, 2, 2, 3, 3, 3, 3)

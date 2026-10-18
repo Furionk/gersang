@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="RainbowWeaponDefinition" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://features/rainbow/weapon_definition.gd" id="1"]
+[ext_resource type="Resource" path="res://features/rainbow/data/skins/merchant.tres" id="2"]
+
+[ext_resource type="Texture2D" path="res://features/rainbow/art/effects-v1.png" id="3"]
+
+[sub_resource type="AtlasTexture" id="vfx"]
+atlas = ExtResource("3")
+region = Rect2(0, 100, 314, 350)
+filter_clip = true
+
+[resource]
+script = ExtResource("1")
+layout = ExtResource("2")
+unit_id = &"merchant"
+melee_name = "連斬"
+ranged_name = "飛刃"
+specialty = "均衡連擊"
+effect = "blade"
+tint = Color(0.46667, 0.90588, 0.86667, 1)
+effect_texture = SubResource("vfx")

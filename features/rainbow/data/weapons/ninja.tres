@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="RainbowWeaponDefinition" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://features/rainbow/weapon_definition.gd" id="1"]
+[ext_resource type="Resource" path="res://features/rainbow/data/skins/ninja.tres" id="2"]
+
+[ext_resource type="Texture2D" path="res://features/rainbow/art/effects-v1.png" id="3"]
+
+[sub_resource type="AtlasTexture" id="vfx"]
+atlas = ExtResource("3")
+region = Rect2(0, 800, 314, 360)
+filter_clip = true
+
+[resource]
+script = ExtResource("1")
+layout = ExtResource("2")
+unit_id = &"ninja"
+melee_name = "雙刃斬"
+ranged_name = "三方鏢"
+specialty = "高速游擊"
+effect = "kunai"
+tint = Color(1.00000, 0.60392, 0.69020, 1)
+melee_range = 58.0
+melee_half_angle = 0.65
+melee_windup = 0.07
+melee_recovery = 0.16
+melee_power = 0.65
+ranged_windup = 0.1
+ranged_recovery = 0.4
+ranged_power = 0.23
+mana_cost = 3.0
+projectile_speed = 820.0
+projectile_lifetime = 0.55
+projectile_count = 3
+spread = 0.22
+move_multiplier = 1.15
+stagger = 0.08
+knockback = 65.0
+effect_texture = SubResource("vfx")

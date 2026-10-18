@@ -1,0 +1,77 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3 uid="uid://vn2v6mg1ct1l"]
+
+[ext_resource type="Script" path="res://common/data/unit_definition.gd" id="1"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_or6dg"]
+[ext_resource type="Script" path="res://common/data/sprite_animation_clip.gd" id="3_fr4pl"]
+[ext_resource type="Script" path="res://common/data/sprite_sheet_layout.gd" id="4_vkg4u"]
+[ext_resource type="Texture2D" path="res://features/units/art/spirit.png" id="5_0q5g3"]
+[ext_resource type="Resource" path="res://features/audio/data/spirit.tres" id="voice_profile"]
+
+[sub_resource type="Resource" id="Resource_l2kbx"]
+script = ExtResource("3_fr4pl")
+columns = PackedInt32Array(0)
+fps = 2.0
+loop = true
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_p1213"]
+script = ExtResource("3_fr4pl")
+action = 1
+columns = PackedInt32Array(1, 2, 0, 2)
+fps = 7.0
+loop = true
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_qwlt0"]
+script = ExtResource("3_fr4pl")
+action = 2
+columns = PackedInt32Array(0, 3, 0)
+fps = 12.0
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_klaj7"]
+script = ExtResource("3_fr4pl")
+action = 3
+columns = PackedInt32Array(0, 4, 0)
+fps = 12.0
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_sl8q3"]
+script = ExtResource("3_fr4pl")
+action = 4
+columns = PackedInt32Array(5)
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_2lt3o"]
+script = ExtResource("4_vkg4u")
+source_texture = ExtResource("5_0q5g3")
+frame_size = Vector2i(181, 181)
+foot_point = Vector2(90.5, 157.47)
+frame_rects = Array[Rect2i]([Rect2i(27, 24, 130, 153), Rect2i(198, 25, 126, 152), Rect2i(378, 26, 132, 153), Rect2i(562, 0, 151, 181), Rect2i(743, 3, 135, 178), Rect2i(905, 72, 176, 104), Rect2i(28, 206, 119, 156), Rect2i(200, 207, 128, 155), Rect2i(378, 207, 128, 155), Rect2i(564, 181, 142, 181), Rect2i(740, 191, 136, 171), Rect2i(905, 220, 167, 138), Rect2i(39, 387, 102, 156), Rect2i(214, 386, 99, 157), Rect2i(392, 386, 98, 157), Rect2i(562, 362, 133, 181), Rect2i(737, 367, 148, 176), Rect2i(905, 395, 170, 145), Rect2i(24, 569, 139, 153), Rect2i(202, 568, 152, 154), Rect2i(383, 570, 143, 153), Rect2i(556, 543, 146, 181), Rect2i(736, 557, 145, 167), Rect2i(909, 578, 158, 143), Rect2i(29, 741, 129, 164), Rect2i(202, 742, 147, 161), Rect2i(375, 746, 144, 159), Rect2i(558, 726, 152, 172), Rect2i(746, 732, 155, 173), Rect2i(905, 759, 165, 144), Rect2i(45, 919, 117, 161), Rect2i(219, 918, 135, 161), Rect2i(402, 917, 114, 159), Rect2i(557, 905, 154, 178), Rect2i(727, 912, 155, 171), Rect2i(905, 959, 168, 119), Rect2i(30, 1098, 130, 162), Rect2i(223, 1099, 122, 162), Rect2i(399, 1098, 119, 163), Rect2i(560, 1086, 127, 174), Rect2i(743, 1087, 136, 180), Rect2i(905, 1116, 162, 141), Rect2i(29, 1282, 123, 158), Rect2i(202, 1282, 130, 158), Rect2i(390, 1275, 127, 165), Rect2i(561, 1267, 146, 172), Rect2i(736, 1267, 150, 178), Rect2i(905, 1296, 162, 148)])
+source_pivots = Array[Vector2]([Vector2(63.5, 151), Vector2(73.5, 150), Vector2(74.5, 151), Vector2(71.5, 179), Vector2(71.5, 176), Vector2(90.5, 102), Vector2(62.5, 154), Vector2(71.5, 153), Vector2(74.5, 153), Vector2(69.5, 179), Vector2(74.5, 169), Vector2(90.5, 136), Vector2(51.5, 154), Vector2(57.5, 155), Vector2(60.5, 155), Vector2(71.5, 179), Vector2(77.5, 174), Vector2(90.5, 143), Vector2(66.5, 151), Vector2(69.5, 152), Vector2(69.5, 151), Vector2(77.5, 179), Vector2(78.5, 165), Vector2(86.5, 141), Vector2(61.5, 162), Vector2(69.5, 159), Vector2(77.5, 157), Vector2(75.5, 170), Vector2(68.5, 171), Vector2(90.5, 142), Vector2(45.5, 159), Vector2(52.5, 159), Vector2(50.5, 157), Vector2(76.5, 176), Vector2(87.5, 169), Vector2(90.5, 117), Vector2(60.5, 160), Vector2(48.5, 160), Vector2(53.5, 161), Vector2(73.5, 172), Vector2(71.5, 178), Vector2(90.5, 139), Vector2(61.5, 156), Vector2(69.5, 156), Vector2(62.5, 163), Vector2(72.5, 170), Vector2(78.5, 176), Vector2(90.5, 146)])
+animations = Array[ExtResource("3_fr4pl")]([SubResource("Resource_l2kbx"), SubResource("Resource_p1213"), SubResource("Resource_qwlt0"), SubResource("Resource_klaj7"), SubResource("Resource_sl8q3")])
+direction_rows = Array[int]([0, 1, 2, 1, 0, 7, 6, 7])
+mirrored_directions = Array[bool]([false, false, false, true, true, true, false, false])
+
+[resource]
+script = ExtResource("1")
+accuracy = 160.0
+id = &"spirit"
+display_name = "忠臣箭魂"
+role = 11
+max_health = 850.0
+max_mana = 0.0
+damage = 65.0
+attack_range = 420.0
+attack_interval = 0.06
+attack_windup_override = 0.025
+speed = 115.0
+detection_range = 340.0
+sprite_path = "res://features/units/art/spirit.png"
+sprite_layout = SubResource("Resource_2lt3o")
+voice_profile = ExtResource("voice_profile")

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="WorldSceneryDefinition" format=3 uid="uid://cgcajg80yocy8"]
+
+[ext_resource type="Script" uid="uid://cavu7erabb3x3" path="res://features/world/definitions/world_scenery_definition.gd" id="1_0cx05"]
+[ext_resource type="Texture2D" uid="uid://7bgvjhv55tll" path="res://art/terrain/shaolin_temple/props-v1.png" id="2_cxyve"]
+
+[resource]
+script = ExtResource("1_0cx05")
+display_name = "朱牆 · 東西段"
+texture = ExtResource("2_cxyve")
+atlas_region = Rect2(1100, 120, 436, 390)
+foot_anchor = Vector2(218, 294)
+sprite_scale = 0.42
+sorting_note = "立體素材，腳底Y自動交錯；不產生障礙。"

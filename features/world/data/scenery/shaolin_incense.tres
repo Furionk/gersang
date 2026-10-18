@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="WorldSceneryDefinition" format=3]
+
+[ext_resource type="Script" path="res://features/world/definitions/world_scenery_definition.gd" id="1_lu6yx"]
+[ext_resource type="Texture2D" path="res://art/terrain/shaolin_temple/props-v1.png" id="2_n6iwf"]
+
+[resource]
+script = ExtResource("1_lu6yx")
+display_name = "古松碑林與香爐"
+texture = ExtResource("2_n6iwf")
+atlas_region = Rect2(1024, 512, 512, 512)
+foot_anchor = Vector2(256, 425)
+sprite_scale = 0.48
+
+sorting_mode = 1
+sorting_review_required = false
+sorting_note = "立體素材，腳底Y自動交錯；不產生障礙。"

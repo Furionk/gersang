@@ -1,0 +1,3439 @@
+{
+  "schema": 1,
+  "review_status": "full_assets_complete",
+  "full_generation_approved": true,
+  "units": [
+    {
+      "unit_id": "archer",
+      "name": "山寨弓兵",
+      "definition_path": "features/units/data/monsters/archer.tres",
+      "group": "enemy",
+      "nationality": "中國",
+      "language": "zh",
+      "species": "human",
+      "profession": "山寨弓兵",
+      "personality": "攔路、貪財、狡猾",
+      "gender": "male",
+      "vocal_age": "middle_aged",
+      "voice": {
+        "voice_id": "xQsp9uyB3OResmXFYuFx",
+        "name": "Arthur - Chinese Male",
+        "source": "ElevenLabs public Voice Library",
+        "public_owner_id": "63d2922605db2bfb04f15808540e9bc0a1564a43e41fb5d86e8c0f8ab0aa6613",
+        "native_language": "zh",
+        "notice_period": 730
+      },
+      "model_id": "eleven_v3",
+      "voice_settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "use_speaker_boost": false,
+        "speed": 1.0
+      },
+      "postprocess": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "loudness_lufs": -18,
+        "true_peak_db": -2,
+        "vorbis_quality": 5,
+        "pitch_ratio": 1.0
+      },
+      "events": {
+        "engage": [
+          {
+            "id": "engage_01",
+            "text": "過路錢拿來！",
+            "translation_zh": "過路錢拿來！",
+            "path": "res://art/voices/archer/engage_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_02",
+            "text": "敢闖咱們的地盤？",
+            "translation_zh": "敢闖咱們的地盤？",
+            "path": "res://art/voices/archer/engage_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_03",
+            "text": "我的箭可不長眼！",
+            "translation_zh": "我的箭可不長眼！",
+            "path": "res://art/voices/archer/engage_03.ogg",
+            "pilot": false
+          }
+        ],
+        "death": [
+          {
+            "id": "death_01",
+            "text": "這筆買賣……虧了。",
+            "translation_zh": "這筆買賣……虧了。",
+            "path": "res://art/voices/archer/death_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_02",
+            "text": "我的弓……斷了。",
+            "translation_zh": "我的弓……斷了。",
+            "path": "res://art/voices/archer/death_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_03",
+            "text": "兄弟們，快走！",
+            "translation_zh": "兄弟們，快走！",
+            "path": "res://art/voices/archer/death_03.ogg",
+            "pilot": false
+          }
+        ]
+      },
+      "performance_direction": "清楚自然的角色演出、正常說話距離；精神與力度依職業／性格調整，避免播音腔及貼近麥克風的氣音。",
+      "delivery_tags": {
+        "engage": "[confident]",
+        "death": "[sad]"
+      }
+    },
+    {
+      "unit_id": "beast",
+      "name": "租霸豬",
+      "definition_path": "features/units/data/monsters/beast.tres",
+      "group": "enemy",
+      "nationality": "",
+      "language": "",
+      "species": "boar",
+      "profession": "租霸豬",
+      "personality": "A large wild boar, rough snorts and throaty squeals",
+      "gender": "male",
+      "vocal_age": "middle_aged",
+      "voice": {
+        "voice_id": "",
+        "name": "A large wild boar, rough snorts and throaty squeals",
+        "source": "ElevenLabs Sound Effects API"
+      },
+      "model_id": "eleven_text_to_sound_v2",
+      "voice_settings": {
+        "duration_seconds": 2.0,
+        "prompt_influence": 0.5
+      },
+      "postprocess": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "loudness_lufs": -18,
+        "true_peak_db": -2,
+        "vorbis_quality": 5,
+        "pitch_ratio": 1.0
+      },
+      "events": {
+        "engage": [
+          {
+            "id": "engage_01",
+            "text": "A large wild boar, rough snorts and throaty squeals. One isolated short aggressive challenge vocalization, variation 1, dry close recording, no speech, no music, no ambience.",
+            "translation_zh": "接敵叫聲",
+            "path": "res://art/voices/beast/engage_01.ogg",
+            "pilot": true
+          },
+          {
+            "id": "engage_02",
+            "text": "A large wild boar, rough snorts and throaty squeals. One isolated short aggressive challenge vocalization, variation 2, dry close recording, no speech, no music, no ambience.",
+            "translation_zh": "接敵叫聲",
+            "path": "res://art/voices/beast/engage_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_03",
+            "text": "A large wild boar, rough snorts and throaty squeals. One isolated short aggressive challenge vocalization, variation 3, dry close recording, no speech, no music, no ambience.",
+            "translation_zh": "接敵叫聲",
+            "path": "res://art/voices/beast/engage_03.ogg",
+            "pilot": false
+          }
+        ],
+        "death": [
+          {
+            "id": "death_01",
+            "text": "A large wild boar, rough snorts and throaty squeals. One isolated brief defeated collapsing dying vocalization, variation 1, dry close recording, no speech, no music, no ambience.",
+            "translation_zh": "死亡叫聲",
+            "path": "res://art/voices/beast/death_01.ogg",
+            "pilot": true
+          },
+          {
+            "id": "death_02",
+            "text": "A large wild boar, rough snorts and throaty squeals. One isolated brief defeated collapsing dying vocalization, variation 2, dry close recording, no speech, no music, no ambience.",
+            "translation_zh": "死亡叫聲",
+            "path": "res://art/voices/beast/death_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_03",
+            "text": "A large wild boar, rough snorts and throaty squeals. One isolated brief defeated collapsing dying vocalization, variation 3, dry close recording, no speech, no music, no ambience.",
+            "translation_zh": "死亡叫聲",
+            "path": "res://art/voices/beast/death_03.ogg",
+            "pilot": false
+          }
+        ]
+      }
+    },
+    {
+      "unit_id": "bloodfang",
+      "name": "噬血山魈",
+      "definition_path": "features/units/data/monsters/bloodfang.tres",
+      "group": "enemy",
+      "nationality": "",
+      "language": "",
+      "species": "mandrill demon",
+      "profession": "噬血山魈",
+      "personality": "A predatory mountain mandrill demon, feral chattering snarls",
+      "gender": "male",
+      "vocal_age": "middle_aged",
+      "voice": {
+        "voice_id": "",
+        "name": "A predatory mountain mandrill demon, feral chattering snarls",
+        "source": "ElevenLabs Sound Effects API"
+      },
+      "model_id": "eleven_text_to_sound_v2",
+      "voice_settings": {
+        "duration_seconds": 2.0,
+        "prompt_influence": 0.5
+      },
+      "postprocess": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "loudness_lufs": -18,
+        "true_peak_db": -2,
+        "vorbis_quality": 5,
+        "pitch_ratio": 1.0
+      },
+      "events": {
+        "engage": [
+          {
+            "id": "engage_01",
+            "text": "A predatory mountain mandrill demon, feral chattering snarls. One isolated short aggressive challenge vocalization, variation 1, dry close recording, no speech, no music, no ambience.",
+            "translation_zh": "接敵叫聲",
+            "path": "res://art/voices/bloodfang/engage_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_02",
+            "text": "A predatory mountain mandrill demon, feral chattering snarls. One isolated short aggressive challenge vocalization, variation 2, dry close recording, no speech, no music, no ambience.",
+            "translation_zh": "接敵叫聲",
+            "path": "res://art/voices/bloodfang/engage_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_03",
+            "text": "A predatory mountain mandrill demon, feral chattering snarls. One isolated short aggressive challenge vocalization, variation 3, dry close recording, no speech, no music, no ambience.",
+            "translation_zh": "接敵叫聲",
+            "path": "res://art/voices/bloodfang/engage_03.ogg",
+            "pilot": false
+          }
+        ],
+        "death": [
+          {
+            "id": "death_01",
+            "text": "A predatory mountain mandrill demon, feral chattering snarls. One isolated brief defeated collapsing dying vocalization, variation 1, dry close recording, no speech, no music, no ambience.",
+            "translation_zh": "死亡叫聲",
+            "path": "res://art/voices/bloodfang/death_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_02",
+            "text": "A predatory mountain mandrill demon, feral chattering snarls. One isolated brief defeated collapsing dying vocalization, variation 2, dry close recording, no speech, no music, no ambience.",
+            "translation_zh": "死亡叫聲",
+            "path": "res://art/voices/bloodfang/death_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_03",
+            "text": "A predatory mountain mandrill demon, feral chattering snarls. One isolated brief defeated collapsing dying vocalization, variation 3, dry close recording, no speech, no music, no ambience.",
+            "translation_zh": "死亡叫聲",
+            "path": "res://art/voices/bloodfang/death_03.ogg",
+            "pilot": false
+          }
+        ]
+      }
+    },
+    {
+      "unit_id": "boss",
+      "name": "赤魂獄使",
+      "definition_path": "features/units/data/monsters/boss.tres",
+      "group": "enemy",
+      "nationality": "中國",
+      "language": "zh",
+      "species": "intelligent spirit",
+      "profession": "赤魂獄使",
+      "personality": "威嚴、殘酷、獄吏",
+      "gender": "male",
+      "vocal_age": "middle_aged",
+      "voice": {
+        "voice_id": "xQsp9uyB3OResmXFYuFx",
+        "name": "Arthur - Chinese Male",
+        "source": "ElevenLabs public Voice Library",
+        "public_owner_id": "63d2922605db2bfb04f15808540e9bc0a1564a43e41fb5d86e8c0f8ab0aa6613",
+        "native_language": "zh",
+        "notice_period": 730
+      },
+      "model_id": "eleven_v3",
+      "voice_settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "use_speaker_boost": false,
+        "speed": 1.0
+      },
+      "postprocess": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "loudness_lufs": -18,
+        "true_peak_db": -2,
+        "vorbis_quality": 5,
+        "pitch_ratio": 1.0
+      },
+      "events": {
+        "engage": [
+          {
+            "id": "engage_01",
+            "text": "此門只進不出！",
+            "translation_zh": "此門只進不出！",
+            "path": "res://art/voices/boss/engage_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_02",
+            "text": "亡魂，歸我管束！",
+            "translation_zh": "亡魂，歸我管束！",
+            "path": "res://art/voices/boss/engage_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_03",
+            "text": "你的名字，記下了！",
+            "translation_zh": "你的名字，記下了！",
+            "path": "res://art/voices/boss/engage_03.ogg",
+            "pilot": false
+          }
+        ],
+        "death": [
+          {
+            "id": "death_01",
+            "text": "獄門……竟然開了。",
+            "translation_zh": "獄門……竟然開了。",
+            "path": "res://art/voices/boss/death_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_02",
+            "text": "我的鎖鏈……碎了。",
+            "translation_zh": "我的鎖鏈……碎了。",
+            "path": "res://art/voices/boss/death_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_03",
+            "text": "誰敢……逆我判令？",
+            "translation_zh": "誰敢……逆我判令？",
+            "path": "res://art/voices/boss/death_03.ogg",
+            "pilot": false
+          }
+        ]
+      },
+      "performance_direction": "清楚自然的角色演出、正常說話距離；精神與力度依職業／性格調整，避免播音腔及貼近麥克風的氣音。",
+      "delivery_tags": {
+        "engage": "[confident]",
+        "death": "[sad]"
+      }
+    },
+    {
+      "unit_id": "controller",
+      "name": "符咒師",
+      "definition_path": "features/units/data/mercenaries/controller.tres",
+      "group": "player",
+      "nationality": "日本",
+      "language": "ja",
+      "species": "human",
+      "profession": "符咒師",
+      "personality": "冷靜、神祕、簡潔",
+      "gender": "female",
+      "vocal_age": "young",
+      "voice": {
+        "voice_id": "fUjY9K2nAIwlALOwSiwc",
+        "name": "Yui - Warm, Clear and Natural",
+        "source": "ElevenLabs public Voice Library (professional voice)",
+        "native_language": "ja"
+      },
+      "model_id": "eleven_v3",
+      "voice_settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "use_speaker_boost": false,
+        "speed": 1.05
+      },
+      "postprocess": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "loudness_lufs": -18,
+        "true_peak_db": -2,
+        "vorbis_quality": 5,
+        "pitch_ratio": 1.0
+      },
+      "events": {
+        "select": [
+          {
+            "id": "select_01",
+            "text": "札が呼んでいます。",
+            "translation_zh": "符紙正在呼喚。",
+            "path": "res://art/voices/controller/select_01.ogg",
+            "pilot": true
+          },
+          {
+            "id": "select_02",
+            "text": "気配を感じます。",
+            "translation_zh": "我感覺到了氣息。",
+            "path": "res://art/voices/controller/select_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "select_03",
+            "text": "静かに、お話を。",
+            "translation_zh": "請輕聲說吧。",
+            "path": "res://art/voices/controller/select_03.ogg",
+            "pilot": false
+          }
+        ],
+        "move": [
+          {
+            "id": "move_01",
+            "text": "影に沿って進みます。",
+            "translation_zh": "我將循影而行。",
+            "path": "res://art/voices/controller/move_01.ogg",
+            "pilot": true
+          },
+          {
+            "id": "move_02",
+            "text": "その先を確かめます。",
+            "translation_zh": "我去探明前方。",
+            "path": "res://art/voices/controller/move_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "move_03",
+            "text": "承知しました。",
+            "translation_zh": "明白了。",
+            "path": "res://art/voices/controller/move_03.ogg",
+            "pilot": false
+          }
+        ],
+        "attack": [
+          {
+            "id": "attack_01",
+            "text": "その魂、縛ります。",
+            "translation_zh": "我要束縛那靈魂。",
+            "path": "res://art/voices/controller/attack_01.ogg",
+            "pilot": true
+          },
+          {
+            "id": "attack_02",
+            "text": "逃げ道はありません。",
+            "translation_zh": "你無路可逃。",
+            "path": "res://art/voices/controller/attack_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "attack_03",
+            "text": "札よ、封じなさい。",
+            "translation_zh": "符紙啊，封住它。",
+            "path": "res://art/voices/controller/attack_03.ogg",
+            "pilot": false
+          }
+        ],
+        "inspect": [
+          {
+            "id": "inspect_01",
+            "text": "札の順は変えないで。",
+            "translation_zh": "請別改動符紙的次序。",
+            "path": "res://art/voices/controller/inspect_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "inspect_02",
+            "text": "見えぬものも、ここに。",
+            "translation_zh": "看不見之物，也在此處。",
+            "path": "res://art/voices/controller/inspect_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "inspect_03",
+            "text": "まだ、力は残っています。",
+            "translation_zh": "力量尚未耗盡。",
+            "path": "res://art/voices/controller/inspect_03.ogg",
+            "pilot": false
+          }
+        ]
+      },
+      "delivery_tags": {
+        "select": "[confident]",
+        "move": "[confident]",
+        "attack": "[confident]",
+        "inspect": "[confident]"
+      },
+      "performance_direction": "清楚自然、有活力的日語回應；保留冷靜神祕的個性，正常聲量。"
+    },
+    {
+      "unit_id": "copper_reinforcement",
+      "name": "金身銅人",
+      "definition_path": "features/units/data/summons/copper_reinforcement.tres",
+      "group": "enemy",
+      "nationality": "",
+      "language": "",
+      "species": "copper construct",
+      "profession": "金身銅人",
+      "personality": "A living copper monk construct, resonant bronze chest vibration",
+      "gender": "male",
+      "vocal_age": "middle_aged",
+      "voice": {
+        "voice_id": "",
+        "name": "A living copper monk construct, resonant bronze chest vibration",
+        "source": "ElevenLabs Sound Effects API"
+      },
+      "model_id": "eleven_text_to_sound_v2",
+      "voice_settings": {
+        "duration_seconds": 2.0,
+        "prompt_influence": 0.5
+      },
+      "postprocess": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "loudness_lufs": -18,
+        "true_peak_db": -2,
+        "vorbis_quality": 5,
+        "pitch_ratio": 1.0
+      },
+      "events": {
+        "engage": [
+          {
+            "id": "engage_01",
+            "text": "A living copper monk construct, resonant bronze chest vibration. One isolated short aggressive challenge vocalization, variation 1, dry close recording, no speech, no music, no ambience.",
+            "translation_zh": "接敵叫聲",
+            "path": "res://art/voices/copper_reinforcement/engage_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_02",
+            "text": "A living copper monk construct, resonant bronze chest vibration. One isolated short aggressive challenge vocalization, variation 2, dry close recording, no speech, no music, no ambience.",
+            "translation_zh": "接敵叫聲",
+            "path": "res://art/voices/copper_reinforcement/engage_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_03",
+            "text": "A living copper monk construct, resonant bronze chest vibration. One isolated short aggressive challenge vocalization, variation 3, dry close recording, no speech, no music, no ambience.",
+            "translation_zh": "接敵叫聲",
+            "path": "res://art/voices/copper_reinforcement/engage_03.ogg",
+            "pilot": false
+          }
+        ],
+        "death": [
+          {
+            "id": "death_01",
+            "text": "A living copper monk construct, resonant bronze chest vibration. One isolated brief defeated collapsing dying vocalization, variation 1, dry close recording, no speech, no music, no ambience.",
+            "translation_zh": "死亡叫聲",
+            "path": "res://art/voices/copper_reinforcement/death_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_02",
+            "text": "A living copper monk construct, resonant bronze chest vibration. One isolated brief defeated collapsing dying vocalization, variation 2, dry close recording, no speech, no music, no ambience.",
+            "translation_zh": "死亡叫聲",
+            "path": "res://art/voices/copper_reinforcement/death_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_03",
+            "text": "A living copper monk construct, resonant bronze chest vibration. One isolated brief defeated collapsing dying vocalization, variation 3, dry close recording, no speech, no music, no ambience.",
+            "translation_zh": "死亡叫聲",
+            "path": "res://art/voices/copper_reinforcement/death_03.ogg",
+            "pilot": false
+          }
+        ]
+      }
+    },
+    {
+      "unit_id": "deep_well_blood_wraith",
+      "name": "深井嗜血刑鬼",
+      "definition_path": "features/units/data/monsters/deep_well_blood_wraith.tres",
+      "group": "enemy",
+      "nationality": "中國",
+      "language": "zh",
+      "species": "intelligent spirit",
+      "profession": "深井嗜血刑鬼",
+      "personality": "殘酷、暴戾、刑罰",
+      "gender": "male",
+      "vocal_age": "middle_aged",
+      "voice": {
+        "voice_id": "xQsp9uyB3OResmXFYuFx",
+        "name": "Arthur - Chinese Male",
+        "source": "ElevenLabs public Voice Library",
+        "public_owner_id": "63d2922605db2bfb04f15808540e9bc0a1564a43e41fb5d86e8c0f8ab0aa6613",
+        "native_language": "zh",
+        "notice_period": 730
+      },
+      "model_id": "eleven_v3",
+      "voice_settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "use_speaker_boost": false,
+        "speed": 1.0
+      },
+      "postprocess": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "loudness_lufs": -18,
+        "true_peak_db": -2,
+        "vorbis_quality": 5,
+        "pitch_ratio": 1.0
+      },
+      "events": {
+        "engage": [
+          {
+            "id": "engage_01",
+            "text": "刑期，才剛開始！",
+            "translation_zh": "刑期，才剛開始！",
+            "path": "res://art/voices/deep_well_blood_wraith/engage_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_02",
+            "text": "深井吞得下你的哭聲。",
+            "translation_zh": "深井吞得下你的哭聲。",
+            "path": "res://art/voices/deep_well_blood_wraith/engage_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_03",
+            "text": "這一刑，你逃不掉！",
+            "translation_zh": "這一刑，你逃不掉！",
+            "path": "res://art/voices/deep_well_blood_wraith/engage_03.ogg",
+            "pilot": false
+          }
+        ],
+        "death": [
+          {
+            "id": "death_01",
+            "text": "誰來……替我受刑？",
+            "translation_zh": "誰來……替我受刑？",
+            "path": "res://art/voices/deep_well_blood_wraith/death_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_02",
+            "text": "枷鎖……勒住了我。",
+            "translation_zh": "枷鎖……勒住了我。",
+            "path": "res://art/voices/deep_well_blood_wraith/death_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_03",
+            "text": "原來……我也會痛。",
+            "translation_zh": "原來……我也會痛。",
+            "path": "res://art/voices/deep_well_blood_wraith/death_03.ogg",
+            "pilot": false
+          }
+        ]
+      },
+      "performance_direction": "清楚自然的角色演出、正常說話距離；精神與力度依職業／性格調整，避免播音腔及貼近麥克風的氣音。",
+      "delivery_tags": {
+        "engage": "[confident]",
+        "death": "[sad]"
+      }
+    },
+    {
+      "unit_id": "deep_well_pyromancer",
+      "name": "深井焚魂祭司",
+      "definition_path": "features/units/data/monsters/deep_well_pyromancer.tres",
+      "group": "enemy",
+      "nationality": "中國",
+      "language": "zh",
+      "species": "intelligent spirit",
+      "profession": "深井焚魂祭司",
+      "personality": "狂熱、祭祀、焚魂",
+      "gender": "male",
+      "vocal_age": "middle_aged",
+      "voice": {
+        "voice_id": "xQsp9uyB3OResmXFYuFx",
+        "name": "Arthur - Chinese Male",
+        "source": "ElevenLabs public Voice Library",
+        "public_owner_id": "63d2922605db2bfb04f15808540e9bc0a1564a43e41fb5d86e8c0f8ab0aa6613",
+        "native_language": "zh",
+        "notice_period": 730
+      },
+      "model_id": "eleven_v3",
+      "voice_settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "use_speaker_boost": false,
+        "speed": 1.0
+      },
+      "postprocess": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "loudness_lufs": -18,
+        "true_peak_db": -2,
+        "vorbis_quality": 5,
+        "pitch_ratio": 1.0
+      },
+      "events": {
+        "engage": [
+          {
+            "id": "engage_01",
+            "text": "你的魂，正合此祭！",
+            "translation_zh": "你的魂，正合此祭！",
+            "path": "res://art/voices/deep_well_pyromancer/engage_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_02",
+            "text": "深井之火，醒來！",
+            "translation_zh": "深井之火，醒來！",
+            "path": "res://art/voices/deep_well_pyromancer/engage_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_03",
+            "text": "祭壇已為你留位！",
+            "translation_zh": "祭壇已為你留位！",
+            "path": "res://art/voices/deep_well_pyromancer/engage_03.ogg",
+            "pilot": false
+          }
+        ],
+        "death": [
+          {
+            "id": "death_01",
+            "text": "祭火……反噬了。",
+            "translation_zh": "祭火……反噬了。",
+            "path": "res://art/voices/deep_well_pyromancer/death_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_02",
+            "text": "供奉……竟是我自己。",
+            "translation_zh": "供奉……竟是我自己。",
+            "path": "res://art/voices/deep_well_pyromancer/death_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_03",
+            "text": "深井……不再應我。",
+            "translation_zh": "深井……不再應我。",
+            "path": "res://art/voices/deep_well_pyromancer/death_03.ogg",
+            "pilot": false
+          }
+        ]
+      },
+      "performance_direction": "清楚自然的角色演出、正常說話距離；精神與力度依職業／性格調整，避免播音腔及貼近麥克風的氣音。",
+      "delivery_tags": {
+        "engage": "[confident]",
+        "death": "[sad]"
+      }
+    },
+    {
+      "unit_id": "deep_well_shock_guard",
+      "name": "深井裂焰鬼將",
+      "definition_path": "features/units/data/monsters/deep_well_shock_guard.tres",
+      "group": "enemy",
+      "nationality": "中國",
+      "language": "zh",
+      "species": "intelligent spirit",
+      "profession": "深井裂焰鬼將",
+      "personality": "兇猛、軍威、鬼將",
+      "gender": "male",
+      "vocal_age": "middle_aged",
+      "voice": {
+        "voice_id": "xQsp9uyB3OResmXFYuFx",
+        "name": "Arthur - Chinese Male",
+        "source": "ElevenLabs public Voice Library",
+        "public_owner_id": "63d2922605db2bfb04f15808540e9bc0a1564a43e41fb5d86e8c0f8ab0aa6613",
+        "native_language": "zh",
+        "notice_period": 730
+      },
+      "model_id": "eleven_v3",
+      "voice_settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "use_speaker_boost": false,
+        "speed": 1.0
+      },
+      "postprocess": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "loudness_lufs": -18,
+        "true_peak_db": -2,
+        "vorbis_quality": 5,
+        "pitch_ratio": 1.0
+      },
+      "events": {
+        "engage": [
+          {
+            "id": "engage_01",
+            "text": "裂焰軍令，斬！",
+            "translation_zh": "裂焰軍令，斬！",
+            "path": "res://art/voices/deep_well_shock_guard/engage_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_02",
+            "text": "此井由我鎮守！",
+            "translation_zh": "此井由我鎮守！",
+            "path": "res://art/voices/deep_well_shock_guard/engage_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_03",
+            "text": "踏碎你們的陣線！",
+            "translation_zh": "踏碎你們的陣線！",
+            "path": "res://art/voices/deep_well_shock_guard/engage_03.ogg",
+            "pilot": false
+          }
+        ],
+        "death": [
+          {
+            "id": "death_01",
+            "text": "軍旗……倒了。",
+            "translation_zh": "軍旗……倒了。",
+            "path": "res://art/voices/deep_well_shock_guard/death_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_02",
+            "text": "深井的火……冷了。",
+            "translation_zh": "深井的火……冷了。",
+            "path": "res://art/voices/deep_well_shock_guard/death_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_03",
+            "text": "此將……敗於此地。",
+            "translation_zh": "此將……敗於此地。",
+            "path": "res://art/voices/deep_well_shock_guard/death_03.ogg",
+            "pilot": false
+          }
+        ]
+      },
+      "performance_direction": "清楚自然的角色演出、正常說話距離；精神與力度依職業／性格調整，避免播音腔及貼近麥克風的氣音。",
+      "delivery_tags": {
+        "engage": "[confident]",
+        "death": "[sad]"
+      }
+    },
+    {
+      "unit_id": "earth_brute",
+      "name": "裂地石妖",
+      "definition_path": "features/units/data/monsters/earth_brute.tres",
+      "group": "enemy",
+      "nationality": "",
+      "language": "",
+      "species": "stone demon",
+      "profession": "裂地石妖",
+      "personality": "A huge living stone demon, deep gravel grinding groans",
+      "gender": "male",
+      "vocal_age": "middle_aged",
+      "voice": {
+        "voice_id": "",
+        "name": "A huge living stone demon, deep gravel grinding groans",
+        "source": "ElevenLabs Sound Effects API"
+      },
+      "model_id": "eleven_text_to_sound_v2",
+      "voice_settings": {
+        "duration_seconds": 2.0,
+        "prompt_influence": 0.5
+      },
+      "postprocess": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "loudness_lufs": -18,
+        "true_peak_db": -2,
+        "vorbis_quality": 5,
+        "pitch_ratio": 1.0
+      },
+      "events": {
+        "engage": [
+          {
+            "id": "engage_01",
+            "text": "A huge living stone demon, deep gravel grinding groans. One isolated short aggressive challenge vocalization, variation 1, dry close recording, no speech, no music, no ambience.",
+            "translation_zh": "接敵叫聲",
+            "path": "res://art/voices/earth_brute/engage_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_02",
+            "text": "A huge living stone demon, deep gravel grinding groans. One isolated short aggressive challenge vocalization, variation 2, dry close recording, no speech, no music, no ambience.",
+            "translation_zh": "接敵叫聲",
+            "path": "res://art/voices/earth_brute/engage_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_03",
+            "text": "A huge living stone demon, deep gravel grinding groans. One isolated short aggressive challenge vocalization, variation 3, dry close recording, no speech, no music, no ambience.",
+            "translation_zh": "接敵叫聲",
+            "path": "res://art/voices/earth_brute/engage_03.ogg",
+            "pilot": false
+          }
+        ],
+        "death": [
+          {
+            "id": "death_01",
+            "text": "A huge living stone demon, deep gravel grinding groans. One isolated brief defeated collapsing dying vocalization, variation 1, dry close recording, no speech, no music, no ambience.",
+            "translation_zh": "死亡叫聲",
+            "path": "res://art/voices/earth_brute/death_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_02",
+            "text": "A huge living stone demon, deep gravel grinding groans. One isolated brief defeated collapsing dying vocalization, variation 2, dry close recording, no speech, no music, no ambience.",
+            "translation_zh": "死亡叫聲",
+            "path": "res://art/voices/earth_brute/death_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_03",
+            "text": "A huge living stone demon, deep gravel grinding groans. One isolated brief defeated collapsing dying vocalization, variation 3, dry close recording, no speech, no music, no ambience.",
+            "translation_zh": "死亡叫聲",
+            "path": "res://art/voices/earth_brute/death_03.ogg",
+            "pilot": false
+          }
+        ]
+      }
+    },
+    {
+      "unit_id": "elite",
+      "name": "黑甲石衛",
+      "definition_path": "features/units/data/monsters/elite.tres",
+      "group": "enemy",
+      "nationality": "",
+      "language": "",
+      "species": "stone guardian",
+      "profession": "黑甲石衛",
+      "personality": "An armored stone guardian, hollow resonant stone rumbling",
+      "gender": "male",
+      "vocal_age": "middle_aged",
+      "voice": {
+        "voice_id": "",
+        "name": "An armored stone guardian, hollow resonant stone rumbling",
+        "source": "ElevenLabs Sound Effects API"
+      },
+      "model_id": "eleven_text_to_sound_v2",
+      "voice_settings": {
+        "duration_seconds": 2.0,
+        "prompt_influence": 0.5
+      },
+      "postprocess": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "loudness_lufs": -18,
+        "true_peak_db": -2,
+        "vorbis_quality": 5,
+        "pitch_ratio": 1.0
+      },
+      "events": {
+        "engage": [
+          {
+            "id": "engage_01",
+            "text": "An armored stone guardian, hollow resonant stone rumbling. One isolated short aggressive challenge vocalization, variation 1, dry close recording, no speech, no music, no ambience.",
+            "translation_zh": "接敵叫聲",
+            "path": "res://art/voices/elite/engage_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_02",
+            "text": "An armored stone guardian, hollow resonant stone rumbling. One isolated short aggressive challenge vocalization, variation 2, dry close recording, no speech, no music, no ambience.",
+            "translation_zh": "接敵叫聲",
+            "path": "res://art/voices/elite/engage_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_03",
+            "text": "An armored stone guardian, hollow resonant stone rumbling. One isolated short aggressive challenge vocalization, variation 3, dry close recording, no speech, no music, no ambience.",
+            "translation_zh": "接敵叫聲",
+            "path": "res://art/voices/elite/engage_03.ogg",
+            "pilot": false
+          }
+        ],
+        "death": [
+          {
+            "id": "death_01",
+            "text": "An armored stone guardian, hollow resonant stone rumbling. One isolated brief defeated collapsing dying vocalization, variation 1, dry close recording, no speech, no music, no ambience.",
+            "translation_zh": "死亡叫聲",
+            "path": "res://art/voices/elite/death_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_02",
+            "text": "An armored stone guardian, hollow resonant stone rumbling. One isolated brief defeated collapsing dying vocalization, variation 2, dry close recording, no speech, no music, no ambience.",
+            "translation_zh": "死亡叫聲",
+            "path": "res://art/voices/elite/death_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_03",
+            "text": "An armored stone guardian, hollow resonant stone rumbling. One isolated brief defeated collapsing dying vocalization, variation 3, dry close recording, no speech, no music, no ambience.",
+            "translation_zh": "死亡叫聲",
+            "path": "res://art/voices/elite/death_03.ogg",
+            "pilot": false
+          }
+        ]
+      }
+    },
+    {
+      "unit_id": "ember_raider",
+      "name": "赤焰劫匪",
+      "definition_path": "features/units/data/monsters/ember_raider.tres",
+      "group": "enemy",
+      "nationality": "中國",
+      "language": "zh",
+      "species": "human",
+      "profession": "赤焰劫匪",
+      "personality": "兇悍、急躁、劫掠",
+      "gender": "male",
+      "vocal_age": "middle_aged",
+      "voice": {
+        "voice_id": "xQsp9uyB3OResmXFYuFx",
+        "name": "Arthur - Chinese Male",
+        "source": "ElevenLabs public Voice Library",
+        "public_owner_id": "63d2922605db2bfb04f15808540e9bc0a1564a43e41fb5d86e8c0f8ab0aa6613",
+        "native_language": "zh",
+        "notice_period": 730
+      },
+      "model_id": "eleven_v3",
+      "voice_settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "use_speaker_boost": false,
+        "speed": 1.0
+      },
+      "postprocess": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "loudness_lufs": -18,
+        "true_peak_db": -2,
+        "vorbis_quality": 5,
+        "pitch_ratio": 1.0
+      },
+      "events": {
+        "engage": [
+          {
+            "id": "engage_01",
+            "text": "火裡也得把你劫下！",
+            "translation_zh": "火裡也得把你劫下！",
+            "path": "res://art/voices/ember_raider/engage_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_02",
+            "text": "把值錢的都留下！",
+            "translation_zh": "把值錢的都留下！",
+            "path": "res://art/voices/ember_raider/engage_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_03",
+            "text": "燒光你的退路！",
+            "translation_zh": "燒光你的退路！",
+            "path": "res://art/voices/ember_raider/engage_03.ogg",
+            "pilot": false
+          }
+        ],
+        "death": [
+          {
+            "id": "death_01",
+            "text": "火怎麼……熄了？",
+            "translation_zh": "火怎麼……熄了？",
+            "path": "res://art/voices/ember_raider/death_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_02",
+            "text": "這回……失手了。",
+            "translation_zh": "這回……失手了。",
+            "path": "res://art/voices/ember_raider/death_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_03",
+            "text": "我的戰利品……",
+            "translation_zh": "我的戰利品……",
+            "path": "res://art/voices/ember_raider/death_03.ogg",
+            "pilot": false
+          }
+        ]
+      },
+      "performance_direction": "清楚自然的角色演出、正常說話距離；精神與力度依職業／性格調整，避免播音腔及貼近麥克風的氣音。",
+      "delivery_tags": {
+        "engage": "[confident]",
+        "death": "[sad]"
+      }
+    },
+    {
+      "unit_id": "guard",
+      "name": "鐵衛",
+      "definition_path": "features/units/data/mercenaries/guard.tres",
+      "group": "player",
+      "nationality": "朝鮮",
+      "language": "ko",
+      "species": "human",
+      "profession": "鐵衛",
+      "personality": "沉穩、厚實、忠誠",
+      "gender": "male",
+      "vocal_age": "middle_aged",
+      "voice": {
+        "voice_id": "XIBeHrnXIVdoqMMadmog",
+        "name": "MyungIn - Bright & Clear",
+        "source": "ElevenLabs public Voice Library (professional voice)",
+        "native_language": "ko",
+        "public_owner_id": "3b89aa7ae1d1432df1cc4d1078e49223053ae85e33d1def78ca1ce180c3a55cd",
+        "notice_period": 730
+      },
+      "model_id": "eleven_v3",
+      "voice_settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "use_speaker_boost": false,
+        "speed": 1.05
+      },
+      "postprocess": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "loudness_lufs": -18,
+        "true_peak_db": -2,
+        "vorbis_quality": 5,
+        "pitch_ratio": 1.0
+      },
+      "events": {
+        "select": [
+          {
+            "id": "select_01",
+            "text": "제가 지키겠습니다.",
+            "translation_zh": "由我守護。",
+            "path": "res://art/voices/guard/select_01.ogg",
+            "pilot": true
+          },
+          {
+            "id": "select_02",
+            "text": "방패는 굳건합니다.",
+            "translation_zh": "盾牌依然堅固。",
+            "path": "res://art/voices/guard/select_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "select_03",
+            "text": "명령을 기다립니다.",
+            "translation_zh": "等候您的命令。",
+            "path": "res://art/voices/guard/select_03.ogg",
+            "pilot": false
+          }
+        ],
+        "move": [
+          {
+            "id": "move_01",
+            "text": "앞장서겠습니다.",
+            "translation_zh": "我來走在前面。",
+            "path": "res://art/voices/guard/move_01.ogg",
+            "pilot": true
+          },
+          {
+            "id": "move_02",
+            "text": "대열을 지키십시오.",
+            "translation_zh": "請保持隊形。",
+            "path": "res://art/voices/guard/move_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "move_03",
+            "text": "굳건히 나아갑니다.",
+            "translation_zh": "堅定向前。",
+            "path": "res://art/voices/guard/move_03.ogg",
+            "pilot": false
+          }
+        ],
+        "attack": [
+          {
+            "id": "attack_01",
+            "text": "제 뒤에 서십시오!",
+            "translation_zh": "站到我身後！",
+            "path": "res://art/voices/guard/attack_01.ogg",
+            "pilot": true
+          },
+          {
+            "id": "attack_02",
+            "text": "물러서지 않겠습니다!",
+            "translation_zh": "我絕不退讓！",
+            "path": "res://art/voices/guard/attack_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "attack_03",
+            "text": "방패로 길을 열겠습니다!",
+            "translation_zh": "以盾開路！",
+            "path": "res://art/voices/guard/attack_03.ogg",
+            "pilot": false
+          }
+        ],
+        "inspect": [
+          {
+            "id": "inspect_01",
+            "text": "갑옷은 늘 살펴야 합니다.",
+            "translation_zh": "盔甲須時常檢查。",
+            "path": "res://art/voices/guard/inspect_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "inspect_02",
+            "text": "상처는 견딜 수 있습니다.",
+            "translation_zh": "這些傷我承受得住。",
+            "path": "res://art/voices/guard/inspect_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "inspect_03",
+            "text": "믿고 등을 맡기십시오.",
+            "translation_zh": "放心把後背交給我。",
+            "path": "res://art/voices/guard/inspect_03.ogg",
+            "pilot": false
+          }
+        ]
+      },
+      "delivery_tags": {
+        "select": "[confident]",
+        "move": "[confident]",
+        "attack": "[confident]",
+        "inspect": "[confident]"
+      },
+      "performance_direction": "精神飽滿、清楚有力的韓語回應；保留沉穩忠誠，自然說話距離。"
+    },
+    {
+      "unit_id": "gunner",
+      "name": "火銃手",
+      "definition_path": "features/units/data/mercenaries/gunner.tres",
+      "group": "player",
+      "nationality": "日本",
+      "language": "ja",
+      "species": "human",
+      "profession": "火銃手",
+      "personality": "爽朗、俐落、愛惜武器",
+      "gender": "male",
+      "vocal_age": "young",
+      "voice": {
+        "voice_id": "iJBEaXoSKqjBox6o14th",
+        "name": "RJ - Casual, Clear",
+        "source": "ElevenLabs public Voice Library",
+        "public_owner_id": "d6276e983503d903ee5a929a6ee10ada72c6bb2c0a8e2c6ee9ee486c68342155",
+        "native_language": "ja",
+        "notice_period": 730
+      },
+      "model_id": "eleven_v3",
+      "voice_settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "use_speaker_boost": false,
+        "speed": 1.0
+      },
+      "postprocess": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "loudness_lufs": -18,
+        "true_peak_db": -2,
+        "vorbis_quality": 5,
+        "pitch_ratio": 1.0
+      },
+      "events": {
+        "select": [
+          {
+            "id": "select_01",
+            "text": "火薬は乾いてるぜ。",
+            "translation_zh": "火藥可乾爽得很。",
+            "path": "res://art/voices/gunner/select_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "select_02",
+            "text": "狙いなら任せな！",
+            "translation_zh": "瞄準就交給我！",
+            "path": "res://art/voices/gunner/select_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "select_03",
+            "text": "手入れは済んでるぜ。",
+            "translation_zh": "保養早就做好了。",
+            "path": "res://art/voices/gunner/select_03.ogg",
+            "pilot": false
+          }
+        ],
+        "move": [
+          {
+            "id": "move_01",
+            "text": "いい射場を探そうぜ。",
+            "translation_zh": "找個好射擊位置吧。",
+            "path": "res://art/voices/gunner/move_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "move_02",
+            "text": "筒を担いで、出発だ！",
+            "translation_zh": "扛起火銃，出發！",
+            "path": "res://art/voices/gunner/move_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "move_03",
+            "text": "おう、そこまで走るぜ。",
+            "translation_zh": "好，我跑到那裡。",
+            "path": "res://art/voices/gunner/move_03.ogg",
+            "pilot": false
+          }
+        ],
+        "attack": [
+          {
+            "id": "attack_01",
+            "text": "一発、決めてやる！",
+            "translation_zh": "這一發要打個漂亮！",
+            "path": "res://art/voices/gunner/attack_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "attack_02",
+            "text": "射線を空けてくれ！",
+            "translation_zh": "讓開射擊路線！",
+            "path": "res://art/voices/gunner/attack_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "attack_03",
+            "text": "その隙、もらった！",
+            "translation_zh": "這個破綻，我收下了！",
+            "path": "res://art/voices/gunner/attack_03.ogg",
+            "pilot": false
+          }
+        ],
+        "inspect": [
+          {
+            "id": "inspect_01",
+            "text": "火薬袋には触るなよ。",
+            "translation_zh": "別亂碰火藥袋喔。",
+            "path": "res://art/voices/gunner/inspect_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "inspect_02",
+            "text": "こいつは頼れる相棒さ。",
+            "translation_zh": "它可是可靠的夥伴。",
+            "path": "res://art/voices/gunner/inspect_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "inspect_03",
+            "text": "腕は錆びちゃいねえぜ。",
+            "translation_zh": "我的本事可沒生鏽。",
+            "path": "res://art/voices/gunner/inspect_03.ogg",
+            "pilot": false
+          }
+        ]
+      },
+      "performance_direction": "清楚自然的角色演出、正常說話距離；精神與力度依職業／性格調整，避免播音腔及貼近麥克風的氣音。",
+      "delivery_tags": {
+        "select": "[confident]",
+        "move": "[confident]",
+        "attack": "[confident]",
+        "inspect": "[confident]"
+      }
+    },
+    {
+      "unit_id": "healer",
+      "name": "醫術師",
+      "definition_path": "features/units/data/mercenaries/healer.tres",
+      "group": "player",
+      "nationality": "中國",
+      "language": "zh",
+      "species": "human",
+      "profession": "醫術師",
+      "personality": "溫和、可靠",
+      "gender": "female",
+      "vocal_age": "middle_aged",
+      "voice": {
+        "voice_id": "8uceOSflAGVvQuMt4HPh",
+        "name": "Shasha - Clear, Friendly, Posh & Poised",
+        "source": "ElevenLabs public Voice Library",
+        "public_owner_id": "1e34bbf401beda95647818ae64974dc9257a21f0bd593c0c869f054872aea982",
+        "native_language": "zh",
+        "notice_period": 730
+      },
+      "model_id": "eleven_v3",
+      "voice_settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "use_speaker_boost": false,
+        "speed": 1.0
+      },
+      "postprocess": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "loudness_lufs": -18,
+        "true_peak_db": -2,
+        "vorbis_quality": 5,
+        "pitch_ratio": 1.0
+      },
+      "events": {
+        "select": [
+          {
+            "id": "select_01",
+            "text": "哪裡不舒服？",
+            "translation_zh": "哪裡不舒服？",
+            "path": "res://art/voices/healer/select_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "select_02",
+            "text": "有我在，安心些。",
+            "translation_zh": "有我在，安心些。",
+            "path": "res://art/voices/healer/select_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "select_03",
+            "text": "藥箱一直備著呢。",
+            "translation_zh": "藥箱一直備著呢。",
+            "path": "res://art/voices/healer/select_03.ogg",
+            "pilot": false
+          }
+        ],
+        "move": [
+          {
+            "id": "move_01",
+            "text": "慢些，我跟得上。",
+            "translation_zh": "慢些，我跟得上。",
+            "path": "res://art/voices/healer/move_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "move_02",
+            "text": "前面的路要當心。",
+            "translation_zh": "前面的路要當心。",
+            "path": "res://art/voices/healer/move_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "move_03",
+            "text": "好，我帶上藥箱。",
+            "translation_zh": "好，我帶上藥箱。",
+            "path": "res://art/voices/healer/move_03.ogg",
+            "pilot": false
+          }
+        ],
+        "attack": [
+          {
+            "id": "attack_01",
+            "text": "別逼醫者動手！",
+            "translation_zh": "別逼醫者動手！",
+            "path": "res://art/voices/healer/attack_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "attack_02",
+            "text": "休想傷我的同伴！",
+            "translation_zh": "休想傷我的同伴！",
+            "path": "res://art/voices/healer/attack_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "attack_03",
+            "text": "先制住這個禍患！",
+            "translation_zh": "先制住這個禍患！",
+            "path": "res://art/voices/healer/attack_03.ogg",
+            "pilot": false
+          }
+        ],
+        "inspect": [
+          {
+            "id": "inspect_01",
+            "text": "藥材都分好了。",
+            "translation_zh": "藥材都分好了。",
+            "path": "res://art/voices/healer/inspect_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "inspect_02",
+            "text": "身子好，才走得遠。",
+            "translation_zh": "身子好，才走得遠。",
+            "path": "res://art/voices/healer/inspect_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "inspect_03",
+            "text": "傷口可不能硬撐。",
+            "translation_zh": "傷口可不能硬撐。",
+            "path": "res://art/voices/healer/inspect_03.ogg",
+            "pilot": false
+          }
+        ]
+      },
+      "performance_direction": "清楚自然的角色演出、正常說話距離；精神與力度依職業／性格調整，避免播音腔及貼近麥克風的氣音。",
+      "delivery_tags": {
+        "select": "[confident]",
+        "move": "[confident]",
+        "attack": "[confident]",
+        "inspect": "[confident]"
+      }
+    },
+    {
+      "unit_id": "lake_guardian",
+      "name": "千年湖守",
+      "definition_path": "features/units/data/monsters/lake_guardian.tres",
+      "group": "enemy",
+      "nationality": "中國",
+      "language": "zh",
+      "species": "intelligent spirit",
+      "profession": "千年湖守",
+      "personality": "古老、陰冷、守湖",
+      "gender": "male",
+      "vocal_age": "middle_aged",
+      "voice": {
+        "voice_id": "xQsp9uyB3OResmXFYuFx",
+        "name": "Arthur - Chinese Male",
+        "source": "ElevenLabs public Voice Library",
+        "public_owner_id": "63d2922605db2bfb04f15808540e9bc0a1564a43e41fb5d86e8c0f8ab0aa6613",
+        "native_language": "zh",
+        "notice_period": 730
+      },
+      "model_id": "eleven_v3",
+      "voice_settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "use_speaker_boost": false,
+        "speed": 1.0
+      },
+      "postprocess": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "loudness_lufs": -18,
+        "true_peak_db": -2,
+        "vorbis_quality": 5,
+        "pitch_ratio": 1.0
+      },
+      "events": {
+        "engage": [
+          {
+            "id": "engage_01",
+            "text": "千年湖底，容不得生人。",
+            "translation_zh": "千年湖底，容不得生人。",
+            "path": "res://art/voices/lake_guardian/engage_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_02",
+            "text": "水面已記住你的倒影。",
+            "translation_zh": "水面已記住你的倒影。",
+            "path": "res://art/voices/lake_guardian/engage_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_03",
+            "text": "沉入我的湖吧！",
+            "translation_zh": "沉入我的湖吧！",
+            "path": "res://art/voices/lake_guardian/engage_03.ogg",
+            "pilot": false
+          }
+        ],
+        "death": [
+          {
+            "id": "death_01",
+            "text": "湖水……帶我回去。",
+            "translation_zh": "湖水……帶我回去。",
+            "path": "res://art/voices/lake_guardian/death_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_02",
+            "text": "千年的誓言……散了。",
+            "translation_zh": "千年的誓言……散了。",
+            "path": "res://art/voices/lake_guardian/death_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_03",
+            "text": "我的倒影……消失了。",
+            "translation_zh": "我的倒影……消失了。",
+            "path": "res://art/voices/lake_guardian/death_03.ogg",
+            "pilot": false
+          }
+        ]
+      },
+      "performance_direction": "清楚自然的角色演出、正常說話距離；精神與力度依職業／性格調整，避免播音腔及貼近麥克風的氣音。",
+      "delivery_tags": {
+        "engage": "[confident]",
+        "death": "[sad]"
+      }
+    },
+    {
+      "unit_id": "mage",
+      "name": "雷術師",
+      "definition_path": "features/units/data/mercenaries/mage.tres",
+      "group": "player",
+      "nationality": "朝鮮",
+      "language": "ja",
+      "species": "human",
+      "profession": "雷術師",
+      "personality": "高傲、精準、威勢",
+      "gender": "female",
+      "vocal_age": "adult female",
+      "voice": {
+        "voice_id": "JTlYtJrcTzPC71hMLOxo",
+        "name": "Yuki",
+        "source": "ElevenLabs Voice Library, professional Japanese female character voice",
+        "native_language": "ja"
+      },
+      "model_id": "eleven_v3",
+      "voice_settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "use_speaker_boost": false,
+        "speed": 1.05
+      },
+      "postprocess": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "loudness_lufs": -18,
+        "true_peak_db": -2,
+        "vorbis_quality": 5,
+        "pitch_ratio": 1.0
+      },
+      "events": {
+        "select": [
+          {
+            "id": "select_01",
+            "text": "雷鳴、聞こえた？",
+            "translation_zh": "聽見雷鳴了嗎？",
+            "path": "res://art/voices/mage/select_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "select_02",
+            "text": "空の気は、私が読む。",
+            "translation_zh": "天空之氣由我洞察。",
+            "path": "res://art/voices/mage/select_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "select_03",
+            "text": "私の腕を疑うの？",
+            "translation_zh": "你懷疑我的本領？",
+            "path": "res://art/voices/mage/select_03.ogg",
+            "pilot": false
+          }
+        ],
+        "move": [
+          {
+            "id": "move_01",
+            "text": "風に乗って、行くわ。",
+            "translation_zh": "我將乘風而行。",
+            "path": "res://art/voices/mage/move_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "move_02",
+            "text": "そこに気が集まってる。",
+            "translation_zh": "氣正匯聚在那裡。",
+            "path": "res://art/voices/mage/move_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "move_03",
+            "text": "道は私が照らすわ。",
+            "translation_zh": "由我照亮道路。",
+            "path": "res://art/voices/mage/move_03.ogg",
+            "pilot": false
+          }
+        ],
+        "attack": [
+          {
+            "id": "attack_01",
+            "text": "雷よ、貫け！",
+            "translation_zh": "雷啊，貫穿它！",
+            "path": "res://art/voices/mage/attack_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "attack_02",
+            "text": "空の怒りを受けなさい！",
+            "translation_zh": "承受天空之怒！",
+            "path": "res://art/voices/mage/attack_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "attack_03",
+            "text": "一筋で十分よ！",
+            "translation_zh": "一道雷就足夠！",
+            "path": "res://art/voices/mage/attack_03.ogg",
+            "pilot": false
+          }
+        ],
+        "inspect": [
+          {
+            "id": "inspect_01",
+            "text": "気を乱さないでね。",
+            "translation_zh": "請別擾亂氣息。",
+            "path": "res://art/voices/mage/inspect_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "inspect_02",
+            "text": "力はまだ、満ちてるわ。",
+            "translation_zh": "力量仍然充盈。",
+            "path": "res://art/voices/mage/inspect_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "inspect_03",
+            "text": "稲妻は、迷わない。",
+            "translation_zh": "閃電從不猶豫。",
+            "path": "res://art/voices/mage/inspect_03.ogg",
+            "pilot": false
+          }
+        ]
+      },
+      "performance_direction": "日語女性角色演出，雷術師自信、有朝氣、果斷。",
+      "delivery_tags": {
+        "select": "[confident]",
+        "move": "[confident]",
+        "attack": "[confident]",
+        "inspect": "[confident]"
+      },
+      "voice_language_note": "使用者指定日語女性聲線；語音語言覆寫，角色國籍不因聲線選擇自動改寫。"
+    },
+    {
+      "unit_id": "merchant",
+      "name": "行旅商人",
+      "definition_path": "features/units/data/mercenaries/merchant.tres",
+      "group": "player",
+      "nationality": "中國",
+      "language": "zh",
+      "species": "human",
+      "profession": "行旅商人",
+      "personality": "年輕有為、自信、朝氣、機靈、愛冒險",
+      "gender": "male",
+      "vocal_age": "young adult (20–25)",
+      "voice": {
+        "voice_id": "ZJsn5HnrE3eUbep2ia8D",
+        "name": "Qiao Feng - Warm, Clear, Humble & Friendly",
+        "source": "ElevenLabs public Voice Library (professional voice)",
+        "native_language": "zh",
+        "public_owner_id": "bbda6ec5e1c07d1ce2e6c98c1a7c0312d59881690502537f9cf586d533aabf19",
+        "notice_period": 730
+      },
+      "model_id": "eleven_v3",
+      "voice_settings": {
+        "stability": 0.0,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "use_speaker_boost": false,
+        "speed": 1.08
+      },
+      "postprocess": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "loudness_lufs": -18,
+        "true_peak_db": -2,
+        "vorbis_quality": 5,
+        "pitch_ratio": 1.0
+      },
+      "events": {
+        "select": [
+          {
+            "id": "select_01",
+            "text": "遠路才有好買賣！",
+            "translation_zh": "遠路才有好買賣！",
+            "path": "res://art/voices/merchant/select_01.ogg",
+            "pilot": true
+          },
+          {
+            "id": "select_02",
+            "text": "嘿，找我做哪筆生意？",
+            "translation_zh": "嘿，找我做哪筆生意？",
+            "path": "res://art/voices/merchant/select_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "select_03",
+            "text": "見識可比銀子值錢！",
+            "translation_zh": "見識可比銀子值錢！",
+            "path": "res://art/voices/merchant/select_03.ogg",
+            "pilot": false
+          }
+        ],
+        "move": [
+          {
+            "id": "move_01",
+            "text": "這條路，我來探！",
+            "translation_zh": "這條路，我來探！",
+            "path": "res://art/voices/merchant/move_01.ogg",
+            "pilot": true
+          },
+          {
+            "id": "move_02",
+            "text": "收好行囊，出發！",
+            "translation_zh": "收好行囊，出發！",
+            "path": "res://art/voices/merchant/move_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "move_03",
+            "text": "好地方可不等人！",
+            "translation_zh": "好地方可不等人！",
+            "path": "res://art/voices/merchant/move_03.ogg",
+            "pilot": false
+          }
+        ],
+        "attack": [
+          {
+            "id": "attack_01",
+            "text": "敢擋我的財路？",
+            "translation_zh": "敢擋我的財路？",
+            "path": "res://art/voices/merchant/attack_01.ogg",
+            "pilot": true
+          },
+          {
+            "id": "attack_02",
+            "text": "這回可不講價！",
+            "translation_zh": "這回可不講價！",
+            "path": "res://art/voices/merchant/attack_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "attack_03",
+            "text": "讓你見識我的本事！",
+            "translation_zh": "讓你見識我的本事！",
+            "path": "res://art/voices/merchant/attack_03.ogg",
+            "pilot": false
+          }
+        ],
+        "inspect": [
+          {
+            "id": "inspect_01",
+            "text": "看看，我的家當都在這！",
+            "translation_zh": "看看，我的家當都在這！",
+            "path": "res://art/voices/merchant/inspect_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "inspect_02",
+            "text": "行走四方，靠的是真本事！",
+            "translation_zh": "行走四方，靠的是真本事！",
+            "path": "res://art/voices/merchant/inspect_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "inspect_03",
+            "text": "別急，好東西慢慢看！",
+            "translation_zh": "別急，好東西慢慢看！",
+            "path": "res://art/voices/merchant/inspect_03.ogg",
+            "pilot": false
+          }
+        ]
+      },
+      "delivery_tags": {
+        "select": "[excited]",
+        "move": "[excited]",
+        "attack": "[confident]",
+        "inspect": "[confident]"
+      },
+      "performance_direction": "年輕行旅商人，明亮有精神、爽朗自信，向同伴說話的自然距離；短促有力，保留冒險熱情。"
+    },
+    {
+      "unit_id": "shaolin_copper_master",
+      "name": "銅人陣師",
+      "definition_path": "features/units/data/monsters/shaolin_copper_master.tres",
+      "group": "enemy",
+      "nationality": "中國",
+      "language": "zh",
+      "species": "human",
+      "profession": "銅人陣師",
+      "personality": "老練、精確、布陣",
+      "gender": "male",
+      "vocal_age": "middle_aged",
+      "voice": {
+        "voice_id": "xQsp9uyB3OResmXFYuFx",
+        "name": "Arthur - Chinese Male",
+        "source": "ElevenLabs public Voice Library",
+        "public_owner_id": "63d2922605db2bfb04f15808540e9bc0a1564a43e41fb5d86e8c0f8ab0aa6613",
+        "native_language": "zh",
+        "notice_period": 730
+      },
+      "model_id": "eleven_v3",
+      "voice_settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "use_speaker_boost": false,
+        "speed": 1.0
+      },
+      "postprocess": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "loudness_lufs": -18,
+        "true_peak_db": -2,
+        "vorbis_quality": 5,
+        "pitch_ratio": 1.0
+      },
+      "events": {
+        "engage": [
+          {
+            "id": "engage_01",
+            "text": "銅人列陣！",
+            "translation_zh": "銅人列陣！",
+            "path": "res://art/voices/shaolin_copper_master/engage_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_02",
+            "text": "你的步法，我看穿了。",
+            "translation_zh": "你的步法，我看穿了。",
+            "path": "res://art/voices/shaolin_copper_master/engage_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_03",
+            "text": "陣中無退路！",
+            "translation_zh": "陣中無退路！",
+            "path": "res://art/voices/shaolin_copper_master/engage_03.ogg",
+            "pilot": false
+          }
+        ],
+        "death": [
+          {
+            "id": "death_01",
+            "text": "陣勢……斷了。",
+            "translation_zh": "陣勢……斷了。",
+            "path": "res://art/voices/shaolin_copper_master/death_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_02",
+            "text": "銅人……失去呼應。",
+            "translation_zh": "銅人……失去呼應。",
+            "path": "res://art/voices/shaolin_copper_master/death_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_03",
+            "text": "終是……棋差一著。",
+            "translation_zh": "終是……棋差一著。",
+            "path": "res://art/voices/shaolin_copper_master/death_03.ogg",
+            "pilot": false
+          }
+        ]
+      },
+      "performance_direction": "清楚自然的角色演出、正常說話距離；精神與力度依職業／性格調整，避免播音腔及貼近麥克風的氣音。",
+      "delivery_tags": {
+        "engage": "[confident]",
+        "death": "[sad]"
+      }
+    },
+    {
+      "unit_id": "shaolin_elite_copper",
+      "name": "金剛陣師",
+      "definition_path": "features/units/data/monsters/shaolin_elite_copper.tres",
+      "group": "enemy",
+      "nationality": "中國",
+      "language": "zh",
+      "species": "human",
+      "profession": "金剛陣師",
+      "personality": "堅定、威嚴、精通陣法",
+      "gender": "male",
+      "vocal_age": "middle_aged",
+      "voice": {
+        "voice_id": "xQsp9uyB3OResmXFYuFx",
+        "name": "Arthur - Chinese Male",
+        "source": "ElevenLabs public Voice Library",
+        "public_owner_id": "63d2922605db2bfb04f15808540e9bc0a1564a43e41fb5d86e8c0f8ab0aa6613",
+        "native_language": "zh",
+        "notice_period": 730
+      },
+      "model_id": "eleven_v3",
+      "voice_settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "use_speaker_boost": false,
+        "speed": 1.0
+      },
+      "postprocess": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "loudness_lufs": -18,
+        "true_peak_db": -2,
+        "vorbis_quality": 5,
+        "pitch_ratio": 1.0
+      },
+      "events": {
+        "engage": [
+          {
+            "id": "engage_01",
+            "text": "金剛之陣，不動如山！",
+            "translation_zh": "金剛之陣，不動如山！",
+            "path": "res://art/voices/shaolin_elite_copper/engage_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_02",
+            "text": "破陣之前，先問我！",
+            "translation_zh": "破陣之前，先問我！",
+            "path": "res://art/voices/shaolin_elite_copper/engage_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_03",
+            "text": "萬邪難入此陣！",
+            "translation_zh": "萬邪難入此陣！",
+            "path": "res://art/voices/shaolin_elite_copper/engage_03.ogg",
+            "pilot": false
+          }
+        ],
+        "death": [
+          {
+            "id": "death_01",
+            "text": "金剛陣……竟破了。",
+            "translation_zh": "金剛陣……竟破了。",
+            "path": "res://art/voices/shaolin_elite_copper/death_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_02",
+            "text": "不動之心……動了。",
+            "translation_zh": "不動之心……動了。",
+            "path": "res://art/voices/shaolin_elite_copper/death_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_03",
+            "text": "此身……守到盡頭。",
+            "translation_zh": "此身……守到盡頭。",
+            "path": "res://art/voices/shaolin_elite_copper/death_03.ogg",
+            "pilot": false
+          }
+        ]
+      },
+      "performance_direction": "清楚自然的角色演出、正常說話距離；精神與力度依職業／性格調整，避免播音腔及貼近麥克風的氣音。",
+      "delivery_tags": {
+        "engage": "[confident]",
+        "death": "[sad]"
+      }
+    },
+    {
+      "unit_id": "shaolin_flame_keeper",
+      "name": "赤燈護法",
+      "definition_path": "features/units/data/monsters/shaolin_flame_keeper.tres",
+      "group": "enemy",
+      "nationality": "中國",
+      "language": "zh",
+      "species": "human",
+      "profession": "赤燈護法",
+      "personality": "莊重、執著、守燈",
+      "gender": "male",
+      "vocal_age": "middle_aged",
+      "voice": {
+        "voice_id": "xQsp9uyB3OResmXFYuFx",
+        "name": "Arthur - Chinese Male",
+        "source": "ElevenLabs public Voice Library",
+        "public_owner_id": "63d2922605db2bfb04f15808540e9bc0a1564a43e41fb5d86e8c0f8ab0aa6613",
+        "native_language": "zh",
+        "notice_period": 730
+      },
+      "model_id": "eleven_v3",
+      "voice_settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "use_speaker_boost": false,
+        "speed": 1.0
+      },
+      "postprocess": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "loudness_lufs": -18,
+        "true_peak_db": -2,
+        "vorbis_quality": 5,
+        "pitch_ratio": 1.0
+      },
+      "events": {
+        "engage": [
+          {
+            "id": "engage_01",
+            "text": "赤燈未滅，爾等休進！",
+            "translation_zh": "赤燈未滅，爾等休進！",
+            "path": "res://art/voices/shaolin_flame_keeper/engage_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_02",
+            "text": "燈火照破邪念！",
+            "translation_zh": "燈火照破邪念！",
+            "path": "res://art/voices/shaolin_flame_keeper/engage_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_03",
+            "text": "退到燈影之外！",
+            "translation_zh": "退到燈影之外！",
+            "path": "res://art/voices/shaolin_flame_keeper/engage_03.ogg",
+            "pilot": false
+          }
+        ],
+        "death": [
+          {
+            "id": "death_01",
+            "text": "燈芯……護不住了。",
+            "translation_zh": "燈芯……護不住了。",
+            "path": "res://art/voices/shaolin_flame_keeper/death_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_02",
+            "text": "這盞燈……莫熄。",
+            "translation_zh": "這盞燈……莫熄。",
+            "path": "res://art/voices/shaolin_flame_keeper/death_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_03",
+            "text": "火光……遠了。",
+            "translation_zh": "火光……遠了。",
+            "path": "res://art/voices/shaolin_flame_keeper/death_03.ogg",
+            "pilot": false
+          }
+        ]
+      },
+      "performance_direction": "清楚自然的角色演出、正常說話距離；精神與力度依職業／性格調整，避免播音腔及貼近麥克風的氣音。",
+      "delivery_tags": {
+        "engage": "[confident]",
+        "death": "[sad]"
+      }
+    },
+    {
+      "unit_id": "shaolin_grandmaster",
+      "name": "金身羅漢",
+      "definition_path": "features/units/data/monsters/shaolin_grandmaster.tres",
+      "group": "enemy",
+      "nationality": "中國",
+      "language": "zh",
+      "species": "human",
+      "profession": "金身羅漢",
+      "personality": "莊嚴、慈悲、強大",
+      "gender": "male",
+      "vocal_age": "middle_aged",
+      "voice": {
+        "voice_id": "xQsp9uyB3OResmXFYuFx",
+        "name": "Arthur - Chinese Male",
+        "source": "ElevenLabs public Voice Library",
+        "public_owner_id": "63d2922605db2bfb04f15808540e9bc0a1564a43e41fb5d86e8c0f8ab0aa6613",
+        "native_language": "zh",
+        "notice_period": 730
+      },
+      "model_id": "eleven_v3",
+      "voice_settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "use_speaker_boost": false,
+        "speed": 1.0
+      },
+      "postprocess": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "loudness_lufs": -18,
+        "true_peak_db": -2,
+        "vorbis_quality": 5,
+        "pitch_ratio": 1.0
+      },
+      "events": {
+        "engage": [
+          {
+            "id": "engage_01",
+            "text": "回頭，尚有餘地。",
+            "translation_zh": "回頭，尚有餘地。",
+            "path": "res://art/voices/shaolin_grandmaster/engage_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_02",
+            "text": "金身護法，伏邪！",
+            "translation_zh": "金身護法，伏邪！",
+            "path": "res://art/voices/shaolin_grandmaster/engage_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_03",
+            "text": "你的執念，該放下了。",
+            "translation_zh": "你的執念，該放下了。",
+            "path": "res://art/voices/shaolin_grandmaster/engage_03.ogg",
+            "pilot": false
+          }
+        ],
+        "death": [
+          {
+            "id": "death_01",
+            "text": "金身……亦歸塵土。",
+            "translation_zh": "金身……亦歸塵土。",
+            "path": "res://art/voices/shaolin_grandmaster/death_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_02",
+            "text": "放下……便無所懼。",
+            "translation_zh": "放下……便無所懼。",
+            "path": "res://art/voices/shaolin_grandmaster/death_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_03",
+            "text": "這一程……到此為止。",
+            "translation_zh": "這一程……到此為止。",
+            "path": "res://art/voices/shaolin_grandmaster/death_03.ogg",
+            "pilot": false
+          }
+        ]
+      },
+      "performance_direction": "清楚自然的角色演出、正常說話距離；精神與力度依職業／性格調整，避免播音腔及貼近麥克風的氣音。",
+      "delivery_tags": {
+        "engage": "[confident]",
+        "death": "[sad]"
+      }
+    },
+    {
+      "unit_id": "shaolin_guardian",
+      "name": "銅棍護院",
+      "definition_path": "features/units/data/monsters/shaolin_guardian.tres",
+      "group": "enemy",
+      "nationality": "中國",
+      "language": "zh",
+      "species": "human",
+      "profession": "銅棍護院",
+      "personality": "戒律、堅毅、守院",
+      "gender": "male",
+      "vocal_age": "middle_aged",
+      "voice": {
+        "voice_id": "xQsp9uyB3OResmXFYuFx",
+        "name": "Arthur - Chinese Male",
+        "source": "ElevenLabs public Voice Library",
+        "public_owner_id": "63d2922605db2bfb04f15808540e9bc0a1564a43e41fb5d86e8c0f8ab0aa6613",
+        "native_language": "zh",
+        "notice_period": 730
+      },
+      "model_id": "eleven_v3",
+      "voice_settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "use_speaker_boost": false,
+        "speed": 1.0
+      },
+      "postprocess": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "loudness_lufs": -18,
+        "true_peak_db": -2,
+        "vorbis_quality": 5,
+        "pitch_ratio": 1.0
+      },
+      "events": {
+        "engage": [
+          {
+            "id": "engage_01",
+            "text": "止步，此院不可擅闖！",
+            "translation_zh": "止步，此院不可擅闖！",
+            "path": "res://art/voices/shaolin_guardian/engage_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_02",
+            "text": "銅棍不容邪祟！",
+            "translation_zh": "銅棍不容邪祟！",
+            "path": "res://art/voices/shaolin_guardian/engage_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_03",
+            "text": "先過我這一關！",
+            "translation_zh": "先過我這一關！",
+            "path": "res://art/voices/shaolin_guardian/engage_03.ogg",
+            "pilot": false
+          }
+        ],
+        "death": [
+          {
+            "id": "death_01",
+            "text": "護院之責……未盡。",
+            "translation_zh": "護院之責……未盡。",
+            "path": "res://art/voices/shaolin_guardian/death_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_02",
+            "text": "這一棍……失了分寸。",
+            "translation_zh": "這一棍……失了分寸。",
+            "path": "res://art/voices/shaolin_guardian/death_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_03",
+            "text": "師兄……守住院門。",
+            "translation_zh": "師兄……守住院門。",
+            "path": "res://art/voices/shaolin_guardian/death_03.ogg",
+            "pilot": false
+          }
+        ]
+      },
+      "performance_direction": "清楚自然的角色演出、正常說話距離；精神與力度依職業／性格調整，避免播音腔及貼近麥克風的氣音。",
+      "delivery_tags": {
+        "engage": "[confident]",
+        "death": "[sad]"
+      }
+    },
+    {
+      "unit_id": "shaolin_iron_disciple",
+      "name": "鐵棍武僧",
+      "definition_path": "features/units/data/monsters/shaolin_iron_disciple.tres",
+      "group": "enemy",
+      "nationality": "中國",
+      "language": "zh",
+      "species": "human",
+      "profession": "鐵棍武僧",
+      "personality": "剛直、勤練、勇猛",
+      "gender": "male",
+      "vocal_age": "middle_aged",
+      "voice": {
+        "voice_id": "xQsp9uyB3OResmXFYuFx",
+        "name": "Arthur - Chinese Male",
+        "source": "ElevenLabs public Voice Library",
+        "public_owner_id": "63d2922605db2bfb04f15808540e9bc0a1564a43e41fb5d86e8c0f8ab0aa6613",
+        "native_language": "zh",
+        "notice_period": 730
+      },
+      "model_id": "eleven_v3",
+      "voice_settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "use_speaker_boost": false,
+        "speed": 1.0
+      },
+      "postprocess": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "loudness_lufs": -18,
+        "true_peak_db": -2,
+        "vorbis_quality": 5,
+        "pitch_ratio": 1.0
+      },
+      "events": {
+        "engage": [
+          {
+            "id": "engage_01",
+            "text": "請教高招！",
+            "translation_zh": "請教高招！",
+            "path": "res://art/voices/shaolin_iron_disciple/engage_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_02",
+            "text": "鐵棍之下，見真章！",
+            "translation_zh": "鐵棍之下，見真章！",
+            "path": "res://art/voices/shaolin_iron_disciple/engage_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_03",
+            "text": "休想亂我陣腳！",
+            "translation_zh": "休想亂我陣腳！",
+            "path": "res://art/voices/shaolin_iron_disciple/engage_03.ogg",
+            "pilot": false
+          }
+        ],
+        "death": [
+          {
+            "id": "death_01",
+            "text": "今日……技不如人。",
+            "translation_zh": "今日……技不如人。",
+            "path": "res://art/voices/shaolin_iron_disciple/death_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_02",
+            "text": "我的棍……握不住了。",
+            "translation_zh": "我的棍……握不住了。",
+            "path": "res://art/voices/shaolin_iron_disciple/death_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_03",
+            "text": "這身功夫……還欠火候。",
+            "translation_zh": "這身功夫……還欠火候。",
+            "path": "res://art/voices/shaolin_iron_disciple/death_03.ogg",
+            "pilot": false
+          }
+        ]
+      },
+      "performance_direction": "清楚自然的角色演出、正常說話距離；精神與力度依職業／性格調整，避免播音腔及貼近麥克風的氣音。",
+      "delivery_tags": {
+        "engage": "[confident]",
+        "death": "[sad]"
+      }
+    },
+    {
+      "unit_id": "shaolin_shadow_captain",
+      "name": "疾影統領",
+      "definition_path": "features/units/data/monsters/shaolin_shadow_captain.tres",
+      "group": "enemy",
+      "nationality": "中國",
+      "language": "zh",
+      "species": "human",
+      "profession": "疾影統領",
+      "personality": "嚴整、敏銳、統領",
+      "gender": "male",
+      "vocal_age": "middle_aged",
+      "voice": {
+        "voice_id": "xQsp9uyB3OResmXFYuFx",
+        "name": "Arthur - Chinese Male",
+        "source": "ElevenLabs public Voice Library",
+        "public_owner_id": "63d2922605db2bfb04f15808540e9bc0a1564a43e41fb5d86e8c0f8ab0aa6613",
+        "native_language": "zh",
+        "notice_period": 730
+      },
+      "model_id": "eleven_v3",
+      "voice_settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "use_speaker_boost": false,
+        "speed": 1.0
+      },
+      "postprocess": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "loudness_lufs": -18,
+        "true_peak_db": -2,
+        "vorbis_quality": 5,
+        "pitch_ratio": 1.0
+      },
+      "events": {
+        "engage": [
+          {
+            "id": "engage_01",
+            "text": "收緊陣線！",
+            "translation_zh": "收緊陣線！",
+            "path": "res://art/voices/shaolin_shadow_captain/engage_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_02",
+            "text": "隨我截住來敵！",
+            "translation_zh": "隨我截住來敵！",
+            "path": "res://art/voices/shaolin_shadow_captain/engage_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_03",
+            "text": "疾影陣，合！",
+            "translation_zh": "疾影陣，合！",
+            "path": "res://art/voices/shaolin_shadow_captain/engage_03.ogg",
+            "pilot": false
+          }
+        ],
+        "death": [
+          {
+            "id": "death_01",
+            "text": "陣眼……失守。",
+            "translation_zh": "陣眼……失守。",
+            "path": "res://art/voices/shaolin_shadow_captain/death_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_02",
+            "text": "眾弟子……莫亂。",
+            "translation_zh": "眾弟子……莫亂。",
+            "path": "res://art/voices/shaolin_shadow_captain/death_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_03",
+            "text": "此陣……交給你們。",
+            "translation_zh": "此陣……交給你們。",
+            "path": "res://art/voices/shaolin_shadow_captain/death_03.ogg",
+            "pilot": false
+          }
+        ]
+      },
+      "performance_direction": "清楚自然的角色演出、正常說話距離；精神與力度依職業／性格調整，避免播音腔及貼近麥克風的氣音。",
+      "delivery_tags": {
+        "engage": "[confident]",
+        "death": "[sad]"
+      }
+    },
+    {
+      "unit_id": "shaolin_swift_disciple",
+      "name": "疾影棍僧",
+      "definition_path": "features/units/data/monsters/shaolin_swift_disciple.tres",
+      "group": "enemy",
+      "nationality": "中國",
+      "language": "zh",
+      "species": "human",
+      "profession": "疾影棍僧",
+      "personality": "敏捷、機警、輕快",
+      "gender": "male",
+      "vocal_age": "middle_aged",
+      "voice": {
+        "voice_id": "xQsp9uyB3OResmXFYuFx",
+        "name": "Arthur - Chinese Male",
+        "source": "ElevenLabs public Voice Library",
+        "public_owner_id": "63d2922605db2bfb04f15808540e9bc0a1564a43e41fb5d86e8c0f8ab0aa6613",
+        "native_language": "zh",
+        "notice_period": 730
+      },
+      "model_id": "eleven_v3",
+      "voice_settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "use_speaker_boost": false,
+        "speed": 1.0
+      },
+      "postprocess": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "loudness_lufs": -18,
+        "true_peak_db": -2,
+        "vorbis_quality": 5,
+        "pitch_ratio": 1.0
+      },
+      "events": {
+        "engage": [
+          {
+            "id": "engage_01",
+            "text": "你追得上這道影嗎？",
+            "translation_zh": "你追得上這道影嗎？",
+            "path": "res://art/voices/shaolin_swift_disciple/engage_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_02",
+            "text": "棍影已到！",
+            "translation_zh": "棍影已到！",
+            "path": "res://art/voices/shaolin_swift_disciple/engage_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_03",
+            "text": "莫眨眼！",
+            "translation_zh": "莫眨眼！",
+            "path": "res://art/voices/shaolin_swift_disciple/engage_03.ogg",
+            "pilot": false
+          }
+        ],
+        "death": [
+          {
+            "id": "death_01",
+            "text": "這一次……慢了。",
+            "translation_zh": "這一次……慢了。",
+            "path": "res://art/voices/shaolin_swift_disciple/death_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_02",
+            "text": "腳下……再無力了。",
+            "translation_zh": "腳下……再無力了。",
+            "path": "res://art/voices/shaolin_swift_disciple/death_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_03",
+            "text": "影子……也散了。",
+            "translation_zh": "影子……也散了。",
+            "path": "res://art/voices/shaolin_swift_disciple/death_03.ogg",
+            "pilot": false
+          }
+        ]
+      },
+      "performance_direction": "清楚自然的角色演出、正常說話距離；精神與力度依職業／性格調整，避免播音腔及貼近麥克風的氣音。",
+      "delivery_tags": {
+        "engage": "[confident]",
+        "death": "[sad]"
+      }
+    },
+    {
+      "unit_id": "shaolin_thunder_warden",
+      "name": "震地護法",
+      "definition_path": "features/units/data/monsters/shaolin_thunder_warden.tres",
+      "group": "enemy",
+      "nationality": "中國",
+      "language": "zh",
+      "species": "human",
+      "profession": "震地護法",
+      "personality": "威猛、篤定、震地",
+      "gender": "male",
+      "vocal_age": "middle_aged",
+      "voice": {
+        "voice_id": "xQsp9uyB3OResmXFYuFx",
+        "name": "Arthur - Chinese Male",
+        "source": "ElevenLabs public Voice Library",
+        "public_owner_id": "63d2922605db2bfb04f15808540e9bc0a1564a43e41fb5d86e8c0f8ab0aa6613",
+        "native_language": "zh",
+        "notice_period": 730
+      },
+      "model_id": "eleven_v3",
+      "voice_settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "use_speaker_boost": false,
+        "speed": 1.0
+      },
+      "postprocess": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "loudness_lufs": -18,
+        "true_peak_db": -2,
+        "vorbis_quality": 5,
+        "pitch_ratio": 1.0
+      },
+      "events": {
+        "engage": [
+          {
+            "id": "engage_01",
+            "text": "大地亦有雷聲！",
+            "translation_zh": "大地亦有雷聲！",
+            "path": "res://art/voices/shaolin_thunder_warden/engage_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_02",
+            "text": "站穩了！",
+            "translation_zh": "站穩了！",
+            "path": "res://art/voices/shaolin_thunder_warden/engage_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_03",
+            "text": "這一擊，震碎邪障！",
+            "translation_zh": "這一擊，震碎邪障！",
+            "path": "res://art/voices/shaolin_thunder_warden/engage_03.ogg",
+            "pilot": false
+          }
+        ],
+        "death": [
+          {
+            "id": "death_01",
+            "text": "大地……接住我。",
+            "translation_zh": "大地……接住我。",
+            "path": "res://art/voices/shaolin_thunder_warden/death_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_02",
+            "text": "雷聲……止了。",
+            "translation_zh": "雷聲……止了。",
+            "path": "res://art/voices/shaolin_thunder_warden/death_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_03",
+            "text": "護法之身……亦有盡時。",
+            "translation_zh": "護法之身……亦有盡時。",
+            "path": "res://art/voices/shaolin_thunder_warden/death_03.ogg",
+            "pilot": false
+          }
+        ]
+      },
+      "performance_direction": "清楚自然的角色演出、正常說話距離；精神與力度依職業／性格調整，避免播音腔及貼近麥克風的氣音。",
+      "delivery_tags": {
+        "engage": "[confident]",
+        "death": "[sad]"
+      }
+    },
+    {
+      "unit_id": "spirit",
+      "name": "忠臣箭魂",
+      "definition_path": "features/units/data/summons/spirit.tres",
+      "group": "player_summon",
+      "nationality": "中國",
+      "language": "zh",
+      "species": "ancestral spirit",
+      "profession": "箭魂",
+      "personality": "忠誠、古雅、果斷",
+      "gender": "male",
+      "vocal_age": "middle_aged",
+      "voice": {
+        "voice_id": "xQsp9uyB3OResmXFYuFx",
+        "name": "Arthur - Chinese Male",
+        "source": "ElevenLabs public Voice Library",
+        "public_owner_id": "63d2922605db2bfb04f15808540e9bc0a1564a43e41fb5d86e8c0f8ab0aa6613",
+        "native_language": "zh",
+        "notice_period": 730
+      },
+      "model_id": "eleven_v3",
+      "voice_settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "use_speaker_boost": false,
+        "speed": 1.0
+      },
+      "postprocess": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "loudness_lufs": -18,
+        "true_peak_db": -2,
+        "vorbis_quality": 5,
+        "pitch_ratio": 1.0
+      },
+      "events": {
+        "select": [
+          {
+            "id": "select_01",
+            "text": "忠魂仍在。",
+            "translation_zh": "忠魂仍在。",
+            "path": "res://art/voices/spirit/select_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "select_02",
+            "text": "此箭不負所託。",
+            "translation_zh": "此箭不負所託。",
+            "path": "res://art/voices/spirit/select_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "select_03",
+            "text": "聽候差遣。",
+            "translation_zh": "聽候差遣。",
+            "path": "res://art/voices/spirit/select_03.ogg",
+            "pilot": false
+          }
+        ],
+        "move": [
+          {
+            "id": "move_01",
+            "text": "魂隨令行。",
+            "translation_zh": "魂隨令行。",
+            "path": "res://art/voices/spirit/move_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "move_02",
+            "text": "前路由我探明。",
+            "translation_zh": "前路由我探明。",
+            "path": "res://art/voices/spirit/move_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "move_03",
+            "text": "循此路而去。",
+            "translation_zh": "循此路而去。",
+            "path": "res://art/voices/spirit/move_03.ogg",
+            "pilot": false
+          }
+        ],
+        "attack": [
+          {
+            "id": "attack_01",
+            "text": "以此箭，報知遇！",
+            "translation_zh": "以此箭，報知遇！",
+            "path": "res://art/voices/spirit/attack_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "attack_02",
+            "text": "此心不退！",
+            "translation_zh": "此心不退！",
+            "path": "res://art/voices/spirit/attack_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "attack_03",
+            "text": "箭至，邪散！",
+            "translation_zh": "箭至，邪散！",
+            "path": "res://art/voices/spirit/attack_03.ogg",
+            "pilot": false
+          }
+        ]
+      },
+      "performance_direction": "清楚自然的角色演出、正常說話距離；精神與力度依職業／性格調整，避免播音腔及貼近麥克風的氣音。",
+      "delivery_tags": {
+        "select": "[confident]",
+        "move": "[confident]",
+        "attack": "[confident]"
+      }
+    },
+    {
+      "unit_id": "supplier",
+      "name": "道術師",
+      "definition_path": "features/units/data/mercenaries/supplier.tres",
+      "group": "player",
+      "nationality": "中國",
+      "language": "ja",
+      "species": "human",
+      "profession": "道術師",
+      "personality": "灑脫、從容",
+      "gender": "female",
+      "vocal_age": "adult female",
+      "voice": {
+        "voice_id": "J6YFreR6shJoaDfv7tLf",
+        "name": "Yuko - Calm, Clear and Steady",
+        "source": "ElevenLabs Voice Library, professional Japanese female character voice",
+        "native_language": "ja"
+      },
+      "model_id": "eleven_v3",
+      "voice_settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "use_speaker_boost": false,
+        "speed": 1.05
+      },
+      "postprocess": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "loudness_lufs": -18,
+        "true_peak_db": -2,
+        "vorbis_quality": 5,
+        "pitch_ratio": 1.0
+      },
+      "events": {
+        "select": [
+          {
+            "id": "select_01",
+            "text": "道は、足元にあるのよ。",
+            "translation_zh": "道在腳下。",
+            "path": "res://art/voices/supplier/select_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "select_02",
+            "text": "ふふ、何かお困り？",
+            "translation_zh": "呵呵，有什麼煩心事？",
+            "path": "res://art/voices/supplier/select_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "select_03",
+            "text": "お茶を一杯、いかが？",
+            "translation_zh": "來一杯清茶如何？",
+            "path": "res://art/voices/supplier/select_03.ogg",
+            "pilot": false
+          }
+        ],
+        "move": [
+          {
+            "id": "move_01",
+            "text": "風と共に、行きましょう。",
+            "translation_zh": "且隨清風走一程。",
+            "path": "res://art/voices/supplier/move_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "move_02",
+            "text": "面白い道ね、進みましょう。",
+            "translation_zh": "這條路有趣，向前吧。",
+            "path": "res://art/voices/supplier/move_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "move_03",
+            "text": "ええ、すぐに向かうわ。",
+            "translation_zh": "好，我立刻前往。",
+            "path": "res://art/voices/supplier/move_03.ogg",
+            "pilot": false
+          }
+        ],
+        "attack": [
+          {
+            "id": "attack_01",
+            "text": "慈悲を、侮らないで。",
+            "translation_zh": "莫小看慈悲。",
+            "path": "res://art/voices/supplier/attack_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "attack_02",
+            "text": "天地の気を、借りるわ！",
+            "translation_zh": "借天地之氣一用！",
+            "path": "res://art/voices/supplier/attack_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "attack_03",
+            "text": "ここでの狼藉は許さない！",
+            "translation_zh": "此處容不得作亂！",
+            "path": "res://art/voices/supplier/attack_03.ogg",
+            "pilot": false
+          }
+        ],
+        "inspect": [
+          {
+            "id": "inspect_01",
+            "text": "小さな袋にも、世界はあるの。",
+            "translation_zh": "小小行囊，亦有乾坤。",
+            "path": "res://art/voices/supplier/inspect_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "inspect_02",
+            "text": "息を整えれば、心も静まるわ。",
+            "translation_zh": "氣息平順，心亦安。",
+            "path": "res://art/voices/supplier/inspect_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "inspect_03",
+            "text": "お札は、濡らさないでね。",
+            "translation_zh": "符紙要保持乾爽。",
+            "path": "res://art/voices/supplier/inspect_03.ogg",
+            "pilot": false
+          }
+        ]
+      },
+      "performance_direction": "日語女性角色演出，道術師沉穩、灑脫、清楚、親切。",
+      "delivery_tags": {
+        "select": "[confident]",
+        "move": "[confident]",
+        "attack": "[confident]",
+        "inspect": "[confident]"
+      },
+      "voice_language_note": "使用者指定日語女性聲線；語音語言覆寫，角色國籍不因聲線選擇自動改寫。"
+    },
+    {
+      "unit_id": "well_blood_wraith",
+      "name": "古井血侍",
+      "definition_path": "features/units/data/monsters/well_blood_wraith.tres",
+      "group": "enemy",
+      "nationality": "中國",
+      "language": "zh",
+      "species": "intelligent spirit",
+      "profession": "古井血侍",
+      "personality": "怨恨、嗜血、侍從",
+      "gender": "male",
+      "vocal_age": "middle_aged",
+      "voice": {
+        "voice_id": "xQsp9uyB3OResmXFYuFx",
+        "name": "Arthur - Chinese Male",
+        "source": "ElevenLabs public Voice Library",
+        "public_owner_id": "63d2922605db2bfb04f15808540e9bc0a1564a43e41fb5d86e8c0f8ab0aa6613",
+        "native_language": "zh",
+        "notice_period": 730
+      },
+      "model_id": "eleven_v3",
+      "voice_settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "use_speaker_boost": false,
+        "speed": 1.0
+      },
+      "postprocess": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "loudness_lufs": -18,
+        "true_peak_db": -2,
+        "vorbis_quality": 5,
+        "pitch_ratio": 1.0
+      },
+      "events": {
+        "engage": [
+          {
+            "id": "engage_01",
+            "text": "井底還缺一份血。",
+            "translation_zh": "井底還缺一份血。",
+            "path": "res://art/voices/well_blood_wraith/engage_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_02",
+            "text": "聽，血在呼喚。",
+            "translation_zh": "聽，血在呼喚。",
+            "path": "res://art/voices/well_blood_wraith/engage_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_03",
+            "text": "把你的熱血留下！",
+            "translation_zh": "把你的熱血留下！",
+            "path": "res://art/voices/well_blood_wraith/engage_03.ogg",
+            "pilot": false
+          }
+        ],
+        "death": [
+          {
+            "id": "death_01",
+            "text": "血……流盡了。",
+            "translation_zh": "血……流盡了。",
+            "path": "res://art/voices/well_blood_wraith/death_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_02",
+            "text": "井主……救我。",
+            "translation_zh": "井主……救我。",
+            "path": "res://art/voices/well_blood_wraith/death_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_03",
+            "text": "這口井……太冷了。",
+            "translation_zh": "這口井……太冷了。",
+            "path": "res://art/voices/well_blood_wraith/death_03.ogg",
+            "pilot": false
+          }
+        ]
+      },
+      "performance_direction": "清楚自然的角色演出、正常說話距離；精神與力度依職業／性格調整，避免播音腔及貼近麥克風的氣音。",
+      "delivery_tags": {
+        "engage": "[confident]",
+        "death": "[sad]"
+      }
+    },
+    {
+      "unit_id": "well_earth_sentinel",
+      "name": "古井震地鬼衛",
+      "definition_path": "features/units/data/monsters/well_earth_sentinel.tres",
+      "group": "enemy",
+      "nationality": "",
+      "language": "",
+      "species": "ghost sentinel",
+      "profession": "古井震地鬼衛",
+      "personality": "An ancient well sentinel, eerie low metallic spectral moaning",
+      "gender": "male",
+      "vocal_age": "middle_aged",
+      "voice": {
+        "voice_id": "",
+        "name": "An ancient well sentinel, eerie low metallic spectral moaning",
+        "source": "ElevenLabs Sound Effects API"
+      },
+      "model_id": "eleven_text_to_sound_v2",
+      "voice_settings": {
+        "duration_seconds": 2.0,
+        "prompt_influence": 0.5
+      },
+      "postprocess": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "loudness_lufs": -18,
+        "true_peak_db": -2,
+        "vorbis_quality": 5,
+        "pitch_ratio": 1.0
+      },
+      "events": {
+        "engage": [
+          {
+            "id": "engage_01",
+            "text": "An ancient well sentinel, eerie low metallic spectral moaning. One isolated short aggressive challenge vocalization, variation 1, dry close recording, no speech, no music, no ambience.",
+            "translation_zh": "接敵叫聲",
+            "path": "res://art/voices/well_earth_sentinel/engage_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_02",
+            "text": "An ancient well sentinel, eerie low metallic spectral moaning. One isolated short aggressive challenge vocalization, variation 2, dry close recording, no speech, no music, no ambience.",
+            "translation_zh": "接敵叫聲",
+            "path": "res://art/voices/well_earth_sentinel/engage_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_03",
+            "text": "An ancient well sentinel, eerie low metallic spectral moaning. One isolated short aggressive challenge vocalization, variation 3, dry close recording, no speech, no music, no ambience.",
+            "translation_zh": "接敵叫聲",
+            "path": "res://art/voices/well_earth_sentinel/engage_03.ogg",
+            "pilot": false
+          }
+        ],
+        "death": [
+          {
+            "id": "death_01",
+            "text": "An ancient well sentinel, eerie low metallic spectral moaning. One isolated brief defeated collapsing dying vocalization, variation 1, dry close recording, no speech, no music, no ambience.",
+            "translation_zh": "死亡叫聲",
+            "path": "res://art/voices/well_earth_sentinel/death_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_02",
+            "text": "An ancient well sentinel, eerie low metallic spectral moaning. One isolated brief defeated collapsing dying vocalization, variation 2, dry close recording, no speech, no music, no ambience.",
+            "translation_zh": "死亡叫聲",
+            "path": "res://art/voices/well_earth_sentinel/death_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_03",
+            "text": "An ancient well sentinel, eerie low metallic spectral moaning. One isolated brief defeated collapsing dying vocalization, variation 3, dry close recording, no speech, no music, no ambience.",
+            "translation_zh": "死亡叫聲",
+            "path": "res://art/voices/well_earth_sentinel/death_03.ogg",
+            "pilot": false
+          }
+        ]
+      }
+    },
+    {
+      "unit_id": "well_pyromancer",
+      "name": "古井燃燈巫",
+      "definition_path": "features/units/data/monsters/well_pyromancer.tres",
+      "group": "enemy",
+      "nationality": "中國",
+      "language": "zh",
+      "species": "intelligent spirit",
+      "profession": "古井燃燈巫",
+      "personality": "陰森、巫術、燃燈",
+      "gender": "male",
+      "vocal_age": "middle_aged",
+      "voice": {
+        "voice_id": "xQsp9uyB3OResmXFYuFx",
+        "name": "Arthur - Chinese Male",
+        "source": "ElevenLabs public Voice Library",
+        "public_owner_id": "63d2922605db2bfb04f15808540e9bc0a1564a43e41fb5d86e8c0f8ab0aa6613",
+        "native_language": "zh",
+        "notice_period": 730
+      },
+      "model_id": "eleven_v3",
+      "voice_settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "use_speaker_boost": false,
+        "speed": 1.0
+      },
+      "postprocess": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "loudness_lufs": -18,
+        "true_peak_db": -2,
+        "vorbis_quality": 5,
+        "pitch_ratio": 1.0
+      },
+      "events": {
+        "engage": [
+          {
+            "id": "engage_01",
+            "text": "井火為你點起了！",
+            "translation_zh": "井火為你點起了！",
+            "path": "res://art/voices/well_pyromancer/engage_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_02",
+            "text": "來做我的燈芯吧。",
+            "translation_zh": "來做我的燈芯吧。",
+            "path": "res://art/voices/well_pyromancer/engage_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "engage_03",
+            "text": "別躲，火已聞見你！",
+            "translation_zh": "別躲，火已聞見你！",
+            "path": "res://art/voices/well_pyromancer/engage_03.ogg",
+            "pilot": false
+          }
+        ],
+        "death": [
+          {
+            "id": "death_01",
+            "text": "燈油……乾了。",
+            "translation_zh": "燈油……乾了。",
+            "path": "res://art/voices/well_pyromancer/death_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_02",
+            "text": "井火……棄我而去。",
+            "translation_zh": "井火……棄我而去。",
+            "path": "res://art/voices/well_pyromancer/death_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "death_03",
+            "text": "誰把……燈吹滅了？",
+            "translation_zh": "誰把……燈吹滅了？",
+            "path": "res://art/voices/well_pyromancer/death_03.ogg",
+            "pilot": false
+          }
+        ]
+      },
+      "performance_direction": "清楚自然的角色演出、正常說話距離；精神與力度依職業／性格調整，避免播音腔及貼近麥克風的氣音。",
+      "delivery_tags": {
+        "engage": "[confident]",
+        "death": "[sad]"
+      }
+    },
+    {
+      "unit_id": "ninja",
+      "name": "忍者",
+      "definition_path": "features/units/data/mercenaries/ninja.tres",
+      "group": "player_trial",
+      "nationality": "",
+      "language": "en",
+      "species": "human",
+      "profession": "忍者",
+      "personality": "低沉、克制、機警、自信、帶神祕魔法感",
+      "gender": "male",
+      "vocal_age": "adult",
+      "voice": {
+        "voice_id": "N2lVS1w4EtoT3dr4eOWO",
+        "name": "Callum - Husky Trickster",
+        "source": "ElevenLabs premade character voice",
+        "native_language": "en"
+      },
+      "model_id": "eleven_v3",
+      "voice_settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "use_speaker_boost": false,
+        "speed": 1.05
+      },
+      "postprocess": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "loudness_lufs": -18,
+        "true_peak_db": -2,
+        "vorbis_quality": 5,
+        "pitch_ratio": 1.0
+      },
+      "delivery_tags": {
+        "select": "[confident]",
+        "move": "[confident]",
+        "attack": "[confident]",
+        "inspect": "[confident]"
+      },
+      "performance_direction": "自然低沉的英文男性忍者，冷靜、自信、有神祕感；清楚說話，保留原音色，無人工降調。",
+      "voice_language_note": "使用者指定英文男聲及四句原文；國籍未指定。",
+      "variation_counts": {
+        "select": 2,
+        "move": 2,
+        "attack": 3,
+        "inspect": 2
+      },
+      "events": {
+        "select": [
+          {
+            "id": "select_01",
+            "text": "I smell magic in the air.",
+            "translation_zh": "我聞到了空氣中的魔法。",
+            "path": "res://art/voices/ninja/select_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "select_02",
+            "text": "Be quick; time is mana.",
+            "translation_zh": "快點；時間就是法力。",
+            "path": "res://art/voices/ninja/select_02.ogg",
+            "pilot": false
+          }
+        ],
+        "move": [
+          {
+            "id": "move_01",
+            "text": "Watch and learn",
+            "translation_zh": "看著，學著點。",
+            "path": "res://art/voices/ninja/move_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "move_02",
+            "text": "Very clever",
+            "translation_zh": "真聰明。",
+            "path": "res://art/voices/ninja/move_02.ogg",
+            "pilot": false
+          }
+        ],
+        "attack": [
+          {
+            "id": "attack_01",
+            "text": "From the shadows.",
+            "translation_zh": "從暗影中出擊。",
+            "path": "res://art/voices/ninja/attack_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "attack_02",
+            "text": "Your guard is down.",
+            "translation_zh": "你的防備露出了破綻。",
+            "path": "res://art/voices/ninja/attack_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "attack_03",
+            "text": "One strike is enough.",
+            "translation_zh": "一擊便足夠。",
+            "path": "res://art/voices/ninja/attack_03.ogg",
+            "pilot": false
+          }
+        ],
+        "inspect": [
+          {
+            "id": "inspect_01",
+            "text": "I smell magic in the air.",
+            "translation_zh": "我聞到了空氣中的魔法。",
+            "path": "res://art/voices/ninja/inspect_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "inspect_02",
+            "text": "Be quick; time is mana.",
+            "translation_zh": "快點；時間就是法力。",
+            "path": "res://art/voices/ninja/inspect_02.ogg",
+            "pilot": false
+          }
+        ]
+      }
+    },
+    {
+      "unit_id": "malfory",
+      "name": "女魔法師・Malfory",
+      "definition_path": "features/units/data/mercenaries/malfory.tres",
+      "group": "player_recruitable",
+      "nationality": "",
+      "language": "en",
+      "species": "human",
+      "profession": "女魔法師",
+      "personality": "成熟、自信、性感、魅惑，帶危險的黑魔法氣質",
+      "gender": "female",
+      "vocal_age": "mature adult female",
+      "voice": {
+        "voice_id": "pFZP5JQG7iQjIQuC4Bku",
+        "name": "Lily - Velvety Actress",
+        "source": "ElevenLabs premade British female voice",
+        "native_language": "en"
+      },
+      "model_id": "eleven_v3",
+      "voice_settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "use_speaker_boost": false,
+        "speed": 1.05
+      },
+      "postprocess": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "loudness_lufs": -18,
+        "true_peak_db": -2,
+        "vorbis_quality": 5,
+        "pitch_ratio": 1.0
+      },
+      "delivery_tags": {
+        "select": "[flirtatious]",
+        "move": "[flirtatious]",
+        "attack": "[confident]",
+        "inspect": "[flirtatious]"
+      },
+      "performance_direction": "成熟英式女性角色聲線，柔韌如絲絨、略沙啞、帶魅惑與自信；短句清楚，保持自然距離，攻擊時有威勢。",
+      "events": {
+        "select": [
+          {
+            "id": "select_01",
+            "text": "Well... aren't you intriguing.",
+            "translation_zh": "嗯……你倒是很有趣。",
+            "path": "res://art/voices/malfory/select_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "select_02",
+            "text": "A little danger suits you.",
+            "translation_zh": "一點危險，很適合你。",
+            "path": "res://art/voices/malfory/select_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "select_03",
+            "text": "Tell me what you desire.",
+            "translation_zh": "告訴我，你渴望什麼。",
+            "path": "res://art/voices/malfory/select_03.ogg",
+            "pilot": false
+          }
+        ],
+        "move": [
+          {
+            "id": "move_01",
+            "text": "Lead the way, darling.",
+            "translation_zh": "帶路吧，親愛的。",
+            "path": "res://art/voices/malfory/move_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "move_02",
+            "text": "I'll follow your scent.",
+            "translation_zh": "我會循著你的氣息。",
+            "path": "res://art/voices/malfory/move_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "move_03",
+            "text": "Such a tempting path.",
+            "translation_zh": "多麼誘人的道路。",
+            "path": "res://art/voices/malfory/move_03.ogg",
+            "pilot": false
+          }
+        ],
+        "attack": [
+          {
+            "id": "attack_01",
+            "text": "Let me teach you fear.",
+            "translation_zh": "讓我教會你何謂恐懼。",
+            "path": "res://art/voices/malfory/attack_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "attack_02",
+            "text": "Your courage won't save you.",
+            "translation_zh": "你的勇氣救不了你。",
+            "path": "res://art/voices/malfory/attack_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "attack_03",
+            "text": "How beautifully you tremble.",
+            "translation_zh": "你顫抖的樣子，真美。",
+            "path": "res://art/voices/malfory/attack_03.ogg",
+            "pilot": false
+          }
+        ],
+        "inspect": [
+          {
+            "id": "inspect_01",
+            "text": "Some secrets are best kept close.",
+            "translation_zh": "有些秘密，最好藏在身邊。",
+            "path": "res://art/voices/malfory/inspect_01.ogg",
+            "pilot": false
+          },
+          {
+            "id": "inspect_02",
+            "text": "Look closely. I don't disappoint.",
+            "translation_zh": "看仔細些。我不會讓你失望。",
+            "path": "res://art/voices/malfory/inspect_02.ogg",
+            "pilot": false
+          },
+          {
+            "id": "inspect_03",
+            "text": "These charms aren't for everyone.",
+            "translation_zh": "這些魔法，可不是人人都適合。",
+            "path": "res://art/voices/malfory/inspect_03.ogg",
+            "pilot": false
+          }
+        ]
+      }
+    }
+  ],
+  "review_note": "新增Malfory：成熟、魅惑的英語女性聲線。共34份已配音角色配置／258段音訊；其他待定新兵種維持原狀。",
+  "production_style": "2026-10-11第二輪回饋：更有朝氣、自然角色對話；不使用人工音高處理；仍保留不同職業、年齡與敵人的性格差異。",
+  "approval_note": "2026-10-11 user: OK 好吧，先這樣。套用到所有 及GODOT PROJECT入面",
+  "revision_note": "使用者要求Malfory性感女性聲線並明確選英語；加入四類回應，不改技能、招募、立繪或原編隊。"
+}

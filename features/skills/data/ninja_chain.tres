@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="SkillDefinition" format=3 uid="uid://df41b5xqr3d8s"]
+
+[ext_resource type="Script" path="res://common/data/skill_effect_definition.gd" id="1_br5he"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_id72o"]
+
+[sub_resource type="Resource" id="Resource_f046f"]
+script = ExtResource("1_br5he")
+chain_orbs = 4
+kind = 12
+duration = 6.0
+tick_interval = 0.5
+chain_targets = 6
+chain_jump_range = 240.0
+chain_damage_multiplier = 0.85
+hit_control_duration = 0.12
+
+[resource]
+script = ExtResource("2_id72o")
+id = &"ninja_chain"
+display_name = "忍法密傳．四方導雷"
+description = "C指定敵人；最多6個敵人各有4顆環繞電球，每球0.48–0.52秒獨立電击。Tick Interval、Jitter、Chain Orbs、Jump Range可調。"
+effect = 16
+target_mode = 3
+action = &"skill_ninja_chain"
+default_key = 67
+icon_index = 7
+mana_cost = 75.0
+range = 300.0
+radius = 0.0
+damage_formula = "35+agility*1.2+intelligence*0.5"
+formula_multiplier = 1.8
+effect_data = SubResource("Resource_f046f")

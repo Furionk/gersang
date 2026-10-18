@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="EncounterDefinition" format=3 uid="uid://cdgu7fudsp734"]
+
+[ext_resource type="Script" uid="uid://d3vyygwq6v6lc" path="res://common/data/encounter_definition.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = &"mountain"
+display_name = "石槌山・山道伏擊"
+terrain = 1
+level = 20
+melee_count = 8
+ranged_count = 3
+elite_count = 2
+battlefield_scene = "res://features/battle/maps/mountain.tscn"
+enemy_spawn_centers = null

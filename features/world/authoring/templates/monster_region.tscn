@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3]
+[ext_resource type="Script" path="res://features/world/authoring/world_monster_region.gd" id="1"]
+[ext_resource type="Script" path="res://features/world/authoring/world_region_polygon.gd" id="2"]
+[ext_resource type="Resource" path="res://features/units/data/monsters/beast.tres" id="3"]
+[node name="MonsterRegion" type="Node2D"]
+script = ExtResource("1")
+display_name = "新怪物區域"
+monster = ExtResource("3")
+[node name="SpawnArea" type="Polygon2D" parent="."]
+script = ExtResource("2")
+color = Color(0,0,0,0)
+polygon = PackedVector2Array(-240,0,0,-120,240,0,0,120)
+[node name="RoamingArea" type="Polygon2D" parent="."]
+script = ExtResource("2")
+color = Color(0,0,0,0)
+polygon = PackedVector2Array(-400,0,0,-200,400,0,0,200)
+[node name="PursuitArea" type="Polygon2D" parent="."]
+script = ExtResource("2")
+color = Color(0,0,0,0)
+polygon = PackedVector2Array(-500,0,0,-250,500,0,0,250)

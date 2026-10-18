@@ -1,0 +1,55 @@
+[gd_resource type="Resource" script_class="SpriteSheetLayout" format=3]
+
+[ext_resource type="Script" path="res://common/data/sprite_animation_clip.gd" id="1_mk882"]
+[ext_resource type="Script" path="res://common/data/sprite_sheet_layout.gd" id="2_4abyo"]
+[ext_resource type="Texture2D" path="res://art/terrain/shenchao_abyss/orb-ghost-v1.png" id="3_yc4r3"]
+
+[sub_resource type="Resource" id="Resource_85ecu"]
+script = ExtResource("1_mk882")
+columns = PackedInt32Array(0)
+loop = true
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_0kqw4"]
+script = ExtResource("1_mk882")
+action = 1
+columns = PackedInt32Array(0)
+loop = true
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_7rkga"]
+script = ExtResource("1_mk882")
+action = 2
+columns = PackedInt32Array(0)
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_m3ffk"]
+script = ExtResource("1_mk882")
+action = 3
+columns = PackedInt32Array(0)
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_vl3s6"]
+script = ExtResource("1_mk882")
+action = 4
+columns = PackedInt32Array(0)
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[resource]
+script = ExtResource("2_4abyo")
+source_texture = ExtResource("3_yc4r3")
+source_size = Vector2i(1254, 1254)
+columns = 1
+rows = 1
+frame_size = Vector2i(1254, 1254)
+foot_point = Vector2(627, 1190)
+frame_rects = Array[Rect2i]([Rect2i(0, 0, 1254, 1254)])
+source_pivots = Array[Vector2]([Vector2(627, 1190)])
+animations = Array[ExtResource("1_mk882")]([SubResource("Resource_85ecu"), SubResource("Resource_0kqw4"), SubResource("Resource_7rkga"), SubResource("Resource_m3ffk"), SubResource("Resource_vl3s6")])
+attack_columns = Array[int]([0])
+direction_rows = Array[int]([0, 0, 0, 0, 0, 0, 0, 0])

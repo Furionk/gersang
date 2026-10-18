@@ -1,0 +1,55 @@
+[gd_resource type="Resource" script_class="SpriteSheetLayout" format=3]
+
+[ext_resource type="Script" path="res://common/data/sprite_animation_clip.gd" id="1_23gx8"]
+[ext_resource type="Script" path="res://common/data/sprite_sheet_layout.gd" id="2_abrmd"]
+[ext_resource type="Texture2D" path="res://features/rainbow/art/temple-creatures-v2.png" id="3_es2lg"]
+
+[sub_resource type="Resource" id="Resource_664mi"]
+script = ExtResource("1_23gx8")
+columns = PackedInt32Array(0)
+loop = true
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_ixfm0"]
+script = ExtResource("1_23gx8")
+action = 1
+columns = PackedInt32Array(0)
+loop = true
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_t2rie"]
+script = ExtResource("1_23gx8")
+action = 2
+columns = PackedInt32Array(0)
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_iy5jn"]
+script = ExtResource("1_23gx8")
+action = 3
+columns = PackedInt32Array(0)
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_fkrve"]
+script = ExtResource("1_23gx8")
+action = 4
+columns = PackedInt32Array(0)
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[resource]
+script = ExtResource("2_abrmd")
+source_texture = ExtResource("3_es2lg")
+source_size = Vector2i(1254, 1254)
+columns = 1
+rows = 4
+frame_size = Vector2i(360, 360)
+foot_point = Vector2(180, 325)
+frame_rects = Array[Rect2i]([Rect2i(15, 940, 298, 284), Rect2i(313, 947, 312, 307), Rect2i(628, 940, 307, 314), Rect2i(945, 940, 285, 314)])
+source_pivots = Array[Vector2]([Vector2(149, 282), Vector2(156, 305), Vector2(153.5, 312), Vector2(142.5, 312)])
+animations = Array[ExtResource("1_23gx8")]([SubResource("Resource_664mi"), SubResource("Resource_ixfm0"), SubResource("Resource_t2rie"), SubResource("Resource_iy5jn"), SubResource("Resource_fkrve")])
+attack_columns = Array[int]([0])
+direction_rows = Array[int]([0, 0, 3, 3, 1, 1, 2, 2])

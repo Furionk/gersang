@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="SpriteSheetLayout" format=3]
+
+[ext_resource type="Script" path="res://common/data/sprite_animation_clip.gd" id="1_0wfa1"]
+[ext_resource type="Script" path="res://common/data/sprite_sheet_layout.gd" id="2_13xke"]
+[ext_resource type="Texture2D" path="res://features/units/art/hogwarts/school-cerberus-v1.png" id="3_xha6s"]
+
+[resource]
+script = ExtResource("2_13xke")
+source_texture = ExtResource("3_xha6s")
+frame_size = Vector2i(256, 256)
+foot_point = Vector2(128, 224)
+frame_rects = Array[Rect2i]([Rect2i(20, 6, 141, 168), Rect2i(213, 6, 129, 174), Rect2i(389, 6, 124, 173), Rect2i(551, 18, 160, 163), Rect2i(726, 4, 175, 173), Rect2i(905, 47, 176, 119), Rect2i(20, 189, 160, 167), Rect2i(200, 191, 160, 167), Rect2i(374, 188, 169, 171), Rect2i(543, 191, 165, 168), Rect2i(724, 181, 181, 180), Rect2i(905, 230, 175, 122), Rect2i(9, 372, 171, 157), Rect2i(191, 373, 171, 159), Rect2i(370, 373, 172, 158), Rect2i(547, 376, 167, 152), Rect2i(724, 367, 181, 176), Rect2i(905, 421, 177, 110), Rect2i(14, 543, 159, 172), Rect2i(197, 543, 156, 174), Rect2i(375, 543, 149, 174), Rect2i(551, 543, 169, 174), Rect2i(728, 543, 172, 172), Rect2i(905, 603, 171, 112), Rect2i(24, 724, 132, 176), Rect2i(209, 724, 128, 176), Rect2i(384, 724, 119, 175), Rect2i(557, 724, 140, 172), Rect2i(726, 724, 176, 174), Rect2i(905, 779, 171, 118), Rect2i(12, 908, 163, 172), Rect2i(196, 909, 160, 171), Rect2i(378, 909, 156, 171), Rect2i(550, 907, 174, 173), Rect2i(724, 906, 181, 178), Rect2i(905, 971, 172, 103), Rect2i(5, 1099, 175, 168), Rect2i(187, 1100, 170, 167), Rect2i(365, 1103, 178, 139), Rect2i(543, 1100, 175, 144), Rect2i(724, 1086, 180, 181), Rect2i(905, 1143, 178, 116), Rect2i(13, 1267, 162, 165), Rect2i(192, 1267, 155, 165), Rect2i(364, 1267, 179, 164), Rect2i(543, 1267, 181, 167), Rect2i(724, 1267, 180, 168), Rect2i(905, 1312, 173, 123)])
+source_pivots = Array[Vector2]([Vector2(70.5, 166), Vector2(58.5, 166), Vector2(63.5, 166), Vector2(82.5, 154), Vector2(88.5, 168), Vector2(88, 117), Vector2(80, 165), Vector2(81, 163), Vector2(88, 166), Vector2(100, 163), Vector2(100, 173), Vector2(87.5, 120), Vector2(85.5, 155), Vector2(84.5, 154), Vector2(86.5, 154), Vector2(90.5, 151), Vector2(94.5, 160), Vector2(88.5, 108), Vector2(79.5, 170), Vector2(77.5, 170), Vector2(80.5, 170), Vector2(85.5, 170), Vector2(89.5, 170), Vector2(85.5, 110), Vector2(66, 174), Vector2(62, 174), Vector2(68, 174), Vector2(76, 174), Vector2(88, 174), Vector2(85.5, 116), Vector2(81.5, 170), Vector2(78.5, 169), Vector2(77.5, 169), Vector2(86.5, 171), Vector2(93.5, 172), Vector2(86, 101), Vector2(87.5, 166), Vector2(86.5, 165), Vector2(89.5, 162), Vector2(92.5, 165), Vector2(92.5, 179), Vector2(89, 114), Vector2(81, 163), Vector2(83, 163), Vector2(92, 163), Vector2(94, 163), Vector2(94, 163), Vector2(86.5, 121)])
+direction_rows = Array[int]([2, 1, 0, 7, 6, 5, 4, 3])
+metadata/initial_silhouette_review = true
+metadata/column_pivots_corrected = true

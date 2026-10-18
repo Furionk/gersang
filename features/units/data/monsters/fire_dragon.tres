@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/unit_definition.gd" id="1_jwl23"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_q3p1q"]
+[ext_resource type="Resource" path="res://features/rainbow/data/skins/fire_dragon.tres" id="3_5g28v"]
+
+[resource]
+script = ExtResource("1_jwl23")
+base_power = 8000
+luck = 0.0
+defense = 2.0
+experience_reward = 4000
+level = 35
+id = &"fire_dragon"
+display_name = "簡單火龍"
+max_health = 15728.0
+max_mana = 300.0
+damage = 36.0
+attack_range = 160.0
+balance_revision = 3
+tactical_hint = "簡單版 · 建議十人 Lv25。65%及35%轉階段；吐息、落星與內圈爆燃以有限連續次數組合。預警鎖定後閃避，三次攻勢後破鱗反擊；不設等級限制。"
+speed = 90.0
+mana_regeneration = 8.0
+sprite_path = "res://features/rainbow/art/fire_dragon-v1.png"
+sprite_layout = ExtResource("3_5g28v")
+battle_sprite_scale = 1.5
+world_sprite_scale = 0.7
+metadata/rainbow_balance_v1 = true

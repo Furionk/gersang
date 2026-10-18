@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="UnitVoiceProfile" format=3 uid="uid://bh0v25h50db8r"]
+
+[ext_resource type="Script" uid="uid://cpjpdr846ikm2" path="res://features/audio/unit_voice_profile.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+unit_id = &"healer"
+nationality = "中國"
+language = "zh"
+profession = "醫術師"
+personality = "溫和、可靠"
+voice_id = "8uceOSflAGVvQuMt4HPh"
+manifest_path = "res://features/audio/data/unit_voices.json"
+events = {
+"attack": ["res://art/voices/healer/attack_01.ogg", "res://art/voices/healer/attack_02.ogg", "res://art/voices/healer/attack_03.ogg"],
+"inspect": ["res://art/voices/healer/inspect_01.ogg", "res://art/voices/healer/inspect_02.ogg", "res://art/voices/healer/inspect_03.ogg"],
+"move": ["res://art/voices/healer/move_01.ogg", "res://art/voices/healer/move_02.ogg", "res://art/voices/healer/move_03.ogg"],
+"select": ["res://art/voices/healer/select_01.ogg", "res://art/voices/healer/select_02.ogg", "res://art/voices/healer/select_03.ogg"]
+}

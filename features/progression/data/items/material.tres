@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="GearItemDefinition" load_steps=2 format=3]
+[ext_resource type="Script" path="res://common/data/gear_item_definition.gd" id="1"]
+[resource]
+script = ExtResource("1")
+id = &"material"
+display_name = "山野素材"
+kind = 3
+equipment_slot = 0
+max_stack = 99
+weight = 0.2
+restore = 0.0
+modifiers = {}
+description = "素材測試物品，未加入販賣或製作。"

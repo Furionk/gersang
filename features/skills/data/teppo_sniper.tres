@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="SkillDefinition" format=3 uid="uid://c1a5e85vlwj2v"]
+
+[ext_resource type="Script" path="res://common/data/skill_effect_definition.gd" id="1_i4lrb"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_4v3nj"]
+
+[sub_resource type="Resource" id="Resource_0xvtv"]
+script = ExtResource("1_i4lrb")
+kind = 13
+duration = 10.8
+attack_multiplier = 1.3
+attack_speed_multiplier = 1.3
+attack_range_bonus = 251.99999999999997
+attack_bonus = 45.0
+
+[resource]
+script = ExtResource("2_4v3nj")
+id = &"teppo_sniper"
+display_name = "狙擊模式"
+description = "進入8秒狙擊狀態，普通攻擊距離+180、攻擊力+30；仍可正常走位。重施刷新持續時間，不疊加。"
+effect = 17
+target_mode = 1
+action = &"skill_teppo_sniper"
+default_key = 78
+icon_index = 2
+mana_cost = 35.0
+damage_formula = "0"
+effect_data = SubResource("Resource_0xvtv")

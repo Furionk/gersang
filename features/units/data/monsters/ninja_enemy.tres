@@ -1,0 +1,123 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/unit_definition.gd" id="1_a28pu"]
+[ext_resource type="Texture2D" path="res://features/units/art/ninja.png" id="1_jewf6"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_jewf6"]
+[ext_resource type="Script" path="res://common/data/skill_effect_definition.gd" id="3_dh5a5"]
+[ext_resource type="Resource" path="res://features/units/data/layouts/ninja_layout.tres" id="4_a28pu"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dh5a5"]
+atlas = ExtResource("1_jewf6")
+region = Rect2(82.75, 366, 65.5, 65.5)
+filter_clip = true
+
+[sub_resource type="Resource" id="Resource_3bs6p"]
+script = ExtResource("3_dh5a5")
+kind = 10
+duration = 20.0
+movement_multiplier = 1.2
+reveal_attack_formula = "90+agility*1.5"
+
+[sub_resource type="Resource" id="Resource_jewf6"]
+script = ExtResource("2_jewf6")
+id = &"enemy_ninja_stealth"
+display_name = "迷蹤步"
+description = "進入隱身最多20秒，移速+20%。攻擊或施法現身；攻擊現身的第一擊額外造成90+敏捷×1.5普通傷害。隱身不可被敵人重新選為攻擊目標；範圍技能仍可命中。"
+effect = 14
+target_mode = 1
+action = &"skill_ninja_stealth"
+default_key = 74
+icon_index = 3
+ai_enabled = true
+ai_attempt_interval = 5.0
+ai_cast_chance = 0.4
+mana_cost = 45.0
+radius = 0.0
+damage_formula = "0"
+effect_data = SubResource("Resource_3bs6p")
+
+[sub_resource type="Resource" id="Resource_qeqlm"]
+script = ExtResource("3_dh5a5")
+kind = 11
+duration = 15.0
+tick_interval = 1.0
+radius = 42.0
+
+[sub_resource type="Resource" id="Resource_dh5a5"]
+script = ExtResource("2_jewf6")
+id = &"enemy_ninja_fire_trail"
+display_name = "忍法．熾烈之徑"
+description = "啟用15秒，經過的地方留下3秒火焰。每秒對碰到火路的地面敵軍造成20+敏捷×0.4法術傷害；同一施放的重疊火点只計一次。"
+effect = 15
+target_mode = 1
+action = &"skill_ninja_fire_trail"
+default_key = 75
+icon_index = 8
+ai_enabled = true
+ai_attempt_interval = 5.0
+ai_cast_chance = 0.4
+mana_cost = 55.0
+radius = 42.0
+damage_formula = "20+agility*0.4"
+effect_data = SubResource("Resource_qeqlm")
+
+[sub_resource type="Resource" id="Resource_f046f"]
+script = ExtResource("3_dh5a5")
+kind = 12
+duration = 4.0
+tick_interval = 1.0
+chain_damage_multiplier = 0.85
+hit_control_duration = 0.35
+
+[sub_resource type="Resource" id="Resource_oe3uv"]
+script = ExtResource("2_jewf6")
+id = &"enemy_ninja_chain"
+display_name = "忍法密傳．四方導雷"
+description = "指定敵軍，每秒放出一輪串連閃電，共4輪。每輪最多串連4個不同敵人，跳距180，基礎傷害35+敏捷×1.2+智慧×0.5，每跳保留85%，每次命中控制0.35秒。主目標死亡則結束。"
+effect = 16
+target_mode = 3
+action = &"skill_ninja_chain"
+default_key = 76
+icon_index = 9
+ai_enabled = true
+ai_attempt_interval = 5.0
+ai_cast_chance = 0.4
+mana_cost = 75.0
+range = 300.0
+radius = 0.0
+damage_formula = "35+agility*1.2+intelligence*0.5"
+effect_data = SubResource("Resource_f046f")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oe3uv"]
+atlas = ExtResource("1_jewf6")
+region = Rect2(50, 366, 131, 167)
+filter_clip = true
+
+[resource]
+script = ExtResource("1_a28pu")
+base_power = 230
+strength = 30.0
+agility = 95.0
+intelligence = 26.0
+evasion = 0.1
+magic_resistance = 0.18
+experience_reward = 70
+level = 20
+id = &"ninja_enemy"
+display_name = "湖畔影忍"
+max_health = 414.0
+max_mana = 240.0
+damage = 42.0
+attack_range = 55.0
+attack_interval = 0.85
+minimum_ai_cast_time = 0.4
+balance_revision = 1
+tactical_hint = "高速突擊：先控場／火路封位再集火，分散避開直線衝鋒；用高命中或範圍技能。"
+speed = 156.8
+mana_regeneration = 6.0
+armor = 0.08
+sprite_path = "res://features/units/art/ninja.png"
+sprite_layout = ExtResource("4_a28pu")
+portrait_texture = SubResource("AtlasTexture_dh5a5")
+standee_texture = SubResource("AtlasTexture_oe3uv")
+skills = Array[ExtResource("2_jewf6")]([SubResource("Resource_jewf6"), SubResource("Resource_dh5a5"), SubResource("Resource_oe3uv")])

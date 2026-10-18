@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ArenaDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/encounter_definition.gd" id="1_jpyol"]
+[ext_resource type="Script" path="res://features/world/definitions/arena_definition.gd" id="2_gj5fc"]
+
+[sub_resource type="Resource" id="Resource_rma6n"]
+script = ExtResource("1_jpyol")
+id = &"shenchao_abyss"
+display_name = "暗密空間"
+battlefield_scene = "res://features/battle/maps/shenchao_abyss.tscn"
+enemy_spawn_centers = PackedVector2Array(1160, 440, 1520, 880, 1160, 1320, 600, 1240)
+
+[resource]
+script = ExtResource("2_gj5fc")
+arena_id = "shenchao_abyss"
+encounter = SubResource("Resource_rma6n")

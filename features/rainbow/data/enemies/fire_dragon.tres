@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="RainbowEnemyDefinition" format=3]
+
+[ext_resource type="Resource" path="res://features/rainbow/data/dragon_tier_0.tres" id="1_gd12w"]
+[ext_resource type="Script" path="res://features/rainbow/enemy_definition.gd" id="1_jwv4a"]
+[ext_resource type="Texture2D" path="res://features/rainbow/art/effects-v1.png" id="2_gd12w"]
+[ext_resource type="Resource" path="res://features/rainbow/data/skins/fire_dragon.tres" id="3_irtjh"]
+[ext_resource type="Script" path="res://features/rainbow/weapon_definition.gd" id="4_a218v"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yxcjh"]
+atlas = ExtResource("2_gd12w")
+region = Rect2(314, 800, 314, 360)
+
+[sub_resource type="Resource" id="Resource_5mm30"]
+script = ExtResource("4_a218v")
+unit_id = &"fire_dragon"
+layout = ExtResource("3_irtjh")
+effect_texture = SubResource("AtlasTexture_yxcjh")
+sprite_scale = 1.5
+tint = Color(1, 0.34509805, 0.16078432, 1)
+effect = "heavy"
+melee_range = 175.0
+melee_half_angle = 0.9
+melee_windup = 0.9
+melee_recovery = 0.85
+ranged_windup = 0.8
+ranged_recovery = 1.1
+ranged_power = 0.8
+mana_cost = 0.0
+projectile_speed = 340.0
+projectile_lifetime = 1.8
+spread = 0.19
+knockback = 200.0
+
+[resource]
+script = ExtResource("1_jwv4a")
+unit_id = &"fire_dragon"
+weapon = SubResource("Resource_5mm30")
+pattern = "dragon"
+boss = true
+boss_tier = ExtResource("1_gd12w")
+body_radius = 90.0
+special_interval = 5.0
+warning_seconds = 1.6
+special_power = 100.0
+armored_damage_scale = 0.8
+exposed_damage_scale = 1.8
+exposure_seconds = 5.0

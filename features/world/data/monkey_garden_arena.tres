@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ArenaDefinition" format=3]
+
+[ext_resource type="Resource" path="res://features/monkey/data/default.tres" id="1_6cbox"]
+[ext_resource type="Script" path="res://common/data/encounter_definition.gd" id="2_mk141"]
+[ext_resource type="Script" path="res://features/world/definitions/arena_definition.gd" id="3_oguc6"]
+
+[sub_resource type="Resource" id="Resource_nlw2a"]
+script = ExtResource("2_mk141")
+id = &"monkey_garden"
+display_name = "普通捕猴"
+monkey_profile = ExtResource("1_6cbox")
+enemy_spawn_centers = PackedVector2Array(1160, 440, 1520, 880, 1160, 1320, 600, 1240)
+
+[resource]
+script = ExtResource("3_oguc6")
+arena_id = "monkey_garden"
+encounter = SubResource("Resource_nlw2a")
+enemy_capacity = 5

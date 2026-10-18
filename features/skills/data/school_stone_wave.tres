@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="SkillDefinition" format=3 uid="uid://qu2x68qhqbv4"]
+
+[ext_resource type="Script" uid="uid://cwgoeihpnw613" path="res://common/data/skill_effect_definition.gd" id="1_n7j5x"]
+[ext_resource type="Script" uid="uid://boxf02g81ffu" path="res://common/data/skill_definition.gd" id="2_3kith"]
+
+[sub_resource type="Resource" id="Resource_84sxu"]
+script = ExtResource("1_n7j5x")
+kind = 4
+duration = 1.6
+width = 95.0
+distance = 900.0
+speed = 650.0
+sprite_path = "res://features/skills/art/dragon.png"
+
+[resource]
+script = ExtResource("2_3kith")
+id = &"school_stone_wave"
+display_name = "守門衝擊波"
+description = "普攻命中後釋放直線衝擊波，攻擊×1.5物理傷害；Effect Data可調寬度、距離、速度與命中間隔。Proc Chance控制觸發率。"
+effect = 26
+trigger = 1
+action = &"skill_school_stone_wave"
+ai_attempt_interval = 5.0
+ai_cast_chance = 0.6
+mana_cost = 0.0
+range = 900.0
+proc_chance = 1.0
+damage_formula = "attack*1.5"
+damage_type = 0
+effect_data = SubResource("Resource_84sxu")
+tint = Color(1, 0.7, 0.35, 1)

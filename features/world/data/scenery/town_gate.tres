@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="WorldSceneryDefinition" load_steps=3 format=3]
+[ext_resource type="Script" path="res://features/world/definitions/world_scenery_definition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://art/terrain/props.png" id="2"]
+[resource]
+script = ExtResource("1")
+display_name = "城鎮入口"
+description = "通往城鎮的入口。\n城內是安全地區，可整備隊伍。"
+texture = ExtResource("2")
+atlas_region = Rect2(542, 0, 482, 512)
+foot_anchor = Vector2(226, 478)
+sprite_scale = 0.6
+tint = Color(1,1,1,1)
+
+sorting_mode = 1
+sorting_review_required = false
+sorting_note = "立體素材，腳底Y自動交錯；不產生障礙。"

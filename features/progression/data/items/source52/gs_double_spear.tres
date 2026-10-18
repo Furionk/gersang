@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="GearItemDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="1_qm5gs"]
+[ext_resource type="Texture2D" path="res://art/items/source52/gs_double_spear.png" id="2_7i4d8"]
+[ext_resource type="Script" path="res://common/data/gear_item_definition.gd" id="3_pah6h"]
+
+[resource]
+script = ExtResource("3_pah6h")
+id = &"gs_double_spear"
+display_name = "子母槍"
+category = "spear"
+icon = ExtResource("2_7i4d8")
+kind = 0
+weight = 43.0
+modifiers = {
+"attack_max": 37.0,
+"attack_min": 24.0
+}
+required_level = 34
+allowed_roles = PackedInt32Array()
+use_effect = 1
+source_url = "https://www.52jushang.com/item/mao.asp"
+source_image_url = "https://www.52jushang.com/item/img/mao/yari34.jpg"
+source_stats = {
+"modifiers": {
+"attack_max": 37.0,
+"attack_min": 24.0
+},
+"required_level": 34.0,
+"weight_jin": 43.0
+}
+source_skill_names = PackedStringArray()
+description = "52巨商參考裝備；屬性與重量依來源，攻擊區間作為裝備加成。"

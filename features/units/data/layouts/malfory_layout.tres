@@ -1,0 +1,55 @@
+[gd_resource type="Resource" script_class="SpriteSheetLayout" format=3 uid="uid://df3dcc21mmye1"]
+
+[ext_resource type="Script" uid="uid://t0xvoej4tvhi" path="res://common/data/sprite_sheet_layout.gd" id="1_6eeow"]
+[ext_resource type="Script" uid="uid://dekk0d4nvs8mb" path="res://common/data/sprite_animation_clip.gd" id="1_ga2sm"]
+[ext_resource type="Texture2D" uid="uid://buxnjoxraf1e" path="res://features/units/art/malfory-v1.png" id="3_3f8xn"]
+
+[sub_resource type="Resource" id="Resource_igpb8"]
+script = ExtResource("1_ga2sm")
+columns = PackedInt32Array(0)
+fps = 2.0
+loop = true
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_vamxa"]
+script = ExtResource("1_ga2sm")
+action = 1
+columns = PackedInt32Array(1, 0, 2, 0)
+fps = 8.0
+loop = true
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_t5csc"]
+script = ExtResource("1_ga2sm")
+action = 2
+columns = PackedInt32Array(0, 3, 0)
+fps = 12.0
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_7hhld"]
+script = ExtResource("1_ga2sm")
+action = 3
+columns = PackedInt32Array(0, 4, 0)
+fps = 12.0
+frame_durations = PackedFloat32Array()
+instant_start_frame = 1
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_e7ku5"]
+script = ExtResource("1_ga2sm")
+action = 4
+columns = PackedInt32Array(5)
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[resource]
+script = ExtResource("1_6eeow")
+source_texture = ExtResource("3_3f8xn")
+frame_size = Vector2i(256, 256)
+foot_point = Vector2(128, 224)
+frame_rects = Array[Rect2i]([Rect2i(64, 23, 73, 156), Rect2i(232, 24, 89, 153), Rect2i(408, 24, 95, 153), Rect2i(570, 23, 144, 153), Rect2i(741, 15, 164, 164), Rect2i(918, 73, 140, 102), Rect2i(58, 199, 90, 157), Rect2i(235, 199, 92, 156), Rect2i(412, 199, 90, 157), Rect2i(570, 198, 135, 157), Rect2i(744, 194, 151, 163), Rect2i(921, 242, 133, 117), Rect2i(56, 376, 91, 165), Rect2i(231, 376, 107, 165), Rect2i(410, 376, 100, 165), Rect2i(572, 376, 105, 165), Rect2i(741, 364, 135, 177), Rect2i(926, 422, 127, 120), Rect2i(60, 561, 89, 158), Rect2i(233, 561, 104, 155), Rect2i(414, 561, 99, 158), Rect2i(554, 561, 140, 158), Rect2i(745, 557, 133, 163), Rect2i(926, 613, 131, 111), Rect2i(59, 740, 86, 161), Rect2i(243, 740, 99, 160), Rect2i(417, 740, 99, 158), Rect2i(545, 740, 145, 161), Rect2i(731, 737, 155, 166), Rect2i(926, 784, 139, 114), Rect2i(56, 922, 93, 159), Rect2i(226, 921, 109, 159), Rect2i(401, 921, 108, 159), Rect2i(577, 918, 104, 162), Rect2i(734, 905, 142, 177), Rect2i(929, 962, 137, 116), Rect2i(58, 1104, 91, 154), Rect2i(236, 1104, 98, 155), Rect2i(418, 1104, 95, 155), Rect2i(579, 1097, 106, 162), Rect2i(743, 1088, 125, 169), Rect2i(915, 1145, 143, 114), Rect2i(56, 1277, 86, 153), Rect2i(229, 1277, 102, 153), Rect2i(405, 1275, 96, 155), Rect2i(570, 1275, 136, 155), Rect2i(747, 1267, 146, 164), Rect2i(921, 1316, 138, 101)])
+source_pivots = Array[Vector2]([Vector2(26.5, 154), Vector2(39.5, 151), Vector2(44.5, 151), Vector2(63.5, 151), Vector2(73.5, 162), Vector2(77.5, 100), Vector2(32.5, 155), Vector2(36.5, 154), Vector2(40.5, 155), Vector2(63.5, 155), Vector2(70.5, 161), Vector2(74.5, 115), Vector2(34.5, 163), Vector2(40.5, 163), Vector2(42.5, 163), Vector2(61.5, 163), Vector2(73.5, 175), Vector2(69.5, 118), Vector2(30.5, 156), Vector2(38.5, 153), Vector2(38.5, 156), Vector2(79.5, 156), Vector2(69.5, 161), Vector2(69.5, 109), Vector2(31.5, 159), Vector2(28.5, 158), Vector2(35.5, 156), Vector2(88.5, 159), Vector2(83.5, 164), Vector2(69.5, 112), Vector2(34.5, 157), Vector2(45.5, 157), Vector2(51.5, 157), Vector2(56.5, 160), Vector2(80.5, 175), Vector2(66.5, 114), Vector2(32.5, 152), Vector2(35.5, 153), Vector2(34.5, 153), Vector2(54.5, 160), Vector2(71.5, 167), Vector2(80.5, 112), Vector2(34.5, 151), Vector2(42.5, 151), Vector2(47.5, 153), Vector2(63.5, 153), Vector2(67.5, 162), Vector2(74.5, 99)])
+animations = Array[ExtResource("1_ga2sm")]([SubResource("Resource_igpb8"), SubResource("Resource_vamxa"), SubResource("Resource_t5csc"), SubResource("Resource_7hhld"), SubResource("Resource_e7ku5")])

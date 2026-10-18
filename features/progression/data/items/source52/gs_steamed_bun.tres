@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="GearItemDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="1_wqhhu"]
+[ext_resource type="Texture2D" path="res://art/items/source52/gs_steamed_bun.png" id="2_b8gd3"]
+[ext_resource type="Script" path="res://common/data/gear_item_definition.gd" id="3_kjn7e"]
+
+[resource]
+script = ExtResource("3_kjn7e")
+id = &"gs_steamed_bun"
+display_name = "五色饅頭"
+category = "food"
+icon = ExtResource("2_b8gd3")
+kind = 1
+allowed_roles = PackedInt32Array()
+use_effect = 1
+source_url = "https://www.52jushang.com/item/shiwu.asp"
+source_image_url = "https://www.52jushang.com/item/img3/shiwu/food05.jpg"
+source_stats = {
+"modifiers": {},
+"required_level": 1.0,
+"satiety": 10.0,
+"weight_jin": 1.0
+}
+source_skill_names = PackedStringArray()
+description = "只收錄食品資料；本作不設定飽食度或食用效果。"

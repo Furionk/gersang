@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3 uid="uid://b5h3kphhqshvk"]
+
+[ext_resource type="Script" path="res://common/data/unit_definition.gd" id="1_1oey0"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_htemt"]
+[ext_resource type="Resource" path="res://features/skills/data/enemies/enemy_life_steal.tres" id="3_y8nqs"]
+[ext_resource type="Resource" path="res://features/skills/data/enemies/enemy_critical.tres" id="4_83d47"]
+[ext_resource type="Resource" path="res://features/units/data/layouts/blood_wraith_layout.tres" id="5_pfp10"]
+[ext_resource type="Resource" path="res://features/audio/data/bloodfang.tres" id="voice_profile"]
+
+[resource]
+script = ExtResource("1_1oey0")
+base_power = 240
+level_power_growth = 24
+strength = 25.0
+agility = 45.0
+evasion = 0.1
+magic_resistance = 0.18
+experience_reward = 45
+id = &"bloodfang"
+display_name = "噬血山魈"
+role = 9
+max_health = 360.0
+max_mana = 0.0
+damage = 25.5
+attack_range = 58.0
+attack_interval = 1.4
+minimum_ai_cast_time = 0.4
+balance_revision = 1
+tactical_hint = "高速突擊：先控場／火路封位再集火，分散避開直線衝鋒；用高命中或範圍技能。"
+speed = 140.0
+mana_regeneration = 6.0
+armor = 0.08
+sprite_path = "res://features/units/art/blood_wraith-v1.png"
+sprite_layout = ExtResource("5_pfp10")
+skills = Array[ExtResource("2_htemt")]([ExtResource("3_y8nqs"), ExtResource("4_83d47")])
+voice_profile = ExtResource("voice_profile")

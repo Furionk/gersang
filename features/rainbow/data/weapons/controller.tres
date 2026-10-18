@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="RainbowWeaponDefinition" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://features/rainbow/weapon_definition.gd" id="1"]
+[ext_resource type="Resource" path="res://features/rainbow/data/skins/controller.tres" id="2"]
+
+[ext_resource type="Texture2D" path="res://features/rainbow/art/effects-v1.png" id="3"]
+
+[sub_resource type="AtlasTexture" id="vfx"]
+atlas = ExtResource("3")
+region = Rect2(940, 450, 314, 350)
+filter_clip = true
+
+[resource]
+script = ExtResource("1")
+layout = ExtResource("2")
+unit_id = &"controller"
+melee_name = "封環"
+ranged_name = "鎮魂印"
+specialty = "封印控場"
+effect = "seal"
+tint = Color(0.81569, 0.60392, 1.00000, 1)
+melee_range = 85.0
+melee_half_angle = 1.2
+melee_windup = 0.22
+melee_recovery = 0.32
+melee_power = 0.65
+ranged_windup = 0.3
+ranged_recovery = 0.65
+ranged_power = 0.65
+mana_cost = 4.0
+projectile_speed = 480.0
+projectile_lifetime = 1.1
+stagger = 0.38
+knockback = 55.0
+effect_texture = SubResource("vfx")

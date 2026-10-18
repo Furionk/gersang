@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="SkillDefinition" format=3 uid="uid://bjllxh1bqfsdy"]
+
+[ext_resource type="Script" uid="uid://cwgoeihpnw613" path="res://common/data/skill_effect_definition.gd" id="1_mn3b0"]
+[ext_resource type="Script" uid="uid://boxf02g81ffu" path="res://common/data/skill_definition.gd" id="2_fd1qp"]
+
+[sub_resource type="Resource" id="Resource_ymdqf"]
+script = ExtResource("1_mn3b0")
+kind = 4
+duration = 2.0
+tick_interval = 0.2
+radius = 80.0
+sprite_path = "res://features/skills/art/dragon.png"
+
+[resource]
+script = ExtResource("2_fd1qp")
+id = &"enemy_shockwave"
+display_name = "裂焰衝擊波"
+description = "沿釋放方向射出寬60的衝擊波；可橫移避開。每3.2秒判斷22%機率。"
+effect = 8
+target_mode = 4
+action = &""
+icon_index = 4
+ai_enabled = true
+ai_attempt_interval = 3.2
+ai_cast_chance = 0.22
+range = 480.0
+radius = 80.0
+cast_time = 0.35
+damage_formula = "intelligence*0.35"
+effect_data = SubResource("Resource_ymdqf")

@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="SkillDefinition" format=3 uid="uid://crt3c6mbveiu8"]
+
+[ext_resource type="Script" path="res://common/data/skill_effect_definition.gd" id="1_rf06l"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_2hlw4"]
+
+[sub_resource type="Resource" id="Resource_qeqlm"]
+script = ExtResource("1_rf06l")
+use_skill_radius = true
+kind = 11
+duration = 15.0
+tick_interval = 0.35
+sprite_path = "res://features/skills/art/fire-trail-v2.png"
+trail_point_lifetime = 5.0
+
+[resource]
+script = ExtResource("2_2hlw4")
+id = &"ninja_fire_trail"
+display_name = "忍法．熾烈之徑"
+description = "立即啟用加寬火徑；Radius100、每0.35秒原公式×2，火點保留5秒。同一條重疊火徑不重複計同一tick。"
+effect = 15
+target_mode = 1
+action = &"skill_ninja_fire_trail"
+default_key = 75
+icon_index = 4
+instant_self_activation = true
+mana_cost = 55.0
+radius = 100.0
+damage_formula = "20+agility*0.4"
+formula_multiplier = 2.0
+effect_data = SubResource("Resource_qeqlm")

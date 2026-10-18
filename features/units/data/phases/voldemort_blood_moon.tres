@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MonsterPhaseDefinition" format=3]
+
+[ext_resource type="PackedScene" path="res://features/battle/maps/hogwarts_blood_moon.tscn" id="1_2wrm8"]
+[ext_resource type="Resource" path="res://features/units/data/monsters/ganondorf_phantom.tres" id="2_gvvi1"]
+[ext_resource type="Resource" path="res://features/units/data/phases/blood_moon_presentation.tres" id="3_gvvi1"]
+[ext_resource type="Script" path="res://common/data/monster_phase_definition.gd" id="14_q1scr"]
+
+[resource]
+script = ExtResource("14_q1scr")
+next_form = ExtResource("2_gvvi1")
+title = "末日來了"
+presentation = ExtResource("3_gvvi1")
+battlefield = ExtResource("1_2wrm8")
+hazard_enabled = true
+hazard_teams = PackedInt32Array(0, 1)

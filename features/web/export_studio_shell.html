@@ -1,0 +1,365 @@
+<!doctype html>
+<!-- WEB_EXPORT_SHELL_V1 | Source project: __WX_TITLE__ -->
+<html lang="zh-Hant"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>巨箱5.0</title>
+<meta name="description" content="巨箱5.0 網頁遊戲。點擊開始遊戲，展開冒險。">
+<meta name="theme-color" content="#0b101b"><meta name="apple-mobile-web-app-title" content="巨箱5.0">
+<link rel="icon" type="image/png" href="__WX_LOGO__"><link rel="apple-touch-icon" href="__WX_LOGO__">
+<style>
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;background:#0b101b;color:#f8f1df;font-family:system-ui,"Microsoft JhengHei",sans-serif}body{overflow:hidden}[hidden]{display:none!important}#canvas{display:block;width:100%;height:100%;outline:none}
+#web-export-loading{position:fixed;inset:0;z-index:20;display:flex;flex-direction:column;overflow:auto;background:#0b101b;isolation:isolate}
+#web-export-loading:before{content:"";position:fixed;inset:0;z-index:-1;background:linear-gradient(180deg,#0b101b88,#0b101bf5),url("__WX_LOGO__") center/cover;filter:blur(18px);opacity:.65;pointer-events:none}
+.hero{flex:1 1 auto;min-height:140px;display:flex;justify-content:center;overflow:hidden;padding:clamp(8px,2vh,24px) 16px 0}#logo{width:100%;height:100%;min-height:0;object-fit:contain;object-position:center;filter:drop-shadow(0 12px 24px #0006)}
+.entry{flex:0 0 auto;width:100%;padding:20px max(24px,env(safe-area-inset-right)) max(14px,env(safe-area-inset-bottom));background:linear-gradient(180deg,#0b101b00,#0b101bf2 20%)}
+.entry-inner{max-width:1120px;margin:auto;display:grid;grid-template-columns:1fr minmax(300px,400px);gap:8px 40px;align-items:center}.eyebrow{color:#e6bd72;font-size:12px;letter-spacing:.18em;margin:0 0 5px}h1{font-size:clamp(28px,3vw,40px);line-height:1.2;margin:0 0 8px;font-weight:750}.subtitle{color:#bac5d4;margin:0;font-size:14px;line-height:1.7}
+button{font:inherit;cursor:pointer;touch-action:manipulation}button:focus-visible,summary:focus-visible{outline:3px solid #fff;outline-offset:5px}#web-export-start{width:100%;min-height:64px;border:1px solid #ffe9a7;border-radius:8px;background:linear-gradient(180deg,#ffe5a0,#dca845);color:#211609;box-shadow:0 4px 20px #0006;font-size:22px;font-weight:800;letter-spacing:.12em;transition:filter .15s,transform .15s}#web-export-start:hover:not(:disabled){filter:brightness(1.1);transform:translateY(-1px)}#web-export-start:disabled{cursor:wait;filter:saturate(.35);opacity:.75}#web-export-progress{display:block;width:100%;height:8px;margin:10px 0 0;accent-color:#edc16d}#web-export-status{min-height:21px;margin-top:8px;text-align:center;color:#c8d4e4;font-size:13px;overflow-wrap:anywhere}
+.desktop-hint{grid-column:1/-1;border-top:1px solid #ffffff19;margin-top:8px;padding-top:3px;color:#c6cfdb;font-size:13px}.desktop-hint summary{min-height:44px;display:list-item;align-content:center;cursor:pointer;width:fit-content;max-width:100%;padding:10px 2px}.desktop-hint p{margin:0 0 9px;line-height:1.7}.desktop-hint strong{color:#f4dfb4}.desktop-hint .note{color:#98a8bc;font-size:12px}#web-export-info{position:fixed;bottom:6px;right:8px;font-size:11px;opacity:.65;pointer-events:none}#game-toolbar button{background:#211c12;color:#eddfb9;border:1px solid #81745b;border-radius:4px}#game-toolbar[hidden]{display:none!important}
+@media(max-width:640px){.hero{padding:0;min-height:120px;mask-image:linear-gradient(#000 85%,transparent)}#logo{object-fit:cover;object-position:50% 50%}.entry{padding:12px 20px max(12px,env(safe-area-inset-bottom))}.entry-inner{grid-template-columns:1fr;gap:12px;text-align:center}h1{font-size:30px}.eyebrow{font-size:11px}.subtitle{font-size:12px}#web-export-start{min-height:60px;font-size:21px}.desktop-hint{text-align:left;margin-top:0;font-size:12px}.desktop-hint summary{width:100%;text-align:center}.desktop-hint p{font-size:12px}}
+@media(max-height:500px) and (min-width:641px){.hero{min-height:80px;padding-top:6px}.entry{padding-top:8px;padding-bottom:4px}h1{font-size:26px}.eyebrow{display:none}.desktop-hint{margin-top:0}.desktop-hint summary{min-height:36px;padding:6px 2px}}
+@media(prefers-reduced-motion:reduce){#web-export-start{transition:none}}
+
+.license-credits{grid-column:1/-1;border-top:1px solid #465063;padding-top:8px;color:#bac5d4;font-size:13px;text-align:left;line-height:1.65}.license-credits>summary{cursor:pointer;color:#e6bd72;padding:8px 0;min-height:40px}.license-credits a{color:#9fd9ff;text-underline-offset:3px}.license-credits ul{padding-left:20px}.license-credits li{margin:12px 0}.license-credits details{margin:8px 0}.license-credits pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#141d2b;padding:12px;border-radius:6px;font:12px/1.6 monospace}.license-credits a:focus-visible{outline:2px solid #fff;outline-offset:3px}
+</style>$GODOT_HEAD_INCLUDE</head>
+<body><canvas id="canvas" tabindex="0" aria-label="巨箱5.0 遊戲畫面">此遊戲需要支援 WebGL 2 的瀏覽器。</canvas>
+<section id="web-export-loading" aria-label="巨箱5.0 遊戲入口">
+<div class="hero"><img id="logo" src="__WX_LOGO__" alt="巨箱5.0 主視覺" fetchpriority="high"></div>
+<div class="entry"><div class="entry-inner"><div><p class="eyebrow">冒險，從這裡開始</p><h1>巨箱5.0</h1><p class="subtitle">無背景音樂 · 保留遊戲音效與角色語音</p></div>
+<div class="launch"><button id="web-export-start" type="button">開始遊戲</button><progress id="web-export-progress" aria-label="遊戲下載進度" hidden></progress><div id="web-export-status" role="status" aria-live="polite">點擊後載入；已快取的相同內容會自動重用</div></div>
+<details class="desktop-hint"><summary>手機玩家：將「巨箱5.0」加入主畫面／桌面</summary><p><strong>iPhone／iPad：</strong>用 Safari 開啟此頁 → 分享 →「加入主畫面」。<br><strong>Android：</strong>用 Chrome 開啟此頁 → 右上角 ⋮ →「加到主畫面」或「新增至主畫面」（名稱依瀏覽器版本而異）。</p><p class="note">加入後可從桌面快速開啟。啟動仍需連網檢查版本；建議橫向遊玩。</p></details>
+<details class="license-credits" id="license-credits"><summary>License / Credits · 素材授權與製作名單</summary><ul><li><strong>村莊場景與素材 — Maciej EmacArt / EmacEArt</strong><br>Free Fantasy Medieval Houses。採用隨附 EmacEArt Asset License，允許遊戲內使用及修改；禁止獨立素材轉售或再分發。 <a href="https://emaceart.itch.io/free-fantasy-medieval-houses-and-props-pack" target="_blank" rel="noopener noreferrer">作者素材頁</a><details><summary>授權原文</summary><pre>================================================================
+  EmacEArt Asset License
+  Maciej EmacArt -- 3D Assets
+================================================================
+
+Copyright (c) 2026 Maciej EmacArt
+
+Free for personal and commercial use, but resale or redistribution
+of the assets as standalone files or asset packs is prohibited.
+No credit is required, though it is always welcome.
+
+----------------------------------------------------------------
+  YOU MAY
+----------------------------------------------------------------
+  - Use these assets in personal and commercial projects
+  - Modify and adapt them for your own project
+  - Ship them as part of a game or application you build
+
+----------------------------------------------------------------
+  YOU MAY NOT
+----------------------------------------------------------------
+  - Sell the assets themselves, on their own or inside another
+    asset pack
+  - Redistribute them as standalone files, free or paid
+
+----------------------------------------------------------------
+  CONTACT
+----------------------------------------------------------------
+  Maciej EmacArt
+  Website: emaceart.dev
+  Discord: https://discord.com/invite/ctXaf5Ftqw
+
+THE ASSETS ARE PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND.
+================================================================
+</pre></details></li><li><strong>自然素材與早期角色基底 — Kenney</strong><br>Nature Kit 2.1、Blocky Characters 2.0，CC0。 <a href="https://kenney.nl/assets/nature-kit" target="_blank" rel="noopener noreferrer">Nature Kit</a> · <a href="https://kenney.nl/assets/blocky-characters" target="_blank" rel="noopener noreferrer">Blocky Characters</a><details><summary>授權原文</summary><pre>	
+
+	Nature Kit (2.1)
+
+	Created/distributed by Kenney (www.kenney.nl)
+	Creation date: 29-04-2020 01:02
+
+			------------------------------
+
+	License: (Creative Commons Zero, CC0)
+	http://creativecommons.org/publicdomain/zero/1.0/
+
+	This content is free to use in personal, educational and commercial projects.
+
+	Support us by crediting Kenney or www.kenney.nl (this is not mandatory)
+
+			------------------------------
+
+	Donate:   http://support.kenney.nl
+	Request:  http://request.kenney.nl
+	Patreon:  http://patreon.com/kenney/
+
+	Follow on Twitter for updates:
+	http://twitter.com/KenneyNL</pre></details></li><li><strong>中文字體 — Adobe / Google / Noto contributors</strong><br>Source Han Sans、Noto Sans CJK，SIL Open Font License 1.1。<details><summary>授權原文</summary><pre>Copyright 2014-2021 Adobe (http://www.adobe.com/), with Reserved Font Name &#x27;Source&#x27;
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+https://scripts.sil.org/OFL
+
+
+-----------------------------------------------------------
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+-----------------------------------------------------------
+
+PREAMBLE
+The goals of the Open Font License (OFL) are to stimulate worldwide
+development of collaborative font projects, to support the font creation
+efforts of academic and linguistic communities, and to provide a free and
+open framework in which fonts may be shared and improved in partnership
+with others.
+
+The OFL allows the licensed fonts to be used, studied, modified and
+redistributed freely as long as they are not sold by themselves. The
+fonts, including any derivative works, can be bundled, embedded, 
+redistributed and/or sold with any software provided that any reserved
+names are not used by derivative works. The fonts and derivatives,
+however, cannot be released under any other type of license. The
+requirement for fonts to remain under this license does not apply
+to any document created using the fonts or their derivatives.
+
+DEFINITIONS
+&quot;Font Software&quot; refers to the set of files released by the Copyright
+Holder(s) under this license and clearly marked as such. This may
+include source files, build scripts and documentation.
+
+&quot;Reserved Font Name&quot; refers to any names specified as such after the
+copyright statement(s).
+
+&quot;Original Version&quot; refers to the collection of Font Software components as
+distributed by the Copyright Holder(s).
+
+&quot;Modified Version&quot; refers to any derivative made by adding to, deleting,
+or substituting -- in part or in whole -- any of the components of the
+Original Version, by changing formats or by porting the Font Software to a
+new environment.
+
+&quot;Author&quot; refers to any designer, engineer, programmer, technical
+writer or other person who contributed to the Font Software.
+
+PERMISSION &amp; CONDITIONS
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of the Font Software, to use, study, copy, merge, embed, modify,
+redistribute, and sell modified and unmodified copies of the Font
+Software, subject to the following conditions:
+
+1) Neither the Font Software nor any of its individual components,
+in Original or Modified Versions, may be sold by itself.
+
+2) Original or Modified Versions of the Font Software may be bundled,
+redistributed and/or sold with any software, provided that each copy
+contains the above copyright notice and this license. These can be
+included either as stand-alone text files, human-readable headers or
+in the appropriate machine-readable metadata fields within text or
+binary files as long as those fields can be easily viewed by the user.
+
+3) No Modified Version of the Font Software may use the Reserved Font
+Name(s) unless explicit written permission is granted by the corresponding
+Copyright Holder. This restriction only applies to the primary font name as
+presented to the users.
+
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
+Software shall not be used to promote, endorse or advertise any
+Modified Version, except to acknowledge the contribution(s) of the
+Copyright Holder(s) and the Author(s) or with their explicit written
+permission.
+
+5) The Font Software, modified or unmodified, in part or in whole,
+must be distributed entirely under this license, and must not be
+distributed under any other license. The requirement for fonts to
+remain under this license does not apply to any document created
+using the Font Software.
+
+TERMINATION
+This license becomes null and void if any of the above conditions are
+not met.
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
+OTHER DEALINGS IN THE FONT SOFTWARE.
+</pre></details></li><li><strong>Noto Sans CJK 授權</strong><br>Noto Sans CJK 隨附授權全文。<details><summary>授權原文</summary><pre>This Font Software is licensed under the SIL Open Font License,
+Version 1.1.
+
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL
+
+-----------------------------------------------------------
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+-----------------------------------------------------------
+
+PREAMBLE
+The goals of the Open Font License (OFL) are to stimulate worldwide
+development of collaborative font projects, to support the font
+creation efforts of academic and linguistic communities, and to
+provide a free and open framework in which fonts may be shared and
+improved in partnership with others.
+
+The OFL allows the licensed fonts to be used, studied, modified and
+redistributed freely as long as they are not sold by themselves. The
+fonts, including any derivative works, can be bundled, embedded,
+redistributed and/or sold with any software provided that any reserved
+names are not used by derivative works. The fonts and derivatives,
+however, cannot be released under any other type of license. The
+requirement for fonts to remain under this license does not apply to
+any document created using the fonts or their derivatives.
+
+DEFINITIONS
+&quot;Font Software&quot; refers to the set of files released by the Copyright
+Holder(s) under this license and clearly marked as such. This may
+include source files, build scripts and documentation.
+
+&quot;Reserved Font Name&quot; refers to any names specified as such after the
+copyright statement(s).
+
+&quot;Original Version&quot; refers to the collection of Font Software
+components as distributed by the Copyright Holder(s).
+
+&quot;Modified Version&quot; refers to any derivative made by adding to,
+deleting, or substituting -- in part or in whole -- any of the
+components of the Original Version, by changing formats or by porting
+the Font Software to a new environment.
+
+&quot;Author&quot; refers to any designer, engineer, programmer, technical
+writer or other person who contributed to the Font Software.
+
+PERMISSION &amp; CONDITIONS
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of the Font Software, to use, study, copy, merge, embed,
+modify, redistribute, and sell modified and unmodified copies of the
+Font Software, subject to the following conditions:
+
+1) Neither the Font Software nor any of its individual components, in
+Original or Modified Versions, may be sold by itself.
+
+2) Original or Modified Versions of the Font Software may be bundled,
+redistributed and/or sold with any software, provided that each copy
+contains the above copyright notice and this license. These can be
+included either as stand-alone text files, human-readable headers or
+in the appropriate machine-readable metadata fields within text or
+binary files as long as those fields can be easily viewed by the user.
+
+3) No Modified Version of the Font Software may use the Reserved Font
+Name(s) unless explicit written permission is granted by the
+corresponding Copyright Holder. This restriction only applies to the
+primary font name as presented to the users.
+
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
+Software shall not be used to promote, endorse or advertise any
+Modified Version, except to acknowledge the contribution(s) of the
+Copyright Holder(s) and the Author(s) or with their explicit written
+permission.
+
+5) The Font Software, modified or unmodified, in part or in whole,
+must be distributed entirely under this license, and must not be
+distributed under any other license. The requirement for fonts to
+remain under this license does not apply to any document created using
+the Font Software.
+
+TERMINATION
+This license becomes null and void if any of the above conditions are
+not met.
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
+OTHER DEALINGS IN THE FONT SOFTWARE.
+</pre></details></li><li><strong>Web Export Studio — Furion Tools</strong><br>網頁匯出與分塊載入工具，MIT License。<details><summary>授權原文</summary><pre>MIT License
+
+Copyright (c) 2026 Furion Tools
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</pre></details></li><li><strong>遊戲引擎 — Godot Engine contributors</strong><br>Godot Engine，MIT License。 <a href="https://godotengine.org/license/" target="_blank" rel="noopener noreferrer">引擎授權與版權聲明</a> · <a href="https://github.com/godotengine/godot/blob/4.7.1-stable/COPYRIGHT.txt" target="_blank" rel="noopener noreferrer">引擎第三方元件授權</a></li><li><strong>角色、道具與介面素材來源</strong><br>現用捕猴員與五件道具：依專案提供的參考圖，使用 Meshy 生成及專案後製。猴子模型與捕猴 UI 圖集：專案提供素材；未標示為 CC0 或其他開放授權。</li><li><strong>遊戲製作與整合 — 巨箱5.0 專案</strong><br>捕猴玩法、角色操作、介面及 Web 適配。各素材權利依其原作者與授權條款保留；本名單不授予獨立素材再分發權利。</li></ul></details>
+</div></div></section><div id="web-export-info"></div>
+<script>const canvas=document.getElementById("canvas");
+const toolbar=document.createElement('nav');toolbar.id='game-toolbar';toolbar.setAttribute('aria-label','遊戲視窗工具');toolbar.style.cssText='position:fixed;top:6px;left:50%;transform:translateX(-50%);display:flex;gap:8px;z-index:10';toolbar.hidden=true;document.body.appendChild(toolbar);
+for(const type of ['pointerdown','pointerup','mousedown','mouseup','touchstart','touchend','keydown','keyup','click'])toolbar.addEventListener(type,event=>event.stopPropagation());
+const full=document.createElement('button');full.textContent='全螢幕';full.style.cssText='font-size:13px;padding:5px 12px;white-space:nowrap;flex-shrink:0';toolbar.appendChild(full);
+const audio=document.createElement('button');audio.textContent='測試聲音';audio.style.cssText=full.style.cssText;toolbar.appendChild(audio);
+const notice=document.createElement('output');notice.style.cssText='font-size:12px;background:#090a0b;padding:5px;max-width:260px';toolbar.appendChild(notice);
+full.onclick=async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else await document.documentElement.requestFullscreen();canvas.focus()}catch(error){notice.textContent='此瀏覽器不允許全螢幕：'+error.message}};
+document.addEventListener('fullscreenchange',()=>full.textContent=document.fullscreenElement?'退出全螢幕':'全螢幕');
+window.gersangWeb={test:null,setAudioTest(callback){this.test=callback;toolbar.hidden=false},audioResult(db){notice.textContent=db>-100?'已輸出測試音；若聽不到，請取消分頁靜音。':'音訊尚未啟用，請點遊戲畫面再試。';console.info('WEB_AUDIO_PEAK',db);setTimeout(()=>notice.textContent='',8000)}};
+audio.onclick=()=>{canvas.focus();if(window.gersangWeb.test){notice.textContent='正在播放遊戲測試音…';window.gersangWeb.test()}else notice.textContent='請先開始遊戲。'};
+canvas.addEventListener('contextmenu',e=>e.preventDefault());canvas.addEventListener('keydown',e=>{if(['F1','F2',' ','ArrowUp','ArrowDown','ArrowLeft','ArrowRight'].includes(e.key))e.preventDefault()});
+</script>
+<script id="gersang-diagnostics">
+/* Bounded local diagnostics; separate from game saves and the asset cache. */
+(()=>{'use strict';
+ const prefix='gersang-debug-v1:'+new URL('.',location.href).pathname+':';
+ const id=Date.now()+'-'+Math.random().toString(36).slice(2,9), key=prefix+'session:'+id;
+ const MAX_EVENTS=180, MAX_SESSIONS=4;let enabled=true,storageOK=true,dirty=false,timer=0;
+ const originals={log:console.log.bind(console),warn:console.warn.bind(console),error:console.error.bind(console)};
+ try{enabled=localStorage.getItem(prefix+'enabled')!=='0';}catch(_){storageOK=false;}
+ const session={schema:1,id,started:new Date().toISOString(),updated:Date.now(),lifecycle:'active',tag:'未標記',release:'',environment:{userAgent:navigator.userAgent,language:navigator.language,screen:[screen.width,screen.height],pixelRatio:devicePixelRatio,standalone:!!navigator.standalone},events:[],dropped:0};
+ function text(v,max=900){try{return String(v instanceof Error?v.stack||v.message:v).slice(0,max);}catch(_){return '[unreadable]';}}
+ function sessions(){const rows=[];try{for(let i=0;i<localStorage.length;i++){const k=localStorage.key(i);if(!k?.startsWith(prefix+'session:'))continue;const raw=localStorage.getItem(k);if(!raw||raw.length>220000)continue;try{const v=JSON.parse(raw);if(v.schema===1&&Array.isArray(v.events)&&typeof v.updated==='number')rows.push({key:k,value:v});}catch(_){}}}catch(_){storageOK=false;}return rows.sort((a,b)=>b.value.updated-a.value.updated);}
+ function prune(){for(const row of sessions().filter(r=>r.key!==key).slice(MAX_SESSIONS-1)){try{localStorage.removeItem(row.key);}catch(_){storageOK=false;}}}
+ function flush(){clearTimeout(timer);timer=0;if(!dirty)return;session.updated=Date.now();try{localStorage.setItem(key,JSON.stringify(session));storageOK=true;dirty=false;}catch(_){storageOK=false;}}
+ function record(kind,data={},urgent=false){if(!enabled)return;session.events.push({at:new Date().toISOString(),ms:Math.round(performance.now()),kind,tag:session.tag,data});if(session.events.length>MAX_EVENTS){session.events.shift();session.dropped++;}dirty=true;if(urgent)flush();else if(!timer)timer=setTimeout(flush,1000);}
+ function viewport(){const c=document.getElementById('canvas');return {width:innerWidth,height:innerHeight,dpr:devicePixelRatio,angle:screen.orientation?.angle??window.orientation??null,canvas:c?[c.width,c.height]:null,visual:window.visualViewport?[Math.round(visualViewport.width),Math.round(visualViewport.height),visualViewport.scale]:null,visible:document.visibilityState};}
+ prune();record('page-start',{...viewport(),navigation:performance.getEntriesByType('navigation')[0]?.type||'unknown',previous:sessions().filter(r=>r.key!==key).map(r=>({id:r.value.id,lifecycle:r.value.lifecycle,tag:r.value.tag}))},true);
+ for(const level of ['warn','error'])console[level]=(...args)=>{record('console-'+level,{message:args.map(a=>text(a,400)).join(' ').slice(0,1200)},level==='error');originals[level](...args);};
+ addEventListener('error',event=>{const target=event.target;record('browser-error',{message:text(event.error||event.message||'resource load failed'),file:text(event.filename||target?.src||target?.href||'',400).split('?')[0],line:event.lineno||0,column:event.colno||0},true);},true);
+ addEventListener('unhandledrejection',event=>record('unhandled-rejection',{message:text(event.reason)},true));
+ addEventListener('orientationchange',()=>record('orientation-change',viewport(),true));
+ screen.orientation?.addEventListener('change',()=>record('screen-orientation-change',viewport(),true));
+ let resizeTimer=0;addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(()=>record('viewport-resize',viewport(),true),180);});
+ document.addEventListener('visibilitychange',()=>record('visibility',viewport(),true));
+ addEventListener('pagehide',event=>{session.lifecycle=event.persisted?'bfcache':'pagehide';record('pagehide',{persisted:event.persisted},true);});
+ addEventListener('pageshow',event=>{session.lifecycle='active';record('pageshow',{persisted:event.persisted},true);});
+ const canvas=document.getElementById('canvas');
+ canvas.addEventListener('webglcontextlost',event=>record('webgl-context-lost',{message:text(event.statusMessage),...viewport()},true));
+ canvas.addEventListener('webglcontextrestored',()=>record('webgl-context-restored',viewport(),true));
+ let touches=0,downs=0,moves=0,ups=0,lastAction=0,frames=0,lastFrame=0,maxFrameGap=0,heartbeat=performance.now();
+ canvas.addEventListener('pointerdown',event=>{downs++;if(event.pointerType==='touch')touches++;const now=performance.now();if(now-lastAction>1000){record('canvas-pointer-down',{type:event.pointerType,x:Math.round(event.offsetX),y:Math.round(event.offsetY)});lastAction=now;}},{passive:true});
+ canvas.addEventListener('pointermove',()=>moves++,{passive:true});canvas.addEventListener('pointerup',()=>ups++,{passive:true});
+ function frame(now){if(enabled&&document.visibilityState==='visible'){frames++;if(lastFrame)maxFrameGap=Math.max(maxFrameGap,now-lastFrame);}lastFrame=now;requestAnimationFrame(frame);}requestAnimationFrame(frame);
+ setInterval(()=>{const now=performance.now();if(enabled&&document.visibilityState==='visible'){record('heartbeat',{elapsedMs:Math.round(now-heartbeat),rafFrames:frames,maxRafGapMs:Math.round(maxFrameGap),pointerDowns:downs,pointerMoves:moves,pointerUps:ups,touches,...viewport()},true);}heartbeat=now;frames=0;maxFrameGap=0;downs=0;moves=0;ups=0;touches=0;},5000);
+ let progressAt=0,ready=false;
+ const phaseObserver=new MutationObserver(()=>{const node=document.getElementById('web-export-status');if(node){const now=performance.now();if(now-progressAt>2000||node.textContent.includes('Starting engine')){record('loader-status',{message:text(node.textContent)});progressAt=now;}}if(!ready&&!document.getElementById('web-export-loading')){ready=true;record('engine-ready',{...viewport(),download:window.WebExport?.lastStats||null},true);phaseObserver.disconnect();}});
+ phaseObserver.observe(document.getElementById('web-export-loading'),{subtree:true,childList:true,characterData:true});
+ // Observe just direct body children to detect the loading screen's removal.
+ const readyObserver=new MutationObserver(()=>{if(!document.getElementById('web-export-loading')){if(!ready){ready=true;record('engine-ready',{...viewport(),download:window.WebExport?.lastStats||null},true);}phaseObserver.disconnect();readyObserver.disconnect();}});readyObserver.observe(document.body,{childList:true});
+ document.getElementById('web-export-start').addEventListener('click',()=>record('start-click',viewport(),true));
+ function report(){flush();const rows=sessions().filter(r=>r.key!==key).slice(0,MAX_SESSIONS-1).map(r=>r.value);return {schema:1,exported:new Date().toISOString(),storageAvailable:storageOK,note:'Missing pagehide is a clue, not proof of a crash. iOS process kills may leave no final error. RAF timing is browser timing, not Godot FPS. Safari RAM/GPU usage is not measured. Scenario tags are selected by the tester.',sessions:[session,...rows]};}
+ window.GersangDebug={record,report,flush,attach(config,meta){session.release=meta.manifest;record('build',{manifest:meta.manifest,project:meta.project},true);for(const name of ['onPrint','onPrintError']){const before=config[name];config[name]=(...args)=>{record(name==='onPrint'?'godot-output':'godot-error',{message:args.map(a=>text(a,400)).join(' ').slice(0,1200)},name==='onPrintError');if(before)before(...args);else originals[name==='onPrint'?'log':'error'](...args);};}return config;}};
+ const style=document.createElement('style');style.textContent=`#gersang-debug-open{position:fixed;right:max(8px,env(safe-area-inset-right));top:max(8px,env(safe-area-inset-top));z-index:40;min-height:44px;padding:8px 12px;border:1px solid #c3a15e;border-radius:6px;background:#17202eeb;color:#fff;font-size:13px}#gersang-debug-overlay{position:fixed;inset:0;z-index:60;display:grid;place-items:center;padding:12px;background:#000b}#gersang-debug-overlay[hidden]{display:none!important}#gersang-debug-panel{box-sizing:border-box;width:min(600px,100%);max-height:90vh;max-height:90dvh;overflow:auto;padding:20px;border:1px solid #bba16b;border-radius:10px;background:#101823;color:#ecf0f8;font:14px/1.6 system-ui,sans-serif}#gersang-debug-panel h2{margin:0;font-size:22px}#gersang-debug-panel p{margin:10px 0}#gersang-debug-panel button{min-height:44px;padding:8px 14px;background:#e5c47f;color:#20190f;border:0;border-radius:5px;font:inherit;cursor:pointer}#gersang-debug-panel .debug-row{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}#gersang-debug-panel select{width:100%;min-height:44px;background:#25334a;color:#fff;font:inherit;padding:8px}#gersang-debug-panel textarea{box-sizing:border-box;width:100%;height:170px;background:#08101c;color:#dbe9ff;font:12px/1.4 monospace}#gersang-debug-panel small{color:#aebcce}#gersang-debug-panel label{display:block;margin:12px 0}#gersang-debug-panel input{width:20px;height:20px;vertical-align:middle}`;document.head.appendChild(style);
+ const open=document.createElement('button');open.id='gersang-debug-open';open.textContent='DEBUG 紀錄';open.type='button';document.body.appendChild(open);
+ const overlay=document.createElement('div');overlay.id='gersang-debug-overlay';overlay.hidden=true;
+ overlay.innerHTML=`<section id="gersang-debug-panel" role="dialog" aria-modal="true" aria-labelledby="gersang-debug-title"><h2 id="gersang-debug-title">iPhone DEBUG 紀錄</h2><p>先選問題場景，再關閉此視窗遊玩。若回到載入畫面，直接打開這裡匯出紀錄，不用再次開始遊戲。</p><label><input id="debug-enabled" type="checkbox"> 記錄診斷資訊</label><label for="debug-scenario">問題場景（手動標記）</label><select id="debug-scenario"><option>未標記</option><option>一般轉珠</option><option>彩虹冒險打怪</option><option>黑暗轉珠塔</option><option>旋轉直向／橫向</option></select><p id="debug-summary" role="status"></p><div class="debug-row"><button id="debug-export">分享／下載紀錄</button><button id="debug-copy">複製紀錄</button><button id="debug-close">關閉，繼續遊戲</button></div><textarea id="debug-text" readonly hidden aria-label="可手動複製的診斷紀錄"></textarea><small>只保存在這個瀏覽器，保留最多 4 次啟動、每次最近 180 項。沒有自動上傳，也不修改遊戲存檔。iOS 直接終止網頁時可能無法留下最後錯誤；這份紀錄不等於系統 Jetsam 報告。</small></section>`;document.body.appendChild(overlay);
+ const $=id=>document.getElementById(id);$('debug-enabled').checked=enabled;
+ function summary(message=''){const r=report();$('debug-summary').textContent=message||`${enabled?'記錄中':'記錄已暫停'} · ${r.sessions.length} 次啟動 · ${storageOK?'已保存本地':'無法保存本地，請立即匯出；重新載入可能遺失'} · 當前場景：${session.tag}`;}
+ function stop(event){event.stopPropagation();}for(const node of [open,overlay])for(const type of ['pointerdown','pointerup','mousedown','mouseup','touchstart','touchend','keydown','keyup','click'])node.addEventListener(type,stop);
+ open.onclick=()=>{overlay.hidden=false;summary();$('debug-close').focus();};
+ $('debug-close').onclick=()=>{overlay.hidden=true;canvas.focus();};
+ overlay.addEventListener('keydown',event=>{if(event.key==='Escape')$('debug-close').click();if(event.key==='Tab'){const list=[...overlay.querySelectorAll('button,input,select,textarea')].filter(n=>!n.hidden),first=list[0],last=list.at(-1);if(event.shiftKey&&document.activeElement===first){event.preventDefault();last.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}}});
+ $('debug-scenario').onchange=event=>{session.tag=event.target.value;record('scenario-marker',{scenario:session.tag},true);summary();};
+ $('debug-enabled').onchange=event=>{if(!event.target.checked)record('recording-paused',{},true);enabled=event.target.checked;try{localStorage.setItem(prefix+'enabled',enabled?'1':'0');}catch(_){storageOK=false;}if(enabled)record('recording-resumed',viewport(),true);summary();};
+ function serialized(){return JSON.stringify(report(),null,2);}function showText(value){$('debug-text').hidden=false;$('debug-text').value=value;}
+ $('debug-export').onclick=async()=>{const value=serialized(),file=new File([value],'gersang-debug-'+Date.now()+'.json',{type:'application/json'});try{if(navigator.canShare?.({files:[file]})){await navigator.share({files:[file],title:'巨箱 DEBUG 紀錄'});summary('已開啟分享。');return;}}catch(error){if(error.name==='AbortError'){summary('已取消分享，紀錄仍保留。');return;}}const url=URL.createObjectURL(file),a=document.createElement('a');a.href=url;a.download=file.name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),60000);showText(value);summary('已要求下載；如未出現檔案，可用「複製紀錄」。');};
+ $('debug-copy').onclick=async()=>{const value=serialized();showText(value);try{await navigator.clipboard.writeText(value);summary('已複製，可貼上到對話。');}catch(_){$('debug-text').focus();$('debug-text').select();summary('請長按文字框，全選並複製。');}};
+})();
+</script>
+<script src="$GODOT_URL"></script><script src="__WX_RUNTIME__"></script><script>WebExport.boot(GersangDebug.attach($GODOT_CONFIG,__WX_META__),__WX_META__);</script></body></html>

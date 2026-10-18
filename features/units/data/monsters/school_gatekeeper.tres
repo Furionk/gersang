@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3]
+
+[ext_resource type="Texture2D" path="res://features/units/art/hogwarts/school-gatekeeper-v1.png" id="1_8hmk8"]
+[ext_resource type="Script" path="res://common/data/unit_definition.gd" id="2_rh5dg"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="3_0w4ud"]
+[ext_resource type="Resource" path="res://features/skills/data/school_stone_wave.tres" id="4_aunr7"]
+[ext_resource type="Resource" path="res://features/units/data/layouts/school_gatekeeper_layout.tres" id="5_8hmk8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aunr7"]
+atlas = ExtResource("1_8hmk8")
+region = Rect2(26, 362, 116, 181)
+margin = Rect2(70, 45, 140, 75)
+filter_clip = true
+
+[resource]
+script = ExtResource("2_rh5dg")
+base_power = 4500
+level_power_growth = 45
+strength = 55.0
+intelligence = 50.0
+defense = 99.0
+magic_resistance = 0.08
+experience_reward = 1250
+level = 50
+id = &"school_gatekeeper"
+display_name = "石像守門人"
+max_health = 6120.0
+max_mana = 500.0
+damage = 90.0
+minimum_ai_cast_time = 0.4
+balance_revision = 1
+tactical_hint = "重甲高體力：用法術／持續地面技削血，前排拉住，不要只靠普通物理硬打。"
+speed = 85.0
+mana_regeneration = 8.0
+armor = 0.45
+sprite_layout = ExtResource("5_8hmk8")
+battle_sprite_scale = 0.75
+world_sprite_scale = 0.75
+portrait_texture = SubResource("AtlasTexture_aunr7")
+eyes_texture = SubResource("AtlasTexture_aunr7")
+standee_texture = SubResource("AtlasTexture_aunr7")
+skills = Array[ExtResource("3_0w4ud")]([ExtResource("4_aunr7")])

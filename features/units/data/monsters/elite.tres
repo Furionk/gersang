@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3 uid="uid://cdt08o0t2wujt"]
+
+[ext_resource type="Script" path="res://common/data/unit_definition.gd" id="1"]
+[ext_resource type="Resource" path="res://features/units/data/layouts/elite_layout.tres" id="2"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_wo81m"]
+[ext_resource type="Resource" path="res://features/audio/data/elite.tres" id="voice_profile"]
+
+[resource]
+script = ExtResource("1")
+strength = 55.0
+defense = 90.0
+magic_resistance = 0.08
+id = &"elite"
+display_name = "黑甲石衛"
+role = 9
+max_health = 558.0
+max_mana = 0.0
+damage = 33.0
+attack_range = 58.0
+attack_interval = 1.4
+minimum_ai_cast_time = 0.4
+balance_revision = 1
+tactical_hint = "重甲高體力：用法術／持續地面技削血，前排拉住，不要只靠普通物理硬打。"
+speed = 86.0
+mana_regeneration = 6.0
+armor = 0.45
+sprite_path = "res://features/units/art/elite.png"
+sprite_layout = ExtResource("2")
+voice_profile = ExtResource("voice_profile")

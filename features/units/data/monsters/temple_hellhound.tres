@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/unit_definition.gd" id="1_p1gx8"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_yvbx0"]
+[ext_resource type="Resource" path="res://features/rainbow/data/skins/temple_hellhound.tres" id="3_pjxsm"]
+
+[resource]
+script = ExtResource("1_p1gx8")
+base_power = 500
+luck = 0.0
+defense = 4.0
+experience_reward = 180
+level = 18
+id = &"temple_hellhound"
+display_name = "地獄犬"
+max_health = 960.0
+max_mana = 300.0
+damage = 38.0
+attack_range = 100.0
+balance_revision = 1
+tactical_hint = "快速追擊；橫向閃避火牙預警。"
+speed = 140.0
+mana_regeneration = 8.0
+sprite_path = "res://features/rainbow/art/temple-creatures-v2.png"
+sprite_layout = ExtResource("3_pjxsm")
+battle_sprite_scale = 0.36
+world_sprite_scale = 0.198

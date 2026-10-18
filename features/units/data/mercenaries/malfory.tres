@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3 uid="uid://4xmv2emvx5jf"]
+
+[ext_resource type="Texture2D" uid="uid://kwyxsik3pb4c" path="res://features/units/art/malfory-standee-v1.png" id="1_8h4v5"]
+[ext_resource type="Script" uid="uid://bx2ysry1l3shr" path="res://common/data/unit_definition.gd" id="2_vy5at"]
+[ext_resource type="Script" uid="uid://boxf02g81ffu" path="res://common/data/skill_definition.gd" id="3_shyw0"]
+[ext_resource type="Resource" uid="uid://b8ifsmfj0t7o2" path="res://features/skills/data/crucio.tres" id="4_vy5at"]
+[ext_resource type="Resource" uid="uid://ct1ep4b8s7vma" path="res://features/skills/data/avada_kedavra.tres" id="5_shyw0"]
+[ext_resource type="Resource" uid="uid://df3dcc21mmye1" path="res://features/units/data/layouts/malfory_layout.tres" id="6_5wxoh"]
+[ext_resource type="Resource" path="res://features/audio/data/malfory.tres" id="voice_profile"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bvmmp"]
+atlas = ExtResource("1_8h4v5")
+region = Rect2(450, 115, 230, 95)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vuicr"]
+atlas = ExtResource("1_8h4v5")
+region = Rect2(390, 40, 330, 330)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ylqyj"]
+atlas = ExtResource("1_8h4v5")
+region = Rect2(0, 0, 1024, 1536)
+filter_clip = true
+
+[resource]
+script = ExtResource("2_vy5at")
+puzzle_element = 2
+strength = 12.0
+agility = 25.0
+intelligence = 70.0
+id = &"malfory"
+display_name = "女魔法師・Malfory"
+role = 3
+max_health = 220.0
+max_mana = 400.0
+damage = 22.0
+attack_range = 210.0
+attack_interval = 1.5
+speed = 125.0
+sprite_path = "res://features/units/art/malfory-v1.png"
+sprite_layout = ExtResource("6_5wxoh")
+portrait_texture = SubResource("AtlasTexture_vuicr")
+eyes_texture = SubResource("AtlasTexture_bvmmp")
+standee_texture = SubResource("AtlasTexture_ylqyj")
+skills = Array[ExtResource("3_shyw0")]([ExtResource("4_vy5at"), ExtResource("5_shyw0")])
+voice_profile = ExtResource("voice_profile")
+metadata/malfory_link_finalized = true

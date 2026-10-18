@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="UnitVoiceProfile" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://features/audio/unit_voice_profile.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+unit_id = &"ninja"
+language = "en"
+gender = "male"
+vocal_age = "adult"
+profession = "忍者"
+personality = "低沉、克制、機警、自信、帶神祕魔法感"
+voice_id = "N2lVS1w4EtoT3dr4eOWO"
+model_id = "eleven_v3"
+manifest_path = "res://features/audio/data/unit_voices.json"
+events = {"select": ["res://art/voices/ninja/select_01.ogg", "res://art/voices/ninja/select_02.ogg"], "move": ["res://art/voices/ninja/move_01.ogg", "res://art/voices/ninja/move_02.ogg"], "attack": ["res://art/voices/ninja/attack_01.ogg", "res://art/voices/ninja/attack_02.ogg", "res://art/voices/ninja/attack_03.ogg"], "inspect": ["res://art/voices/ninja/inspect_01.ogg", "res://art/voices/ninja/inspect_02.ogg"]}

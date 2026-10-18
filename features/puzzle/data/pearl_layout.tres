@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="SpriteSheetLayout" format=3]
+[ext_resource type="Script" path="res://common/data/sprite_sheet_layout.gd" id="1"]
+[ext_resource type="Script" path="res://common/data/sprite_animation_clip.gd" id="2"]
+[ext_resource type="Texture2D" path="res://features/puzzle/art/pearl-monster-v1.png" id="3"]
+
+[sub_resource type="Resource" id="clip0"]
+script = ExtResource("2")
+action = 0
+columns = PackedInt32Array(0)
+loop = true
+
+[sub_resource type="Resource" id="clip1"]
+script = ExtResource("2")
+action = 1
+columns = PackedInt32Array(0)
+loop = true
+
+[sub_resource type="Resource" id="clip2"]
+script = ExtResource("2")
+action = 2
+columns = PackedInt32Array(0)
+loop = false
+
+[sub_resource type="Resource" id="clip3"]
+script = ExtResource("2")
+action = 3
+columns = PackedInt32Array(0)
+loop = false
+
+[sub_resource type="Resource" id="clip4"]
+script = ExtResource("2")
+action = 4
+columns = PackedInt32Array(0)
+loop = false
+
+[resource]
+script = ExtResource("1")
+source_texture = ExtResource("3")
+source_size = Vector2i(1254, 1254)
+columns = 1
+rows = 1
+frame_size = Vector2i(1254, 1254)
+foot_point = Vector2(627, 934)
+frame_rects = Array[Rect2i]([Rect2i(0, 0, 1254, 1254)])
+source_pivots = Array[Vector2]([Vector2(627, 934)])
+animations = Array[ExtResource("2")]([SubResource("clip0"),SubResource("clip1"),SubResource("clip2"),SubResource("clip3"),SubResource("clip4")])
+attack_columns = Array[int]([0])
+direction_rows = Array[int]([0,0,0,0,0,0,0,0])

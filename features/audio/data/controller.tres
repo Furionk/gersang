@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="UnitVoiceProfile" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://features/audio/unit_voice_profile.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+unit_id = &"controller"
+nationality = "日本"
+language = "ja"
+species = "human"
+profession = "符咒師"
+personality = "冷靜、神祕、簡潔"
+voice_id = "fUjY9K2nAIwlALOwSiwc"
+model_id = "eleven_v3"
+manifest_path = "res://features/audio/data/unit_voices.json"
+events = {"select": ["res://art/voices/controller/select_01.ogg", "res://art/voices/controller/select_02.ogg", "res://art/voices/controller/select_03.ogg"], "move": ["res://art/voices/controller/move_01.ogg", "res://art/voices/controller/move_02.ogg", "res://art/voices/controller/move_03.ogg"], "attack": ["res://art/voices/controller/attack_01.ogg", "res://art/voices/controller/attack_02.ogg", "res://art/voices/controller/attack_03.ogg"], "inspect": ["res://art/voices/controller/inspect_01.ogg", "res://art/voices/controller/inspect_02.ogg", "res://art/voices/controller/inspect_03.ogg"]}

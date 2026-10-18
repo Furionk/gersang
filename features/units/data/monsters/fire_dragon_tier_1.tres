@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/unit_definition.gd" id="1_fbfyq"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_idkds"]
+[ext_resource type="Resource" path="res://features/rainbow/data/skins/fire_dragon_tier_1.tres" id="3_fbfyq"]
+
+[resource]
+script = ExtResource("1_fbfyq")
+base_power = 8000
+luck = 0.0
+defense = 2.0
+experience_reward = 4000
+level = 50
+id = &"fire_dragon_tier_1"
+display_name = "普通火龍"
+max_health = 36839.0
+max_mana = 300.0
+damage = 36.0
+attack_range = 160.0
+balance_revision = 2
+tactical_hint = "建議十人編隊 Lv50 · 自由挑戰 · 高危險；留意預警，側移與反擊。"
+speed = 90.0
+mana_regeneration = 8.0
+sprite_path = "res://features/rainbow/art/dragon-tiers-v3.png"
+sprite_layout = ExtResource("3_fbfyq")
+battle_sprite_scale = 1.7
+world_sprite_scale = 0.8
+metadata/rainbow_balance_v1 = true

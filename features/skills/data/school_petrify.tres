@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="SkillDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="1_66fs6"]
+
+[resource]
+script = ExtResource("1_66fs6")
+id = &"school_petrify"
+display_name = "石化"
+description = "施法1秒，半徑170內敵軍石化4秒，暫停移動與出招；Cast Time、Radius、Duration可直接調整。"
+effect = 25
+action = &"skill_school_petrify"
+ai_enabled = true
+ai_attempt_interval = 7.0
+ai_cast_chance = 0.6
+mana_cost = 0.0
+range = 380.0
+radius = 170.0
+cast_time = 1.0
+duration = 4.0
+damage_formula = "0"
+tint = Color(0.6, 0.7, 0.6, 1)

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="MonsterPhaseDefinition" format=3]
+
+[ext_resource type="Resource" path="res://features/units/data/monsters/ganondorf_echo.tres" id="1_8alww"]
+[ext_resource type="Script" path="res://common/data/monster_phase_definition.gd" id="8_554np"]
+
+[resource]
+script = ExtResource("8_554np")
+final_spawn = ExtResource("1_8alww")
+final_spawn_count = 5
+pause_seconds = 0.0
+title = "五重血月幻影"
+hazard_teams = PackedInt32Array(0, 1)

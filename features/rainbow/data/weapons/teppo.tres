@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="RainbowWeaponDefinition" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://features/rainbow/weapon_definition.gd" id="1"]
+[ext_resource type="Resource" path="res://features/rainbow/data/skins/teppo.tres" id="2"]
+
+[ext_resource type="Texture2D" path="res://features/rainbow/art/effects-v1.png" id="3"]
+
+[sub_resource type="AtlasTexture" id="vfx"]
+atlas = ExtResource("3")
+region = Rect2(628, 100, 312, 350)
+filter_clip = true
+
+[resource]
+script = ExtResource("1")
+layout = ExtResource("2")
+unit_id = &"teppo"
+melee_name = "槍托刺"
+ranged_name = "貫穿彈"
+specialty = "架槍狙擊"
+effect = "rifle"
+tint = Color(1.00000, 0.89412, 0.69412, 1)
+melee_range = 65.0
+melee_half_angle = 0.45
+melee_windup = 0.12
+melee_recovery = 0.28
+melee_power = 0.75
+ranged_windup = 0.35
+ranged_recovery = 0.55
+ranged_power = 1.5
+mana_cost = 5.0
+projectile_speed = 1100.0
+projectile_lifetime = 0.75
+pierce = 3
+move_multiplier = 0.95
+effect_texture = SubResource("vfx")

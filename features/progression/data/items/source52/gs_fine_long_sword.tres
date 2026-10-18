@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="GearItemDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="1_6v3yg"]
+[ext_resource type="Resource" path="res://features/skills/data/blast.tres" id="2_s4hqh"]
+[ext_resource type="Texture2D" path="res://art/items/source52/gs_fine_long_sword.png" id="3_6hemr"]
+[ext_resource type="Script" path="res://common/data/gear_item_definition.gd" id="4_ekat6"]
+
+[resource]
+script = ExtResource("4_ekat6")
+id = &"gs_fine_long_sword"
+display_name = "高級長劍"
+category = "sword"
+icon = ExtResource("3_6hemr")
+kind = 0
+weight = 29.0
+modifiers = {
+"attack_max": 41.0,
+"attack_min": 28.0
+}
+required_level = 46
+allowed_roles = PackedInt32Array()
+granted_skills = Array[ExtResource("1_6v3yg")]([ExtResource("2_s4hqh")])
+use_effect = 1
+source_url = "https://www.52jushang.com/item/dao.asp"
+source_image_url = "https://www.52jushang.com/item/img/dao/sword43.jpg"
+source_stats = {
+"modifiers": {
+"attack_max": 41.0,
+"attack_min": 28.0
+},
+"required_level": 46.0,
+"weight_jin": 29.0
+}
+source_skill_names = PackedStringArray("爆雷擊")
+adaptation_notes = "爆雷擊連接本作現有暴雷機制；時序／公式是既有可調試玩值，不宣稱原版量測。"
+description = "52巨商參考裝備；屬性與重量依來源，攻擊區間作為裝備加成。"

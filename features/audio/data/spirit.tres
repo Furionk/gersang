@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="UnitVoiceProfile" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://features/audio/unit_voice_profile.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+unit_id = &"spirit"
+nationality = "中國"
+language = "zh"
+species = "ancestral spirit"
+profession = "箭魂"
+personality = "忠誠、古雅、果斷"
+voice_id = "xQsp9uyB3OResmXFYuFx"
+model_id = "eleven_v3"
+manifest_path = "res://features/audio/data/unit_voices.json"
+events = {"select": ["res://art/voices/spirit/select_01.ogg", "res://art/voices/spirit/select_02.ogg", "res://art/voices/spirit/select_03.ogg"], "move": ["res://art/voices/spirit/move_01.ogg", "res://art/voices/spirit/move_02.ogg", "res://art/voices/spirit/move_03.ogg"], "attack": ["res://art/voices/spirit/attack_01.ogg", "res://art/voices/spirit/attack_02.ogg", "res://art/voices/spirit/attack_03.ogg"]}

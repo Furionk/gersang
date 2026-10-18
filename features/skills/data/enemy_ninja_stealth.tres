@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="SkillDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/skill_effect_definition.gd" id="1_b5qe4"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_5yulp"]
+
+[sub_resource type="Resource" id="Resource_3bs6p"]
+script = ExtResource("1_b5qe4")
+kind = 10
+duration = 20.0
+movement_multiplier = 1.2
+reveal_attack_formula = "90+agility*1.5"
+
+[resource]
+script = ExtResource("2_5yulp")
+id = &"enemy_ninja_stealth"
+display_name = "迷蹤步"
+description = "進入隱身最多20秒，移速+20%。攻擊或施法現身；攻擊現身的第一擊額外造成90+敏捷×1.5普通傷害。隱身不可被敵人重新選為攻擊目標；範圍技能仍可命中。"
+effect = 14
+target_mode = 1
+action = &"skill_ninja_stealth"
+default_key = 74
+icon_index = 3
+ai_enabled = true
+ai_attempt_interval = 5.0
+ai_cast_chance = 0.4
+mana_cost = 45.0
+radius = 0.0
+damage_formula = "0"
+effect_data = SubResource("Resource_3bs6p")

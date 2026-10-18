@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3 uid="uid://dcd1u22nr81vs"]
+
+[ext_resource type="Script" uid="uid://bx2ysry1l3shr" path="res://common/data/unit_definition.gd" id="1"]
+[ext_resource type="Resource" uid="uid://ccuy2n7b6p8hn" path="res://features/skills/data/quake.tres" id="2"]
+[ext_resource type="Script" uid="uid://boxf02g81ffu" path="res://common/data/skill_definition.gd" id="2_a1yhg"]
+[ext_resource type="Resource" path="res://features/units/data/layouts/merchant_layout.tres" id="3"]
+
+[ext_resource type="Resource" path="res://features/audio/data/merchant.tres" id="voice_profile"]
+
+[resource]
+script = ExtResource("1")
+puzzle_element = 1
+id = &"merchant"
+display_name = "行旅商人"
+max_health = 230.0
+max_mana = 90.0
+damage = 17.0
+speed = 130.0
+armor = 0.12
+sprite_path = "res://features/units/art/merchant.png"
+sprite_layout = ExtResource("3")
+skills = Array[ExtResource("2_a1yhg")]([ExtResource("2")])
+
+voice_profile = ExtResource("voice_profile")

@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3]
+
+[ext_resource type="Texture2D" path="res://features/units/art/hogwarts/school-dementor-v1.png" id="1_g1rtp"]
+[ext_resource type="Script" path="res://common/data/unit_definition.gd" id="2_dqo45"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="3_4pxrk"]
+[ext_resource type="Resource" path="res://features/skills/data/school_soul_drain.tres" id="4_0ehlg"]
+[ext_resource type="Resource" path="res://features/units/data/layouts/school_dementor_layout.tres" id="5_g1rtp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0ehlg"]
+atlas = ExtResource("1_g1rtp")
+region = Rect2(50, 366, 110, 167)
+margin = Rect2(73, 59, 146, 89)
+filter_clip = true
+
+[resource]
+script = ExtResource("2_dqo45")
+base_power = 4500
+level_power_growth = 45
+intelligence = 80.0
+defense = 14.0
+magic_resistance = 0.6
+experience_reward = 1250
+level = 50
+movement_type = 1
+id = &"school_dementor"
+display_name = "催狂魔"
+max_health = 2250.0
+max_mana = 500.0
+damage = 60.0
+attack_range = 180.0
+minimum_ai_cast_time = 0.4
+balance_revision = 1
+tactical_hint = "高法抗施法者：用物理射手／忠臣之魂集中火力，控制中斷施法；不要一直用同種法術。"
+speed = 230.0
+mana_regeneration = 8.0
+armor = 0.03
+sprite_layout = ExtResource("5_g1rtp")
+battle_sprite_scale = 0.6
+world_sprite_scale = 0.6
+portrait_texture = SubResource("AtlasTexture_0ehlg")
+eyes_texture = SubResource("AtlasTexture_0ehlg")
+standee_texture = SubResource("AtlasTexture_0ehlg")
+skills = Array[ExtResource("3_4pxrk")]([ExtResource("4_0ehlg")])

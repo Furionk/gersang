@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/unit_definition.gd" id="1_gkxbr"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_k4a83"]
+[ext_resource type="Resource" path="res://features/skills/data/enemies/enemy_flame.tres" id="3_dta6r"]
+[ext_resource type="Resource" path="res://features/skills/data/enemies/enemy_shockwave.tres" id="4_bdycu"]
+[ext_resource type="Resource" path="res://features/units/data/layouts/tomb_pyromancer_layout.tres" id="5_lwv08"]
+[ext_resource type="Resource" path="res://features/audio/data/deep_well_pyromancer.tres" id="voice_profile"]
+
+[resource]
+script = ExtResource("1_gkxbr")
+base_power = 240
+level_power_growth = 24
+intelligence = 95.0
+defense = 8.0
+magic_resistance = 0.6
+experience_reward = 350
+id = &"deep_well_pyromancer"
+display_name = "深井焚魂祭司"
+role = 8
+max_health = 630.0
+max_mana = 250.0
+damage = 39.0
+attack_range = 280.0
+attack_interval = 1.6
+minimum_ai_cast_time = 0.4
+balance_revision = 1
+tactical_hint = "高法抗施法者：用物理射手／忠臣之魂集中火力，控制中斷施法；不要一直用同種法術。"
+speed = 108.0
+mana_regeneration = 6.0
+armor = 0.03
+sprite_path = "res://features/units/art/tomb_pyromancer-v1.png"
+sprite_layout = ExtResource("5_lwv08")
+skills = Array[ExtResource("2_k4a83")]([ExtResource("3_dta6r"), ExtResource("4_bdycu")])
+voice_profile = ExtResource("voice_profile")

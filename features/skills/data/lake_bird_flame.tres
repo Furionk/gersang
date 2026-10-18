@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="SkillDefinition" format=3 uid="uid://c0nlkvn44oq4k"]
+
+[ext_resource type="Script" uid="uid://cwgoeihpnw613" path="res://common/data/skill_effect_definition.gd" id="1_k4jvh"]
+[ext_resource type="Script" uid="uid://boxf02g81ffu" path="res://common/data/skill_definition.gd" id="2_e71mx"]
+
+[sub_resource type="Resource" id="Resource_lskly"]
+script = ExtResource("1_k4jvh")
+kind = 8
+duration = 1.6
+tick_interval = 0.4
+sprite_path = "res://features/skills/art/fire-trail-v2.png"
+sprite_grounded = true
+sprite_foot_ratio = 0.9
+
+[resource]
+script = ExtResource("2_e71mx")
+id = &"lake_bird_flame"
+display_name = "焚湖火羽"
+description = "遠距普攻命中後，在目標位置留下1.6秒火焰，半徑100、每0.4秒造成攻擊×0.6法術傷害。"
+effect = 20
+trigger = 1
+action = &"skill_lake_bird_flame"
+mana_cost = 0.0
+radius = 100.0
+proc_chance = 1.0
+damage_formula = "attack*0.6"
+effect_data = SubResource("Resource_lskly")

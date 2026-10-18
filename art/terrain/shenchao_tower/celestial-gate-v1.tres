@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="WorldSceneryDefinition" format=3]
+
+[ext_resource type="Script" path="res://features/world/definitions/world_scenery_definition.gd" id="1_ca20c"]
+[ext_resource type="Texture2D" path="res://art/terrain/shenchao_tower/celestial-tower-v1.png" id="2_sa352"]
+
+[resource]
+script = ExtResource("1_ca20c")
+display_name = "神抄天門"
+texture = ExtResource("2_sa352")
+foot_anchor = Vector2(887, 871)
+sprite_scale = 0.5

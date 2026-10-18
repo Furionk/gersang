@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="PuzzleRules" format=3]
+
+[ext_resource type="Texture2D" path="res://art/terrain/shenchao_abyss/orb-ghost-v1.png" id="1_6jc7w"]
+[ext_resource type="Resource" path="res://features/units/data/mercenaries/gunner.tres" id="2_3ld87"]
+[ext_resource type="Script" path="res://features/puzzle/puzzle_rules.gd" id="3_4r3s0"]
+
+[resource]
+script = ExtResource("3_4r3s0")
+enemy_texture = ExtResource("1_6jc7w")
+dark_monster = true
+enemy_attack_fraction = 0.18
+enemy_cooldown_seconds = 1.6
+enemy_initial_min_seconds = 6.0
+enemy_initial_max_seconds = 6.0
+monster_health_attack_multiple = 1800.0
+monster_level = 100
+monster_attack_reference = ExtResource("2_3ld87")

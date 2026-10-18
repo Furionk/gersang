@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ArenaDefinition" format=3 uid="uid://bdnscpw6b4qru"]
+
+[ext_resource type="Texture2D" uid="uid://c44ft0wed7joj" path="res://art/terrain/millennium_lake/battle-earth-v1.png" id="1_5whbu"]
+[ext_resource type="Script" uid="uid://d3vyygwq6v6lc" path="res://common/data/encounter_definition.gd" id="2_dpqi4"]
+[ext_resource type="Script" uid="uid://cre3yslmla84g" path="res://features/world/definitions/arena_definition.gd" id="3_3wq37"]
+
+[sub_resource type="Resource" id="Resource_tjdbu"]
+script = ExtResource("2_dpqi4")
+id = &"millennium_lake"
+display_name = "千年湖 · 湖守試煉"
+terrain = 2
+ground_texture = ExtResource("1_5whbu")
+battlefield_scene = "res://features/battle/maps/millennium_lake.tscn"
+enemy_spawn_centers = PackedVector2Array(1160, 440, 1520, 880, 1160, 1320, 600, 1240)
+
+[resource]
+script = ExtResource("3_3wq37")
+arena_id = "millennium_lake"
+encounter = SubResource("Resource_tjdbu")

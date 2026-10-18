@@ -1,0 +1,84 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3 uid="uid://brlhsgah4fcsf"]
+
+[ext_resource type="Script" path="res://common/data/unit_definition.gd" id="1"]
+[ext_resource type="Resource" path="res://features/skills/data/blast.tres" id="2"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_recfy"]
+[ext_resource type="Script" path="res://common/data/sprite_animation_clip.gd" id="4_261td"]
+[ext_resource type="Script" path="res://common/data/sprite_sheet_layout.gd" id="5_t8wae"]
+[ext_resource type="Texture2D" path="res://features/units/art/boss.png" id="6_tvw3a"]
+[ext_resource type="Resource" path="res://features/audio/data/boss.tres" id="voice_profile"]
+
+[sub_resource type="Resource" id="Resource_yhve3"]
+script = ExtResource("4_261td")
+columns = PackedInt32Array(0)
+fps = 2.0
+loop = true
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_rk55v"]
+script = ExtResource("4_261td")
+action = 1
+columns = PackedInt32Array(1, 0, 2, 0)
+fps = 8.0
+loop = true
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_nxrjd"]
+script = ExtResource("4_261td")
+action = 2
+columns = PackedInt32Array(0, 3, 0)
+fps = 12.0
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_eo3rw"]
+script = ExtResource("4_261td")
+action = 3
+columns = PackedInt32Array(0, 4, 0)
+fps = 12.0
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_2oiv2"]
+script = ExtResource("4_261td")
+action = 4
+columns = PackedInt32Array(5)
+frame_durations = PackedFloat32Array()
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_y4dg2"]
+script = ExtResource("5_t8wae")
+source_texture = ExtResource("6_tvw3a")
+frame_size = Vector2i(181, 181)
+foot_point = Vector2(90.5, 157.47)
+frame_rects = Array[Rect2i]([Rect2i(12, 0, 147, 180), Rect2i(181, 0, 144, 177), Rect2i(362, 0, 128, 180), Rect2i(543, 0, 159, 180), Rect2i(724, 4, 109, 177), Rect2i(905, 78, 173, 103), Rect2i(14, 182, 144, 175), Rect2i(181, 184, 138, 173), Rect2i(362, 181, 122, 175), Rect2i(543, 181, 126, 178), Rect2i(724, 181, 111, 175), Rect2i(905, 244, 174, 115), Rect2i(18, 362, 136, 170), Rect2i(181, 362, 131, 172), Rect2i(362, 362, 119, 172), Rect2i(543, 362, 129, 177), Rect2i(724, 362, 114, 173), Rect2i(905, 416, 174, 127), Rect2i(25, 543, 122, 172), Rect2i(188, 543, 121, 169), Rect2i(362, 543, 119, 169), Rect2i(543, 543, 134, 178), Rect2i(724, 543, 118, 176), Rect2i(905, 604, 162, 120), Rect2i(27, 724, 123, 176), Rect2i(182, 730, 133, 170), Rect2i(362, 730, 112, 170), Rect2i(543, 724, 126, 181), Rect2i(724, 724, 146, 181), Rect2i(905, 790, 175, 115), Rect2i(8, 905, 149, 172), Rect2i(181, 905, 149, 175), Rect2i(362, 905, 127, 173), Rect2i(543, 905, 150, 181), Rect2i(724, 905, 157, 178), Rect2i(905, 960, 173, 117), Rect2i(20, 1086, 133, 170), Rect2i(181, 1086, 134, 172), Rect2i(362, 1086, 122, 172), Rect2i(543, 1086, 125, 175), Rect2i(724, 1103, 118, 156), Rect2i(905, 1123, 166, 133), Rect2i(14, 1267, 147, 158), Rect2i(181, 1267, 141, 160), Rect2i(362, 1267, 127, 160), Rect2i(543, 1267, 132, 177), Rect2i(724, 1267, 147, 172), Rect2i(905, 1314, 169, 119)])
+source_pivots = Array[Vector2]([Vector2(78.5, 178), Vector2(90.5, 175), Vector2(90.5, 178), Vector2(90.5, 178), Vector2(90.5, 175), Vector2(90.5, 101), Vector2(76.5, 173), Vector2(90.5, 171), Vector2(90.5, 173), Vector2(90.5, 176), Vector2(90.5, 173), Vector2(90.5, 113), Vector2(72.5, 168), Vector2(90.5, 170), Vector2(90.5, 170), Vector2(90.5, 175), Vector2(90.5, 171), Vector2(90.5, 125), Vector2(65.5, 170), Vector2(83.5, 167), Vector2(90.5, 167), Vector2(90.5, 176), Vector2(90.5, 174), Vector2(90.5, 118), Vector2(63.5, 174), Vector2(89.5, 168), Vector2(90.5, 168), Vector2(90.5, 179), Vector2(90.5, 179), Vector2(90.5, 113), Vector2(82.5, 170), Vector2(90.5, 173), Vector2(90.5, 171), Vector2(90.5, 179), Vector2(90.5, 176), Vector2(90.5, 115), Vector2(70.5, 168), Vector2(90.5, 170), Vector2(90.5, 170), Vector2(90.5, 173), Vector2(90.5, 154), Vector2(90.5, 131), Vector2(76.5, 156), Vector2(90.5, 158), Vector2(90.5, 158), Vector2(90.5, 175), Vector2(90.5, 170), Vector2(90.5, 117)])
+animations = Array[ExtResource("4_261td")]([SubResource("Resource_yhve3"), SubResource("Resource_rk55v"), SubResource("Resource_nxrjd"), SubResource("Resource_eo3rw"), SubResource("Resource_2oiv2")])
+direction_rows = Array[int]([0, 1, 2, 1, 0, 7, 6, 7])
+mirrored_directions = Array[bool]([false, false, false, true, true, true, false, false])
+
+[resource]
+script = ExtResource("1")
+strength = 55.0
+defense = 90.0
+magic_resistance = 0.08
+id = &"boss"
+display_name = "赤魂獄使"
+role = 10
+max_health = 1404.0
+max_mana = 180.0
+damage = 40.5
+attack_range = 65.0
+attack_interval = 1.6
+minimum_ai_cast_time = 0.4
+balance_revision = 1
+tactical_hint = "重甲高體力：用法術／持續地面技削血，前排拉住，不要只靠普通物理硬打。"
+speed = 80.0
+mana_regeneration = 6.0
+armor = 0.45
+sprite_path = "res://features/units/art/boss.png"
+sprite_layout = SubResource("Resource_y4dg2")
+skills = Array[ExtResource("2_recfy")]([ExtResource("2")])
+voice_profile = ExtResource("voice_profile")

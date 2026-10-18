@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="GearItemDefinition" load_steps=3 format=3]
+[ext_resource type="Script" path="res://common/data/gear_item_definition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://art/items/debug_medicine.svg" id="2"]
+[resource]
+script = ExtResource("1")
+id = &"debug_medicine"
+display_name = "大補丸"
+category = "debug"
+kind = 4
+weight = 0.0
+icon = ExtResource("2")
+debug_only = false
+use_effect = 4
+restore_health = 500.0
+restore_mana = 500.0
+affects_party = true
+revives = true
+description = "復活我方全隊，並各回復500體力及500魔力，最多至上限。"
+adaptation_notes = "使用者指定 Debug 道具；數值不是52巨商的原版資料。"

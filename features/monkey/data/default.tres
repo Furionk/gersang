@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MonkeyProfile" load_steps=2 format=3]
+[ext_resource type="Script" path="res://features/monkey/monkey_profile.gd" id="1"]
+[resource]
+script = ExtResource("1")
+
+scene = "res://features/monkey/village_easy.tscn"
+
+zone_name = "普通 · Lv.1 · 5隻"
+
+time_limit = 180.0
+
+monkey_count = 5
+
+monkey_level = 1
+
+difficulty = 0
+
+alarm_radius = 0
+
+feint_chance = 0
+
+attack_windup = 0.6
+
+attack_recovery = 0.65
+
+exhaustion_seconds = 0.65
+
+stun_resistance = 0
+
+sight_range = 10
+
+sight_degrees = 110
+
+confirmation_seconds = 0.6
+
+dodge_chance = 0.4
+
+dodge_reaction = 0.18
+
+dodge_cooldown_seconds = 1.5
+
+escape_multiplier = 1.2
+
+prediction_seconds = 0.35

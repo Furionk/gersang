@@ -1,0 +1,52 @@
+{
+  "purpose": "Original Millennium Lake dungeon art and one-monster playable demonstration",
+  "method": "built-in image_gen",
+  "reference": "User supplied isometric dungeon images used as style references only; no original game pixels extracted.",
+  "assets": [
+	{
+	  "asset": "art/terrain/millennium_lake/props-v1.png",
+	  "source_size": [
+		1536,
+		1024
+	  ],
+	  "layout": "3x2 at 512px; gate, two cliff orientations, moss/reeds, shrine, bridge",
+	  "prompt": "Create an ORIGINAL production-ready 2D isometric game ENVIRONMENT PROP SPRITE ATLAS for a dark ancient East Asian dungeon named Thousand-Year Lake. Late-1990s detailed pre-rendered RPG pixel textures, muted moss olive stone, weathered brown wood, dark jade water accents, subtle amber candles; not cartoon, no outlines, fixed 2:1 isometric view, consistent upper-left light. TRANSPARENT background. Canvas 1536x1024, STRICT 3 columns x 2 rows, each cell 512x512, objects completely contained inside cell with at least 35px transparent padding, same ground-plane foot anchor centered x at y=430. No text, no labels, no grid. TOP LEFT: ancient mossy carved stone entrance arch with dark opening, faded red sealing ribbons, two little amber lanterns. TOP CENTER: tall jagged moss-covered limestone cliff segment whose ridge runs screen southwest to northeast (/), modular wall. TOP RIGHT: matching limestone cliff segment whose ridge runs screen northwest to southeast (\\). BOTTOM LEFT: low cluster of mossy boulders and sparse lakeshore reeds. BOTTOM CENTER: a small island shrine, bare gnarled tree and stacked stone altar with several paper talismans, jade light very restrained, no terrain floor. BOTTOM RIGHT: short old wooden footbridge whose deck runs screen southwest to northeast (/), complete handrails and support posts, footprint around 360x180. Detached usable sprites, transparent empty gutters. Each object has detailed rough diffuse texture and readable silhouette when reduced to 180px tall."
+	},
+	{
+	  "asset": "art/terrain/millennium_lake/materials-v1.png",
+	  "source_size": [
+		1254,
+		1254
+	  ],
+	  "layout": "2x2 actual 627px quadrants; earth, water, paving, wooden planks",
+	  "prompt": "Generate a production-ready ORIGINAL tile material texture atlas for Thousand-Year Lake, dark ancient East Asian isometric RPG dungeon. 1024x1024 square image, STRICT 2x2 grid of equal 512x512 square seamless texture swatches, exactly meet at x512 y512, absolutely no margins, borders, text or objects. Flat top-down orthographic material swatches, no perspective, no illumination gradient. TOP LEFT: weathered dark olive-grey compacted earth, small stone grit and delicate sparse moss, neutral readable medium-dark, seamless on opposite edges. TOP RIGHT: dark jade-teal still lake water, faint caustic ripples, subtle cold reflections, seamless on opposite edges, no shoreline. BOTTOM LEFT: old grey mossy paving stones with uneven cracked seams, very small-scale, seamless edges. BOTTOM RIGHT: parallel weathered brown wooden planks of an old bridge with subtle moss and nails, horizontal boards, seamless edges. Classic late-1990s prerendered RPG detail, restrained small texture features, no big landmarks, no glossy cartoon, no black backgrounds. These materials will be sampled onto individual 64x32 diamond tiles."
+	},
+	{
+	  "asset": "features/units/art/lake_guardian-v1.png",
+	  "source_size": [
+		1086,
+		1448
+	  ],
+	  "layout": "6 columns x 8 directions; 181px cells; original alpha preserved; authored 224px output canvas, foot pivot per layout Resource",
+	  "prompt": "Production-ready original RPG MONSTER SPRITE SHEET with true transparent background. Canvas 1536 wide x2048 high. STRICT uniform grid 6 columns and 8 rows, each 256x256, each character fully inside its own cell with 20px padding, feet consistently at local x128 y224, identical scale. No text, grid, borders, scenery or floor. Original Thousand-Year Lake Guardian: squat amphibian turtle spirit with hunched moss-covered stone shell, jade scales, pale beard, small glowing amber eyes, faded red prayer cord around neck, stubby clawed arms, heavy readable silhouette, detailed late-1990s pre-rendered isometric pixel RPG style, NOT cartoon, NOT human, no weapon. Facing directions rows from top to bottom: E right profile, SE front-right three-quarter, S front, SW front-left three-quarter, W left profile, NW back-left three-quarter, N back, NE back-right three-quarter. All six poses within a row preserve that facing. Columns left to right: neutral idle standing, walking left foot forward, walking right foot forward, attack with raised claw arm and leaning slightly forwards, cast with hands raised and a tiny jade ripple between them, dead collapsed low on ground. Camera locked high angle isometric 2:1. Consistent upper-left diffuse lighting and grounded material textures. Exact evenly spaced grid, all 48 sprites, including full lower row, no cropping."
+	}
+  ],
+  "derived": [
+	{
+	  "asset": "art/terrain/millennium_lake/tiles-v1.png",
+	  "size": [
+		320,
+		512
+	  ],
+	  "method": "Godot Image integration: generated texture quadrants sampled onto 64x32 isometric diamonds; 5 materials x16 planar offsets; direct PNG references"
+	},
+	{
+	  "asset": "art/terrain/millennium_lake/battle-earth-v1.png",
+	  "size": [
+		627,
+		627
+	  ],
+	  "method": "Godot Image lossless top-left quadrant crop for combat floor"
+	}
+  ]
+}

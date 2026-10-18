@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="SkillDefinition" format=3 uid="uid://cp8q7cgahr37g"]
+
+[ext_resource type="Script" path="res://common/data/skill_effect_definition.gd" id="1_tjr01"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_vw4yb"]
+
+[sub_resource type="Resource" id="Resource_75i7t"]
+script = ExtResource("1_tjr01")
+line_visual_count = 3
+blood_wave_visual = true
+kind = 4
+duration = 1.6
+width = 240.0
+distance = 900.0
+speed = 650.0
+trail_length = 240.0
+sprite_path = "res://features/skills/art/dragon.png"
+
+[resource]
+script = ExtResource("2_vw4yb")
+id = &"blood_moon_wave"
+display_name = "血月劍波"
+description = "血色多道劍弧；Width240是實際傷害寬度，Line Visual Count只是呈現。Formula Multiplier控制威力；最終幻影仍只打原形的半傷害。"
+effect = 26
+trigger = 1
+action = &"skill_blood_moon_wave"
+ai_attempt_interval = 5.0
+ai_cast_chance = 0.6
+mana_cost = 0.0
+range = 900.0
+proc_chance = 1.0
+damage_formula = "attack*1.5"
+formula_multiplier = 1.5
+damage_type = 0
+effect_data = SubResource("Resource_75i7t")
+tint = Color(1, 0.08, 0.15, 1)

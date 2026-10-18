@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="SkillDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/skill_effect_definition.gd" id="1_xkku1"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_3f8qy"]
+
+[sub_resource type="Resource" id="Resource_be7n5"]
+script = ExtResource("1_xkku1")
+ground_targets_only = true
+kind = 14
+width = 95.0
+distance = 700.0
+speed = 750.0
+
+[resource]
+script = ExtResource("2_3f8qy")
+id = &"lake_wolf_charge"
+display_name = "千年疾衝"
+description = "鎖定釋放時方向，實際衝向敵人，沿途每個敌人只受一次3.2倍攻擊傷害。地面阻擋／冰牆可中止衝鋒，僅命中地面敵軍。"
+effect = 19
+target_mode = 3
+action = &"skill_lake_wolf_charge"
+ai_enabled = true
+ai_attempt_interval = 5.0
+ai_cast_chance = 0.65
+mana_cost = 0.0
+range = 700.0
+damage_formula = "attack*3.2"
+damage_type = 0
+effect_data = SubResource("Resource_be7n5")
+tint = Color(0.15, 0.85, 1, 1)

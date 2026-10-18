@@ -1,0 +1,68 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3 uid="uid://dd0hr0gyqrtr7"]
+
+[ext_resource type="Script" path="res://common/data/unit_definition.gd" id="1_oiee0"]
+[ext_resource type="Texture2D" path="res://features/units/art/millennium_wolf-v1.png" id="1_skkal"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_skkal"]
+[ext_resource type="Script" path="res://common/data/skill_effect_definition.gd" id="3_ixg1k"]
+[ext_resource type="Resource" path="res://features/units/data/layouts/millennium_wolf_layout.tres" id="4_nnwer"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ixg1k"]
+atlas = ExtResource("1_skkal")
+region = Rect2(0, 362, 181, 181)
+filter_clip = true
+
+[sub_resource type="Resource" id="Resource_be7n5"]
+script = ExtResource("3_ixg1k")
+ground_targets_only = true
+kind = 14
+width = 95.0
+distance = 700.0
+speed = 750.0
+
+[sub_resource type="Resource" id="Resource_rd83t"]
+script = ExtResource("2_skkal")
+id = &"lake_wolf_charge"
+display_name = "千年疾衝"
+description = "鎖定釋放時方向，實際衝向敵人，沿途每個敌人只受一次3.2倍攻擊傷害。地面阻擋／冰牆可中止衝鋒，僅命中地面敵軍。"
+effect = 19
+target_mode = 3
+action = &"skill_lake_wolf_charge"
+ai_enabled = true
+ai_attempt_interval = 5.0
+ai_cast_chance = 0.65
+mana_cost = 0.0
+range = 700.0
+damage_formula = "attack*3.2"
+damage_type = 0
+effect_data = SubResource("Resource_be7n5")
+tint = Color(0.15, 0.85, 1, 1)
+
+[resource]
+script = ExtResource("1_oiee0")
+base_power = 450
+agility = 45.0
+defense = 40.0
+evasion = 0.1
+magic_resistance = 0.18
+experience_reward = 650
+id = &"millennium_wolf"
+display_name = "千年狼"
+role = 9
+max_health = 4680.0
+max_mana = 0.0
+damage = 225.0
+attack_range = 65.0
+attack_interval = 1.1
+minimum_ai_cast_time = 0.4
+balance_revision = 1
+tactical_hint = "高速突擊：先控場／火路封位再集火，分散避開直線衝鋒；用高命中或範圍技能。"
+speed = 162.4
+detection_range = 550.0
+mana_regeneration = 6.0
+armor = 0.08
+sprite_path = "res://features/units/art/millennium_wolf-v1.png"
+sprite_layout = ExtResource("4_nnwer")
+portrait_texture = SubResource("AtlasTexture_ixg1k")
+standee_texture = SubResource("AtlasTexture_ixg1k")
+skills = Array[ExtResource("2_skkal")]([SubResource("Resource_rd83t")])
+controllable = false

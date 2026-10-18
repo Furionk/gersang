@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="UnitVoiceProfile" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://features/audio/unit_voice_profile.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+unit_id = &"mage"
+nationality = "朝鮮"
+language = "ja"
+species = "human"
+profession = "雷術師"
+personality = "高傲、精準、威勢"
+voice_id = "JTlYtJrcTzPC71hMLOxo"
+model_id = "eleven_v3"
+manifest_path = "res://features/audio/data/unit_voices.json"
+events = {"select": ["res://art/voices/mage/select_01.ogg", "res://art/voices/mage/select_02.ogg", "res://art/voices/mage/select_03.ogg"], "move": ["res://art/voices/mage/move_01.ogg", "res://art/voices/mage/move_02.ogg", "res://art/voices/mage/move_03.ogg"], "attack": ["res://art/voices/mage/attack_01.ogg", "res://art/voices/mage/attack_02.ogg", "res://art/voices/mage/attack_03.ogg"], "inspect": ["res://art/voices/mage/inspect_01.ogg", "res://art/voices/mage/inspect_02.ogg", "res://art/voices/mage/inspect_03.ogg"]}
+
+gender = "female"
+vocal_age = "adult female"

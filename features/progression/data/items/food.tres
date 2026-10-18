@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="GearItemDefinition" load_steps=2 format=3]
+[ext_resource type="Script" path="res://common/data/gear_item_definition.gd" id="1"]
+[resource]
+script = ExtResource("1")
+id = &"food"
+display_name = "行軍飯糰"
+kind = 1
+equipment_slot = 0
+max_stack = 99
+weight = 0.5
+restore = 60.0
+modifiers = {}
+description = "非戰鬥恢復60體力；已滿不消耗。"

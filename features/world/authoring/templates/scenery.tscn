@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3]
+[ext_resource type="Texture2D" path="res://art/terrain/props.png" id="1"]
+[ext_resource type="Resource" path="res://features/world/data/scenery/tree.tres" id="2"]
+[node name="BuildingOrLandscape" type="Sprite2D"]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(-256, -478)
+region_enabled = true
+region_rect = Rect2(0, 0, 512, 512)
+metadata/world_scenery_id = ""
+metadata/world_scenery_label = "新地景"
+metadata/world_scenery_definition = ExtResource("2")

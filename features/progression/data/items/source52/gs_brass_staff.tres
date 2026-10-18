@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="GearItemDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="1_qtjoc"]
+[ext_resource type="Texture2D" path="res://art/items/source52/gs_brass_staff.png" id="2_giy5n"]
+[ext_resource type="Script" path="res://common/data/gear_item_definition.gd" id="3_mcw76"]
+
+[resource]
+script = ExtResource("3_mcw76")
+id = &"gs_brass_staff"
+display_name = "黃銅拐杖"
+category = "staff"
+icon = ExtResource("2_giy5n")
+kind = 0
+weight = 10.0
+modifiers = {
+"attack_max": 30.0,
+"attack_min": 20.0
+}
+required_level = 30
+allowed_roles = PackedInt32Array()
+use_effect = 1
+source_url = "https://www.52jushang.com/item/jipangyi.asp"
+source_image_url = "https://www.52jushang.com/item/img/jipangyi/1.gif"
+source_stats = {
+"modifiers": {
+"attack_max": 30.0,
+"attack_min": 20.0
+},
+"required_level": 30.0,
+"weight_jin": 10.0
+}
+source_skill_names = PackedStringArray()
+description = "52巨商參考裝備；屬性與重量依來源，攻擊區間作為裝備加成。"

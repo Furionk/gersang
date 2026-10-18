@@ -1,0 +1,65 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3 uid="uid://80r78a87vi5j"]
+
+[ext_resource type="Script" path="res://common/data/unit_definition.gd" id="1_ga8at"]
+[ext_resource type="Texture2D" path="res://features/units/art/millennium_bird-v1.png" id="1_o87ni"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_o87ni"]
+[ext_resource type="Script" path="res://common/data/skill_effect_definition.gd" id="3_5g1av"]
+[ext_resource type="Resource" path="res://features/units/data/layouts/millennium_bird_motion_v3_layout.tres" id="4_csxax"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5g1av"]
+atlas = ExtResource("1_o87ni")
+region = Rect2(0, 362, 181, 181)
+filter_clip = true
+
+[sub_resource type="Resource" id="Resource_lskly"]
+script = ExtResource("3_5g1av")
+kind = 8
+duration = 1.6
+tick_interval = 0.4
+sprite_path = "res://features/skills/art/fire-trail-v2.png"
+
+[sub_resource type="Resource" id="Resource_p5h3c"]
+script = ExtResource("2_o87ni")
+id = &"lake_bird_flame"
+display_name = "焚湖火羽"
+description = "遠距普攻命中後，在目標位置留下1.6秒火焰，半徑100、每0.4秒造成攻擊×0.6法術傷害。"
+effect = 20
+trigger = 1
+action = &"skill_lake_bird_flame"
+mana_cost = 0.0
+radius = 100.0
+proc_chance = 1.0
+damage_formula = "attack*0.6"
+effect_data = SubResource("Resource_lskly")
+
+[resource]
+script = ExtResource("1_ga8at")
+base_power = 450
+intelligence = 50.0
+defense = 17.5
+magic_resistance = 0.6
+experience_reward = 450
+movement_type = 1
+id = &"millennium_bird"
+display_name = "千年鳥"
+role = 9
+max_health = 2880.0
+max_mana = 0.0
+damage = 180.0
+attack_range = 360.0
+attack_interval = 1.5
+minimum_ai_cast_time = 0.4
+balance_revision = 1
+tactical_hint = "高法抗施法者：用物理射手／忠臣之魂集中火力，控制中斷施法；不要一直用同種法術。"
+speed = 125.0
+detection_range = 550.0
+mana_regeneration = 6.0
+armor = 0.03
+sprite_path = "res://features/units/art/millennium_bird-motion-v3.png"
+sprite_layout = ExtResource("4_csxax")
+battle_sprite_scale = 0.53633
+world_sprite_scale = 0.51351
+portrait_texture = SubResource("AtlasTexture_5g1av")
+standee_texture = SubResource("AtlasTexture_5g1av")
+skills = Array[ExtResource("2_o87ni")]([SubResource("Resource_p5h3c")])
+controllable = false

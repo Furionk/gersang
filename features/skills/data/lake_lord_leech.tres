@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="SkillDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="1_rbidl"]
+
+[resource]
+script = ExtResource("1_rbidl")
+id = &"lake_lord_leech"
+display_name = "湖血吞噬"
+description = "按實際命中扣除HP的45%恢復自身體力；不吸取MISS或過量傷害。"
+effect = 11
+trigger = 1
+action = &"skill_lake_lord_leech"
+life_steal_ratio = 0.45
+mana_cost = 0.0
+proc_chance = 1.0
+damage_formula = "0"

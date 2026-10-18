@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="WorldSceneryDefinition" load_steps=3 format=3]
+[ext_resource type="Script" path="res://features/world/definitions/world_scenery_definition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://art/terrain/props.png" id="2"]
+[resource]
+script = ExtResource("1")
+display_name = "林木"
+description = "林地地景。"
+texture = ExtResource("2")
+atlas_region = Rect2(0, 0, 512, 512)
+foot_anchor = Vector2(256, 478)
+sprite_scale = 0.3
+tint = Color(1,1,1,1)
+
+sorting_mode = 1
+sorting_review_required = false
+sorting_note = "立體素材，腳底Y自動交錯；不產生障礙。"

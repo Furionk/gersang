@@ -1,0 +1,85 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3 uid="uid://b6dj562kjjt2b"]
+
+[ext_resource type="Script" uid="uid://bx2ysry1l3shr" path="res://common/data/unit_definition.gd" id="1"]
+[ext_resource type="Resource" uid="uid://c3qjd061gpkek" path="res://features/skills/data/critical.tres" id="2"]
+[ext_resource type="Script" uid="uid://boxf02g81ffu" path="res://common/data/skill_definition.gd" id="2_svpky"]
+[ext_resource type="Resource" uid="uid://dwj6dudhga2fs" path="res://features/skills/data/summon.tres" id="3"]
+[ext_resource type="Script" uid="uid://dekk0d4nvs8mb" path="res://common/data/sprite_animation_clip.gd" id="5_tmasa"]
+[ext_resource type="Script" uid="uid://t0xvoej4tvhi" path="res://common/data/sprite_sheet_layout.gd" id="6_5l012"]
+[ext_resource type="Texture2D" uid="uid://drrfu50h4m3lc" path="res://features/units/art/gunner.png" id="7_va333"]
+[ext_resource type="Resource" path="res://features/audio/data/gunner.tres" id="voice_profile"]
+
+[sub_resource type="Resource" id="Resource_s7p7c"]
+script = ExtResource("5_tmasa")
+columns = PackedInt32Array(0)
+fps = 2.0
+loop = true
+frame_durations = PackedFloat32Array()
+instant_start_frame = null
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_hsfsi"]
+script = ExtResource("5_tmasa")
+action = 1
+columns = PackedInt32Array(1, 0, 2, 0)
+fps = 8.0
+loop = true
+frame_durations = PackedFloat32Array()
+instant_start_frame = null
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_4qws3"]
+script = ExtResource("5_tmasa")
+action = 2
+columns = PackedInt32Array(0, 3, 0)
+fps = 12.0
+frame_durations = PackedFloat32Array()
+instant_start_frame = null
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_q6yf8"]
+script = ExtResource("5_tmasa")
+action = 3
+columns = PackedInt32Array(0, 4, 0)
+fps = 12.0
+frame_durations = PackedFloat32Array()
+instant_start_frame = null
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_ww1ib"]
+script = ExtResource("5_tmasa")
+action = 4
+columns = PackedInt32Array(5)
+frame_durations = PackedFloat32Array()
+instant_start_frame = null
+direction_rows = PackedInt32Array()
+
+[sub_resource type="Resource" id="Resource_vdefv"]
+script = ExtResource("6_5l012")
+source_texture = ExtResource("7_va333")
+frame_size = Vector2i(181, 181)
+foot_point = Vector2(90.5, 157.47)
+frame_rects = Array[Rect2i]([Rect2i(43, 32, 127, 149), Rect2i(213, 34, 121, 144), Rect2i(395, 32, 82, 145), Rect2i(558, 55, 166, 124), Rect2i(764, 4, 100, 177), Rect2i(905, 112, 174, 68), Rect2i(47, 209, 111, 151), Rect2i(214, 208, 120, 147), Rect2i(403, 209, 80, 150), Rect2i(573, 236, 144, 122), Rect2i(755, 191, 110, 171), Rect2i(905, 296, 169, 65), Rect2i(48, 391, 91, 149), Rect2i(223, 393, 100, 150), Rect2i(412, 391, 80, 151), Rect2i(581, 416, 122, 125), Rect2i(761, 376, 105, 167), Rect2i(906, 476, 168, 65), Rect2i(25, 577, 99, 147), Rect2i(199, 578, 104, 146), Rect2i(409, 578, 85, 146), Rect2i(543, 596, 141, 128), Rect2i(762, 553, 98, 171), Rect2i(909, 658, 165, 66), Rect2i(10, 757, 114, 148), Rect2i(196, 758, 119, 147), Rect2i(406, 757, 90, 148), Rect2i(553, 775, 132, 130), Rect2i(774, 735, 94, 170), Rect2i(911, 834, 165, 70), Rect2i(13, 946, 114, 140), Rect2i(208, 951, 105, 135), Rect2i(403, 950, 83, 136), Rect2i(599, 960, 76, 126), Rect2i(779, 921, 85, 165), Rect2i(918, 1027, 135, 59), Rect2i(43, 1131, 83, 136), Rect2i(238, 1134, 76, 133), Rect2i(411, 1131, 73, 136), Rect2i(590, 1135, 93, 132), Rect2i(770, 1100, 97, 167), Rect2i(919, 1204, 120, 63), Rect2i(63, 1304, 109, 137), Rect2i(234, 1304, 95, 139), Rect2i(414, 1304, 69, 136), Rect2i(577, 1312, 145, 130), Rect2i(771, 1289, 90, 156), Rect2i(911, 1368, 165, 70)])
+source_pivots = Array[Vector2]([Vector2(47.5, 147), Vector2(58.5, 142), Vector2(57.5, 143), Vector2(75.5, 122), Vector2(50.5, 175), Vector2(90.5, 66), Vector2(43.5, 149), Vector2(57.5, 145), Vector2(49.5, 148), Vector2(60.5, 120), Vector2(59.5, 169), Vector2(90.5, 63), Vector2(42.5, 147), Vector2(48.5, 148), Vector2(40.5, 149), Vector2(52.5, 123), Vector2(53.5, 165), Vector2(89.5, 63), Vector2(65.5, 145), Vector2(72.5, 144), Vector2(43.5, 144), Vector2(90.5, 126), Vector2(52.5, 169), Vector2(86.5, 64), Vector2(80.5, 146), Vector2(75.5, 145), Vector2(46.5, 146), Vector2(80.5, 128), Vector2(40.5, 168), Vector2(84.5, 68), Vector2(77.5, 138), Vector2(63.5, 133), Vector2(49.5, 134), Vector2(34.5, 124), Vector2(35.5, 163), Vector2(77.5, 57), Vector2(47.5, 134), Vector2(33.5, 131), Vector2(41.5, 134), Vector2(43.5, 130), Vector2(44.5, 165), Vector2(76.5, 61), Vector2(27.5, 135), Vector2(37.5, 137), Vector2(38.5, 134), Vector2(56.5, 128), Vector2(43.5, 154), Vector2(84.5, 68)])
+animations = Array[ExtResource("5_tmasa")]([SubResource("Resource_s7p7c"), SubResource("Resource_hsfsi"), SubResource("Resource_4qws3"), SubResource("Resource_q6yf8"), SubResource("Resource_ww1ib")])
+direction_rows = Array[int]([0, 1, 2, 1, 0, 7, 6, 7])
+mirrored_directions = Array[bool]([false, false, false, true, true, true, false, false])
+
+[resource]
+script = ExtResource("1")
+puzzle_element = 0
+id = &"gunner"
+display_name = "火銃手"
+role = 2
+max_health = 170.0
+max_mana = 90.0
+damage = 26.0
+attack_range = 260.0
+attack_interval = 1.4
+speed = 124.0
+armor = 0.03
+sprite_path = "res://features/units/art/gunner.png"
+sprite_layout = SubResource("Resource_vdefv")
+illustration_index = 2
+skills = Array[ExtResource("2_svpky")]([ExtResource("2"), ExtResource("3")])
+voice_profile = ExtResource("voice_profile")

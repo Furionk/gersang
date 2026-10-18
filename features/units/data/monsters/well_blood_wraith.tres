@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3]
+
+[ext_resource type="Script" path="res://common/data/unit_definition.gd" id="1_840a3"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_gyewp"]
+[ext_resource type="Resource" path="res://features/skills/data/enemies/enemy_life_steal.tres" id="3_rfp13"]
+[ext_resource type="Resource" path="res://features/skills/data/enemies/enemy_critical.tres" id="4_lakf1"]
+[ext_resource type="Resource" path="res://features/units/data/layouts/blood_wraith_layout.tres" id="5_rq0b4"]
+[ext_resource type="Resource" path="res://features/audio/data/well_blood_wraith.tres" id="voice_profile"]
+
+[resource]
+script = ExtResource("1_840a3")
+base_power = 240
+level_power_growth = 24
+strength = 32.0
+intelligence = 50.0
+defense = 8.0
+magic_resistance = 0.6
+experience_reward = 110
+id = &"well_blood_wraith"
+display_name = "古井血侍"
+role = 9
+max_health = 486.0
+max_mana = 0.0
+damage = 34.5
+attack_range = 58.0
+attack_interval = 1.4
+minimum_ai_cast_time = 0.4
+balance_revision = 1
+tactical_hint = "高法抗施法者：用物理射手／忠臣之魂集中火力，控制中斷施法；不要一直用同種法術。"
+speed = 118.0
+mana_regeneration = 6.0
+armor = 0.03
+sprite_path = "res://features/units/art/blood_wraith-v1.png"
+sprite_layout = ExtResource("5_rq0b4")
+skills = Array[ExtResource("2_gyewp")]([ExtResource("3_rfp13"), ExtResource("4_lakf1")])
+voice_profile = ExtResource("voice_profile")

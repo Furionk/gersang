@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="UnitDefinition" format=3 uid="uid://b0p5sonvl6joy"]
+
+[ext_resource type="Script" path="res://common/data/unit_definition.gd" id="1_ii3wy"]
+[ext_resource type="Texture2D" path="res://features/units/art/earth-claw-v2.png" id="1_qct3s"]
+[ext_resource type="Script" path="res://common/data/skill_definition.gd" id="2_qct3s"]
+[ext_resource type="Resource" path="res://features/skills/data/claw_strike_empowered.tres" id="3_ii3wy"]
+[ext_resource type="Resource" path="res://features/units/data/layouts/earth_claw_v2_layout.tres" id="4_qct3s"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_thnbr"]
+atlas = ExtResource("1_qct3s")
+region = Rect2(30, 362, 135, 135)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ro3l5"]
+atlas = ExtResource("1_qct3s")
+region = Rect2(0, 362, 181, 181)
+filter_clip = true
+
+[resource]
+script = ExtResource("1_ii3wy")
+intelligence = 0.0
+id = &"earth_claw"
+display_name = "大地魔爪"
+max_health = 420.0
+max_mana = 0.0
+damage = 0.0
+attack_range = 110.0
+attack_interval = 0.28
+attack_windup_override = 0.04
+speed = 150.0
+detection_range = 450.0
+sprite_path = "res://features/units/art/earth-claw-v2.png"
+sprite_layout = ExtResource("4_qct3s")
+visual_scale = 1.8
+portrait_texture = SubResource("AtlasTexture_thnbr")
+standee_texture = SubResource("AtlasTexture_ro3l5")
+skills = Array[ExtResource("2_qct3s")]([ExtResource("3_ii3wy")])
+controllable = false
+random_nearby_target = true

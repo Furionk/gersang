@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="MonkeyProfile" load_steps=2 format=3]
+[ext_resource type="Script" path="res://features/monkey/monkey_profile.gd" id="1"]
+[resource]
+script = ExtResource("1")
+zone_name = "癲狂 · Lv.35 · 15隻"
+time_limit = 90.0
+escape_multiplier = 1.9
+burst_multiplier = 1.55
+decision_seconds = 0.4
+dodge_chance = 0.85
+jump_seconds = 0.5
+confirmation_seconds = 0.18
+search_seconds = 6.0
+sight_range = 19
+hearing_range = 7.0
+look_back_interval = 0.6
+burst_cooldown = 1.6
+dodge_reaction = 0.075
+dodge_cooldown_seconds = 0.65
+prediction_seconds = 0.9
+
+scene = "res://features/monkey/village_mania.tscn"
+
+monkey_count = 15
+
+monkey_level = 35
+
+difficulty = 2
+
+alarm_radius = 13
+
+feint_chance = 0.55
+
+attack_windup = 0.36
+
+attack_recovery = 0.35
+
+exhaustion_seconds = 0.25
+
+stun_resistance = 0.3
+
+sight_degrees = 175
